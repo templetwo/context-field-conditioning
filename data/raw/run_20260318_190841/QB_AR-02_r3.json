@@ -1,0 +1,17 @@
+{
+  "trial_id": "QB_AR-02_r3",
+  "condition": "QB",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 3,
+  "response_text": "The evidence base reveals a **counterintuitive decoupling of accuracy and practical utility**\u2014where higher accuracy can reduce real-world effectiveness\u2014through several distinct mechanisms. These conditions emerge from the **RING 2: QUANTITATIVE ANCHORS** and **RING 3: CROSS-DOMAIN BRIDGES**, particularly in:\n\n---\n\n### **1. Signal Routing\u2019s \"Happy Accident\" Effect (WITNESS Paradox)**\n**Evidence:** [QA-002], [QA-009], [CB-008], [CB-010]\n- **WITNESS Signal (63% accuracy, 35-0-0 judge wins):**\n  The compass\u2019s WITNESS category achieves **perfect judge preference** (35-0-0) despite only **63% accuracy** (QA-001 shows OPEN/PAUSE at 94% but WITNESS at 100% judge wins). This arises because:\n  - **Structured Restraint > Correctness:** The WITNESS signal\u2019s *utility* comes from **preventing the model from answering at all** (e.g., for unanswerable questions), not from precision. The judge prefers this \"silent restraint\" over a wrong but verbose answer.\n  - **Accuracy-Utility Tradeoff:** Increasing WITNESS accuracy (e.g., by reducing false positives) might force the model to answer *some* unanswerable questions, **reducing its practical utility** (CB-010). This mirrors **apophatic theology** (CB-008): truth emerges from *what is not said*, not what is said correctly.\n\n**Analogous Cases:**\n- **Medical Screening:** A test with 90% accuracy but 10% false positives (low precision) may be *more useful* than a 99% accurate test if the false positives trigger unnecessary follow-ups (CB-010).\n- **Weather Forecasting:** Probabilistic statements (\"30% chance of rain\") are *more actionable* than deterministic ones (\"It will rain at 3pm\") even if less accurate.\n\n---\n\n### **2. Entropy Expansion and Over-Specificity**\n**Evidence:** [QA-005], [QA-006], [QA-007],",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18585.135250001258,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:30:16.294724"
+}

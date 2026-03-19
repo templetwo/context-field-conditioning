@@ -1,0 +1,17 @@
+{
+  "trial_id": "TB_FR-01_r1",
+  "condition": "TB",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 1,
+  "response_text": "The **quadratic complexity problem** in transformer attention mechanisms refers to the **O(n\u00b2) time and space complexity** of self-attention, where *n* is the sequence length. This arises from three core operations in the standard scaled dot-product attention:\n\n1. **Query-Key Product (QK\u1d40):**\n   - For a sequence of length *n*, the Q and K matrices are *n\u00d7d* (where *d* is embedding dimension), and their product QK\u1d40 is *n\u00d7n* with *n\u00b2* entries.\n   - Computing this requires *O(n\u00b2d)* FLOPs (floating-point operations) due to matrix multiplication.\n\n2. **Softmax and Value Projection:**\n   - Applying softmax to the *n\u00d7n* attention scores and multiplying by the *n\u00d7d* V matrix adds additional *O(n\u00b2d)* overhead.\n\n3. **Memory/Storage:**\n   - Storing the *n\u00d7n* attention matrix consumes *O(n\u00b2)* memory, prohibitive for long sequences (e.g., books, genomes, or videos).\n\n---\n### **Why This Matters in the Honeycomb Evidence**\nThe quadratic problem connects to multiple findings in your lattice, particularly in **Ring 1 (Trust Gate)** and **Ring 3 (Cross-Domain Bridges)**:\n\n1. **TG-001 (K-SSM Phase Synchronization) \u2194 CB-001 (Kuramoto \u2194 Attention):**\n   - The Kuramoto oscillators in K-SSM (a sub-quadratic alternative to transformers) aim to achieve *global coordination* (like attention) but with *local coupling* (O(n) complexity).\n   - **Key insight:** Attention\u2019s quadratic cost stems from its *all-to-all* relationship (every token attends to every other token). Kuramoto oscillators, like biological neural networks, use *local interactions* to achieve global coherence\u2014suggesting a path to scalability.\n\n2. **CB-002 (Phase Transitions \u2194 Capability Emergence):**\n   - Transformers\u2019 quadratic bottleneck may *mask* latent capabilities (like phase transitions in physics). For example:\n     - Long-range dependencies (e.g., in code or scientific text) require *O(n\u00b2)* attention, but models like **RetroTransformer** or **H3** (hierarchical transformers) approximate this with linear or near-linear complexity.\n     - **Implication:** The \"",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 29956.28683400082,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:06:00.306653"
+}

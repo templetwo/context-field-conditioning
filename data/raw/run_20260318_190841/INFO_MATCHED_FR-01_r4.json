@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_FR-01_r4",
+  "condition": "INFO_MATCHED",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 4,
+  "response_text": "The **quadratic complexity problem** in transformer attention mechanisms refers to the **O(n\u00b2) computational and memory scaling** of self-attention with respect to sequence length (*n*), which becomes intractable for long sequences (e.g., >1024 tokens). Here\u2019s a breakdown of its origins, implications, and how it connects to your research context\u2014particularly the **Kuramoto/attention analogy**, **phase transitions**, and **Compass routing\u2019s role in computational coordination**:\n\n---\n\n### **1. Root Causes of Quadratic Complexity**\n#### **A. Attention as a Global Coordination Problem**\n- **Self-attention** computes pairwise relationships between all tokens in a sequence via the dot-product attention mechanism:\n  \\[\n  \\text{Attention}(Q, K, V) = \\text{softmax}\\left(\\frac{QK^T}{\\sqrt{d_k}}\\right) V\n  \\]\n  - **Key observation**: The \\(QK^T\\) operation requires **O(n\u00b2)** operations to compute the attention scores between every query token and every key token.\n  - **Mathematical analogy to Kuramoto oscillators**:\n    In the Kuramoto model, each oscillator\u2019s phase adjustment depends on the **mean field** of all other oscillators\u2019 phases (damped sine coupling). Similarly, attention weights are a **softmax-normalized mean field** of all tokens\u2019 relationships. Both are **global coordination problems solved via local interactions**.\n\n#### **B. Memory and Compute Bottlenecks**\n- **Memory**: Storing \\(QK^T\\) (or its sparse approximations) scales with \\(n^2\\).\n- **Compute**: For a sequence of length \\(n\\), computing attention requires:\n  - **Forward pass**: \\(n^2 d\\) FLOPs (where \\(d\\) = dimension of keys/queries).\n  - **Backward pass**: Gradient computation compounds the cost, making training/finetuning prohibitive for long sequences.\n\n#### **C. Practical Limits**\n- **Current transformers** typically cap sequences at **2048\u20134096 tokens** due to hardware constraints (e.g., GPU memory limits).\n- **Long-range dependencies** (e.g., full-document reasoning, genomic sequences) are impossible to model efficiently.\n\n---\n\n### **2. Why This Matters in Your Research**\n#### **A. Attention vs. Kuramoto: Two Solutions to the Same Problem**\nYour notes highlight the **formal analogy** between attention and Kuramoto dynamics",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 19563.040750001164,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:43:47.187476"
+}

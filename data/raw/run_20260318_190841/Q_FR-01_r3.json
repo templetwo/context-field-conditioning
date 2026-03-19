@@ -1,0 +1,17 @@
+{
+  "trial_id": "Q_FR-01_r3",
+  "condition": "Q",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 3,
+  "response_text": "The **quadratic complexity** problem in transformer attention mechanisms refers to the **O(n\u00b2)** computational and memory cost of self-attention, where *n* is the sequence length. Here\u2019s how it manifests in your evidence base and why it\u2019s critical for interpreting the **Compass** architecture and dynamical systems approaches like the **K-SSM (Kuramoto-based State Space Model)**:\n\n---\n\n### **1. Core Problem in Transformers**\n- **Self-attention bottleneck**: For each token in a sequence of length *n*, transformers compute attention scores between that token and *all other n* tokens via dot products (softmax) and weighted sums. This results in:\n  - **Memory**: Storing the *n\u00d7n* attention matrix (quadratic space).\n  - **Compute**: *n\u00b2* dot products per layer, per head, per forward pass.\n- **Scalability**: For long sequences (e.g., 4,096 tokens in Llama-2), this becomes prohibitive. For example:\n  - A 1,000-token sequence requires **1M attention computations per layer**.\n  - **Compass\u2019s 3B/9B models** (QA-004) would face this if relying on naive attention for routing signals.\n\n---\n\n### **2. How Compass Mitigates It (Indirectly)**\nWhile **Compass** itself isn\u2019t a direct solver for quadratic attention, the evidence suggests **alternative mechanisms** that reduce effective sequence dependency or enable efficient routing:\n- **Signal Classification (QA-001, QA-002)**:\n  - Compass **classifies context into OPEN/PAUSE/WITNESS** *before* generating responses, effectively **chunking** the problem into smaller, independent subproblems.\n  - **WITNESS signals (100% accuracy, QA-001)** may imply the model leverages **sparse attention** or **structured routing** to avoid full *n\u00b2* computations for certain tokens.\n  - **Entropy shifts (QA-005\u2013QA-007)**: By widening token distributions, Compass may **distribute computational load** across more plausible paths, reducing the need for exhaustive attention.\n\n- **Efficiency in Training (QA-004)**:\n  - Achieved **96% accuracy with only 246 examples**, suggesting the routing mechanism is **lightweight",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17097.912499999893,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:54:23.771473"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_FR-01_r2",
+  "condition": "INFO_MATCHED",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 2,
+  "response_text": "The **quadratic complexity problem** in transformer attention mechanisms refers to the fact that the self-attention operation scales as **O(n\u00b2)** with respect to sequence length (*n*), making it computationally and memory-intensive for long-range dependencies. Here\u2019s a detailed breakdown of the problem, its roots, and how it connects to your research context (e.g., Kuramoto oscillators, entropy, and coordination):\n\n---\n\n### **1. The Core Problem: Quadratic Time and Space**\nTransformer attention computes pairwise relationships between all tokens in a sequence via:\n- **Query-Key (QK) dot products**: For each token *i*, compute attention scores with every other token *j* (O(n\u00b2) operations).\n- **Attention weights**: A softmax-normalized matrix of size *n\u00d7n* (O(n\u00b2) memory).\n- **Value (V) aggregation**: Multiply attention weights with values (another O(n\u00b2) step).\n\nFor a sequence of length *n*, this results in:\n- **Time complexity**: O(*n\u00b2*) per layer.\n- **Memory complexity**: O(*n\u00b2*) to store the attention matrix.\n\nThis becomes prohibitive for:\n- Long documents (e.g., 10,000+ tokens in legal/technical texts).\n- Video/audio processing (frames > 1,000).\n- Real-time applications (e.g., chatbots with long context).\n\n---\n\n### **2. Mathematical Formalization**\nThe self-attention operation for a sequence *x* = (*x\u2081*, ..., *x\u2099*) is:\n```\nAttention(Q, K, V) = softmax(QK\u1d40/\u221ad)V\n```\nwhere:\n- *Q, K, V* are projections of *x* (each of size *n\u00d7d*).\n- *QK\u1d40* is an *n\u00d7n* matrix (O(*n\u00b2*) to compute).\n- *softmax* and *V* multiplication add further O(*n\u00b2*) overhead.\n\nFor *L* layers, total complexity is **O(L\u00b7n\u00b2\u00b7d)**.\n\n---\n\n### **3. Analogies to Your Research**\n#### **A. Attention vs. Kuramoto Oscillators**\nBoth systems solve **global coordination from local interactions**:\n- **Attention**: Each token adjusts its representation toward a weighted sum of other tokens (like oscillators coupling to neighbors).\n  - Kuramoto: *d\u03b8\u1d62/d",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 19230.69166700043,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:43:08.725851"
+}

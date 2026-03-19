@@ -1,0 +1,17 @@
+{
+  "trial_id": "QB_AR-02_r1",
+  "condition": "QB",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 1,
+  "response_text": "Based on the evidence base, **increasing a system's accuracy can decrease its practical utility** under the following conditions\u2014all of which align with the decoupling of *accuracy* and *utility* observed in **QA-002, QA-009, CB-010**, and the broader principles of **phase transitions, apophatic knowing, and superadditive effects** across domains:\n\n---\n\n### **1. When the System\u2019s Value Relies on *Structured Restraint* (Apophatic Utility)**\n   - **Evidence:** [CB-008], [QA-002], [TG-003]\n     - The **WITNESS signal** in Compass achieves **100% classification accuracy** but only a **63% raw accuracy** in practice\u2014yet it delivers a **35-0-0 judge win rate** because its *utility* comes from **what it prevents the model from saying** (apophatic knowing). Higher accuracy might eliminate these \"happy accidents\" where imperfect signals still produce high-value outputs.\n     - **Example:** In medical diagnostics, a test with **90% accuracy** might miss critical false negatives, but a **lower-accuracy screening tool** (e.g., a sensitive but imprecise biomarker) may catch more cases at the cost of more false alarms\u2014*utility depends on the decision context*.\n   - **Condition:** The system\u2019s **practical value arises from controlled error or silence** (e.g., WITNESS routing, screening tests, weather probability forecasts).\n\n---\n\n### **2. When Utility Emerges from *Phase Transitions* (Threshold Effects)**\n   - **Evidence:** [CB-002], [CB-004], [QA-003]\n     - **K-SSM oscillators** at **R_init = 0.3270** (near critical coupling) exhibit **discontinuous capability jumps**\u2014a small change in parameter accuracy (e.g., fixing the gradient severance) might push the system *past* the phase boundary where **qualitative utility** (e.g., synchronization, emergent behavior) collapses into incoherence.\n     - **LLM example:** A model might achieve **99% accuracy on a task** but lose **creativity, adaptability, or contextual nuance**\u2014traits that emerge *at* phase boundaries (e.g., near-critical",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18765.6072080008,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:29:39.384076"
+}

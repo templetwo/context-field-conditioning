@@ -1,0 +1,17 @@
+{
+  "trial_id": "Q_AR-04_r1",
+  "condition": "Q",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 1,
+  "response_text": "In this evidence base, the **superadditive interaction** (specifically the **Rigor \u00d7 Empathy (R\u00d7E) interaction** in [QA-008]) refers to a fundamental departure from **simple additivity** in how framing effects combine. Here\u2019s the distinction, grounded in the data and broader systems theory:\n\n---\n\n### **1. Simple Additivity (Linear Combination)**\n- **Definition**: If two factors (e.g., *Rigor* and *Empathy*) combine additively, their joint effect equals the sum of their individual effects. Mathematically:\n  **E(Rigor + Empathy) = E(Rigor) + E(Empathy)**\n- **Example**: If *Rigor* alone improves response quality by **+10%** and *Empathy* alone improves it by **+15%**, an additive model would predict **+25%** total.\n- **Key Property**: The effect of the combination is *predictable* from the parts. No \"bonus\" or \"penalty\" emerges beyond the sum.\n\n---\n### **2. Superadditive Interaction (Synergistic Combination)**\n- **Definition**: The joint effect **exceeds** the sum of individual effects. Formally:\n  **E(Rigor + Empathy) > E(Rigor) + E(Empathy)**\n  (Or equivalently, the interaction term in a statistical model is **positive and significant**.)\n- **Why It Matters in [QA-008]**:\n  - The IRIS study\u2019s **3,830 inference runs** revealed that when *Rigor* and *Empathy* were combined, the improvement in response quality (or other metrics like coherence, creativity, or entropy\u2014see [QA-005]) was **larger than the sum of their separate contributions**.\n  - This suggests the factors **reinforce each other** at a systemic level, creating a new emergent property. For example:\n    - *Rigor* alone might enforce logical consistency, but only when paired with *Empathy* does it also *expand the space of possible solutions* (as seen in [QA-005]\u2019s entropy increase, \u0394H = +0.49 for OPEN questions).\n    - *Empathy* alone might soften responses, but only with *Rigor* does it avoid triviality or sentimentality.\n  - This aligns with **dynamic systems theory** (e.g., [Q",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18325.6033749999,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:59:58.688017"
+}

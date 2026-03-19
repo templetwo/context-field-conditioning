@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQ_FR-01_r3",
+  "condition": "TQ",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 3,
+  "response_text": "The **quadratic complexity problem** in transformer attention mechanisms arises from the **self-attention layer** (and cross-attention in decoder stacks) and is defined by the following core constraints:\n\n---\n\n### **1. Computational Complexity: O(n\u00b2) for Sequence Length *n***\n- **Attention Matrix**: For a sequence of length *n*, the self-attention mechanism computes a *n\u00d7n* attention score matrix where:\n  - **Query (Q)**, **Key (K)**, and **Value (V)** projections are computed for every token (*n* operations each).\n  - **Dot-product attention** between *Q* and *K\u1d40* (shape: *n\u00d7n*) requires *n\u00b2* multiplications and additions.\n  - **Output aggregation**: Multiplying the attention scores with *V* (shape: *n\u00d7d*) requires *n\u00b2\u00d7d* operations (where *d* = embedding dimension).\n- **Result**: The **forward pass** of a single attention head scales as **O(n\u00b2\u00b7d)** for a sequence of length *n*. With *h* heads, this becomes **O(h\u00b7n\u00b2\u00b7d)**.\n\n---\n### **2. Memory (GPU/TPU) Bottlenecks: O(n\u00b2) Attention Matrix Storage**\n- The *n\u00d7n* attention matrix must be stored in memory during computation. For long sequences (e.g., *n* = 10,000 tokens), this requires **~80GB** of memory for float32 (assuming *d* = 512):\n  - **Memory usage** = *n\u00b2 \u00d7 4 bytes* (float32) \u2248 **320MB for *n*=2,000**, **80GB for *n*=10,000**.\n- This **exceeds GPU/TPU capacity** for most modern hardware (e.g., A100: 40GB HBM, H100: 80GB HBM).\n\n---\n### **3. Scaling Laws: Infeasibility for Long-Range Dependencies**\n- Transformers struggle with **long-range dependencies** (e.g., summarizing 100K-token documents) because:\n  - **Attention sparsity**: Even with sparse attention (e.g., Strided, Sliding Window), the problem persists for *n* > 10K\u201310",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 19480.284708,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:47:05.381273"
+}

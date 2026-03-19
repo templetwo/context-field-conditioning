@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_FR-04_r2",
+  "condition": "FULL",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 2,
+  "response_text": "In the context of **hypothesis testing** (statistical inference, scientific experiments, or even AI/ML model evaluation), **Type I and Type II errors** are fundamental classification mistakes. Their definitions are structured as follows:\n\n---\n\n### **1. Type I Error (False Positive)**\n- **Definition**: *Rejecting a true null hypothesis* (i.e., concluding there is an effect, relationship, or difference when there isn\u2019t one).\n- **Example**:\n  - In medical testing: Saying a patient has a disease (positive test) when they don\u2019t (false alarm).\n  - In AI/ML: Claiming a model\u2019s performance improvement is statistically significant (e.g., Phase-GPT\u2019s oscillators \u201clearning\u201d) when it\u2019s due to random variation (e.g., the gradient severance bug in **TG-002**).\n  - In the **Compass system**: Misclassifying a question as **WITNESS** when it should be **OPEN** (as seen in **TG-003**, where 63% accuracy meant some errors existed despite utility).\n- **Probability**: Denoted as **\u03b1** (alpha). The **significance level** (e.g., p < 0.05) is the threshold for \u03b1.\n- **Cost**: Wasted resources (e.g., debugging a non-existent model feature) or eroding trust in results (e.g., **TG-009**\u2019s four independent reviews confirming the gradient bug was catastrophic).\n- **Relation to the honeycomb evidence**:\n  - **TG-002** (gradient severance) is a Type I error: the hypothesis that oscillators were learning was rejected *after* confirming it was false (the bug severed gradients entirely).\n  - **TG-001** (K-SSM synchronization \u2260 utility) could be framed as a Type I error if the team had *overinterpreted* synchronization as computational utility before realizing it was epiphenomenal.\n\n---\n\n### **2. Type II Error (False Negative)**\n- **Definition**: *Failing to reject a false null hypothesis* (i.e., missing a true effect, relationship, or difference that exists).\n- **Example**:\n  - In medical testing: Saying a patient doesn\u2019t have a disease (negative test) when they do (missed diagnosis).\n  - In AI/ML: Failing to detect that a model *could* learn phase relationships (e.g.,",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 23063.42720800001,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T18:35:22.605286"
+}

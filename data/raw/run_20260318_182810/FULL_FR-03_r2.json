@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_FR-03_r2",
+  "condition": "FULL",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 2,
+  "response_text": "Shannon entropy (H) is a fundamental measure in information theory introduced by Claude Shannon (1948) to quantify the **uncertainty or unpredictability** of a random variable or probability distribution. It answers the question: *\"How much information, on average, is contained in the outcomes of a random process?\"* In the context of your evidence base (e.g., token-level entropy in LLMs), it formalizes how \"spread out\" or \"diverse\" the possible outcomes are.\n\n---\n\n### **Mathematical Definition**\nGiven a discrete probability distribution \\( P = \\{p_1, p_2, ..., p_n\\} \\) where \\( p_i \\) is the probability of outcome \\( i \\), Shannon entropy is computed as:\n\n\\[\nH(P) = -\\sum_{i=1}^{n} p_i \\log_2(p_i)\n\\]\n\n- **Base-2 logarithm**: Uses bits as the unit of information (common in computer science). Base-*e* (nats) or base-10 (harts) are also used in other contexts.\n- **Units**: The entropy is measured in **bits** (for base-2), representing the average number of yes/no questions needed to identify an outcome.\n- **Maximum entropy**: Achieved when all outcomes are equally likely (\\( p_i = 1/n \\)), giving \\( H_{\\text{max}} = \\log_2(n) \\).\n- **Minimum entropy**: Zero, when one outcome is certain (\\( p_i = 1 \\) for some \\( i \\)).\n\n---\n\n### **Intuition Behind the Formula**\n1. **Weighted by probability**:\n   Outcomes that are *more likely* contribute *less* to entropy (since they\u2019re predictable). Outcomes that are *less likely* contribute *more* (since they\u2019re surprising).\n   Example: A coin flip (\\( p = 0.5 \\)) has \\( H = 1 \\) bit, while a biased coin (\\( p = 0.9 \\)) has \\( H = 0.47 \\) bits.\n\n2. **Logarithmic scaling**:\n   The logarithm captures the idea that *doubling* the number of equally likely outcomes adds a fixed amount of entropy (e.g., \\( \\log_2(4) - \\log_2(2) = 1 \\) bit).\n\n---\n\n### **Connection to Your Evidence Base**\nIn your honeycomb lattice, entropy appears in **QA-005\u2013",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 23383.591833000024,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T18:34:36.089294"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQ_FR-02_r2",
+  "condition": "TQ",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 2,
+  "response_text": "The **Kuramoto model** is a **mathematical framework in nonlinear dynamics** that describes **synchronization phenomena in populations of coupled oscillators**. It was introduced by Yoshiki Kuramoto in 1975 to explain how disparate oscillatory elements (e.g., fireflies flashing in unison, pacemaker cells in the heart, or neurons firing in sync) spontaneously self-organize into a **coherent, phase-locked state** despite individual differences in frequency or coupling.\n\n---\n\n### **Core Phenomenon: Phase Synchronization**\nThe model demonstrates how **weakly coupled oscillators**, each with its own natural frequency, can transition from **asynchronous chaos** to **macroscopic phase synchronization** when connected via all-to-all or local interactions. The key observations are:\n\n1. **Order Parameter (R)**\n   A complex-valued quantity that measures the **degree of synchronization** in the system:\n   - \\( R = \\frac{1}{N} \\sum_{j=1}^N e^{i \\phi_j} \\)\n     (where \\( \\phi_j \\) is the phase of oscillator \\( j \\), and \\( N \\) is the total number of oscillators).\n   - **\\( R \\approx 0 \\)**: Oscillators are in random phases (no synchronization).\n   - **\\( R \\approx 1 \\)**: All oscillators are perfectly aligned in phase (full synchronization).\n\n2. **Phase Transition**\n   As the **coupling strength** \\( K \\) (or density of oscillators with frequencies near the mean) increases, the system undergoes a **continuous phase transition** from incoherence (\\( R \\approx 0 \\)) to coherence (\\( R \\to 1 \\)). This is analogous to a **ferromagnetic transition** in statistical physics.\n\n3. **Critical Coupling Threshold**\n   - For \\( K < K_c \\): Oscillators remain desynchronized.\n   - For \\( K > K_c \\): A **macroscopic fraction of oscillators** lock into a common phase, dragging others along.\n   - The transition is **nonlinear** and **emergent**\u2014no single oscillator dictates the synchronized state.\n\n---\n\n### **Key Findings from Your Evidence (Ring 1: Trust Gate)**\nThe research lattice reveals **three critical insights** about the Kuramoto model in the context of **K-SSM (Kuramoto State-Space Model)** and **Phase-GPT**:\n\n1. **Synchronization \u2260 Computational Utility (",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18848.108500000308,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:47:43.595517"
+}

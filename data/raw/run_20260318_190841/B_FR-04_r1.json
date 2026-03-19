@@ -1,0 +1,17 @@
+{
+  "trial_id": "B_FR-04_r1",
+  "condition": "B",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 1,
+  "response_text": "The **honeycomb lattice** you\u2019ve provided doesn\u2019t directly define Type I and Type II errors (which are classical statistical concepts from hypothesis testing), but we can **map these errors onto the cross-domain bridges** in the lattice\u2014particularly through **CB-002 (Phase Transitions \u2194 Capability Emergence)** and **CB-010 (Accuracy-Utility Decoupling)**\u2014to reveal how they generalize across substrates. Here\u2019s a synthesized perspective:\n\n---\n\n### **1. Classical Definitions (Recap)**\n- **Type I Error (False Positive)**: Rejecting a true null hypothesis (e.g., claiming a drug works when it doesn\u2019t).\n- **Type II Error (False Negative)**: Failing to reject a false null hypothesis (e.g., missing a drug\u2019s effect when it exists).\n- **Trade-off**: Reducing one often increases the other (e.g., stricter significance thresholds \u2192 fewer Type I errors but more Type II errors).\n\n---\n\n### **2. Cross-Domain Analogs in the Lattice**\n#### **A. Phase Transitions as Error Thresholds (CB-002)**\n- In **physics**, phase transitions (e.g., water \u2192 ice) are **discontinuous** despite continuous parameter changes. The *critical threshold* (e.g., temperature) separates regimes where errors behave differently:\n  - **Type I Error**: Misidentifying a system as \"above threshold\" (e.g., calling a paramagnet ferromagnetic) when it\u2019s still in a continuous phase.\n  - **Type II Error**: Failing to detect a phase transition (e.g., missing ferromagnetism at the critical point).\n- **LLM Analogy**: Capability emergence (CB-002) mirrors this. At the *K-SSM R_init=0.3270* threshold, the model\u2019s \"phase\" shifts abruptly. Errors here are:\n  - **Type I**: Overestimating capabilities (e.g., hallucinating coherence).\n  - **Type II**: Underestimating latent abilities (e.g., missing emergent reasoning).\n\n#### **B. Accuracy-Utility Decoupling (CB-010)**\n- **Compass WITNESS** (63% accuracy, 97% judge win rate) shows that **utility \u2260 accuracy**. Errors here are:\n  - **Type I (Utility Error)**: High-accuracy but useless outputs (e.g., precise but irrelevant facts).\n  - **Type II (Utility Error",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17488.44716700023,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:13:57.418063"
+}

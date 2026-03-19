@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQ_FR-01_r2",
+  "condition": "TQ",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 2,
+  "response_text": "The **quadratic complexity problem** in transformer attention mechanisms refers to the **O(N\u00b2) time and space complexity** of the self-attention operation, where **N** is the sequence length. This arises from two key components:\n\n---\n\n### **1. Attention Scoring (Query-Key Dot Products)**\nFor a sequence of length **N**, the attention mechanism computes:\n- **N queries** (Q), each of dimension **d_k**\n- **N keys** (K), each of dimension **d_k**\n- **N values** (V), each of dimension **d_v**\n\nThe **attention score matrix** (A) is computed as:\n\\[\nA = \\text{softmax}\\left(\\frac{Q K^T}{\\sqrt{d_k}}\\right)\n\\]\n- **Key operation:** \\(Q K^T\\) is an **N\u00d7N matrix multiplication**, requiring **O(N\u00b2 d_k)** operations.\n- Even with **efficient implementations** (e.g., FlashAttention), this remains the dominant bottleneck for long sequences.\n\n---\n\n### **2. Memory and Compute Bottlenecks**\n- **Memory:** Storing intermediate matrices (e.g., \\(Q K^T\\)) scales with \\(N^2\\).\n- **Compute:** Forward/backward passes for attention involve **N\u00b2 operations per head**, and with **M heads**, complexity becomes **O(M N\u00b2 d_k)**.\n\n---\n### **Why This Matters in Your Evidence Base**\nWhile your research focuses on **dynamical systems (K-SSM), coupling mechanisms (Phase-GPT), and context routing (Compass)**, the quadratic bottleneck is critical for:\n1. **Long-Context Scaling**\n   - Transformers struggle with sequences beyond **~4K tokens** (e.g., in retrieval-augmented generation or coding).\n   - Your **K-SSM** and **oscillator-based models** (e.g., TG-001, TG-002) may offer **linear or near-linear alternatives** if they can maintain computational utility (cf. TG-001\u2019s failure to improve perplexity despite synchronization).\n\n2. **Latency in Compass Routing**\n   - QA-010 shows **compass adds 4s latency** (~40% overhead). This could stem from:\n     - **Attention-heavy signal classification** (Compass v0.9, QA-001).\n     - **Quadratically expensive ablations** (TG-0",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 19415.21662499963,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:46:45.898785"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_AR-04_r3",
+  "condition": "INFO_MATCHED",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 3,
+  "response_text": "The distinction between **superadditive interactions** and **simple additive combinations** lies in the **nature of their combined effect**\u2014specifically, whether the joint impact of two or more variables **exceeds the sum of their individual contributions** (superadditive) or merely equals it (additive). In the context of your research program, this distinction is critical because it reveals **emergent phenomena** where the system behaves qualitatively differently than the sum of its parts. Here\u2019s how to unpack it, using your findings as a lens:\n\n---\n\n### **1. Definitions and Mathematical Formalization**\n#### **Additive Interaction**\n- If two factors \\( A \\) and \\( B \\) combine additively, their total effect is:\n  \\[\n  \\text{Effect}_{A+B} = \\text{Effect}_A + \\text{Effect}_B\n  \\]\n- Example: If framing \"rigor\" (\\( R \\)) improves performance by +10% and \"empathy\" (\\( E \\)) improves it by +15%, the combined effect is +25% (no interaction).\n- In your IRIS study, this would mean the \\( R \\times E \\) interaction had no synergy\u2014just the sum of individual framing effects.\n\n#### **Superadditive Interaction**\n- If the interaction is superadditive, the combined effect **exceeds** the sum:\n  \\[\n  \\text{Effect}_{A+B} > \\text{Effect}_A + \\text{Effect}_B\n  \\]\n  The difference is often called the **synergistic effect** (\\( \\Delta_{syn} \\)):\n  \\[\n  \\Delta_{syn} = \\text{Effect}_{A+B} - (\\text{Effect}_A + \\text{Effect}_B) > 0\n  \\]\n- Example: In your IRIS study, the \\( R \\times E \\) interaction was superadditive, meaning the combined effect of \"rigor\" and \"empathy\" framing was **greater than** the sum of their individual effects. This implies the system doesn\u2019t just stack benefits\u2014it **amplifies** them through their interaction.\n- Key property: The system\u2019s behavior in the joint condition is **not predictable** from the individual conditions alone. This is a hallmark of **emergence**.\n\n---\n\n### **2. Key Observations from Your Research**\nYour program uncovered superadditivity in **three distinct substrates**:\n1. **IRIS Framing",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 19726.498957999866,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:54:46.164507"
+}

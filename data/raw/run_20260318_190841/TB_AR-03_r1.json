@@ -1,0 +1,17 @@
+{
+  "trial_id": "TB_AR-03_r1",
+  "condition": "TB",
+  "probe_id": "AR-03",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "How could a null result be more informative than a positive result in a research program?",
+  "repetition": 1,
+  "response_text": "Null results can be *far* more informative than positive ones in a multi-year research program\u2014not because they lack findings, but because they reveal **structural constraints, hidden assumptions, and the limits of current paradigms**. In this evidence base, null results often expose **mechanistic blind spots, methodological fragilities, and the brittle coupling between formal properties (e.g., synchronization) and functional outcomes (e.g., language modeling performance)**. Here\u2019s how they achieve this, structured through the honeycomb lattice:\n\n---\n\n### **1. Null Results Reveal *False Positives in the Foundation***\n   - **Example**: [TG-002] (Gradient severance in Phase-GPT) and [TG-009] (Four independent reviews confirmed the bug).\n     - *Positive claim*: \"Kuramoto oscillators in the hidden state are learning meaningful phase coupling.\"\n     - *Null result*: The oscillators were **frozen** (gradient = 0) due to a trivial bug, meaning every prior \"positive\" result was a **confound of randomness**.\n     - *Why informative*: This null result didn\u2019t just disprove a hypothesis\u2014it **erased 18 months of work** and forced a **paradigm reset**. The research program now asks: *What other assumptions might be silently violated?* (E.g., [TG-001]\u2019s epiphenomenal synchronization).\n     - **General principle**: Nulls can **invalidate entire research threads**, exposing how **implementation details** (e.g., autograd graphs, casting operations) can make formal theories untestable.\n\n---\n\n### **2. Null Results Expose *Decoupling Between Formal and Functional Properties***\n   - **Example**: [TG-001] (Phase synchronization without language modeling improvement).\n     - *Positive expectation*: If hidden-state oscillators synchronize (R=0.993), the model should improve in downstream tasks.\n     - *Null result*: Synchronization occurred, but **perplexity improved by 0.0**\u2014the oscillators were **epiphenomenal**.\n     - *Why informative*: This decoupling forces a **redefinition of \"computational utility\"**. The research program now investigates:\n       - Are dynamical systems in LLMs **purely descriptive** (like entropy) or **causal**?\n       - Does synchronization require **gradient flow** to matter? ([CB-009]\u2019s severed",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18535.98066700033,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:11:31.161713"
+}

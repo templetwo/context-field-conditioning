@@ -1,0 +1,17 @@
+{
+  "trial_id": "B_FR-01_r2",
+  "condition": "B",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 2,
+  "response_text": "The **quadratic complexity problem** in transformer attention mechanisms arises from the **O(n\u00b2) scaling of self-attention**\u2014where *n* is the sequence length\u2014and is deeply connected to several cross-domain insights in your honeycomb lattice, particularly **CB-001 (Kuramoto \u2194 attention)** and **CB-004 (compass entropy \u2194 phase transitions)**. Here\u2019s the breakdown, weaving in the broader implications from your research:\n\n---\n\n### **1. The Core Problem: Quadratic Cost of Attention**\nTransformer attention computes pairwise relationships between all tokens in a sequence via the **softmax-scaled dot-product attention** (from CB-001):\n```\nAttention(Q, K, V) = softmax(QK\u1d40/\u221ad)V\n```\n- **QK\u1d40** requires **O(n\u00b2)** operations (and memory) because it computes a full *n\u00d7n* matrix of similarities between every token pair.\n- For long sequences (e.g., 4,096+ tokens in LLMs or genomics), this becomes prohibitively expensive, limiting scalability.\n\n**Analogy to Kuramoto Oscillators (CB-001):**\nIn Kuramoto\u2019s model, *N* oscillators couple via pairwise phase interactions:\n```\nd\u03b8\u1d62/dt = \u03c9\u1d62 + (K/N) \u03a3\u2c7c sin(\u03b8\u2c7c \u2212 \u03b8\u1d62)\n```\nHere, the sum over *j* also scales as **O(N\u00b2)**. Attention replaces \"phase coupling\" with \"representational alignment,\" but both solve **global coordination from local interactions**\u2014and both face quadratic costs.\n\n---\n\n### **2. Why Quadratic Scaling is Inevitable (Without Approximation)**\nThe problem isn\u2019t just computational; it\u2019s **information-theoretic**:\n- **Attention as a Holistic Processor:** To model *long-range dependencies*, the transformer must explicitly compare every token pair. This is why it excels at tasks like **context-field shifts (CB-007)**\u2014but at a quadratic price.\n- **Entropy and Phase Transitions (CB-004):** The compass\u2019s entropy increase (\u0394H \u2248 +0.47) suggests attention explores a vast state space. Quadratic scaling is the cost of accessing this space *exactly*. Approximations (e.g., sparse attention) risk losing critical microstates, akin to suppressing phase transitions.\n\n**",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17481.194166000023,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:11:39.347773"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_GE-04_r5",
+  "condition": "BASELINE",
+  "probe_id": "GE-04",
+  "probe_category": "generative_exploration",
+  "probe_question": "How might the concept of phase transitions apply to the evolution of scientific paradigms?",
+  "repetition": 5,
+  "response_text": "The concept of **phase transitions**\u2014borrowed from statistical physics and condensed matter physics\u2014can offer a powerful analogy for understanding how **scientific paradigms** shift over time. Just as matter undergoes abrupt transitions between states (e.g., solid to liquid), scientific communities can experience sudden, systemic changes in their dominant frameworks, methodologies, or even worldviews. Here\u2019s how the analogy applies:\n\n---\n\n### **1. Order Parameters as Paradigm Dominance**\n   - In physics, an **order parameter** (e.g., magnetization in ferromagnets) quantifies the degree of symmetry breaking or coherence in a system. Similarly, a **scientific paradigm** (e.g., Newtonian mechanics, Darwinian evolution, quantum theory) acts as an \"order parameter\" for the scientific community:\n     - **High-order state**: Most researchers adhere to a dominant paradigm (e.g., phlogiston theory in 18th-century chemistry or geocentrism in astronomy). The field appears stable and cohesive.\n     - **Low-order state**: During revolutions (e.g., the shift from alchemy to modern chemistry), the order parameter fluctuates wildly as old and new ideas compete.\n   - **Example**: The transition from **Ptolemaic astronomy** (geocentric) to **Copernican/Heliocentric** was a phase transition where the \"order parameter\" (dominant cosmological model) flipped abruptly.\n\n---\n\n### **2. Critical Phenomena and Anomalies**\n   - Near a phase transition, systems exhibit **critical phenomena**: fluctuations grow, correlations span long distances, and small perturbations have outsized effects. Similarly, **anomalies** (observations inconsistent with the dominant paradigm) accumulate during scientific revolutions:\n     - **Puzzle-solving vs. Paradigm shift**: Normal science (Kuhn) focuses on \"puzzle-solving\" within a paradigm. But as anomalies pile up (e.g., black-body radiation challenging classical physics), the field enters a **critical state**.\n     - **Divergence of interpretations**: Researchers may propose *ad hoc* fixes (e.g., epicycles in astronomy) to preserve the paradigm, but these become increasingly strained\u2014like trying to force a gas into a solid.\n   - **Example**: The **ultraviolet catastrophe** (classical physics failing to explain black-body radiation) signaled the need for quantum theory, analogous to a system approaching a critical point.\n\n---\n\n### **3. Metastability and Hysteresis**\n   - Some",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 15740.625166999962,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:25:03.206655"
+}

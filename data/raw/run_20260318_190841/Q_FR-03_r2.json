@@ -1,0 +1,17 @@
+{
+  "trial_id": "Q_FR-03_r2",
+  "condition": "Q",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 2,
+  "response_text": "Shannon entropy (H) is a fundamental concept in information theory introduced by Claude Shannon in 1948. It quantifies the **average amount of information or uncertainty** contained in a random variable (e.g., a token distribution in language models). In the context of your honeycomb lattice, entropy is used to measure how \"spread out\" or \"diverse\" the probability distribution of generated tokens is\u2014with higher entropy indicating more uncertainty and thus more potential for varied or creative outputs.\n\n---\n\n### **Intuitive Explanation**\n- **High entropy**: The system is in a state of high uncertainty (e.g., many possible tokens are equally likely). Example: A fair coin flip (H = 1 bit).\n- **Low entropy**: The system is predictable (e.g., one outcome is overwhelmingly likely). Example: A biased coin that always lands on heads (H \u2248 0).\n- In the **Compass** framework (QA-005, QA-006), routing increases entropy by expanding the range of probable tokens, making the model less deterministic.\n\n---\n\n### **Mathematical Definition**\nFor a discrete probability distribution \\( P = \\{p_1, p_2, ..., p_n\\} \\), where \\( p_i \\) is the probability of outcome \\( i \\), Shannon entropy is computed as:\n\n\\[\nH(P) = -\\sum_{i=1}^n p_i \\log_2(p_i)\n\\]\n\n#### Key Properties:\n1. **Base of the logarithm**:\n   - \\( \\log_2 \\): Entropy is measured in **bits** (binary units).\n   - \\( \\ln \\): Entropy is measured in **nats** (natural units).\n   - \\( \\log_{10} \\): Entropy is measured in **harts** (rarely used).\n\n2. **Maximum entropy**:\n   - Achieved when all outcomes are equally likely (\\( p_i = \\frac{1}{n} \\)).\n   - \\( H_{max} = \\log_2(n) \\). For a binary system (e.g., coin flip), \\( H_{max} = 1 \\) bit.\n\n3. **Minimum entropy**:\n   - Achieved when one outcome is certain (\\( p_i = 1 \\) for one \\( i \\)).\n   - \\( H_{min} = 0 \\).\n\n---\n\n### **Example Calculation**\nSuppose a language model generates a token with the following probability distribution:\n| Token | Prob",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17092.867790999662,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:55:51.227084"
+}

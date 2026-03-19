@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_FR-03_r1",
+  "condition": "FULL",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 1,
+  "response_text": "Shannon entropy is a fundamental concept in information theory introduced by Claude Shannon in his 1948 paper *\"A Mathematical Theory of Communication.\"* It quantifies the **average amount of information (or uncertainty) contained in a random variable or probability distribution**. In the context of language models (LLMs) like those studied in the honeycomb lattice, it measures the unpredictability or diversity of the model's token distributions at each step of generation.\n\n---\n\n### **Mathematical Definition**\nGiven a discrete random variable \\( X \\) with possible outcomes \\( x_i \\) and corresponding probabilities \\( P(x_i) \\), the **Shannon entropy** \\( H(X) \\) is defined as:\n\n\\[\nH(X) = -\\sum_{i} P(x_i) \\log P(x_i)\n\\]\n\n#### Key Properties:\n1. **Units**: Entropy is measured in *bits* (if \\(\\log\\) is base 2), *nats* (base \\( e \\)), or *banits* (base 10). The honeycomb lattice uses base 2 (bits) for consistency with LLM token distributions.\n2. **Maximum Entropy**: For a distribution with \\( n \\) equally likely outcomes, \\( H_{\\text{max}} = \\log n \\).\n3. **Minimum Entropy**: \\( H = 0 \\) when \\( P(x_i) = 1 \\) for a single outcome (no uncertainty).\n4. **Additivity**: For independent random variables \\( X \\) and \\( Y \\), \\( H(X,Y) = H(X) + H(Y) \\).\n\n---\n\n### **Connection to Language Models**\nIn LLMs, entropy is computed **per token** from the model's **output probability distribution** over the vocabulary \\( V \\). For a given input context, the model generates a distribution \\( P(\\text{token}| \\text{context}) \\), and entropy measures the \"surprise\" or diversity of this distribution.\n\n#### **Steps to Compute Token Entropy in LLMs**:\n1. **Forward Pass**: Given a prompt, the LLM outputs a probability distribution over the next token \\( P(w| \\text{context}) \\), where \\( w \\in V \\).\n2. **Log-Probabilities**: Convert probabilities to log-probabilities: \\( \\log P(w) \\).\n3. **Weighted Sum**: Compute the entropy using the discrete formula above:\n   \\[\n   H = -\\sum_{w \\in V} P(w) \\log P",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 22381.566583000676,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:09:25.159692"
+}

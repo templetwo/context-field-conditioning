@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQB_AR-02_r2",
+  "condition": "TQB",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 2,
+  "response_text": "The **honeycomb lattice** reveals several **structural conditions** where increasing *accuracy* (e.g., signal classification correctness, precision, or fidelity to ground truth) actually **decreases practical utility**\u2014often because utility depends on *non-accuracy dimensions* like **adaptive restraint, entropy, contextual fit, or emergent properties**. Here are the key conditions from the evidence, organized by mechanism:\n\n---\n\n### **1. When Accuracy and Utility Decouple via *Structural Restraint* (TG-003, QA-002, CB-006, CB-008)**\n   - **Condition**: The \"signal\" (e.g., WITNESS, PAUSE) is *intentionally wrong* but triggers a **higher-order constraint** that the system\u2019s default behavior cannot.\n     - Example: **Compass WITNESS** had **63% accuracy** (often misclassified questions) but achieved **97% judge win rate** because its \"do not answer directly\" prompt forced the model into a **more useful epistemic posture** (e.g., hinting at deeper questions, avoiding verbosity).\n     - *Mechanism*: **Apophatic utility** (CB-008) \u2014 meaning emerges from *what is withheld*, not what is stated.\n   - **Cross-domain parallel**:\n     - Medical screening tests prioritize **sensitivity** (catching all cases, even at the cost of false positives) over **precision** because missing a case is worse than over-testing.\n     - Weather forecasts use **categorical probabilities** (\"30% chance of rain\") that are *less precise* than deterministic models but are *more actionable* for decision-making.\n\n---\n\n### **2. When Higher Accuracy *Over-constrains* the System (TG-004, TG-005, QA-010)**\n   - **Condition**: The system\u2019s **intended function** requires *controlled error* or *flexibility* to adapt to context.\n     - Example: **Compass routing** improved **authenticity (+2.45)** and **restraint (+2.60)** but **degraded intellectual rigor (\u20130.50)** in scientific domains (TG-004). The system learned to \"feel\" but forgot to \"think\" under strict routing.\n     - **Pause_012** (TG",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 20646.85174999977,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:49:56.154854"
+}

@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual env
+venv/
+.venv/
+env/
+
+# Data (raw outputs can be large)
+data/raw/*.json
+data/processed/*.csv
+data/processed/*.json
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Analysis outputs (regenerable)
+analysis/results/*.png
+analysis/results/*.pdf
+analysis/results/*.csv
+!analysis/results/.gitkeep
+
+# Logs
+*.log
+data/experiment.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp

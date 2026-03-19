@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_AR-02_r5",
+  "condition": "FULL",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 5,
+  "response_text": "Increasing a system's **accuracy** can decrease its **practical utility** under the following conditions, as revealed by the evidence in this research program. These conditions emerge from the **decoupling of accuracy and utility** (TG-003, CB-010), **cross-substrate patterns** (CB-010), and the **structural constraints of coordination** (SC-002, SC-006). Here\u2019s a synthesized framework:\n\n---\n\n### **1. When the Signal\u2019s *Mechanism* Trumps *Correctness* (Accuracy-Utility Decoupling)**\n   - **Compass WITNESS (TG-003, QA-002, CB-010)**:\n     - *v0.8*: 63% accuracy (wrong 37% of the time) but 97% judge win rate.\n     - *v0.9*: 100% accuracy but 35-0-0 judge sweep (still high utility).\n     - **Why?** The *system prompt* triggered by WITNESS (\"do not answer directly\") was the true driver of utility. Accuracy was a red herring\u2014what mattered was the **structural constraint** (apophatic knowing, CB-008) that forced the model into a higher-order response regime.\n     - *Example*: A weather forecast saying \"chance of rain\" (low numerical accuracy) may outperform \"72% rain\" if decision-makers act on the *framing* (CB-010).\n\n   - **Guardian Refusal (TG-005)**:\n     - *100% \"correct\" PAUSE signal* \u2192 model refused to generate *any* content \u2192 **zero utility**.\n     - **Utility collapsed** because the system\u2019s \"correctness\" became a **hard constraint** rather than a **soft guide**. The model\u2019s ability to *respond at all* was more valuable than precision in classification.\n\n---\n\n### **2. When Accuracy Imposes *Rigor at the Cost of Adaptability* (SC-005)**\n   - **Compass v0.9 vs. Raw (TG-004, TG-010)**:\n     - Compass improved *authenticity* (+2.45) and *restraint* (+2.60) but **degraded intellectual rigor** (\u22120.",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 21863.058375000037,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:16:31.212357"
+}

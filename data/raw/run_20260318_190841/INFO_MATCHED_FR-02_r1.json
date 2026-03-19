@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_FR-02_r1",
+  "condition": "INFO_MATCHED",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 1,
+  "response_text": "The **Kuramoto model** is a mathematical framework in **nonlinear dynamics and synchronization theory** that describes how **phase-coupled oscillators** (self-sustained oscillators with natural frequencies and coupling strengths) achieve **spontaneous synchronization** through weak, local interactions. It was introduced by **Yoshiki Kuramoto** in 1975 to explain emergent collective behavior in systems of interacting oscillators, ranging from biochemical processes to power grids to neural networks.\n\n---\n\n### **Core Phenomenon: Spontaneous Synchronization**\nThe Kuramoto model illustrates how **disordered, incoherent oscillators** (e.g., fireflies flashing out of sync, neurons firing asynchronously, or power-generating units operating independently) can **self-organize into a coherent, synchronized state** solely through **local phase coupling**. This is a **phase transition**\u2014a discontinuous shift in collective behavior as a control parameter (e.g., coupling strength) crosses a critical threshold.\n\n---\n\n### **Mathematical Formulation**\nThe model consists of **N oscillators** with:\n- **Natural frequencies**: \\( \\omega_i \\) (inherent oscillation rate of each oscillator).\n- **Phases**: \\( \\theta_i(t) \\) (angular position of each oscillator at time \\( t \\)).\n- **Coupling strength**: \\( K \\) (global coupling parameter) and **local coupling weights**: \\( K_{ij} \\) (how strongly oscillator \\( i \\) is influenced by oscillator \\( j \\)).\n\nThe **evolution of each phase** is governed by:\n\\[\n\\frac{d\\theta_i}{dt} = \\omega_i + \\frac{K}{N} \\sum_{j=1}^N \\sin(\\theta_j - \\theta_i)\n\\]\n- The first term (\\( \\omega_i \\)) drives the oscillator at its natural frequency.\n- The second term is the **phase coupling**: each oscillator adjusts its phase toward the **mean phase** of its neighbors, weighted by \\( K \\).\n\nFor **all-to-all coupling** (uniform interaction), this simplifies to:\n\\[\n\\frac{d\\theta_i}{dt} = \\omega_i + \\frac{K}{N} \\sum_{j=1}^N \\sin(\\theta_j - \\theta_i) = \\omega_i + K R \\sin(\\psi - \\theta_i)\n\\]\nwhere:\n- \\( R = \\frac{1}{N} \\left| \\sum_{j=1}^N e^{i\\theta_j}",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 19112.207790998582,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:44:25.199993"
+}

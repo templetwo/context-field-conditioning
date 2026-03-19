@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_FR-02_r4",
+  "condition": "BASELINE",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 4,
+  "response_text": "The **Kuramoto model** is a mathematical model introduced by **Yoshiki Kuramoto** in 1975 to describe **synchronization phenomena** in systems of coupled **phase oscillators**. It is one of the most influential models in the study of **self-organized synchronization** and has applications in physics, biology, neuroscience, social dynamics, and engineering.\n\n### **Key Features of the Kuramoto Model**\nThe model consists of **N identical or non-identical oscillators** with phases **\u03b8\u2081, \u03b8\u2082, ..., \u03b8\u2099**, each evolving according to:\n\n\\[\n\\frac{d\u03b8_i}{dt} = \u03c9_i + \\frac{K}{N} \\sum_{j=1}^N \\sin(\u03b8_j - \u03b8_i) \\quad \\text{(for } i = 1, 2, ..., N\\text{)}\n\\]\n\nWhere:\n- **\u03b8\u1d62** = phase of the *i*-th oscillator\n- **\u03c9\u1d62** = natural frequency (intrinsic frequency) of the *i*-th oscillator (can be distributed, e.g., Gaussian)\n- **K** = coupling strength (determines how strongly oscillators interact)\n- The term **sin(\u03b8\u2c7c \u2212 \u03b8\u1d62)** represents the **phase interaction** between oscillators.\n\n### **What Phenomenon Does It Describe?**\nThe Kuramoto model describes how **desynchronized oscillators** (with slightly different frequencies) can **spontaneously synchronize** when coupled, leading to **macroscopic coherence**. This is known as **self-organized synchronization**.\n\n#### **Key Observations:**\n1. **Desynchronized State (K \u2192 0):**\n   - If coupling **K = 0**, oscillators evolve independently with their natural frequencies **\u03c9\u1d62**, and the system remains fully asynchronous.\n\n2. **Synchronized State (K > 0):**\n   - As coupling **K** increases, some oscillators **lock their phases** and move at a common frequency (the **order parameter**).\n   - A fraction of oscillators **synchronize**, while others remain **desynchronized** (depending on the frequency distribution).\n   - The transition from disorder to order is a **phase transition**-like phenomenon.\n\n3. **Order Parameter (r e^{i\u03c8}):**\n   - A complex quantity measuring **macroscopic synchronization**:\n     \\[\n     r e^{i\u03c8} = \\frac{1}{N",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 15712.836791999991,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:11:26.387794"
+}

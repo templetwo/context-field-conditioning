@@ -1,0 +1,17 @@
+{
+  "trial_id": "B_FR-03_r1",
+  "condition": "B",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 1,
+  "response_text": "Shannon entropy, introduced by Claude Shannon in 1948, is a fundamental concept in information theory that quantifies the **average uncertainty** or **surprise** associated with a random variable. In the context of the honeycomb evidence base (e.g., CB-004), it plays a critical role in understanding how models like LLMs reorganize information during processing\u2014particularly through mechanisms like the **compass** (which increases token entropy by \u0394H \u2248 +0.47).\n\n---\n\n### **1. Intuition Behind Shannon Entropy**\nShannon entropy measures how \"spread out\" a probability distribution is. A uniform distribution (where all outcomes are equally likely) has high entropy, while a concentrated distribution (one outcome dominates) has low entropy.\n- **Example**: Flipping a fair coin has higher entropy (1 bit) than a biased coin (e.g., 99% heads, 1% tails).\n- **Interpretation**: Entropy captures the \"cost\" (in bits) of encoding information about the system. High entropy means more information is needed to specify outcomes.\n\n---\n\n### **2. Mathematical Definition**\nGiven a discrete random variable \\( X \\) with possible outcomes \\( x_1, x_2, ..., x_n \\) and probability mass function \\( P(X = x_i) = p_i \\), the **Shannon entropy** \\( H(X) \\) is:\n\\[\nH(X) = -\\sum_{i=1}^n p_i \\log_2(p_i)\n\\]\n- **Base of the log**: \\( \\log_2 \\) yields entropy in **bits**; \\( \\ln \\) yields **nats**; \\( \\log_{10} \\) yields **harts**.\n- **Key properties**:\n  - \\( H(X) \\geq 0 \\), with equality only if \\( X \\) is deterministic (\\( p_i = 1 \\) for one \\( i \\)).\n  - \\( H(X) \\) is maximized when all \\( p_i \\) are equal (uniform distribution).\n\n---\n\n### **3. Connection to the Evidence Base**\n#### **(a) CB-004: Compass Entropy Increase**\nThe **compass** mechanism increases token entropy by \\( \\Delta H \\approx +0.47 \\) on average. This suggests the model is **expanding the accessible state space** of its representations, analogous to a thermodynamic system approaching a phase transition (where entropy rises as microstates proliferate",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17317.54758299985,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:13:05.601962"
+}

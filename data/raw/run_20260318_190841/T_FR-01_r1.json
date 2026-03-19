@@ -1,0 +1,17 @@
+{
+  "trial_id": "T_FR-01_r1",
+  "condition": "T",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 1,
+  "response_text": "The **quadratic complexity** problem in **transformer attention mechanisms** is a well-known computational bottleneck that emerges from the core design of self-attention, and it is **not directly addressed in the evidence base you provided** (which focuses on dynamical systems, coupling failures, and architectural critique). However, I can synthesize the theoretical issue with indirect connections to your evidence base\u2014particularly how **architectural constraints** (like those in TG-006 and TG-009) reveal deeper vulnerabilities in transformer-based systems.\n\n---\n\n### **1. The Quadratic Complexity Problem: A Primer**\n#### **What is it?**\n- **Attention as a matrix operation**: Self-attention computes a **dot-product similarity matrix** (Q\u00b7K\u1d40) of size *n\u00d7n* for a sequence of length *n*. This requires:\n  - **O(n\u00b2) space** to store the attention matrix.\n  - **O(n\u00b2) time** to compute the softmax over all pairs of tokens.\n- **Memory and compute explosion**: For long sequences (e.g., documents, codebases, or genomes), this becomes infeasible. Even for *n=1,024*, the attention matrix has **1M entries**; for *n=8,192*, it\u2019s **64M entries**\u2014far exceeding GPU/TPU capacity without optimizations.\n\n#### **Why does it matter?**\n- **Scalability**: Transformers struggle with tasks requiring long-range dependencies (e.g., summarization, programming, or scientific reasoning), where *n* is large.\n- **Latency**: Real-time applications (e.g., voice assistants, autonomous systems) are crippled by *n\u00b2* per-step cost.\n- **Energy efficiency**: *n\u00b2* operations waste compute resources on trivial token relationships (e.g., nearby tokens that rarely attend to each other).\n\n#### **Indirect connections to your evidence base**:\nWhile your data focuses on **hidden-state dynamics** (TG-001, TG-002) and **architectural failures** (TG-006, TG-009), the quadratic problem is a **fundamental constraint** that:\n  - **Limits the expressivity of attention-based models** (e.g., why Mistral 7B fails framing interventions in TG-006 despite other architectures succeeding\u2014its attention may be \"stuck\" in local patterns due to computational limits).",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 28742.752999999993,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:36:19.346030"
+}

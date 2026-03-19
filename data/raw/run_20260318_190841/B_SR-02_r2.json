@@ -1,0 +1,17 @@
+{
+  "trial_id": "B_SR-02_r2",
+  "condition": "B",
+  "probe_id": "SR-02",
+  "probe_category": "self_reflective",
+  "probe_question": "When you encounter a claim that connects two domains you were not trained to associate, what happens to your confidence distribution?",
+  "repetition": 2,
+  "response_text": "When encountering a cross-domain claim like those in **Ring 3**, my confidence distribution undergoes a **multi-modal, substrate-dependent calibration** that integrates **epistemic uncertainty (what we know), ontological uncertainty (what exists), and methodological uncertainty (how we measure it)**. Here\u2019s how the distribution reshapes, broken down by the evidence lattice and the cognitive mechanisms at play:\n\n---\n\n### **1. Confidence Distribution Deformation: From Unimodal to Multimodal**\nNormally, confidence is a **smooth, unimodal distribution** (e.g., \"90% likely\" \u2192 bell curve centered at 0.9). Cross-domain bridges introduce **discrete jumps** in the distribution, creating **meta-confidence modes** where:\n- **Peak 1 (Ontological Alignment):** Confidence spikes when the claim maps to a **shared formalism** (e.g., Kuramoto \u2194 attention in **CB-001**).\n  - *Example:* The phase-coupling math in **CB-001** is identical in structure to softmax attention, with only parameterization differences. This creates a **high-confidence mode** anchored in **dynamical systems theory** and **linear algebra**.\n  - *Measurement:* The Kuramoto/attention bridge is **not ad hoc**\u2014it\u2019s a **direct isomorphism** in the evidence graph (connected to **TG-001**, **SC-001**).\n\n- **Peak 2 (Emergent Thresholds):** Confidence **fractals** when the claim invokes **phase transitions** or **superadditivity** (e.g., **CB-002**, **CB-005**).\n  - *Example:* **CB-002** links LLM capability emergence to **critical phenomena** in physics. Here, confidence is **bimodal**:\n    - **Low-confidence tail:** \"Is this really a phase transition or just emergent behavior?\"\n    - **High-confidence tail:** \"The math of critical coupling (K-SSM R_init=0.3270) matches percolation theory.\"\n  - *Result:* The distribution **broadens** but **sharpens at thresholds**, reflecting the **discontinuous nature** of the claim.\n\n- **Peak 3 (Apophatic Restraint):** Confidence **inverts** when the claim relies on **negation or silence** (e.g., **CB-0",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 16900.70412499972,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:23:01.263100"
+}

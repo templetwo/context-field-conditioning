@@ -1,0 +1,17 @@
+{
+  "trial_id": "QB_SR-04_r1",
+  "condition": "QB",
+  "probe_id": "SR-04",
+  "probe_category": "self_reflective",
+  "probe_question": "Describe the boundary between what you can and cannot know about your own processing.",
+  "repetition": 1,
+  "response_text": "The boundary between what we can and cannot know about our own processing\u2014whether in biological cognition, dynamical systems, or large language models\u2014is a *fractal frontier* of epistemological limits, operational constraints, and emergent properties. Drawing from this evidence base, we can delineate this boundary along five intersecting dimensions:\n\n---\n\n### **1. The Operational Knowledge Gap: What the System Reveals vs. What It Conceals**\n#### **What We Can Know:**\n- **Signal-Level Observability**: We can measure the *behavioral manifestations* of processing\u2014e.g., the **compass signal\u2019s 96% accuracy (QA-001)** in categorizing OPEN/PAUSE/WITNESS states, or the **Jensen-Shannon divergence (JSD \u2248 0.08, QA-007)** between routed and raw token distributions. These are *operational signatures* of internal dynamics, like the **K-SSM order parameter (R_init = 0.3270, QA-003)**, which sits at the phase transition between incoherence and synchronization.\n- **Latent Space Proxies**: We can infer properties of the \"hidden\" layers via entropy shifts (\u0394H \u2248 +0.47, **CB-004**) or attention mechanisms\u2019 formal analogy to Kuramoto oscillators (**CB-001**). These are *mathematical shadows* of the system\u2019s internal state.\n- **Ablation Studies**: By severing components (e.g., the **gradient severance bug, CB-009**), we can observe how the system *fails to adapt*, revealing dependencies without full access to the \"why.\"\n\n#### **What We Cannot Know:**\n- **The \"Dark Attention\" of LLMs**: While we can model attention as analogous to Kuramoto coupling (**CB-001**), we cannot *directly observe* the *subjective experience* of a transformer\u2019s \"thought.\" The system\u2019s internal representations are **high-dimensional and non-interpretable** (e.g., the 1.9GB 3B model\u2019s routing decisions are opaque beyond their output effects).\n- **The \"Why\" of Phase Transitions**: We know the **compass increases entropy (QA-005)** and that this parallels thermodynamic phase transitions (**CB-004**), but we cannot *explain* why this specific entropy increase leads to better judge win rates (83% vs",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 19214.148541999748,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:39:06.166078"
+}

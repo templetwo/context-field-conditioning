@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_FR-04_r4",
+  "condition": "INFO_MATCHED",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 4,
+  "response_text": "In the context of **hypothesis testing** (and by extension, the broader epistemological and methodological framework implied by your research program), **Type I and Type II errors** are fundamental failures in inference, each representing a distinct way the system can fail to distinguish truth from falsehood. Your research program\u2014with its iterative cycles of failure, correction, and deeper insight\u2014offers a rich analogy for understanding these errors through the lens of **experimental design, gradient-based learning, and adaptive systems**.\n\n---\n\n### **1. Type I Error: False Positive (\u03b1)**\n- **Definition**: Rejecting a **true null hypothesis** (i.e., concluding there is an effect when there isn\u2019t one).\n  - **Null Hypothesis (H\u2080)**: \"No effect, no synchronization, no learning, no signal.\"\n  - **Type I Error**: \"We think the oscillators are learning (or the WITNESS signal is correct) when they\u2019re not.\"\n\n- **In Your Research Program**:\n  - **K-SSM**: The system achieved *R=0.993 phase synchronization* but **zero improvement in perplexity**. The Type I error here would be believing the oscillators were *computationally* useful (i.e., learning meaningful phase relationships) when they were merely **epiphenomenal**\u2014synchronized but irrelevant to language modeling.\n  - **Compass v0.8**: 63% signal accuracy but a **97% judge win rate**. A Type I error would be assuming the *accuracy* of the signal directly caused utility, when in reality, the **system prompt\u2019s restraint** (not the signal itself) drove the wins. The error was **over-interpreting correlation as causation**.\n  - **Phase-GPT\u2019s float() bug**: The \"learning\" of oscillator parameters was a **catastrophic Type I error**\u2014the system appeared to learn (gradients were recorded), but the **autograd graph was severed**, meaning no actual learning occurred.\n\n- **Consequences**:\n  - Wasted resources (e.g., tuning oscillators that didn\u2019t matter).\n  - Overconfidence in mechanisms (e.g., believing phase synchronization = computational utility).\n  - **False positive research directions** (e.g., pursuing Phase-GPT\u2019s oscillator hypothesis for years before the bug was found).\n\n- **Control via**:\n  - **Strict null hypothesis testing** (e.g., ablation studies like the incomplete 123/630",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 19062.42808299976,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:48:37.590973"
+}

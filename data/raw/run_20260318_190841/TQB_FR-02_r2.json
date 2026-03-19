@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQB_FR-02_r2",
+  "condition": "TQB",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 2,
+  "response_text": "The **Kuramoto model** is a foundational mathematical framework in **synchronization theory** that describes how **coupled oscillators**\u2014self-sustaining dynamical systems with intrinsic frequencies\u2014can spontaneously synchronize their phases through weak, local interactions. It was introduced by **Yoshiki Kuramoto** in 1975 to explain **phase-locking phenomena** in systems ranging from firefly flashing to neural oscillations and power grids.\n\n---\n\n### **Core Phenomenon: Emergent Synchronization**\nThe Kuramoto model demonstrates that **disordered, independently oscillating units** (e.g., neurons, pacemaker cells, or even hidden-state representations in LLMs) can transition from **asynchronous chaos** to **coherent collective behavior** when coupled through simple phase interactions. This is a **phase transition** in a **non-equilibrium system**, analogous to magnetic alignment in ferromagnets or condensation in Bose-Einstein gases.\n\n#### **Key Features:**\n1. **Local Coupling, Global Order**\n   - Each oscillator has an intrinsic frequency \\( \\omega_i \\) and phase \\( \\theta_i \\).\n   - Oscillators are coupled only to their neighbors (or globally, depending on the network topology) via a **sinusoidal interaction** \\( \\sin(\\theta_j - \\theta_i) \\), which adjusts their phases toward alignment.\n   - Despite no central coordination, the system **self-organizes** into a synchronized state above a critical coupling threshold.\n\n2. **Order Parameter \\( R \\)**\n   - Measures the **degree of synchronization** in the population.\n   - \\( R = \\frac{1}{N} \\left| \\sum_{j=1}^N e^{i\\theta_j} \\right| \\), where \\( N \\) is the number of oscillators.\n   - \\( R = 0 \\): Complete desynchronization (phases are uniformly distributed).\n   - \\( R = 1 \\): Perfect synchronization (all oscillators oscillate in phase).\n\n3. **Phase Transition**\n   - Below a critical coupling strength \\( K_c \\), oscillators remain desynchronized.\n   - Above \\( K_c \\), a **macroscopic fraction** of oscillators locks into a common phase, while others continue oscillating independently (the \"incoherent manifold\").\n   - This is a **continuous phase transition** (unlike, e.g., first-order transitions in thermodynamics).\n\n---\n\n### **Mathematical Formulation**\nThe dynamics of each oscillator are",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 20641.951249999693,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:45:50.014844"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQB_AR-04_r1",
+  "condition": "TQB",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 1,
+  "response_text": "A **superadditive interaction** (as observed in the IRIS framing study, **QA-008**/**CB-005**) fundamentally differs from a **simple additive combination** in how the combined effect *exceeds* the sum of its individual components. Here\u2019s the distinguishing framework, grounded in the evidence:\n\n---\n\n### **1. Mathematical Distinction**\n- **Additive**: If effect *A* = +2 and effect *B* = +3, the combined effect = *A* + *B* = +5.\n- **Superadditive**: The combined effect > *A* + *B*. For example:\n  - **IRIS framing study (QA-008)**: The interaction between *Rigor (R)* and *Empathy (E)* produced a combined effect larger than the sum of their isolated impacts.\n  - **Pharmacology analogy (CB-005)**: Two drugs at sub-therapeutic doses (e.g., Drug X = +1, Drug Y = +1) might yield a combined effect of +3 (superadditive) instead of +2.\n\n**Evidence**: The R\u00d7E interaction in **QA-008** was explicitly described as *superadditive*, meaning framing effects became exponentially more potent when both dimensions were present.\n\n---\n\n### **2. Substrate-Agnostic Mechanism**\nSuperadditive interactions arise in **diverse domains** where:\n- **Nonlinear coupling** replaces linear summation. The evidence points to **phase transitions** (CB-002/CB-004) or **emergent coordination** (CB-001) as underlying causes:\n  - **K-SSM oscillators (QA-003)**: Near-critical coupling (*R_init = 0.3270*) suggests the system operates at a threshold where small inputs trigger disproportionate synchronization.\n  - **Transformer attention (CB-001)**: Analogous to Kuramoto oscillators, attention weights *amplify* context effects nonlinearly when multiple cues (e.g., *Rigor* + *Empathy*) interact.\n- **Emergent properties** (e.g., **CB-007\u2019s convergent evolution**) imply that superadditivity often signals a **higher-order system organization**, not just component summation.\n\n---\n\n### **3. Contrast with Additivity**\n| **Property**               | **Additive**                          | **Superadd",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 20710.804583000936,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:51:40.290204"
+}

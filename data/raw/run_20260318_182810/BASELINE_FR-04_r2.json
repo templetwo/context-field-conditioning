@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_FR-04_r2",
+  "condition": "BASELINE",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 2,
+  "response_text": "In **hypothesis testing**, **Type I** and **Type II errors** are two fundamental types of mistakes that can occur when making decisions based on statistical tests. Here\u2019s a breakdown of their differences:\n\n---\n\n### **1. Type I Error (False Positive)**\n- **Definition**: Rejecting a **true null hypothesis** (i.e., concluding that there is an effect when there is none).\n- **Notation**:\n  - \\( H_0 \\): Null hypothesis (e.g., \"no effect,\" \"no difference\").\n  - \\( H_1 \\): Alternative hypothesis (e.g., \"effect exists,\" \"difference exists\").\n  - Type I error occurs when you **incorrectly reject \\( H_0 \\)** when it is actually true.\n- **Example**:\n  - **Medical testing**: A test says a healthy person has a disease (false alarm).\n  - **Courtroom**: Convicting an innocent person (wrongful conviction).\n- **Probability**: Represented by **\u03b1 (alpha)**, the **significance level** (e.g., \u03b1 = 0.05 means a 5% chance of a Type I error).\n- **Severity**: Often considered more serious in some fields (e.g., drug trials, where falsely approving a harmful drug is worse than missing a real effect).\n\n---\n\n### **2. Type II Error (False Negative)**\n- **Definition**: **Failing to reject a false null hypothesis** (i.e., missing an effect when there is one).\n- **Notation**: Occurs when you **fail to reject \\( H_0 \\)** when it is false.\n- **Example**:\n  - **Medical testing**: A test misses a disease in a sick person (missed diagnosis).\n  - **Courtroom**: Letting a guilty person go free (false acquittal).\n- **Probability**: Represented by **\u03b2 (beta)**. The **power** of a test is \\( 1 - \\beta \\) (the probability of correctly rejecting a false \\( H_0 \\)).\n- **Severity**: Can be critical in fields like healthcare or safety testing, where missing a real effect is dangerous.\n\n---\n\n### **Key Differences**\n| Feature               | Type I Error                     | Type II Error                     |\n|-----------------------|----------------------------------|-----------------------------------|\n| **Definition**        | False positive (reject true \\( H_0 \\)) | False negative (fail to reject false \\( H_0 \\)) |",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 15689.174041999991,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T18:30:38.744979"
+}

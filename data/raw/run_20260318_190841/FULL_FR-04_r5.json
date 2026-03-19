@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_FR-04_r5",
+  "condition": "FULL",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 5,
+  "response_text": "In the context of this research program\u2019s methodology\u2014particularly given the **self-correcting nature of the research** (SC-007) and the **substrate-independent patterns** (SC-004)\u2014the distinction between **Type I and Type II errors** in hypothesis testing maps directly onto the *failures* and *null results* that drove the program\u2019s evolution. Here\u2019s how they apply, with connections to the evidence:\n\n---\n\n### **Type I Error: False Positive**\n*\"Rejecting a true null hypothesis\"*\n- **Definition**: Concluding that an effect exists when it does not. In research, this is a false alarm\u2014e.g., claiming the Phase-GPT oscillators were learning phase coupling when they weren\u2019t (due to the gradient severance bug, **TG-002**).\n- **In this program**:\n  - **K-SSM (TG-001)**: Synchronization was observed (*R=0.993*), but it was **epiphenomenal**\u2014no improvement in language modeling. This was a Type I error in the *utility* hypothesis: we assumed synchronization \u2192 computation, but the link was broken.\n  - **Phase-GPT (TG-002)**: The oscillators were *claimed* to learn coupling, but the gradient severance meant they were effectively **frozen noise**. Four independent reviews (**TG-009**) confirmed this was a catastrophic Type I error\u2014no learning occurred at all.\n  - **Compass v0.8 (TG-003)**: WITNESS signals were *63% accurate* but still won 97% of judge comparisons. The \"happy accident\" here was a Type I error in *signal precision*\u2014the system benefited from a flawed signal.\n- **Key lesson**: The program **self-corrected** by treating these as failures that required deeper investigation (e.g., the gradient bug fix, **SC-001**).\n\n---\n\n### **Type II Error: False Negative**\n*\"Failing to reject a false null hypothesis\"*\n- **Definition**: Missing a true effect\u2014e.g., failing to detect that the compass routing actually *increased entropy* (**QA-005**) because the initial entropy profiling was incomplete (**TG-008**).\n- **In this program**:\n  - **Incomplete ablation (TG-007)**: Only 123/630 judgments completed, and only",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 22216.340292001405,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:12:47.563539"
+}

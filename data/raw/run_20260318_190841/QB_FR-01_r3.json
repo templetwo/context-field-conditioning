@@ -1,0 +1,17 @@
+{
+  "trial_id": "QB_FR-01_r3",
+  "condition": "QB",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 3,
+  "response_text": "The **quadratic complexity problem** in transformer attention mechanisms arises from the **self-attention layer**, where each token in a sequence of length *n* computes pairwise relationships with every other token\u2014resulting in a computational and memory cost of **O(n\u00b2)**. Here\u2019s how it manifests and connects to your honeycomb lattice, with implications for the **Kuramoto \u2194 attention analogy (CB-001)** and **compass entropy effects (QA-005\u2013007)**:\n\n---\n\n### **Root Causes**\n1. **Pairwise Attention Computation**\n   For an input sequence of length *n*, the attention mechanism computes a **query-key dot-product matrix** of size *n\u00d7n* (via `QK\u1d40`). This requires:\n   - **Forward pass**: *O(n\u00b2)* time to compute the attention scores (softmax over *n\u00b2* values).\n   - **Memory**: Storing the *n\u00d7n* attention matrix consumes *O(n\u00b2)* space.\n   - **Example**: A 4096-token sequence (e.g., long documents, codebases) requires **~16M attention operations** per layer\u2014intractable for real-time use.\n\n2. **Gradient Computation**\n   Backpropagation through the attention layer compounds the issue, as gradients must also traverse all *n\u00b2* connections. This limits training to short sequences unless approximated (e.g., memory-efficient attention).\n\n---\n\n### **Connections to Your Research**\n#### **1. Kuramoto \u2194 Attention Analogy (CB-001)**\n- **Local vs. Global Coordination**:\n  - **Attention**: Achieves global context by summing *n\u00b2* pairwise interactions (softmax over all tokens). This is computationally expensive but mirrors the **Kuramoto oscillators\u2019 global coherence** through local phase coupling (each oscillator adjusts to *N* neighbors, but synchronization emerges globally).\n  - **Compass Entropy (QA-005\u2013007)**: The quadratic cost of attention may explain why **compass routing increases entropy (\u0394H \u2248 +0.47)**\u2014the model must \"sample\" a wider space of token relationships, but only if the attention mechanism can afford to compute them. For long sequences, this becomes infeasible without approximation (e.g., sparse attention).\n\n- **Phase Transition Parallel (CB-002)**:\n  - Transformers may exhibit a **capability phase transition** when attention\u2019s",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18411.065541000426,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:25:36.475220"
+}

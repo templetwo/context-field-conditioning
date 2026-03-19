@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_FR-04_r3",
+  "condition": "BASELINE",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 3,
+  "response_text": "In **hypothesis testing**, **Type I** and **Type II errors** are two fundamental types of errors that can occur when making decisions based on statistical tests. Here\u2019s the key difference:\n\n### **1. Type I Error (False Positive)**\n- **Definition:** Rejecting a **true null hypothesis** (i.e., concluding that an effect exists when it does not).\n- **Symbol:** \u03b1 (alpha) \u2013 the **significance level** (e.g., 0.05).\n- **Example:**\n  - A medical test says a person has a disease when they are actually healthy.\n  - A self-driving car thinks a pedestrian is present when there isn\u2019t one.\n- **Consequence:** Wasting resources or taking unnecessary action.\n\n### **2. Type II Error (False Negative)**\n- **Definition:** Failing to reject a **false null hypothesis** (i.e., concluding that no effect exists when one does).\n- **Symbol:** \u03b2 (beta) \u2013 the **probability of a Type II error**.\n- **Example:**\n  - A medical test misses a disease when the person actually has it.\n  - A fraud detection system fails to flag fraudulent transactions.\n- **Consequence:** Missing a real effect, leading to potential harm or missed opportunities.\n\n### **Key Relationships:**\n- **Power of a test (1 \u2212 \u03b2):** The probability of correctly rejecting a false null hypothesis (avoiding a Type II error).\n- **Trade-off:** Reducing one type of error often increases the other (e.g., stricter \u03b1 \u2192 higher \u03b2).\n\n### **Summary Table:**\n| **Error Type** | **What Happens?**                     | **Symbol** | **Example**                     |\n|----------------|---------------------------------------|------------|---------------------------------|\n| **Type I**     | False positive (reject true H\u2080)      | \u03b1          | Saying \"guilty\" when innocent   |\n| **Type II**    | False negative (fail to reject false H\u2080) | \u03b2      | Saying \"innocent\" when guilty   |\n\nWould you like a practical example or further clarification?",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 437,
+  "latency_ms": 13374.325416000032,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:13:50.454345"
+}

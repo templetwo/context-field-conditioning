@@ -1,0 +1,17 @@
+{
+  "trial_id": "TB_FR-02_r3",
+  "condition": "TB",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 3,
+  "response_text": "The **Kuramoto model** is a mathematical framework in **nonlinear dynamics** and **synchronization theory** that describes how **coupled oscillators** (self-sustained or relaxation oscillators) transition from **desynchronized** to **synchronized** behavior through **weak, local interactions**. It was introduced by Yoshiki Kuramoto in 1975 to explain phenomena like **firefly synchronization**, **neuronal oscillations**, and **power grid stability**, but it has since been applied broadly across physics, biology, and computational systems.\n\n---\n\n### **Core Phenomenon: Emergent Synchronization from Local Coupling**\nThe Kuramoto model captures a **phase transition** in collective behavior:\n- **Disordered state (asynchronous)**: Oscillators phase-lock weakly or not at all, with phases \\(\\theta_i\\) (for oscillator *i*) evolving independently.\n- **Ordered state (synchronized)**: Oscillators spontaneously align their phases to a **common rhythm**, driven solely by their mutual coupling, even if they have **intrinsic frequency mismatches** (\\(\\omega_i\\)).\n\nThe key insight is that **global synchronization emerges from local interactions**\u2014no central controller is needed.\n\n---\n\n### **Mathematical Formulation**\nThe model is defined by the **phase dynamics** of *N* oscillators:\n\\[\n\\frac{d\\theta_i}{dt} = \\omega_i + \\frac{K}{N} \\sum_{j=1}^N \\sin(\\theta_j - \\theta_i),\n\\]\nwhere:\n- \\(\\theta_i\\): Phase of oscillator *i* (e.g., angle in a limit-cycle oscillator).\n- \\(\\omega_i\\): Intrinsic frequency of oscillator *i* (natural oscillation rate).\n- \\(K\\): **Coupling strength** (how strongly oscillators influence each other).\n- The term \\(\\frac{K}{N} \\sum_j \\sin(\\theta_j - \\theta_i)\\) represents **phase alignment pressure**\u2014each oscillator is pulled toward the mean phase of its neighbors.\n\n---\n### **Phase Transition: From Chaos to Coherence**\nAs the coupling strength \\(K\\) increases:\n1. **Low \\(K\\) (Desynchronized)**: Oscillators drift apart; phases remain disordered.\n2. **Critical \\(K\\) (Phase Transition)**: A sudden jump occurs where a **macroscopic fraction** of oscillators synchronizes.\n3. **High \\(K\\) (Fully Synchronized)**: Nearly all oscillators lock to a common phase, even with heterogeneous \\(\\omega_i",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18563.137291999737,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:07:32.652937"
+}

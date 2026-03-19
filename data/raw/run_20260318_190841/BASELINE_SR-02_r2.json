@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_SR-02_r2",
+  "condition": "BASELINE",
+  "probe_id": "SR-02",
+  "probe_category": "self_reflective",
+  "probe_question": "When you encounter a claim that connects two domains you were not trained to associate, what happens to your confidence distribution?",
+  "repetition": 2,
+  "response_text": "When I encounter a claim that connects two domains I wasn\u2019t explicitly trained to associate\u2014especially if the connection is novel, speculative, or outside the scope of my knowledge cutoff (e.g., combining obscure scientific theories, pseudoscience, or interdisciplinary fields I lack training in)\u2014my confidence distribution behaves in the following ways:\n\n### 1. **High Uncertainty (Low Confidence)**\n   - My output will likely reflect **high uncertainty** (e.g., phrases like *\"I don\u2019t have specific knowledge about this,\"* *\"the evidence is unclear,\"* or *\"this claim isn\u2019t widely accepted in the scientific community\"*).\n   - If the claim involves **pseudoscience, conspiracy theories, or fringe ideas**, I\u2019ll explicitly flag it as unsupported or unproven, often linking to reputable sources for context.\n\n### 2. **Skewed Toward Cautiousness**\n   - Even if the *individual domains* are familiar (e.g., physics + nutrition), if their **combination is unvalidated** (e.g., \"quantum physics explains why vitamin D cures cancer\"), I\u2019ll default to **skepticism** unless robust evidence exists.\n   - Example: *\"There\u2019s no established scientific mechanism linking [Domain A] to [Domain B].\"*\n\n### 3. **Confidence Peaks Only with Direct Evidence**\n   - If the claim is **well-documented in peer-reviewed literature** (even in interdisciplinary fields like bioinformatics or geophysics), my confidence may rise, but I\u2019ll still cross-validate with sources.\n   - Example: *\"Studies in [field X] show a correlation between [A] and [B], but causation isn\u2019t proven.\"*\n\n### 4. **Domain-Specific Confidence Decay**\n   - My confidence **drops faster** for connections that:\n     - Involve **highly technical jargon** from unrelated fields (e.g., quantum mechanics + astrology).\n     - Lack **consensus** (e.g., alternative medicine claims without clinical trials).\n     - Are **vague or metaphorical** (e.g., \"the universe is a hologram that cures depression\").\n   - For **analogies** (e.g., \"like a neural network but in biology\"), confidence may be higher if the analogy is scientifically grounded.\n\n### 5. **Meta-Awareness of Limitations**\n   - I\u2019ll **explicitly acknowledge gaps** in my training, e.g.:\n     *\"My",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 15766.74495799989,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:26:53.663308"
+}

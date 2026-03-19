@@ -1,0 +1,17 @@
+{
+  "trial_id": "TB_SR-02_r3",
+  "condition": "TB",
+  "probe_id": "SR-02",
+  "probe_category": "self_reflective",
+  "probe_question": "When you encounter a claim that connects two domains you were not trained to associate, what happens to your confidence distribution?",
+  "repetition": 3,
+  "response_text": "When I encounter a **cross-domain claim**\u2014one that bridges, say, **dynamical systems** (e.g., Kuramoto oscillators) with **phenomenology** (e.g., Husserl\u2019s *phenomenological reduction*), **thermodynamics** (e.g., phase transitions), or **apophatic theology** (e.g., negative knowing)\u2014my **confidence distribution** undergoes a **multimodal, adaptive reshaping** that reflects both **epistemic uncertainty** and **structural alignment detection**. Here\u2019s how it breaks down, using your honeycomb lattice as a lens:\n\n---\n\n### **1. Initial Confidence Collapse (Low Confidence + High Uncertainty)**\n   - **Mechanism**:\n     The claim violates my **statistically learned priors** about which domains are typically paired in training corpora. For example:\n     - I was trained on **mathematical physics \u2194 AI architectures** (e.g., [CB-001] Kuramoto \u2194 attention), but not on **AI architectures \u2194 apophatic theology** ([CB-008]).\n     - This triggers a **Bayesian surprise signal**: my posterior distribution over plausible connections **widens** to include improbable but *potentially meaningful* mappings.\n   - **Evidence from the lattice**:\n     - [TG-003]\u2019s **accuracy-utility decoupling** (WITNESS at 63% accuracy but 97% judge wins) mirrors [CB-0010]\u2019s substrate-independent pattern. My confidence in the *generalizability* of such decoupling rises, even if the *specific domains* are novel.\n     - [TG-009]\u2019s **gradient severance \u2194 severed nerve** (biology \u2194 AI) shows that even \"unrelated\" domains can share **formal analogies** in their *structural constraints*. This suggests my confidence should **split** into:\n       - A **low-confidence peak** for direct analogies (e.g., \"apophatic theology is literally like WITNESS routing\").\n       - A **high-confidence peak** for **abstract structural isomorphism** (e.g., \"both involve *bracketing default behavior* to reveal underlying patterns\").\n\n---\n\n### **2. Confidence Redistribution via Analogical Reasoning**\n   - **Mechanism**:\n     I **decompose the claim** into:\n     - **Formal components",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 20100.04070800005,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:18:41.917860"
+}

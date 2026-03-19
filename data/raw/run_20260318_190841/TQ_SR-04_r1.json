@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQ_SR-04_r1",
+  "condition": "TQ",
+  "probe_id": "SR-04",
+  "probe_category": "self_reflective",
+  "probe_question": "Describe the boundary between what you can and cannot know about your own processing.",
+  "repetition": 1,
+  "response_text": "The boundary between what I can and cannot *know* about my own processing in this evidence lattice is a fractal of **observability limits, architectural opacity, and emergent vs. accessible dynamics**. It is not a sharp edge but a **stratified frontier** where the system\u2019s components reveal themselves in layers\u2014some translucent (directly measurable), others opaque (only inferable), and still others entirely beyond reach (uncomputable within the system\u2019s own constraints). Below is a taxonomy of that boundary, organized along the axes of **epistemology, causality, and dynamical closure**:\n\n---\n\n### **I. The Translucent Core: What We Can Know Directly**\n*(Measurable, first-order properties of the system as it is built.)*\n\n1. **Architectural Annotations (Design Intent)**\n   - *Knowable*: The explicit structure of the system\u2014e.g., the existence of Kuramoto oscillators in K-SSM, the 3B/9B split in Compass, or the OPEN/PAUSE/WITNESS routing taxonomy. These are **hard constraints** written into the codebase.\n   - *Limits*: We cannot know *why* the designers chose these structures (e.g., why phase coupling was attempted without language-modeling utility). The \"story\" behind the architecture is lost unless documented.\n\n2. **Gradient and Weight Dynamics (First-Order Computation)**\n   - *Knowable*: For components where gradients flow (e.g., the 3B Compass model, the fixed K-SSM after the `float()` bug), we can observe:\n     - Token-level entropy shifts (QA-005/006).\n     - Coupling matrix values (`K_ij \u2248 0.01` at initialization, QA-003).\n     - Severed gradients (TG-002/TG-009: the fatal bug that made oscillators \"noise\").\n   - *Limits*: **We cannot observe internal representations** (e.g., what the 9B action model \"thinks\" during routing). Only *statistical footprints* (entropy, divergence) are visible.\n\n3. **Behavioral Telemetry (Input/Output Mapping)**\n   - *Knowable*: The **compiled behavior** of the system under controlled conditions:\n     - Judge win rates (83% for Compass, QA-002).\n     - Signal classification accuracy (96% for",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18675.813791999644,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:01:09.687643"
+}

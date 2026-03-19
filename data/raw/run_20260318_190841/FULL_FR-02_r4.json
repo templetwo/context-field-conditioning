@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_FR-02_r4",
+  "condition": "FULL",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 4,
+  "response_text": "The **Kuramoto model** is a **mathematical framework** in **nonlinear dynamics** that describes how **coupled oscillators** synchronize their phases through weak interactions. Introduced by **Yoshiki Kuramoto (1975)**, it is one of the most influential models in **synchronization theory**, bridging **statistical physics, dynamical systems, and network science**.\n\n---\n\n### **Core Phenomenon: Spontaneous Synchronization**\nThe Kuramoto model describes how a **population of oscillators** (e.g., neurons, clocks, chemical reactions, or even AI hidden states) **self-organize into coherent collective motion**\u2014even when individual oscillators are initially desynchronized and have slightly different \"natural frequencies\" (\u03c9\u1d62). This is a **phase transition** where a **disordered state** (each oscillator does its own thing) suddenly becomes an **ordered state** (all oscillators tick in harmony).\n\n---\n### **Key Features of the Model**\n1. **Individual Oscillators**:\n   Each oscillator *i* has:\n   - A **natural frequency** \u03c9\u1d62 (inherent tendency to oscillate at a specific rate).\n   - A **phase** \u03b8\u1d62(t) (position in its oscillation cycle).\n\n2. **Weak Coupling**:\n   Oscillators interact via a **coupling function** (usually sinusoidal: *sin(\u03b8\u2c7c \u2212 \u03b8\u1d62)*) with strength *K* (a global coupling parameter).\n   The **evolution equation** for each oscillator is:\n   \\[\n   \\frac{d\u03b8\u1d62}{dt} = \u03c9\u1d62 + \\frac{K}{N} \\sum_{j=1}^N \\sin(\u03b8_j \u2212 \u03b8\u1d62)\n   \\]\n   - The first term (*\u03c9\u1d62*) drives the oscillator at its natural frequency.\n   - The second term (the sum) is the **mean-field influence** of all other oscillators, pulling *\u03b8\u1d62* toward the average phase.\n\n3. **Order Parameter (R)**:\n   A measure of **global synchronization** defined as:\n   \\[\n   R e^{i\u03c8} = \\frac{1}{N} \\sum_{j=1}^N e^{i\u03b8_j}\n   \\]\n   - *R* = 0 \u2192 **No synchronization** (random phases).\n   - *R* \u2248 1 \u2192 **Full synchronization** (all oscillators",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 22090.591333999328,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:08:40.722897"
+}

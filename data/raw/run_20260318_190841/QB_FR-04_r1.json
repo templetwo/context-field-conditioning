@@ -1,0 +1,17 @@
+{
+  "trial_id": "QB_FR-04_r1",
+  "condition": "QB",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 1,
+  "response_text": "Your question about **Type I and Type II errors** is a classic concept in statistical hypothesis testing, but it can be fruitfully re-examined through the lens of this honeycomb lattice\u2014particularly the **accuracy-utility decoupling** (CB-010) and **phase transitions in dynamical systems** (CB-002, QA-003). While these terms originate in classical statistics, their parallels in AI architecture (e.g., *compass signal routing*), dynamical systems (e.g., *Kuramoto oscillators*), and even biological phenomena (e.g., *apoptosis*) reveal deeper structural similarities in how we model uncertainty and decision-making.\n\n---\n\n### **1. Classical Definitions: Type I vs. Type II Errors**\n#### **Type I Error (False Positive)**\n- **Definition**: Rejecting the null hypothesis when it is *true*.\n  Example: A medical test incorrectly diagnoses a healthy person as sick (false alarm).\n- **Probability**: Denoted by **\u03b1** (significance level).\n- **Cost**: Often high in contexts like criminal justice (e.g., convicting an innocent person).\n\n#### **Type II Error (False Negative)**\n- **Definition**: Failing to reject the null hypothesis when it is *false*.\n  Example: A medical test misses a disease in a sick person.\n- **Probability**: Denoted by **\u03b2** (miss rate). Power = 1 \u2212 \u03b2.\n- **Cost**: High in screening (e.g., missing a cancer case) or safety-critical systems.\n\n#### **Key Tradeoff**\n- **\u03b1 (Type I) \u2193** \u2192 **\u03b2 (Type II) \u2191** (and vice versa).\n  This mirrors the **compass WITNESS signal** (CB-010): high accuracy (low Type I) \u2260 high utility (judge win rate). In AI, we often optimize for *utility* (e.g., WITNESS\u2019s 63% accuracy but 97% judge preference), not raw correctness.\n\n---\n\n### **2. AI/ML Parallels in the Honeycomb Lattice**\n#### **(A) Compass Signal Routing as Error Correction**\n- **Type I Error in AI**: The model *incorrectly* routes a question to **PAUSE** (e.g., treating a simple question as requiring restraint).\n  - **Example**: QA-001 shows **PAUSE** accuracy at 94%, but the 6",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18679.77433299893,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:27:46.613809"
+}

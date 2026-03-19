@@ -1,0 +1,17 @@
+{
+  "trial_id": "QB_FR-01_r2",
+  "condition": "QB",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 2,
+  "response_text": "The **quadratic complexity problem** in transformer attention mechanisms (specifically self-attention) arises from the pairwise comparison of all tokens in the input sequence, and it manifests in two key dimensions:\n\n---\n\n### **1. Computational Complexity: O(n\u00b2) Time and Memory**\n- **Attention Mechanism**: Self-attention computes a score for every token pair *(i, j)* in the sequence of length *n*:\n  - **Query-Key Product (QK\u1d40)**: For each of *n* queries, compute dot products with all *n* keys \u2192 **O(n\u00b2)** operations.\n  - **Softmax and Weighting**: Apply softmax to these *n\u00b2* scores and multiply by values \u2192 another **O(n\u00b2)** step.\n- **Result**: Total time/memory scales as **O(n\u00b2)** per layer, making training/inference intractable for long sequences (e.g., 10,000 tokens = 100M pairwise comparisons).\n\n---\n### **2. Connection to Honeycomb Evidence**\nThe quadratic bottleneck is implicitly addressed in the lattice through **alternative coordination mechanisms** (e.g., Kuramoto oscillators, compass routing), which avoid pairwise comparisons:\n\n#### **A. Kuramoto Oscillators (CB-001, QA-003)**\n- **Local Coupling**: Each oscillator adjusts to the *mean phase* of its neighbors (not all others), reducing complexity to **O(n)** or **O(1)** per oscillator.\n  - Equation: `d\u03b8\u1d62/dt = \u03c9\u1d62 + K/N \u03a3 sin(\u03b8\u2c7c - \u03b8\u1d62)` (sum over *N* neighbors, not *n\u00b2* pairs).\n- **Analogy to Attention**: Transformer attention replaces pairwise softmax with *local* coordination (e.g., sparse attention, memory compression).\n\n#### **B. Compass Routing (QA-005, QA-006)**\n- **Entropy as a Proxy for Efficiency**: The compass increases token entropy by routing tokens into higher-probability *subspaces* (\u0394H \u2248 +0.47), effectively **pruning the search space** of possible token interactions.\n  - **Implication**: By constraining the \"active\" attention paths (e.g., via WITNESS signals), the system avoids redundant pairwise comparisons.\n\n#### **C. Phase Transitions (CB-002, CB",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18785.531000000447,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:25:18.062712"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "S_FR-01_r1",
+  "condition": "S",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 1,
+  "response_text": "The **quadratic complexity problem** in transformer attention mechanisms (as originally introduced in *Attention Is All You Need*, Vaswani et al., 2017) arises from the **self-attention operation**, which has a computational cost that scales as **O(n\u00b2)** per layer, where *n* is the sequence length. This is a critical bottleneck for long-sequence tasks (e.g., document modeling, video, or genomic data). Here\u2019s the breakdown from the lens of this research program, connecting it to the **honeycomb lattice** of findings:\n\n---\n\n### **1. The Core Problem: Quadratic Memory and Compute**\n- **Self-attention** computes pairwise interactions between all tokens in a sequence:\n  - For a sequence of length *n*, the attention matrix is *n \u00d7 n* (every token attends to every other token).\n  - This requires **O(n\u00b2)** memory to store the matrix and **O(n\u00b2)** compute to generate it.\n- **Symmetry**: The matrix is symmetric (if bidirectional attention is used), but even one-sided attention (e.g., causal transformers) still incurs O(n\u00b2) cost.\n- **Contrast with prior architectures**: RNNs/LSTMs are O(n) but suffer from sequential dependency; CNNs are O(n) for fixed kernels but struggle with long-range dependencies.\n\n---\n### **2. Why This Matters in This Research Program**\nWhile the honeycomb lattice doesn\u2019t directly address transformers, it **reveals parallel themes** in structural coherence and efficiency:\n- **SC-003 (Factorial Ablation)**: The methodology used in IRIS/CFC to test superadditivity mirrors the challenge of scaling attention\u2014**factorial experiments explode combinatorially**, just as attention scales quadratically. The research program\u2019s solution? *Modular, substrate-independent designs* (e.g., CFC\u2019s \"local compute, no crash dependency\") that avoid global bottlenecks.\n- **SC-004 (Substrate Independence)**: The recurrence of coordination patterns (Kuramoto, drug synergy, framing effects) suggests that **efficient attention might not require reinventing the mechanism but reusing mathematical principles of coordination** (e.g., phase coupling, sparse interactions).\n- **SC-005 (Null Results Constrain Design Space)**: Early transformer variants (e.g., sparse attention) failed because they violated the \"happy accident\" of dense attention\u2019s inductive bias. The honeycomb\u2019s self",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 26644.23395799986,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:28:51.734975"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "Q_FR-03_r3",
+  "condition": "Q",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 3,
+  "response_text": "Shannon entropy is a fundamental concept in information theory introduced by Claude Shannon in 1948. It quantifies the **uncertainty, randomness, or information content** of a probability distribution. In the context of language models, it measures how \"surprised\" you are by the tokens (words, subwords, etc.) the model generates\u2014higher entropy means the model is considering a broader, less predictable distribution of possibilities.\n\n---\n\n### **Mathematical Definition**\nFor a discrete probability distribution \\( P = \\{p_1, p_2, ..., p_n\\} \\) over \\( n \\) possible outcomes (e.g., tokens in a vocabulary), the **Shannon entropy** \\( H(P) \\) is defined as:\n\n\\[\nH(P) = -\\sum_{i=1}^n p_i \\log_2(p_i)\n\\]\n\n- \\( p_i \\): Probability of the \\( i \\)-th outcome (e.g., \\( P(\\text{token}_i) \\)).\n- \\( \\log_2 \\): Base-2 logarithm (common in information theory, measured in **bits**).\n  *(Note: Natural logarithm \\( \\ln \\) or base-\\( e \\) can also be used, yielding entropy in **nats**.)*\n\n#### **Key Properties**\n1. **Maximized when all outcomes are equally likely**:\n   If \\( p_i = \\frac{1}{n} \\) for all \\( i \\), then \\( H(P) = \\log_2(n) \\). This is the highest possible entropy for \\( n \\) outcomes.\n2. **Zero when the outcome is certain**:\n   If one \\( p_i = 1 \\) and all others are 0, \\( H(P) = 0 \\).\n3. **Measures \"average surprise\"**:\n   It captures the expected value of the information content of the distribution.\n\n---\n\n### **Intuition in Language Models**\nIn your honeycomb evidence (e.g., [QA-005], [QA-006]), Shannon entropy is used to compare how **compass routing** (your signal classification system) alters the probability distribution of generated tokens:\n- **Raw responses** (unrouted) have lower entropy (\\( H = 0.71 \\) bits), meaning the model is more predictable, with a few high-probability tokens dominating.\n- **Compass-routed responses** have higher entropy (\\( H = 1.2",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17104.64541700003,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:56:08.332844"
+}

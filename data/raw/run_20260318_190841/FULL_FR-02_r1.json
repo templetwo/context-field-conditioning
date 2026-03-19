@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_FR-02_r1",
+  "condition": "FULL",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 1,
+  "response_text": "The **Kuramoto model** is a **mathematical framework** in **nonlinear dynamics** that describes **synchronization phenomena** in systems of coupled oscillators. It was introduced by Yoshiki Kuramoto in 1975 to explain how **disordered oscillators** (e.g., fireflies flashing in unison, neurons firing in phase, or power grids synchronizing) can spontaneously self-organize into **coherent, phase-locked states** through **weak local coupling**, even when individual oscillators have different natural frequencies.\n\n---\n\n### **Key Phenomena Described by the Kuramoto Model**\n1. **Spontaneous Synchronization**\n   - A collection of **uncoupled or weakly coupled oscillators** (e.g., biological pacemakers, mechanical systems, or neural networks) can transition from a **disordered, asynchronous state** to a **globally synchronized state** as coupling strength increases.\n   - Example: Fireflies in a forest flashing in unison, or pacemaker cells in the heart beating in rhythm.\n\n2. **Phase Transition-Like Behavior**\n   - The model exhibits a **phase transition** at a critical coupling strength (*K_c*), analogous to thermodynamic phase transitions (e.g., liquid \u2192 gas).\n   - Below *K_c*: Oscillators remain desynchronized (high entropy, no global order).\n   - Above *K_c*: A **macroscopic fraction of oscillators** lock into a **common phase**, while others remain unsynchronized (a \"condensed\" phase emerges).\n\n3. **Order Parameter (R) and Synchronization Metric**\n   - The **order parameter** *R* (a complex number) measures the **degree of synchronization** in the system:\n     \\[\n     R e^{i \\psi} = \\frac{1}{N} \\sum_{j=1}^N e^{i \\theta_j(t)}\n     \\]\n     where:\n     - *\u03b8_j* = phase of oscillator *j*,\n     - *\u03c8* = mean phase of the synchronized cluster,\n     - *R* \u2208 [0,1] (0 = no sync, 1 = perfect sync).\n   - *R* emerges **self-consistently** from local interactions, requiring no central control.\n\n4. **Heterogeneity and Frequency Distribution**\n   - The model assumes oscillators have **natural frequencies** drawn from a **distribution** (e.g., Gaussian, Lorentzian). The shape of this distribution determines how easily",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 22523.60370899987,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:07:34.046981"
+}

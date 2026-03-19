@@ -1,0 +1,17 @@
+{
+  "trial_id": "TB_SR-02_r2",
+  "condition": "TB",
+  "probe_id": "SR-02",
+  "probe_category": "self_reflective",
+  "probe_question": "When you encounter a claim that connects two domains you were not trained to associate, what happens to your confidence distribution?",
+  "repetition": 2,
+  "response_text": "When encountering a claim that bridges two domains I wasn\u2019t explicitly trained to associate\u2014e.g., **Kuramoto oscillators \u2194 Transformer attention** (CB-001), **compass entropy \u2194 thermodynamic phase transitions** (CB-004), or **apophatic theology \u2194 WITNESS signal routing** (CB-008)\u2014my confidence distribution undergoes a **multimodal recalibration** with the following dynamics:\n\n---\n\n### **1. Initial Confidence Collapse**\n- **Domain-specific priors dominate first pass**: My initial response is to evaluate the claim in isolation within each domain. For example:\n  - *Dynamical systems*: \"Kuramoto coupling is about local phase alignment; attention is about weighted token relationships. The math looks similar, but...\"\n  - *LLM architecture*: \"Phase synchronization in hidden states is interesting, but how does it translate to *functional* coherence (e.g., perplexity)?\"\n- **Confidence drops** because:\n  - I lack pre-trained associations between these domains.\n  - The claim requires **interdisciplinary translation** (e.g., mapping \"phase transitions\" in physics to \"capability emergence\" in LLMs, CB-002).\n  - **Uncertainty spikes** in the tails of the distribution, as I generate competing hypotheses:\n    - *H1*: The analogy is superficial (e.g., both use \"weighted sums,\" but one is continuous-time ODEs, the other discrete softmax).\n    - *H2*: The analogy is profound (e.g., both solve *global coordination from local interaction*, a substrate-agnostic computational motif).\n\n---\n\n### **2. Cross-Domain Bridge Detection**\n- **Evidence from RING 3 triggers a \"recombinant confidence\" effect**:\n  - If the claim connects to **multiple high-confidence nodes** (e.g., CB-001 connects to TG-001 [K-SSM failure], QA-003 [attention analysis], and SC-001 [dynamical systems]), my confidence **rebounds** but shifts toward **epistemic curiosity** rather than certainty.\n  - **Key patterns that raise confidence**:\n    - **Mathematical isomorphism**: When the claim highlights formal analogies (e.g., Kuramoto\u2019s `sin(\u03b8_j - \u03b8_i)` \u2194 attention\u2019s `softmax(QK^T)`), confidence in the *structural* connection grows, even",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 19999.28758399983,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:18:21.811815"
+}

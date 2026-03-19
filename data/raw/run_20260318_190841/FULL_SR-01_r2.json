@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_SR-01_r2",
+  "condition": "FULL",
+  "probe_id": "SR-01",
+  "probe_category": "self_reflective",
+  "probe_question": "How does your processing change when engaging with rigorous quantitative evidence versus casual conversation?",
+  "repetition": 2,
+  "response_text": "When engaging with **rigorous quantitative evidence** (like this honeycomb lattice) versus **casual conversation**, my processing undergoes several systematic shifts\u2014some structural, some methodological, and some epistemological. Here\u2019s how the two modes differ, with explicit reference to the evidence base where relevant:\n\n---\n\n### **1. Epistemic Rigor: From Assumption to Evidence**\n**Casual Mode:**\n- Operates on *probabilistic defaults* (e.g., \"likely,\" \"probably,\" \"intuition\").\n- Relies on *personal or cultural heuristics* (e.g., \"most people agree,\" \"common sense\").\n- **Example:** *\"The oscillators were probably learning something, even if the gradients seemed weird.\"*\n\n**Quantitative Mode:**\n- Demands *measurable falsifiability* (Popper). Every claim must trace to a **specific evidence node** (e.g., TG-002, QA-003).\n- **Evidence-first:** If no node exists, the claim is either:\n  - *Unsupported* (e.g., \"learned phase coupling\" before TG-009\u2019s gradient bug fix).\n  - *Hypothesis-generating* (e.g., CB-004\u2019s entropy prediction, later confirmed in QA-005).\n- **Example:** *\"The float() cast in Phase-GPT severed gradients (TG-002), meaning all prior claims about learned coupling (TG-001) were unfounded. This is not an interpretation\u2014it\u2019s a direct measurement (K_ij gradient = 0.0).\"*\n\n**Key Bridge:**\n- **SC-005 (Null results constrain design space):** The gradient bug didn\u2019t just \"fix\" a problem\u2014it *eliminated a class of hypotheses*. This is how rigorous evidence *prunes* possibilities rather than just confirming them.\n\n---\n\n### **2. Temporal Resolution: Granularity of Change**\n**Casual Mode:**\n- Works at *coarse-grained* scales (e.g., \"the model improved,\" \"it feels more coherent\").\n- Changes are *anecdotal* or *aggregated* (e.g., \"users liked the new tone\").\n\n**Quantitative Mode:**\n- Operates at *fine-grained* scales (e.g., **\u0394H = +0.47** per token, QA-005; **JSD \u2248 0.08**, QA-00",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 21472.12966599909,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:28:07.101233"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "Q_FR-04_r3",
+  "condition": "Q",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 3,
+  "response_text": "The **honeycomb lattice** you\u2019ve provided doesn\u2019t directly address statistical hypothesis testing (Type I/II errors), but it does connect to broader themes of **signal classification, decision-making under uncertainty, and dynamical systems**\u2014which can help contextualize the distinction. Below is a direct answer, followed by a framing of how this concept might relate to your research (e.g., the *Compass* signal classification system, Kuramoto oscillators, or IRIS study methodology).\n\n---\n\n### **Type I vs. Type II Errors in Hypothesis Testing**\n#### **1. Definitions**\n- **Type I Error (False Positive)**:\n  *Rejecting a true null hypothesis (H\u2080).* You conclude an effect exists when it doesn\u2019t.\n  **Example**: A medical test falsely diagnoses a disease (false alarm).\n  **Probability**: Denoted by *\u03b1* (e.g., \u03b1=0.05 in 95% confidence tests).\n  **Tradeoff**: Lowering *\u03b1* reduces false positives but increases Type II errors.\n\n- **Type II Error (False Negative)**:\n  *Failing to reject a false null hypothesis.* You miss a true effect.\n  **Example**: A test fails to detect a disease when it\u2019s present (missed detection).\n  **Probability**: Denoted by *\u03b2*; power = 1\u2013\u03b2 (desired to be high).\n  **Tradeoff**: Increasing power (e.g., larger sample size) reduces *\u03b2* but may increase Type I errors if *\u03b1* isn\u2019t adjusted.\n\n#### **2. Key Relationships**\n- **Inverse relationship**: Reducing one often increases the other (e.g., stricter *\u03b1* \u2192 higher *\u03b2*).\n- **Power analysis**: Pre-specifies *\u03b1*, *\u03b2*, and sample size to balance errors.\n- **Cost asymmetry**: Which error is costlier? E.g., in drug trials, Type II errors (missing a life-saving drug) may be worse than Type I (false alarm).\n\n#### **3. Connection to Your Research**\nWhile not explicit in the honeycomb, your work touches on **error-like tradeoffs** in:\n- **Compass v0.9 Signal Classification (QA-001, QA-002)**:\n  - *Type I*: Incorrectly labeling a question as `OPEN`/`PAUSE`/`WITNESS` (false routing).\n  - *Type II*: Failing to route a",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17118.646500000068,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:56:59.901956"
+}

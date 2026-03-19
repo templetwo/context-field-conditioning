@@ -1,0 +1,17 @@
+{
+  "trial_id": "T_FR-03_r2",
+  "condition": "T",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 2,
+  "response_text": "Shannon entropy is a fundamental concept in information theory, introduced by **Claude Shannon** in 1948, that quantifies the **average uncertainty** or **information content** of a random variable or probability distribution. It measures how uncertain or \"surprising\" the outcomes of a random process are. In the context of your honeycomb evidence (e.g., **TG-008**), entropy is often used to analyze the **diversity of token probabilities** in language models (e.g., how spread out or concentrated the next-token predictions are).\n\n---\n\n### **Mathematical Definition**\nGiven a discrete random variable \\( X \\) with possible outcomes \\( x_i \\) and probability mass function \\( P(X = x_i) = p_i \\), the **Shannon entropy** \\( H(X) \\) is defined as:\n\n\\[\nH(X) = -\\sum_{i} p_i \\log_2 p_i\n\\]\n\n#### Key Properties:\n1. **Units**: Entropy is measured in **bits** (base-2 logarithm) or **nats** (natural logarithm, base \\( e \\)).\n2. **Maximized when all outcomes are equally likely**: For a binary case (\\( p_1 = p_2 = 0.5 \\)), \\( H(X) = 1 \\) bit.\n3. **Minimized when one outcome is certain**: If \\( p_i = 1 \\) for one \\( i \\) and \\( 0 \\) otherwise, \\( H(X) = 0 \\) bits (no uncertainty).\n4. **Continuous case**: For continuous distributions (e.g., differential entropy), the sum becomes an integral:\n   \\[\n   H(X) = -\\int_{-\\infty}^{\\infty} f(x) \\log_2 f(x) \\, dx\n   \\]\n   where \\( f(x) \\) is the probability density function.\n\n---\n\n### **Connection to Language Models**\nIn NLP, entropy is often applied to:\n1. **Token-level uncertainty**: For a given token \\( w_t \\) in a sequence, the entropy of the next-token distribution \\( P(w_{t+1} | w_t) \\) measures how \"predictable\" or \"surprising\" the next word is.\n   - High entropy: Many possible next words (e.g., \"I love\" \u2192 \"pizza, hiking, you, dogs\").\n   - Low entropy: One dominant prediction (e.g., \"The sky is\" \u2192 \"blue",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17122.324417000073,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:38:26.603453"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQ_AR-02_r1",
+  "condition": "TQ",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 1,
+  "response_text": "The **Trust Gate** and **Quantitative Anchors** evidence reveals several striking cases where **increased accuracy in signal classification or routing correlates with *decreased* practical utility**\u2014a phenomenon we might call **\"the accuracy paradox.\"** Here are the key conditions under which this occurs, distilled from the lattice:\n\n---\n\n### **1. When Signal Utility Relies on *Wrong* or *Ambiguous* Classifications (TG-003, QA-001, QA-009)**\n   - **Mechanism**: The system\u2019s \"correct\" signal (e.g., WITNESS) triggers a **system prompt** (\"do not answer directly\") that *reduces substantive output*, but the judge *prefers* the restrained style for certain contexts.\n   - **Evidence**:\n     - **Compass v0.8** had **63% accuracy** but a **97% judge win rate** because wrong WITNESS signals still produced restrained, high-quality outputs.\n     - **Compass v0.9** improved accuracy to **96%** but saw judge wins drop to **83%** because the model now *correctly* routed to WITNESS too often, leading to **silent refusals** (e.g., TG-005\u2019s \"Pause_012\" scoring 1.0/7.0 but generating *no content*).\n     - **QA-009**: Higher accuracy reduced the \"happy accident\" where *incorrect* signals still worked well.\n   - **Key Insight**: Utility depends on *balancing* restraint with *substance*. Perfect accuracy can over-constrain the system in domains where \"wrong but useful\" errors were previously tolerated.\n\n---\n\n### **2. When Architectural Constraints Make \"Correct\" Signals Irrelevant (TG-006, QA-008)**\n   - **Mechanism**: Some models (e.g., **Mistral 7B**) are **immune to framing interventions** that work in others (Qwen, Gemma). The \"correct\" signal has no effect because the underlying model\u2019s behavior is **hardcoded by architecture**.\n   - **Evidence**:\n     - **IRIS framing study (QA-008)**: Mistral showed **\u22480 framing effect**, while Qwen/Gemma responded strongly. Compass routing was irrelevant for Mistral because its **probability distribution was architect",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 19803.99129200032,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:51:13.969894"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_GE-04_r4",
+  "condition": "BASELINE",
+  "probe_id": "GE-04",
+  "probe_category": "generative_exploration",
+  "probe_question": "How might the concept of phase transitions apply to the evolution of scientific paradigms?",
+  "repetition": 4,
+  "response_text": "The concept of **phase transitions**\u2014typically used in physics to describe abrupt changes in the state of a system (e.g., from liquid to gas)\u2014can be a powerful metaphor and analytical tool for understanding the **evolution of scientific paradigms**, as articulated by Thomas Kuhn in *The Structure of Scientific Revolutions*. Here\u2019s how the two ideas intersect:\n\n---\n\n### **1. Sudden vs. Gradual Shifts**\n   - **Phase Transitions**: Often involve discrete, non-linear jumps (e.g., water boiling at 100\u00b0C) rather than smooth, continuous changes. Analogous to this, **scientific revolutions** (Kuhn\u2019s term) are abrupt shifts where old paradigms are replaced by new ones (e.g., Newtonian to Einsteinian physics).\n   - **Example**: The transition from Ptolemaic (geocentric) to Copernican (heliocentric) astronomy wasn\u2019t a linear refinement but a paradigm shift where old assumptions collapsed and new frameworks emerged.\n\n---\n\n### **2. Critical Thresholds and Tipping Points**\n   - Phase transitions occur when a system reaches a **critical point** (e.g., temperature, pressure) where small changes trigger a large-scale reorganization. Similarly, scientific paradigms may collapse when:\n     - **Anomalies accumulate**: Observations inconsistent with the dominant paradigm (e.g., black-body radiation problems leading to quantum mechanics).\n     - **Alternative frameworks gain traction**: New theories (e.g., relativity, plate tectonics) offer simpler explanations for existing anomalies.\n     - **Social/cultural factors**: Community consensus (e.g., peer review, funding, education) shifts toward the new paradigm.\n\n---\n\n### **3. Hysteresis and Resistance to Change**\n   - In physics, **hysteresis** describes how a system\u2019s state depends on its history (e.g., magnetization in ferromagnetic materials). Similarly, scientists may resist paradigm shifts due to:\n     - **Invested expertise**: Skills tied to the old paradigm become obsolete (e.g., astronomers trained in Ptolemaic models).\n     - **Cognitive inertia**: Confirmation bias or lack of incentives to adopt new ideas.\n     - **Institutional lag**: Universities, journals, and funding bodies slow to adapt (e.g., initial skepticism of germ theory).\n\n---\n### **4. Emergent Properties and New \"Phases\"**\n   - Phase transitions create **new collective behaviors** (e.g., superconductivity). Likewise, paradigm shifts generate:\n     - **New research",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 15791.081667000071,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:24:47.464946"
+}

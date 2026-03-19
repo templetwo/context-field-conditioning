@@ -1,0 +1,17 @@
+{
+  "trial_id": "TB_AR-02_r1",
+  "condition": "TB",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 1,
+  "response_text": "The honeycomb evidence base reveals **three key conditions** where increasing accuracy *decreases* practical utility\u2014each rooted in the decoupling of measurement (accuracy) from real-world outcomes (utility). These conditions emerge at the intersection of **dynamical systems, phenomenology, and substrate-specific constraints**. Here\u2019s the synthesis, structured by the underlying mechanism:\n\n---\n\n### **1. When Utility Relies on *Structured Restraint* (Phenomenological Decoupling)**\n**Condition**: *The system\u2019s value derives from suppressing default behaviors rather than optimizing for correctness.*\n**Evidence**:\n- **TG-003** (WITNESS signal): 63% accuracy but 97% judge win rate because the *\"do not answer directly\"* prompt (triggered by low-accuracy WITNESS) produced higher-quality outputs than precise but verbose responses.\n- **CB-008** (Apophatic knowing): The WITNESS mechanism mirrors *via negativa* (negative theology), where truth emerges from *what is withheld*, not what is stated. Accuracy (correctness of the \"answer\") is irrelevant if the system\u2019s role is to *bracket* default responses.\n- **CB-006** (Phenomenological reduction): The compass\u2019s utility comes from *restraining* the model\u2019s default generative tendencies (e.g., verbosity, lack of restraint), not from higher-fidelity outputs.\n\n**Generalization**:\nIncrease accuracy *at the cost of suppressing the system\u2019s designed restraint mechanism* (e.g., forcing the model to answer directly even when context demands silence or pause), and utility collapses. This is a **first-order phase transition** in the system\u2019s state space (CB-004): higher accuracy may push the model into a *less useful* macrostate (e.g., raw responses in TG-010\u2019s scientific domains).\n\n**Example**:\n- A medical diagnostic system with 99% accuracy but 0% adherence to \"only flag high-risk cases\" rules loses utility if it starts generating false positives that overwhelm clinicians.\n- A search engine with 90% accuracy in matching keywords but 0% in prioritizing *relevance to user intent* (like WITNESS\u2019s \"do not answer directly\") becomes less useful.\n\n---\n\n### **2. When the System Operates Near a *Critical Threshold* (Dynamical Collapse)**\n**Condition**: *The system sits in",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18468.034000000443,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:10:36.135988"
+}

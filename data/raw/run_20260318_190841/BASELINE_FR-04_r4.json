@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_FR-04_r4",
+  "condition": "BASELINE",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 4,
+  "response_text": "In **hypothesis testing**, **Type I** and **Type II errors** are two fundamental types of mistakes that can occur when making decisions based on statistical tests. Here\u2019s the breakdown:\n\n### **1. Type I Error (False Positive)**\n- **Definition**: Rejecting the **null hypothesis (H\u2080)** when it is actually **true**.\n- **Example**:\n  - **Null Hypothesis (H\u2080)**: \"The new drug has no effect.\"\n  - **Type I Error**: You conclude the drug works (reject H\u2080) when it actually has no effect.\n- **Consequence**: A false alarm (e.g., wrongly convicting an innocent person, or approving an ineffective treatment).\n- **Probability of Occurrence**: Denoted by **\u03b1 (significance level)**\u2014commonly set at 0.05 (5% chance of a false positive).\n\n### **2. Type II Error (False Negative)**\n- **Definition**: **Failing to reject the null hypothesis (H\u2080)** when it is actually **false**.\n- **Example**:\n  - **Null Hypothesis (H\u2080)**: \"The new drug has no effect.\"\n  - **Type II Error**: You conclude the drug has no effect (fail to reject H\u2080) when it actually works.\n- **Consequence**: Missing a real effect (e.g., failing to detect a guilty person, or rejecting a beneficial treatment).\n- **Probability of Occurrence**: Denoted by **\u03b2 (beta)**.\n  - The **power of the test** = **1 \u2013 \u03b2** (probability of correctly rejecting a false H\u2080).\n\n---\n\n### **Key Differences**\n| Feature          | **Type I Error**               | **Type II Error**               |\n|------------------|--------------------------------|--------------------------------|\n| **Definition**   | False rejection of H\u2080         | False acceptance of H\u2080         |\n| **Symbol**       | \u03b1 (alpha)                      | \u03b2 (beta)                        |\n| **Risk**         | \"Cry wolf\" (false alarm)       | \"Miss the signal\"               |\n| **Example**      | Convicting an innocent person  | Letting a guilty person go free |\n| **Impact**       | More severe in strict fields (e.g., medicine, law) | More severe in exploratory research |\n\n---\n\n### **Trade-off Between Type I and Type II Errors**\n- **Reducing \u03b1 (Type I risk)** increases **\u03b2 (",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17046.223957999984,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:14:07.501583"
+}

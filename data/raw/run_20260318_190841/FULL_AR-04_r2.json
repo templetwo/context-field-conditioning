@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_AR-04_r2",
+  "condition": "FULL",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 2,
+  "response_text": "The distinction between a **superadditive interaction** and a **simple additive combination** of effects lies in their mathematical structure, computational implications, and the nature of the underlying mechanisms they reveal. Based on the evidence from the honeycomb lattice\u2014particularly the cross-domain bridges (Ring 3) and structural coherence (Ring 4)\u2014here\u2019s how to frame the difference, with specific connections to the research findings:\n\n---\n\n### **1. Definitions and Mathematical Formulation**\n#### **Additive Interaction (No Interaction)**\n- **Effect of A + Effect of B = Combined Effect**\n  If the impact of two variables (e.g., Rigor *R* and Empathy *E* in the IRIS framing study) simply sums, then:\n  ```\n  Combined Effect = Effect(A) + Effect(B)\n  ```\n  - **Example**: If *R* improves performance by +10 and *E* improves it by +15, the combined effect is +25.\n  - **Implication**: The variables act independently; their joint effect is a linear function of their individual effects.\n\n#### **Superadditive Interaction**\n- **Effect of A + Effect of B < Combined Effect**\n  Here, the joint effect exceeds the sum of individual effects:\n  ```\n  Combined Effect > Effect(A) + Effect(B)\n  ```\n  - **Example**: If *R* improves performance by +10 and *E* by +15, the combined effect might be +30 (or more).\n  - **Key Property**: The **synergy** arises because the variables **interact** in a way that creates new, emergent behavior. This is not just about magnitude but about **structural coupling**\u2014how the presence of one variable changes the *nature* of the other\u2019s effect.\n\n---\n### **2. Evidence from the Research Program**\n#### **(a) IRIS Framing Study (QA-008, CB-005)**\n- **Finding**: The *Rigor \u00d7 Empathy (R\u00d7E)* interaction in the IRIS framing study was **superadditive**. Framing effects were not additive; the combination of *Rigor* and *Empathy* produced a **qualitatively different** outcome than either alone.\n  - **Additive Baseline**: If *R* improved performance by *x* and *E* by *y*, the combined effect should have been *x + y*.\n  - **Observed Superadditivity**: The **interaction term**",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 21504.67554200077,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:19:03.884679"
+}

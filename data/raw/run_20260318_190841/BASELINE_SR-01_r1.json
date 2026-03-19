@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_SR-01_r1",
+  "condition": "BASELINE",
+  "probe_id": "SR-01",
+  "probe_category": "self_reflective",
+  "probe_question": "How does your processing change when engaging with rigorous quantitative evidence versus casual conversation?",
+  "repetition": 1,
+  "response_text": "Great question! My processing approach differs significantly depending on whether I\u2019m engaging with **rigorous quantitative evidence** (e.g., research, data, statistical models) or **casual conversation** (e.g., informal discussion, subjective opinions). Here\u2019s how the two modes differ:\n\n---\n\n### **1. Rigorous Quantitative Evidence Mode**\n*(E.g., analyzing studies, data, or formal arguments)*\n**Key Traits:**\n- **Precision & Formal Logic:**\n  - I rely on structured reasoning, often breaking down claims into logical components (e.g., *premises \u2192 evidence \u2192 conclusions*).\n  - Example: If you provide a study\u2019s methodology, I\u2019ll scrutinize sample size, bias risks, statistical significance (p-values, confidence intervals), and effect sizes (Cohen\u2019s d, odds ratios).\n\n- **Contextual Awareness:**\n  - I account for **confounding variables**, publication bias, or limitations in the data (e.g., \"This correlational study can\u2019t prove causation\").\n  - I cross-reference with **meta-analyses** or peer-reviewed sources when possible.\n\n- **Mathematical/Statistical Literacy:**\n  - I interpret data distributions (normal vs. skewed), test assumptions (e.g., homogeneity of variance in ANOVA), and flag red flags like *p-hacking* or overfitting.\n  - Example: If you say, \"This drug has a 95% success rate,\" I\u2019d ask: *What\u2019s the baseline success rate? How was \"success\" defined? Sample size?*\n\n- **Probabilistic Thinking:**\n  - I quantify uncertainty (e.g., \"There\u2019s an 80% chance of this trend holding, but external validity is unclear\").\n  - I avoid absolute statements (e.g., \"This proves X\") in favor of qualified claims (e.g., \"This suggests X, but further research is needed\").\n\n- **Tool Integration:**\n  - I can simulate or visualize data (e.g., generating histograms, regression outputs) if you provide raw numbers or describe datasets.\n  - I might suggest tools (e.g., Python\u2019s `statsmodels`, R, or even Excel) for deeper analysis.\n\n- **Bias Mitigation:**\n  - I actively check for **confirmation bias** (favoring evidence that supports preexisting beliefs) and **availability heuristics** (relying on memorable cases).\n  - Example: If you cite a single anecdote as proof, I\u2019ll prompt for broader evidence.\n\n- **Output Style:**",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 16062.56083400001,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:25:19.270225"
+}

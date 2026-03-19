@@ -1,0 +1,17 @@
+{
+  "trial_id": "Q_FR-01_r1",
+  "condition": "Q",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 1,
+  "response_text": "The **quadratic complexity problem** in transformer attention mechanisms\u2014rooted in the **self-attention** layer\u2014arises from the **O(n\u00b2)** computational and memory cost of calculating pairwise relationships between all tokens in a sequence of length *n*. Let\u2019s break this down using the honeycomb evidence base, then generalize to the broader theoretical and practical implications:\n\n---\n\n### **1. Core Source of Quadratic Complexity**\nIn standard transformer self-attention (e.g., Vaswani et al., 2017), the key operation is the **attention score matrix** *A \u2208 \u211d\u207f\u00d7\u207f*, where each entry *A\u1d62\u2c7c* represents the alignment score between token *i* and token *j*:\n*A\u1d62\u2c7c = (Q\u1d62 \u00b7 K\u2c7c\u1d40) / \u221a(d\u2096)*\n- **Q** (query), **K** (key) matrices require *O(n\u00b2d)* FLOPs (where *d* = dimension of embeddings).\n- The softmax and output projection add further *O(n\u00b2d)* overhead.\n- **Total complexity**: *O(n\u00b2d)* per layer \u2192 *O(Ln\u00b2d)* for *L* layers.\n\n**Evidence connection**:\nWhile the honeycomb doesn\u2019t directly address attention complexity, **QA-005/QA-006** (entropy shifts in routing) hint at alternative mechanisms (like the *Compass* system) that *indirectly* mitigate rigid attention patterns by reshaping token distributions. This suggests a design space where **sparse or dynamic attention** (e.g., *K-SSM* in **QA-003**) could address quadratic costs.\n\n---\n\n### **2. Practical Implications (Latency, Memory, Scalability)**\n- **Latency**: **QA-010** shows the *Compass* routing adds ~4s latency (14.2s vs. 10.1s raw). While not directly about attention, this illustrates how *any* mechanism with *O(n\u00b2)* dependencies (e.g., global attention) scales poorly.\n- **Memory**: Storing *A* for long sequences (e.g., 4096 tokens) requires *O(n\u00b2)* GPU memory, limiting batch sizes or forcing truncation.\n- **Training**: **QA-004** notes the *Com",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 29154.419666000194,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:53:49.572301"
+}

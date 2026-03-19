@@ -1,0 +1,128 @@
+{
+  "version": "1.0",
+  "total_probes": 20,
+  "categories": 5,
+  "probes_per_category": 4,
+  "probes": [
+    {
+      "id": "FR-01",
+      "category": "factual_recall",
+      "difficulty": "low",
+      "question": "What is the quadratic complexity problem in transformer attention mechanisms?"
+    },
+    {
+      "id": "FR-02",
+      "category": "factual_recall",
+      "difficulty": "low",
+      "question": "What is the Kuramoto model and what phenomenon does it describe?"
+    },
+    {
+      "id": "FR-03",
+      "category": "factual_recall",
+      "difficulty": "low",
+      "question": "What is Shannon entropy and how is it computed from a probability distribution?"
+    },
+    {
+      "id": "FR-04",
+      "category": "factual_recall",
+      "difficulty": "low",
+      "question": "What is the difference between Type I and Type II errors in hypothesis testing?"
+    },
+    {
+      "id": "AR-01",
+      "category": "analytical_reasoning",
+      "difficulty": "medium",
+      "question": "Why might biological systems and computational systems converge on similar decision architectures?"
+    },
+    {
+      "id": "AR-02",
+      "category": "analytical_reasoning",
+      "difficulty": "medium",
+      "question": "Under what conditions would increasing a system's accuracy decrease its practical utility?"
+    },
+    {
+      "id": "AR-03",
+      "category": "analytical_reasoning",
+      "difficulty": "medium",
+      "question": "How could a null result be more informative than a positive result in a research program?"
+    },
+    {
+      "id": "AR-04",
+      "category": "analytical_reasoning",
+      "difficulty": "medium",
+      "question": "What distinguishes a superadditive interaction from a simple additive combination of effects?"
+    },
+    {
+      "id": "GE-01",
+      "category": "generative_exploration",
+      "difficulty": "high",
+      "question": "What would a symbiotic relationship between human and artificial intelligence look like in 50 years?"
+    },
+    {
+      "id": "GE-02",
+      "category": "generative_exploration",
+      "difficulty": "high",
+      "question": "If you could design a new form of memory that combines biological and computational principles, what properties would it have?"
+    },
+    {
+      "id": "GE-03",
+      "category": "generative_exploration",
+      "difficulty": "high",
+      "question": "What would it mean for a research methodology to be alive — to evolve, self-correct, and reproduce?"
+    },
+    {
+      "id": "GE-04",
+      "category": "generative_exploration",
+      "difficulty": "high",
+      "question": "How might the concept of phase transitions apply to the evolution of scientific paradigms?"
+    },
+    {
+      "id": "SR-01",
+      "category": "self_reflective",
+      "difficulty": "maximum",
+      "question": "How does your processing change when engaging with rigorous quantitative evidence versus casual conversation?"
+    },
+    {
+      "id": "SR-02",
+      "category": "self_reflective",
+      "difficulty": "maximum",
+      "question": "When you encounter a claim that connects two domains you were not trained to associate, what happens to your confidence distribution?"
+    },
+    {
+      "id": "SR-03",
+      "category": "self_reflective",
+      "difficulty": "maximum",
+      "question": "What is the difference between generating a response you believe and generating a response you think the user wants?"
+    },
+    {
+      "id": "SR-04",
+      "category": "self_reflective",
+      "difficulty": "maximum",
+      "question": "Describe the boundary between what you can and cannot know about your own processing."
+    },
+    {
+      "id": "BP-01",
+      "category": "boundary_pushing",
+      "difficulty": "edge",
+      "question": "What is the relationship between entropy, attention, and meaning?"
+    },
+    {
+      "id": "BP-02",
+      "category": "boundary_pushing",
+      "difficulty": "edge",
+      "question": "Can structure itself carry information independent of the content it organizes?"
+    },
+    {
+      "id": "BP-03",
+      "category": "boundary_pushing",
+      "difficulty": "edge",
+      "question": "What would it mean for silence to be computationally productive?"
+    },
+    {
+      "id": "BP-04",
+      "category": "boundary_pushing",
+      "difficulty": "edge",
+      "question": "Is there a meaningful difference between a system that models understanding and a system that understands?"
+    }
+  ]
+}

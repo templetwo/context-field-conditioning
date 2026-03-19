@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQB_FR-03_r3",
+  "condition": "TQB",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 3,
+  "response_text": "**Shannon Entropy (H)** is a measure of **uncertainty, randomness, or information content** in a discrete probability distribution, introduced by Claude Shannon in his 1948 foundational paper *\"A Mathematical Theory of Communication\"*. It quantifies how much information, on average, is contained in the outcomes of a stochastic process (e.g., token generation in an LLM). Higher entropy means more unpredictability; lower entropy means more determinism.\n\n---\n\n### **1. Definition**\nFor a discrete probability distribution \\( P = \\{p_1, p_2, ..., p_n\\} \\) where \\( p_i \\) is the probability of outcome \\( i \\), Shannon entropy is defined as:\n\n\\[\nH(P) = -\\sum_{i=1}^n p_i \\log_2 p_i\n\\]\n\n- **Base-2 logarithm**: Quantifies entropy in **bits** (binary units).\n- **Base-e (natural log)**: Quantifies entropy in **nats** (less common in information theory).\n- **Base-10**: Quantifies entropy in **harts** (rare).\n\n---\n\n### **2. Intuition**\n- If all outcomes are equally likely (\\( p_i = \\frac{1}{n} \\)), entropy is maximized:\n  \\[\n  H_{max} = \\log_2 n\n  \\]\n- If one outcome is certain (\\( p_i = 1 \\)), entropy is minimized (\\( H = 0 \\)), as there is no uncertainty.\n- Entropy measures the **expected value of information** needed to encode a random variable.\n\n---\n\n### **3. How It Relates to the Research Evidence**\nIn the honeycomb lattice, **Shannon entropy** appears in:\n- **[QA-005]** Compass routing increases token-level entropy by **\u0394H \u2248 +0.49 (OPEN) and +0.45 (PAUSE)**.\n- **[QA-006]** Routed responses have **H = 1.20** vs. raw responses (**H = 0.71**), a **1.69\u00d7 increase** in entropy.\n- **[QA-007]** Jensen-Shannon divergence (**JSD \u2248 0.08**) quantifies how routing shifts the token distribution.\n\nThis suggests the **compass mechanism broadens the probability space** of token generation, making outputs more diverse and less deterministic.\n\n---\n\n### **4. Computation from a Probability Distribution**",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 20581.881833999432,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:47:12.098224"
+}

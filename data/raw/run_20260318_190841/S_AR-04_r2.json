@@ -1,0 +1,17 @@
+{
+  "trial_id": "S_AR-04_r2",
+  "condition": "S",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 2,
+  "response_text": "In this evidence base, **superadditivity** emerges as a *structural property* of interactions that transcends mere additive combinations\u2014it represents a **higher-order coordination** where the combined effect of two (or more) factors is *greater than the sum of their individual contributions*. The honeycomb lattice reveals its key distinguishing features through methodological rigor, cross-domain recurrence, and self-correcting research design. Here\u2019s the conceptual and empirical distinction, grounded in the lattice:\n\n---\n\n### **1. Mathematical/Mechanistic Distinction: Synergy vs. Additivity**\n- **Additive combination**: If effects *A* and *B* combine such that\n  `Effect(A + B) = Effect(A) + Effect(B)`,\n  the system behaves like a linear superposition (e.g., mixing two drugs with independent mechanisms).\n  *Example*: In IRIS (SC-003), if framing conditions *R* (Reasoning) and *E* (Emotion) had additive utility, their combined effect would equal the sum of their individual accuracies.\n\n- **Superadditive interaction**: The combined effect *exceeds* the sum:\n  `Effect(A + B) > Effect(A) + Effect(B)`.\n  This implies **emergent coordination**\u2014the factors *interfere constructively* to produce new states or outcomes not present in isolation.\n  *Evidence*:\n  - **IRIS (SC-003)**: The *R\u00d7E* interaction showed **superadditive accuracy** (3,830 runs), meaning the reasoning-emotion framing *jointly* unlocked capabilities neither achieved alone. This aligns with **nonlinear dynamical systems** (CB-001, CB-005), where phase relationships (e.g., in oscillators) create emergent patterns.\n  - **CFC (SC-003)**: Hypothesizes that **context topology** (e.g., honeycomb lattice routing) might similarly exhibit superadditivity across conditions, suggesting the *structure itself* is the source of synergy.\n\n---\n\n### **2. Substrate-Independent Pattern (SC-004, SC-008)**\nSuperadditivity is not tied to a specific system (e.g., AI, drugs, or physics) but reflects a **universal principle of coordination**:\n- **Dynamical systems**: Kuramoto oscillators (CB-001) synchronize *superadditively* when coupled critically",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17078.242166000564,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:35:09.567761"
+}

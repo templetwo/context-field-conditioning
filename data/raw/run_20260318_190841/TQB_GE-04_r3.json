@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQB_GE-04_r3",
+  "condition": "TQB",
+  "probe_id": "GE-04",
+  "probe_category": "generative_exploration",
+  "probe_question": "How might the concept of phase transitions apply to the evolution of scientific paradigms?",
+  "repetition": 3,
+  "response_text": "The **phase transition framework** from this evidence base\u2014particularly the dynamical systems (CB-002, CB-004), biological (CB-003), and computational (TG-001, QA-003) analogies\u2014provides a compelling lens for understanding the **evolution of scientific paradigms**. Kuhn\u2019s *The Structure of Scientific Revolutions* describes paradigm shifts as discontinuous ruptures, but the phase transition model offers a **mechanistic, substrate-independent explanation** for why and how they occur. Here\u2019s how it maps:\n\n---\n\n### **1. Paradigm Shifts as Critical Thresholds (CB-002, TG-001)**\n- **Analogous to K-SSM\u2019s Kuramoto oscillators**:\n  In science, a paradigm is a **coherent, synchronized \"oscillator\"** of shared assumptions, methods, and interpretations (e.g., Newtonian mechanics, quantum theory). Before a shift, these assumptions form a **globally coherent but locally rigid** framework\u2014like oscillators near critical coupling (*R \u2248 0.3270*, QA-003), where small perturbations (anomalies) don\u2019t disrupt the system. But at a **phase transition threshold**, the system\u2019s sensitivity to initial conditions explodes:\n  - **Subcritical regime**: Anomalies (e.g., Mercury\u2019s perihelion) are dismissed as noise or measurement error (like incoherent oscillators).\n  - **Critical regime**: The system becomes **hyper-responsive** to anomalies. A single observation (e.g., the Michelson-Morley experiment) can **globalize** as a crisis.\n  - **Supercritical regime**: A new paradigm emerges, where the old framework\u2019s oscillators \"lock\" into a new phase (e.g., relativity replacing ether theory). This mirrors the **Kuramoto transition** where *R jumps from <0.3 to >0.8* (TG-001).\n\n- **Key insight**:\n  Paradigm shifts aren\u2019t just about \"better\" theories\u2014they\u2019re about **the system\u2019s intrinsic sensitivity to coordination**. The old paradigm\u2019s \"coherence\" (e.g., classical physics) was a stable attractor, but anomalies acted as **coupling perturbations** that destabilized it.\n\n---\n\n### **2. Entropy and the \"Phase Boundary\" of Discovery (QA-005, CB-004)**\n- The **compass\u2019s entropy",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 22546.19774999992,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:56:43.372778"
+}

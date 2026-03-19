@@ -1,0 +1,17 @@
+{
+  "trial_id": "Q_AR-04_r3",
+  "condition": "Q",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 3,
+  "response_text": "Great question. In the context of **QA-008** (IRIS framing study) and the broader research program, the distinction between **additive** and **superadditive** interactions lies in how the combined effect of two factors (e.g., *Rigor* and *Empathy*) compares to the sum of their individual effects. Here\u2019s how it breaks down, grounded in the evidence and domain principles:\n\n---\n\n### 1. **Additive Effects: The Linear Baseline**\n   - If two factors (*A* and *B*) have additive effects, their combined impact is the *sum* of their individual impacts.\n   - Example: If *Rigor* alone improves response quality by +20% and *Empathy* alone improves it by +15%, an additive combination would yield **+35%** total improvement.\n   - In this case, the factors operate *independently*\u2014the presence of one doesn\u2019t amplify or diminish the effect of the other.\n\n   **Evidence Connection**: While not explicitly stated, the research program likely tested additive framing effects as a control (e.g., ablations where only *Rigor* or *Empathy* was varied). The fact that **superadditivity** was observed (QA-008) implies that additive interactions were *not* the dominant regime.\n\n---\n\n### 2. **Superadditive Interaction: The \"More Than the Sum\" Effect**\n   - Superadditivity occurs when the *combined effect* of two factors is *greater* than the sum of their individual effects.\n   - Mathematically: If *A* improves outcomes by *a* and *B* by *b*, superadditivity means the combined effect > *a + b*.\n   - In **QA-008**, the *Rigor \u00d7 Empathy* interaction was superadditive: The presence of both dimensions *synergistically* enhanced framing effects beyond what either could achieve alone.\n   - **Why it matters**: This suggests a *nonlinear* relationship where the factors *reinforce each other* at a systemic level. For example:\n     - *Rigor* alone might enforce logical constraints (e.g., precision in claims).\n     - *Empathy* alone might soften tone or validate user emotions.\n     - Together, they might create a *new qualitative state* where the model\u2019s responses are both *rigorous* *and* *deeply attuned to context*\u2014something neither achieves independently.\n\n   **",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17033.932667000045,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:00:32.771903"
+}

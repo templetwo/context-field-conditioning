@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_AR-03_r2",
+  "condition": "FULL",
+  "probe_id": "AR-03",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "How could a null result be more informative than a positive result in a research program?",
+  "repetition": 2,
+  "response_text": "Null results can be *more* informative than positive results in a research program because they **eliminate hypotheses, constrain design spaces, and force theoretical refinement**\u2014whereas positive results often only *expand* or *confirm* existing ones. In this evidence base, null results have played a *structural* role in driving the research program forward by revealing **mechanisms of failure** that are more revealing than the mechanisms of success. Here\u2019s how and why they matter more in this context:\n\n---\n\n### **1. Null Results Act as \"Negative Design Constraints\"**\nA positive result (e.g., \"Compass routing improves judge win rate\") suggests *one* possible path forward. A null result (e.g., \"K-SSM synchronization \u2260 language modeling improvement\") **eliminates entire classes of hypotheses** and forces a reevaluation of the underlying assumptions.\n- **Example from the data:**\n  - **TG-001 (K-SSM null):** Phase synchronization occurred without improving perplexity. This killed the naive hypothesis that *any* dynamical system coupling would automatically confer computational utility. The research program had to ask: *\"What kind of coupling matters?\"* (Answer: *Gradient-connected* coupling, as in Phase-GPT.)\n  - **TG-004 (Rigor collapse):** Compass improved authenticity and restraint but *degraded* rigor. This exposed a **trade-off** that a positive result alone wouldn\u2019t have revealed. The system wasn\u2019t just \"better\"\u2014it was *differently* better, and the null in rigor forced a redesign of the persona\u2019s balance.\n  - **TG-006 (Mistral\u2019s flat response):** Most architectures responded to framing, but Mistral did not. This suggested that **architecture-specific constraints** (e.g., attention mechanisms, layer normalization) gate what context can do. A positive result in one model wouldn\u2019t have uncovered this substrate dependence.\n\n**Key insight:** Nulls don\u2019t just say \"this doesn\u2019t work\"; they say *\"this can\u2019t work under any of these conditions, so the problem must be deeper.\"*\n\n---\n\n### **2. Nulls Reveal \"Invisible\" Assumptions**\nPositive results often confirm what you *think* is happening. Nulls reveal what you *assumed* was happening but wasn\u2019t.\n- **Example:**\n  - **TG-002 (Gradient severance):** The Phase-GPT oscillators *appeared* to synchronize (positive result), but the null was that",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 21596.157334000964,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:17:15.980236"
+}

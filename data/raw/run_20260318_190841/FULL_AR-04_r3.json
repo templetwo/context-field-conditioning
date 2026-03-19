@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_AR-04_r3",
+  "condition": "FULL",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 3,
+  "response_text": "A **superadditive interaction** is fundamentally different from a simple **additive combination of effects** in both mathematical structure and functional implications. The distinction emerges from the research program's evidence, particularly in **CB-005**, **QA-008**, **TG-006**, and **SC-004**, where the phenomenon appears across substrates (LLMs, pharmacology, thermodynamics). Here\u2019s the breakdown:\n\n---\n\n### **1. Mathematical Definition**\n- **Additive Interaction**:\n  The combined effect of two factors (e.g., Rigor *R* and Empathy *E* in framing) equals the sum of their individual effects:\n  **E(R+E) = E(R) + E(E)**.\n  Example: If *R* improves performance by +2.45 and *E* by +1.50, additive predicts +3.95 total.\n\n- **Superadditive Interaction**:\n  The combined effect exceeds the sum of individual effects:\n  **E(R+E) > E(R) + E(E)**.\n  From **QA-008** (IRIS framing study), the *R\u00d7E* interaction was **superadditive**, meaning the framing\u2019s effect on model responses was greater than the arithmetic sum of its components. This mirrors **CB-005**\u2019s pharmacological analogy: two drugs at sub-therapeutic doses produce a synergistic effect when combined.\n\n  *Evidence*: In **QA-008**, the factorial design revealed that the *Rigor \u00d7 Empathy* interaction\u2019s magnitude exceeded the linear sum of their standalone effects, a hallmark of superadditivity.\n\n---\n\n### **2. Functional Implications**\n- **Additive Systems**:\n  - Predictable and modular. Adjusting one factor (e.g., temperature in a thermodynamic system) has a fixed impact regardless of other factors.\n  - Design is \"stackable.\" If *A* gives you +1 and *B* gives +1, combining them gives +2.\n  - *Example*: Adding two resistors in series (electronics) or mixing two non-interacting drugs (pharmacology).\n\n- **Superadditive Systems**:\n  - **Nonlinear and emergent**. The whole is greater than the sum of its parts. This implies **hidden dependencies** where factors amplify each other\u2019s effects through feedback loops, phase transitions, or structural coupling.\n  - **Substrate-independent pattern**: The research program found superadditivity in:",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 21483.63487500137,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:19:25.370005"
+}

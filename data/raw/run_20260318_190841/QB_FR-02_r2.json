@@ -1,0 +1,17 @@
+{
+  "trial_id": "QB_FR-02_r2",
+  "condition": "QB",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 2,
+  "response_text": "The **Kuramoto model** is a **mathematical framework for studying synchronization phenomena** in coupled oscillators\u2014a canonical model in **nonlinear dynamics** that describes how individual oscillators (e.g., biological clocks, neurons, power grids, or even social rhythms) spontaneously coordinate their phases to achieve **global coherence** from local interactions. It was introduced by **Yoshiki Kuramoto** in 1975 as a simplified yet powerful abstraction for understanding emergent synchronization.\n\n---\n\n### **Key Phenomena Described by the Kuramoto Model**\n1. **Phase Synchronization in Populations of Oscillators**\n   - The model asks: *How do a group of oscillators with slightly different natural frequencies (e.g., fireflies flashing, pacemaker neurons firing, or power grids oscillating) lock into a common rhythm?*\n   - Answer: Through **weak, pairwise coupling** (interaction strength \\(K_{ij}\\)), oscillators adjust their phases \\(\\theta_i\\) to align with their neighbors, leading to **coherent oscillations** at a **macroscopic frequency** (e.g., all oscillators ticking in unison).\n\n2. **Phase Transition: From Desynchrony to Synchrony**\n   - As coupling strength \\(K\\) increases, the system undergoes a **second-order phase transition**:\n     - **Low \\(K\\) (Disordered State)**: Oscillators drift incoherently (high entropy, no global phase).\n     - **Critical \\(K\\) (Phase Transition)**: A tipping point where a **synchronized cluster** emerges (like magnetization in ferromagnets).\n     - **High \\(K\\) (Fully Synchronized)**: All oscillators phase-lock to a common rhythm (low entropy, ordered state).\n   - The **order parameter** \\(R\\) (a complex number measuring phase coherence) quantifies this transition:\n     - \\(R \\approx 0\\): No synchronization.\n     - \\(R \\approx 1\\): Perfect synchronization.\n\n3. **Natural Frequency Distribution (Oscillator Diversity)**\n   - The model assumes oscillators have **heterogeneous natural frequencies** (e.g., \\(\\omega_i\\) drawn from a distribution like Gaussian or Lorentzian).\n   - This diversity is crucial: **Homogeneous oscillators** (all \\(\\omega_i\\) identical) trivially synchronize, but **real-world systems** (e.g., circadian rhythms in a population) have variation. The Kuramoto model explains how such systems overcome this diversity to synchronize.\n\n4. **Emergent Complexity",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18309.63483300002,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:26:13.288197"
+}

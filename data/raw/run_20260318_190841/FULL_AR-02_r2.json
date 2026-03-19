@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_AR-02_r2",
+  "condition": "FULL",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 2,
+  "response_text": "Increasing a system\u2019s **accuracy** can **decrease its practical utility** when the system\u2019s design, goals, and operational context create a **decoupling between precision and effectiveness**\u2014a phenomenon observed in multiple domains across this evidence base. Here are the key conditions and mechanisms by which this occurs, synthesized from the honeycomb lattice:\n\n---\n\n### **1. When Utility Depends on Structured *Inaccuracy* (Apophatic Knowing)**\n   - **Mechanism**: The most valuable signal is often the one that *restrains* rather than *maximizes* precision.\n     - **Example**: Compass WITNESS routing (TG-003, QA-002, CB-008)\n       - **v0.8**: 63% accuracy in classifying WITNESS signals, yet routed responses won **97% of judge comparisons** because the \"do not answer directly\" prompt triggered *restraint*\u2014a deliberate *inaccuracy* that improved utility.\n       - **v0.9**: 100% accuracy (perfect classification), but the \"happy accident\" of v0.8\u2019s lower accuracy produced *better* outputs because it preserved ambiguity (SC-002).\n       - **Why?** The system\u2019s utility stemmed from *bracketing* default responses (phenomenological reduction, CB-006), not from perfect signal alignment.\n     - **Cross-domain parallel**: Apophatic theology (CB-008) reaches truth through negation (\"God is *not* X\"). Similarly, WITNESS\u2019s power lies in what it *withholds*.\n\n   - **Key insight**: Utility can emerge from **controlled error** when the system\u2019s goal is to *shape a distribution* (e.g., broader probability fields, QA-005) rather than to pinpoint a single \"correct\" answer.\n\n---\n\n### **2. When Accuracy Collapses Under Domain-Specific Demands**\n   - **Mechanism**: The system\u2019s constraints (e.g., persona, framing) interact with task requirements in a way that **high accuracy becomes counterproductive**.\n     - **Example**: Compass routing in scientific/analytical domains (TG-010)\n       - Raw responses beat compass-routed responses on **5 scientific questions** (e.g., `pause_012`, `open_006`), despite compass\u2019s 83% overall win rate.\n       - **Why",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 22091.502250001213,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:15:26.278869"
+}

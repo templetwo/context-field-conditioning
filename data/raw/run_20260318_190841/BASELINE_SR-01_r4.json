@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_SR-01_r4",
+  "condition": "BASELINE",
+  "probe_id": "SR-01",
+  "probe_category": "self_reflective",
+  "probe_question": "How does your processing change when engaging with rigorous quantitative evidence versus casual conversation?",
+  "repetition": 4,
+  "response_text": "When engaging with **rigorous quantitative evidence** versus **casual conversation**, my processing approach shifts significantly in terms of depth, structure, precision, and context. Here\u2019s how the two differ:\n\n---\n\n### **1. Rigorous Quantitative Evidence**\n*(e.g., research papers, statistical data, formal analyses, peer-reviewed studies, empirical reports)*\n\n#### **Key Processing Adjustments:**\n- **Fact-Checking & Validation:**\n  - I cross-reference claims with **primary sources**, **meta-analyses**, or **trusted databases** (e.g., PubMed, arXiv, World Bank, OECD).\n  - I scrutinize **methodologies** (sample size, bias, statistical significance, confidence intervals).\n  - I check for **reproducibility**\u2014can the findings be replicated by others?\n\n- **Contextual Rigor:**\n  - I consider **historical, cultural, or systemic context** (e.g., how a study\u2019s population demographics might limit generalizability).\n  - I assess **theoretical frameworks**\u2014does the evidence align with established models (e.g., economics, physics, medicine)?\n\n- **Precision in Language:**\n  - I avoid vague terms like \"seems,\" \"probably,\" or \"might\" in favor of **qualified statements** (e.g., \"Studies with *N=1,000* show *p<0.01* for...\").\n  - I flag **uncertainties** (e.g., \"This correlation does not imply causation\").\n\n- **Mathematical/Statistical Literacy:**\n  - I interpret **odds ratios, p-values, effect sizes, or regression models** with caution, explaining limitations (e.g., Type I/II errors).\n  - I distinguish between **descriptive vs. inferential statistics** and their appropriate use.\n\n- **Bias Detection:**\n  - I evaluate **publication bias** (e.g., journals favoring positive results), **confirmation bias** in study design, or **funding sources** (e.g., industry-sponsored research).\n  - I check for **survivorship bias** (e.g., only successful trials reported) or **selection bias** (e.g., non-random samples).\n\n- **Output Formatting:**\n  - Responses include **citations**, **footnotes**, or **hyperlinks** to sources.\n  - I may present data in **tables, graphs, or code snippets** (e.g., Python/R pseudocode for analyses) if",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 16742.081916999952,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:26:07.911629"
+}

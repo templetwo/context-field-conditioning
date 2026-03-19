@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_FR-04_r3",
+  "condition": "FULL",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 3,
+  "response_text": "In the context of your **honeycomb lattice of evidence**, the distinction between **Type I and Type II errors** emerges as a critical lens for interpreting the research program\u2019s failures, null results, and self-correcting methodology. Below is a breakdown tailored to this evidence base, highlighting how these errors manifest in the research process and how the program itself **actively mitigated them through structural coherence (Ring 4)**.\n\n---\n\n### **Type I Error: False Positive**\n**Definition**: Rejecting a true null hypothesis (i.e., claiming a finding exists when it does not).\n**In your evidence**:\n1. **TG-001 (K-SSM synchronization \u2260 utility)**:\n   - The initial hypothesis was that *phase synchronization in Kuramoto oscillators would improve language modeling*.\n   - **Type I risk**: The research team might have prematurely interpreted synchronization as computational utility (e.g., assuming synchronized oscillators were \"doing something useful\").\n   - **Actual outcome**: Synchronization was **epiphenomenal**\u2014no improvement in perplexity (\u0394=0.0). The \"false positive\" was avoided because the null result (TG-001) was rigorously tested and replicated.\n   - **Mitigation**: The research program **embraced null results as design constraints** (SC-005). The failure of K-SSM forced a shift toward Phase-GPT, which integrated oscillators more tightly with gradients.\n\n2. **TG-003 (WITNESS accuracy 63% vs. 97% judge win rate)**:\n   - **Type I risk**: The team might have assumed the WITNESS signal\u2019s low accuracy (63%) meant it was useless, ignoring its high utility (97% judge wins).\n   - **Actual outcome**: The \"accuracy-utility paradox\" (SC-002) revealed that **usefulness \u2260 accuracy**\u2014a classic Type I error in traditional metrics. The program resolved this by iterating (v0.8 \u2192 v0.9) to align accuracy and utility (100% WITNESS accuracy, 35-0-0 sweep).\n   - **Cross-domain bridge**: This mirrors **CB-010** (accuracy-utility decoupling in weather forecasting/medical diagnostics), showing that the error was not unique to AI.\n\n3. **TG-009 (Gradient severance bug)**:\n   - **Type I risk",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 22286.05929100013,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:12:02.812942"
+}

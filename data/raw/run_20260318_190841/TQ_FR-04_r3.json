@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQ_FR-04_r3",
+  "condition": "TQ",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 3,
+  "response_text": "In classical hypothesis testing (e.g., null hypothesis significance testing, NHST), **Type I and Type II errors** are fundamental concepts that describe different ways a statistical test can fail. While your question doesn't directly reference the evidence base above, I\u2019ll draw parallels to the **methodological and interpretive risks** that emerged in the research program (e.g., TG-002, TG-007, TG-009, QA-008), where **false positives (Type I)** and **false negatives (Type II)** manifested in experimental design, model validation, and measurement limitations. Here\u2019s the distinction, framed with echoes of the research program\u2019s challenges:\n\n---\n\n### **1. Type I Error: False Positive (\u03b1-error)**\n**Definition**:\nRejecting a **true null hypothesis** (concluding there is an effect when there isn\u2019t one).\n*Example*: Claiming \"the Kuramoto oscillators learned phase coupling\" (TG-001/TG-002) when in reality they were **severed from gradients** (TG-002). The \"effect\" (synchronization) existed as an artifact, not a learned phenomenon.\n\n**Key Properties**:\n- **Controlled by \u03b1 (significance level)**: Typically set to 0.05, meaning a 5% chance of a Type I error.\n- **Severity in the research program**:\n  - **TG-002**: The gradient severance bug produced *epiphenomenal synchronization* (R=0.993) that was entirely spurious. All prior claims about \"learned coupling\" were Type I errors.\n  - **TG-003**: WITNESS signals had **63% accuracy** but still \"won\" 97% of judge comparisons due to prompt design, not true signal validity. The \"effect\" (judge preference) was driven by prompt framing, not the hypothesis.\n- **Consequence**: Wasted resources (e.g., QA-003\u2019s failed language modeling improvement) and eroded trust in the experimental framework.\n\n**Analogy in the Evidence Base**:\nLike the **Phase-GPT oscillators**, many \"positive\" findings in early runs were **Type I errors**\u2014statistically significant but meaningless because the experimental conditions were flawed (e.g., severed gradients, incomplete ablation studies like TG-007).\n\n---\n\n### **2. Type II Error: False Negative (\u03b2",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18800.239082999724,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:49:56.901160"
+}

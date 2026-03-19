@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_FR-02_r2",
+  "condition": "BASELINE",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 2,
+  "response_text": "The **Kuramoto model** is a mathematical framework introduced by **Yoshiki Kuramoto** in 1975 to describe **synchronization phenomena** in systems of coupled **phase oscillators**. It is widely used in physics, biology, neuroscience, and engineering to study how individual oscillators (e.g., fireflies flashing, neurons firing, power grids, or social networks) coordinate their rhythms to achieve collective synchronization.\n\n---\n\n### **Key Concepts of the Kuramoto Model**\nThe model considers **N identical oscillators** with phases **\u03b8\u1d62(t)** (where *i* = 1, 2, ..., *N*), each evolving independently except for weak coupling. The dynamics are governed by:\n\n\\[\n\\frac{d\u03b8\u1d62}{dt} = \u03c9\u1d62 + \\frac{K}{N} \\sum_{j=1}^N \\sin(\u03b8_j - \u03b8\u1d62)\n\\]\n\n#### **Components:**\n1. **Natural Frequency (\u03c9\u1d62):**\n   - Each oscillator has an intrinsic frequency (e.g., some fireflies naturally blink faster than others).\n   - Assumed to be drawn from a probability distribution (often uniform or Gaussian).\n   - *\u03c9\u1d62* may vary slightly, introducing heterogeneity.\n\n2. **Coupling Term (Synchronizing Force):**\n   - The term \\(\\frac{K}{N} \\sum_{j=1}^N \\sin(\u03b8_j - \u03b8\u1d62)\\) represents the **interaction** between oscillators.\n   - *K* is the **coupling strength** (how strongly oscillators influence each other).\n   - The sine term captures **phase-dependent coupling** (e.g., \"push-pull\" interactions).\n\n3. **Order Parameter (\u03c1e^{i\u03c8}):**\n   - A complex quantity measuring the **degree of synchronization** in the system:\n     \\[\n     \u03c1 e^{i\u03c8} = \\frac{1}{N} \\sum_{j=1}^N e^{i\u03b8_j}\n     \\]\n   - *\u03c1* (0 \u2264 *\u03c1* \u2264 1) is the **synchronization strength**:\n     - *\u03c1* = 0 \u2192 **complete desynchronization** (phases are random).\n     - *\u03c1* = 1 \u2192 **full synchronization** (all oscillators oscillate in phase).\n   - *\u03c8* is the **average phase** of the synchronized group.\n\n---\n\n### **Synchronization Transition**\nA hallmark of",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17918.875709000004,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T18:29:33.025126"
+}

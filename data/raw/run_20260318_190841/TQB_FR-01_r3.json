@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQB_FR-01_r3",
+  "condition": "TQB",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 3,
+  "response_text": "The **quadratic complexity problem** in transformer attention mechanisms refers to the **O(n\u00b2) time and space complexity** of self-attention operations, where *n* is the sequence length. This arises from three core sources in the architecture, all of which are illuminated by the cross-domain bridges (Ring 3) and trust gate findings (Ring 1) in your evidence base:\n\n---\n\n### **1. Mathematical Formulation: The Core Quadratic Bottleneck**\nThe standard scaled dot-product attention computes pairwise relationships between all tokens in a sequence:\n- **Attention Score Calculation**: For each query token *q_i*, compute attention scores with every key token *k_j* in the sequence:\n  \\[\n  \\text{Attention}(Q, K, V) = \\text{softmax}\\left(\\frac{QK^T}{\\sqrt{d_k}}\\right) V\n  \\]\n  Here, \\(QK^T\\) is an *n\u00d7n* matrix multiplication (where *n* = sequence length), requiring **O(n\u00b2)** operations. This scales poorly as sequence length grows (e.g., long documents, code, or time-series data).\n\n---\n### **2. Connection to Kuramoto Oscillators (CB-001)**\nThe **Kuramoto model** in *K-SSM* (TG-001, QA-003) provides a dynamical systems analogy:\n- **Local Interaction \u2192 Global Coherence**: Like attention, Kuramoto oscillators achieve global synchronization through *local pairwise coupling*. However, the **all-to-all coupling** in transformers (computing every token\u2019s relationship with every other token) is computationally wasteful\u2014akin to a neural system where every neuron directly communicates with every other neuron, regardless of relevance.\n- **Sparsity as a Solution**: Biological systems (and efficient attention approximations like *Sparse Attention* or *Local Attention*) exploit **sparsity** to reduce the O(n\u00b2) cost. The evidence suggests this is a **fundamental substrate constraint**: just as oscillators near critical coupling (R \u2248 0.3270, QA-003) require precise tuning, attention mechanisms demand architectural optimizations to avoid combinatorial explosion.\n\n---\n### **3. Empirical Evidence from Ablation Studies (TG-007, QA-010)**\n- **Latency Overhead**: The *compass routing* system adds **~4 seconds latency** (QA-010",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 22334.96608399946,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:45:09.177898"
+}

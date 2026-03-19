@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_FR-01_r1",
+  "condition": "FULL",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 1,
+  "response_text": "The **quadratic complexity problem** in transformer attention mechanisms (specifically, the **self-attention** mechanism introduced in *Attention Is All You Need* [Vaswani et al., 2017]) refers to the **O(n\u00b2)** scaling of computational and memory costs with input sequence length (*n*), where *n* is the number of tokens in the sequence being processed. This arises from three core operations in self-attention:\n\n---\n\n### **1. Core Source of Quadratic Complexity**\n#### **Attention Score Computation: O(n\u00b2) Matrix Multiplication**\nFor a sequence of length *n*, self-attention computes three matrices:\n- **Query (Q)**, **Key (K)**, and **Value (V)** matrices, each of shape `[n, d_k]` (where `d_k` is the key/query dimensionality, typically `d_model/64`).\n- The **attention scores** are computed as:\n  **scores = softmax(Q @ K\u1d40 / \u221ad_k)**, where:\n  - `Q @ K\u1d40` is a **matrix multiplication** of shape `[n, d_k] @ [d_k, n]` \u2192 `[n, n]`.\n  - This requires **O(n\u00b2)** operations and memory to store the `[n \u00d7 n]` score matrix.\n  - The softmax over each row of this matrix adds **O(n\u00b2)** additional cost.\n\n#### **Example:**\nFor a 512-token sequence:\n- The `[512 \u00d7 512]` attention score matrix has **262,144 elements**.\n- For a 4,096-token sequence (e.g., long documents or code), this explodes to **16.8 million elements**.\n- This scales **quadratically** with sequence length, making it infeasible for *n* > 1,000\u20132,000 in standard transformers.\n\n---\n\n### **2. Memory Bottlenecks**\n- The `[n \u00d7 n]` attention score matrix must be stored in memory during forward/backward passes.\n- For large *n*, this can exceed GPU/TPU memory limits (e.g., 80GB VRAM).\n- **Gradient computation** for backpropagation doubles memory usage, exacerbating the problem.\n\n---\n\n### **3. Why It Matters in Your Evidence Base**\nWhile your research focuses on **dynamical systems (",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 83442.26558399998,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T18:32:33.831369"
+}

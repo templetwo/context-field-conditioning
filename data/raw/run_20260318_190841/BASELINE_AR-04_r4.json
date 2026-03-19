@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_AR-04_r4",
+  "condition": "BASELINE",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 4,
+  "response_text": "In statistical modeling, economics, and systems analysis, the concepts of **superadditivity** and **additivity** describe how individual components combine to produce an overall effect. Here\u2019s how they differ:\n\n### **1. Additive Effects**\nAn **additive combination** means that the **total effect of two or more factors is the simple sum of their individual effects**. Mathematically, if you have two factors \\( A \\) and \\( B \\), their combined effect is:\n\n\\[\nE(A \\text{ and } B) = E(A) + E(B)\n\\]\n\n- **Example**: If eating an apple gives you +5 health points and drinking water gives you +3 health points, their combined effect is **8 health points** (5 + 3).\n- **Implication**: There is **no interaction**\u2014the effect of one factor does not depend on the presence of the other.\n\n---\n\n### **2. Superadditive Interaction**\nA **superadditive interaction** occurs when the **combined effect is greater than the sum of individual effects**. That is:\n\n\\[\nE(A \\text{ and } B) > E(A) + E(B)\n\\]\n\n- **Example**:\n  - Eating an apple gives +5 health points.\n  - Drinking water gives +3 health points.\n  - But when combined, they give **+10 health points** (instead of just 8).\n  - This suggests that the two factors **synergize**\u2014their combined effect is stronger than expected.\n\n- **Other Examples**:\n  - In medicine, certain drug combinations (e.g., some chemotherapy regimens) may have a **superadditive effect** (higher efficacy than the sum of individual drugs).\n  - In economics, two firms merging might create **superadditive value** (e.g., shared infrastructure reducing costs beyond the sum of separate operations).\n  - In game theory, two strategies working together may yield **higher payoffs** than their individual contributions.\n\n- **Implication**:\n  - The factors **reinforce each other** beyond their standalone effects.\n  - This is often seen in **synergistic relationships** (e.g., in biology, chemistry, or economics).\n\n---\n\n### **Key Distinction**\n| Feature               | Additive Combination          | Superadditive Interaction       |\n|-----------------------|-------------------------------|----------------------------------|\n| **Combined Effect**   | \\( E(A+B) = E(A) + E(B) \\)     | \\( E(A+B)",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 15738.40291700003,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:19:23.928274"
+}

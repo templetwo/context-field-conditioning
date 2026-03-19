@@ -1,0 +1,17 @@
+{
+  "trial_id": "T_AR-04_r1",
+  "condition": "T",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 1,
+  "response_text": "A **superadditive interaction**\u2014where the combined effect of two or more factors exceeds the sum of their individual effects\u2014emerges in this evidence base as a critical but often *invisible* or *misdiagnosed* phenomenon. The honeycomb lattice reveals how superadditivity collapses under methodological or architectural constraints, yet it also hints at where it might *accidentally* occur (or fail to). Here\u2019s how it distinguishes itself from additive combinations, using the **TRUST GATE** (and adjacent rings) as a lens:\n\n---\n\n### **1. Additive Effects: Linear Summation (Expected)**\n- **Definition**: The total effect is the sum of individual contributions (e.g., *effect(A) + effect(B) = combined effect*).\n- **Examples in the Evidence**:\n  - **TG-003**: WITNESS *accuracy* (63%) + *judge win rate* (97%) might *appear* additive\u2014high utility despite low signal fidelity. But this is **not superadditive**; it\u2019s a *decoupling* of accuracy and utility, where the *system prompt* (not the signal itself) drives the win. The interaction is **asymmetric**: the signal\u2019s inaccuracy is *harnessed* by a prompt design, but it doesn\u2019t *scale* beyond the prompt\u2019s fixed effect.\n  - **TG-006**: Mistral\u2019s *flat response* to framing suggests **no interaction**\u2014the framing effect is *absent* in one architecture but present in others. This is **subadditive** (or zero-interaction), not superadditive.\n\n- **Key Limitation**: Additive effects assume independence. If factors are correlated or constrained (e.g., by gradient bugs in **TG-002**), the \"sum\" becomes meaningless.\n\n---\n\n### **2. Superadditive Interaction: The \"More Than the Sum\" Paradox**\n- **Definition**: The combined effect *> effect(A) + effect(B)* because the factors **co-create** emergent properties. This requires:\n  - **Nonlinear dependencies** (e.g., phase coupling in oscillators, routing + system prompts).\n  - **Contextual amplification** (e.g., a \"weak\" signal triggers a prompt that *itself* has outsized utility).\n  - **Architectural constraints** that make interactions *only possible* when certain conditions align (e.g., **TG-006**: framing",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17221.724582999967,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:42:29.023793"
+}

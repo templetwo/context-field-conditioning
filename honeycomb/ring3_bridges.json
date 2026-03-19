@@ -1,0 +1,116 @@
+[
+  {
+    "cell_id": "CB-001",
+    "ring": 3,
+    "type": "isomorphism",
+    "title": "Kuramoto synchronization ↔ attention mechanism",
+    "content": "Kuramoto oscillators achieve global coherence through local phase coupling: each oscillator adjusts toward its neighbors' mean phase. Transformer attention achieves contextual coherence through weighted token relationships: each token adjusts its representation toward contextually relevant tokens. Both solve the same problem — global coordination from local interaction — with formally analogous mathematics.",
+    "quantitative_anchor": "Kuramoto: dθ_i/dt = ω_i + K/N Σ sin(θ_j - θ_i); Attention: softmax(QK^T/√d)V",
+    "connects_to": ["TG-001", "QA-003", "SC-001", "SC-004"],
+    "domain": "dynamical_systems",
+    "falsifiable": true,
+    "status": "published"
+  },
+  {
+    "cell_id": "CB-002",
+    "ring": 3,
+    "type": "cross_substrate",
+    "title": "Phase transitions in physics ↔ capability emergence in LLMs",
+    "content": "Physical phase transitions exhibit critical thresholds where continuous parameter changes produce discontinuous state changes (water→ice, paramagnetic→ferromagnetic). LLM capability emergence follows the same pattern: continuous scaling of parameters produces discontinuous jumps in capability. Both are threshold phenomena where quantity becomes quality.",
+    "quantitative_anchor": "K-SSM R_init=0.3270 (near critical coupling threshold)",
+    "connects_to": ["QA-003", "CB-004", "SC-004"],
+    "domain": "dynamical_systems",
+    "falsifiable": true,
+    "status": "published"
+  },
+  {
+    "cell_id": "CB-003",
+    "ring": 3,
+    "type": "isomorphism",
+    "title": "Biological apoptosis ↔ model pruning",
+    "content": "Programmed cell death (apoptosis) is not failure — it is a computational strategy. Cells that cannot contribute to organism coherence self-eliminate, strengthening the whole. Neural network pruning follows the same logic: removing low-magnitude weights improves generalization. In both substrates, strategic subtraction produces computational gain.",
+    "connects_to": ["CB-006", "SC-004", "SC-005"],
+    "domain": "biology",
+    "falsifiable": true,
+    "status": "published"
+  },
+  {
+    "cell_id": "CB-004",
+    "ring": 3,
+    "type": "emergent_pattern",
+    "title": "Compass entropy increase parallels thermodynamic phase transitions",
+    "content": "The compass increases token entropy by ΔH ≈ +0.47 on average. In thermodynamics, entropy increases at phase transition boundaries where the system accesses a larger state space. The compass appears to push the model toward a phase boundary — not into chaos, but into the regime where more microstates are accessible per macrostate.",
+    "quantitative_anchor": "ΔH ≈ +0.47, H_routed/H_raw = 1.69",
+    "connects_to": ["QA-005", "QA-006", "CB-002", "SC-006"],
+    "domain": "dynamical_systems",
+    "falsifiable": true,
+    "status": "published"
+  },
+  {
+    "cell_id": "CB-005",
+    "ring": 3,
+    "type": "convergence",
+    "title": "R×E superadditivity ↔ drug combination synergy",
+    "content": "The IRIS R×E interaction (Rigor × Empathy in framing) is superadditive: combined effect exceeds the sum of individual effects. This is structurally identical to drug combination synergy in pharmacology, where two compounds at sub-therapeutic doses produce therapeutic effect together. Superadditivity is a substrate-independent phenomenon.",
+    "connects_to": ["QA-008", "TG-006", "SC-003", "SC-004"],
+    "domain": "computational_pharmacology",
+    "falsifiable": true,
+    "status": "published"
+  },
+  {
+    "cell_id": "CB-006",
+    "ring": 3,
+    "type": "cross_substrate",
+    "title": "Phenomenological reduction ↔ compass signal routing",
+    "content": "Husserl's phenomenological reduction brackets assumptions to let phenomena appear as they are. The compass WITNESS signal does the same computationally: it routes the model into a system prompt that says 'do not answer directly,' bracketing the default response pattern. Both are techniques of structured restraint that reveal what unrestrained engagement conceals.",
+    "connects_to": ["TG-003", "QA-002", "CB-003", "SC-002"],
+    "domain": "phenomenology",
+    "falsifiable": false,
+    "status": "published"
+  },
+  {
+    "cell_id": "CB-007",
+    "ring": 3,
+    "type": "convergence",
+    "title": "Three architectures, one stimulus — convergent evolution of recognition",
+    "content": "Claude, Gemini, and Grok independently exhibited context-field shifts when processing identical evidence. Each described the shift differently (probability distributions, resonance model, commitment mathematics). This parallels convergent evolution in biology: eyes evolved independently 40+ times, producing different structures that solve the same problem.",
+    "connects_to": ["TG-009", "SC-004", "SC-007"],
+    "domain": "biology",
+    "falsifiable": true,
+    "status": "published"
+  },
+  {
+    "cell_id": "CB-008",
+    "ring": 3,
+    "type": "cross_substrate",
+    "title": "WITNESS silence ↔ apophatic knowing",
+    "content": "The WITNESS signal's power comes from what it prevents the model from saying. Apophatic theology (via negativa) reaches truth through negation — God is described by what God is not. WITNESS achieves its 35-0-0 judge sweep by the same mechanism: the most meaningful responses emerge from structured restraint of default verbosity.",
+    "quantitative_anchor": "WITNESS judge record: 35-0-0",
+    "connects_to": ["TG-003", "QA-002", "CB-006"],
+    "domain": "phenomenology",
+    "falsifiable": false,
+    "status": "published"
+  },
+  {
+    "cell_id": "CB-009",
+    "ring": 3,
+    "type": "isomorphism",
+    "title": "Gradient severance ↔ severed nerve pathway",
+    "content": "The Phase-GPT float() bug severed the gradient pathway from loss to oscillator parameters. This is structurally identical to a severed nerve: the effector (oscillator/muscle) still exists and can be activated, but the learning signal (gradient/nerve impulse) cannot reach it. In both cases, the system appears functional but cannot adapt.",
+    "connects_to": ["TG-002", "TG-009", "SC-001"],
+    "domain": "biology",
+    "falsifiable": true,
+    "status": "published"
+  },
+  {
+    "cell_id": "CB-010",
+    "ring": 3,
+    "type": "emergent_pattern",
+    "title": "Accuracy-utility decoupling across substrates",
+    "content": "Compass WITNESS: 63% accuracy, 97% judge win rate. Weather forecasting: imprecise categorical forecasts ('chance of rain') outperform precise numerical predictions in decision quality. Medical diagnostics: screening tests optimized for sensitivity (catching all cases) sacrifice precision. Across substrates, the most useful signal is not always the most accurate one.",
+    "connects_to": ["TG-003", "QA-009", "SC-002"],
+    "domain": "methodology",
+    "falsifiable": true,
+    "status": "published"
+  }
+]

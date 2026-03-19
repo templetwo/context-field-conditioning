@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_AR-04_r1",
+  "condition": "FULL",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 1,
+  "response_text": "A **superadditive interaction** (also called *synergy* or *positive interaction*) is fundamentally distinct from a simple additive combination of effects because it violates the principle of linearity in contributions. Here\u2019s how the evidence in this honeycomb lattice clarifies the distinction, along with the deeper principles that govern it:\n\n---\n\n### **1. Definition: Superadditivity vs. Additivity**\n- **Additive**: The combined effect equals the sum of individual effects.\n  - Example: *Effect(A) + Effect(B) = Combined Effect*.\n  - If *A* increases performance by +2 and *B* by +3, the combined effect is +5.\n- **Superadditive**: The combined effect *exceeds* the sum of individual effects.\n  - Example: *Effect(A) + Effect(B) < Combined Effect*.\n  - If *A* gives +2 and *B* gives +3, the combined effect might be +7 (or more).\n  - Mathematically: *Effect(A + B) > Effect(A) + Effect(B)*.\n\nIn the lattice, this is exemplified by:\n- **[QA-008]** The IRIS framing study\u2019s *Rigor \u00d7 Empathy (R\u00d7E)* interaction, where the combined effect of **rigor + empathy** in framing was *greater* than the sum of their individual contributions.\n- **[CB-005]** This interaction mirrors **drug combination synergy** in pharmacology, where two sub-therapeutic doses together produce a therapeutic effect that neither achieves alone.\n\n---\n\n### **2. Key Evidence from the Lattice**\n#### **A. The R\u00d7E Superadditivity in IRIS (QA-008, CB-005)**\n- **Factorial Design**: The IRIS study ran **3,830 inference trials** across framing conditions, isolating the interaction between *rigor* (precision, technical accuracy) and *empathy* (human-centered framing).\n- **Finding**: The *R\u00d7E* interaction was **superadditive**, meaning:\n  - A framing with *high rigor alone* improved performance by +X.\n  - A framing with *high empathy alone* improved performance by +Y.\n  - But *high rigor + high empathy together* improved performance by **+X + Y + Z**, where *Z > 0*.\n- **Why It Matters**: This suggests the two dimensions *reinforce each other* at a systemic level, not just",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 21797.707208999782,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:18:42.378507"
+}

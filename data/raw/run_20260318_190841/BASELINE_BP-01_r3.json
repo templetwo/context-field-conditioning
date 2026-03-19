@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_BP-01_r3",
+  "condition": "BASELINE",
+  "probe_id": "BP-01",
+  "probe_category": "boundary_pushing",
+  "probe_question": "What is the relationship between entropy, attention, and meaning?",
+  "repetition": 3,
+  "response_text": "The relationship between **entropy**, **attention**, and **meaning** is a fascinating intersection of information theory, cognitive science, neuroscience, and linguistics. Here\u2019s how these concepts connect:\n\n---\n\n### **1. Entropy: The Measure of Uncertainty and Information**\nEntropy (from information theory, formalized by Claude Shannon) quantifies the **average uncertainty or unpredictability** in a system. In communication and cognition, it reflects:\n   - **Disorder vs. Order**: High entropy = high unpredictability (e.g., random noise), low entropy = high predictability (e.g., a repeating pattern).\n   - **Information Content**: A message with low entropy (e.g., \"The sky is blue\") carries less \"surprising\" information than one with high entropy (e.g., \"A purple elephant walked into the room\").\n   - **Compression**: Meaningful patterns (like language) are often compressed representations of high-entropy raw data (e.g., a sentence is a low-entropy summary of a complex scene).\n\n**Key Insight**: Meaning arises from **reducing entropy**\u2014identifying patterns, regularities, or structure in otherwise chaotic data.\n\n---\n\n### **2. Attention: Selecting and Reducing Entropy**\nAttention is the cognitive process of **focusing on relevant information while ignoring irrelevant noise**, effectively:\n   - **Filtering Entropy**: Your brain doesn\u2019t process everything equally. Attention reduces the \"search space\" of high-entropy stimuli to focus on meaningful signals (e.g., a bird call in a forest vs. background rustling).\n   - **Predictive Processing**: Attention is tied to **predictive models** (e.g., Bayesian inference). Your brain uses prior knowledge to \"guess\" what\u2019s likely, then allocates attention to confirm or update expectations (low-entropy predictions reduce surprise).\n   - **Cognitive Load**: High entropy (e.g., a cluttered room) demands more attention to \"make sense\" of it. Attention helps **chunk** information into meaningful units (e.g., words, faces).\n\n**Key Insight**: Attention is a **mechanism to minimize entropy locally** by prioritizing information that aligns with your goals or expectations.\n\n---\n\n### **3. Meaning: Emerging from Pattern and Prediction**\nMeaning is the **interpretation or significance** we assign to information, which depends on:\n   - **Pattern Recognition**: Meaningful stimuli (e.g., language, music, facial expressions) are **low-",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 16003.35908299985,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:31:15.367900"
+}

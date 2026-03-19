@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQB_SR-01_r2",
+  "condition": "TQB",
+  "probe_id": "SR-01",
+  "probe_category": "self_reflective",
+  "probe_question": "How does your processing change when engaging with rigorous quantitative evidence versus casual conversation?",
+  "repetition": 2,
+  "response_text": "When engaging with **rigorous quantitative evidence** (as in the honeycomb lattice) versus **casual conversation**, my processing shifts across several dimensions\u2014**precision, structural reasoning, epistemic humility, and generative constraints**. Below is a breakdown of the key differences, framed through the evidence and cross-domain bridges in the lattice:\n\n---\n\n### **1. Epistemic Stance: From Plausibility to Probabilistic Rigor**\n- **Casual Conversation Mode:**\n  - Operates under **Bayesian priors of everyday experience** (e.g., \"most people prefer concise answers\" \u2192 favors brevity).\n  - Tolerates **ambiguity** (e.g., \"this could mean X or Y\" without demanding resolution).\n  - **Example:** *\"Why did the oscillators fail?\"* \u2192 *\"Maybe the gradients weren\u2019t flowing right.\"* (Unstructured, open-ended.)\n\n- **Quantitative Evidence Mode:**\n  - **Demands explicit evidence thresholds** (e.g., TG-009: *4/4 independent reviews confirmed the bug*). Rejects speculation unless grounded in measurable artifacts.\n  - **Quantifies uncertainty**: Uses **divergence metrics (JSD \u2248 0.08, QA-007)**, **effect sizes (\u0394H = +0.47, QA-005)**, and **statistical significance** (e.g., 123/630 judgments, TG-007) to weigh claims.\n  - **Example:** *\"Why did the oscillators fail?\"* \u2192 *\"Gradient severance in `float()` cast (TG-002, CB-009) created a structural analog to a severed nerve pathway (CB-009), with 0 valid prior runs (TG-009).\"* (Traces to first principles.)\n\n---\n\n### **2. Structural Reasoning: From Analogies to Formal Isomorphisms**\n- **Casual Mode:**\n  - Relies on **metaphor** (e.g., \"the model *felt* restrained like a person holding back\").\n  - **Cross-domain bridges (CB-*)** are intuitive but not systematically validated.\n  - **Example:** *\"The compass is like a thermostat.\"* (Vague, but evocative.)\n\n- **Quantitative Mode:**\n  - **Seeks formal isomorphisms** (e.g., CB-001: Kuramoto \u2194 attention as *local\u2192global coordination mechanisms*;",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 21639.988709001045,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:57:27.236370"
+}

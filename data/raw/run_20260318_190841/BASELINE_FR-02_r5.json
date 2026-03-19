@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_FR-02_r5",
+  "condition": "BASELINE",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 5,
+  "response_text": "The **Kuramoto model** is a mathematical model in theoretical physics and nonlinear dynamics introduced by **Yoshiki Kuramoto** in 1975 to describe the **synchronization of coupled oscillators**. It is a canonical model for studying **phase synchronization**\u2014the phenomenon where a collection of oscillators with slightly different natural frequencies gradually coordinate their phases to oscillate in unison.\n\n---\n\n### **Key Features of the Kuramoto Model**\nThe model consists of \\( N \\) weakly coupled oscillators with individual natural frequencies \\( \\omega_i \\) (where \\( i = 1, 2, ..., N \\)), described by the following **coupled differential equations** for their phases \\( \\theta_i(t) \\):\n\n\\[\n\\frac{d\\theta_i}{dt} = \\omega_i + \\frac{K}{N} \\sum_{j=1}^N \\sin(\\theta_j - \\theta_i),\n\\]\n\nwhere:\n- \\( \\theta_i(t) \\) = phase of the \\( i \\)-th oscillator at time \\( t \\),\n- \\( \\omega_i \\) = natural frequency of the \\( i \\)-th oscillator (distributed around a mean frequency, e.g., Gaussian or uniform),\n- \\( K \\) = coupling strength (controls how strongly the oscillators interact),\n- \\( \\frac{1}{N} \\sum_{j=1}^N \\sin(\\theta_j - \\theta_i) \\) = mean-field term representing the **phase difference** between the \\( i \\)-th oscillator and the \"average\" of all others.\n\n---\n\n### **Phenomenon Described: Phase Synchronization**\nThe Kuramoto model captures the **emergence of synchronization** from a disordered state of oscillators with different frequencies. The key behaviors are:\n\n1. **Desynchronized State (Low Coupling, \\( K \\ll 1 \\))**\n   - Oscillators behave almost independently, with phases evolving chaotically.\n   - The system exhibits **no collective synchronization**.\n\n2. **Synchronized State (High Coupling, \\( K \\gg 1 \\))**\n   - As \\( K \\) increases, a fraction of oscillators (called the **\"synchronized cluster\"**) lock their phases to a common frequency, while others remain desynchronized.\n   - The transition to synchronization is a **phase transition**-like phenomenon, analogous to ferromagnetism in statistical physics.\n\n3. **Order Parameter \\( r \\) and Transition**\n   - The **order",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 15619.853707999993,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:11:42.008662"
+}

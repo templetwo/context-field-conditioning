@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQB_FR-04_r3",
+  "condition": "TQB",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 3,
+  "response_text": "While the provided **honeycomb lattice** does not directly address Type I and Type II errors in hypothesis testing (as it focuses on dynamical systems, AI architecture, and cross-domain bridges), we can map the core concepts of statistical errors to the **methodological and epistemic tensions** evident in the evidence\u2014particularly in **Ring 2 (Quantitative Anchors)** and **Ring 1 (Trust Gate)**. Here\u2019s a conceptual alignment and how the lattice *implicitly* engages with these ideas:\n\n---\n\n### **Type I vs. Type II Errors: Core Definitions**\n1. **Type I Error (False Positive)**\n   - *Definition*: Rejecting a true null hypothesis (claiming an effect exists when it does not).\n   - *Example*: A medical test says you have a disease when you don\u2019t.\n   - *Cost*: Wasted resources, false confidence in incorrect findings.\n\n2. **Type II Error (False Negative)**\n   - *Definition*: Failing to reject a false null hypothesis (missing a true effect).\n   - *Example*: A medical test fails to detect a disease when it\u2019s present.\n   - *Cost*: Undetected problems, delayed action.\n\n---\n### **Mapping to the Honeycomb Lattice**\nThe lattice contains **methodological and architectural \"errors\"** analogous to these statistical pitfalls, often arising from:\n- **Gradient severance (TG-002, TG-009)**\n  - *Type II Error*: The **fatal gradient bug** in Phase-GPT meant the oscillators *could not learn* (a true effect was undetected). Four independent reviews (TG-009) confirmed this, yet prior claims of \"learned coupling\" persisted. This is a **failure to reject a false null** (the null: \"oscillators are learning\").\n  - *Type I Error*: If the bug had been subtle, researchers might have *claimed learning occurred* when it didn\u2019t (false positive). Here, the error was catastrophic but detectable post-hoc.\n\n- **WITNESS Signal Accuracy vs. Judge Win Rate (TG-003, QA-001, QA-002)**\n  - *Type I Error*: The WITNESS signal was **63% accurate** but triggered responses that judges preferred 97% of the time. The \"error\" (low accuracy) didn\u2019t translate to utility\u2014this is like a **high false-positive rate in a screening",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 20179.779250000138,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:48:13.222420"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_FR-01_r1",
+  "condition": "BASELINE",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 1,
+  "response_text": "The **quadratic complexity problem** in **Transformer attention mechanisms** refers to the fact that the self-attention operation in the Transformer model has a time and space complexity of **O(n\u00b2)**, where **n** is the sequence length. This becomes computationally expensive and memory-intensive as the sequence length grows, limiting the model's scalability for long sequences (e.g., documents, codebases, or long-form text).\n\n### **Why Does Quadratic Complexity Arise?**\nIn the standard **self-attention** mechanism, the attention scores between every pair of tokens in a sequence are computed via a **dot-product similarity** between their query (**Q**) and key (**K**) vectors. This involves computing:\n\n\\[\n\\text{Attention}(Q, K, V) = \\text{softmax}\\left(\\frac{QK^T}{\\sqrt{d_k}}\\right)V\n\\]\n\n- **\\(QK^T\\)** computes the similarity between all possible pairs of tokens in the sequence, resulting in an **n \u00d7 n** attention matrix.\n- For sequences of length **n**, this requires **O(n\u00b2)** operations and memory to store the attention matrix.\n\n### **Challenges Caused by Quadratic Complexity**\n1. **High Computational Cost** \u2013 Long sequences (e.g., 10,000 tokens) require ~100 million operations per attention head, making training and inference slow.\n2. **Memory Bottlenecks** \u2013 Storing an **n \u00d7 n** attention matrix is impractical for very long sequences.\n3. **Limited Scalability** \u2013 Transformers struggle with tasks requiring long-range dependencies (e.g., protein folding, long documents).\n\n---\n\n### **Solutions to Reduce Quadratic Complexity**\nSeveral techniques have been proposed to mitigate this issue:\n\n#### **1. Approximate Attention Mechanisms**\n   - **Sparse Attention** \u2013 Only compute attention between nearby tokens (e.g., local windows) or structured patterns (e.g., Strided, Block-Sparse, Routing Transformers).\n     - *Examples:* **Longformer**, **BigBird**, **Reformer**.\n   - **Low-Rank Attention** \u2013 Approximate \\(QK^T\\) using matrix factorization (e.g., **Linformer**, **Nystr\u00f6mformer**).\n   - **Memory-Compressed Attention** \u2013 Store and compute attention over a compressed memory bank (e.g., **Compressive Attention** in **Longformer**).\n\n####",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 36579.281458000005,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:09:17.733999"
+}

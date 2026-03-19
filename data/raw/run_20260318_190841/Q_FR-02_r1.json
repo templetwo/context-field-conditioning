@@ -1,0 +1,17 @@
+{
+  "trial_id": "Q_FR-02_r1",
+  "condition": "Q",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 1,
+  "response_text": "The **Kuramoto model** is a canonical mathematical framework in **synchronization theory** (a subfield of **nonlinear dynamical systems**) that describes how **coupled oscillators**\u2014individual rhythmic systems\u2014transition from **disordered, asynchronous behavior** to **macroscopic synchronization** under specific conditions. It was first proposed by **Yoshiki Kuramoto** in 1975 to explain the emergence of collective rhythms in systems like **firefly flashing, neural oscillators, or power grids**.\n\n---\n\n### **Core Concepts of the Kuramoto Model**\n1. **Oscillators as Phase Rotators**:\n   - Each oscillator is modeled as a phase angle \\( \\theta_i(t) \\) that rotates at its natural frequency \\( \\omega_i \\).\n   - In the absence of coupling (\\( K = 0 \\)), all oscillators rotate independently with their own frequencies.\n\n2. **Coupling Mechanism**:\n   - Oscillators are coupled via a **symmetric interaction matrix** \\( K_{ij} \\), where \\( K_{ij} \\) represents the strength of influence between oscillator \\( i \\) and \\( j \\).\n   - The coupling is typically **all-to-all** (mean-field) or **local** (e.g., lattice-like), and it often depends on the **phase difference** between oscillators (e.g., sinusoidal coupling).\n\n3. **Order Parameter \\( R \\)**:\n   - A key emergent quantity is the **complex order parameter**:\n     \\[\n     R e^{i\\Psi} = \\frac{1}{N} \\sum_{j=1}^N e^{i\\theta_j},\n     \\]\n     where \\( R \\) measures the **degree of synchronization** (ranging from \\( 0 \\) for incoherence to \\( 1 \\) for perfect alignment), and \\( \\Psi \\) is the average phase.\n   - \\( R \\) quantifies how much the system\u2019s oscillators \"lock\" into a common rhythm.\n\n4. **Phase Transition**:\n   - As the **coupling strength \\( K \\)** increases, the system undergoes a **continuous phase transition** from **incoherence (\\( R \\approx 0 \\))** to **synchronization (\\( R > 0 \\))**.\n   - This is analogous to **ferromagnetic transitions** in statistical physics or **Bose-Einstein condensation** in quantum systems.\n\n5. **Critical Coupling**:\n   - At the **critical coupling** \\( K_c \\),",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17290.755416999673,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:54:41.063301"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "T_AR-02_r3",
+  "condition": "T",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 3,
+  "response_text": "The evidence in **Ring 1: Trust Gate** reveals several conditions where **increasing accuracy in a system\u2019s internal signals (e.g., phase synchronization, classification, or routing) actually *decreases* practical utility**\u2014because accuracy and utility are decoupled from each other. Here are the key conditions from the lattice, along with the underlying mechanisms:\n\n---\n\n### **1. When Synchronization Is Epiphenomenal (No Computational Role)**\n**Evidence:** [TG-001]\n- **Condition:** A system exhibits *perfect phase synchronization* in hidden-state dynamics (R=0.993) but shows **zero improvement in language modeling perplexity**.\n- **Why it fails:** The synchronization was *not causally linked* to the system\u2019s computational goal. Oscillators behaved like a \"beautiful but meaningless\" dynamical system\u2014highly coordinated but irrelevant to the actual task.\n- **Utility cost:** Resources spent on phase coupling were wasted; the model\u2019s performance was unchanged.\n\n**Generalization:** *Accuracy in an intermediate representation (e.g., neural synchrony, attention alignment) doesn\u2019t translate to utility if the representation isn\u2019t directly tied to the objective function.*\n\n---\n\n### **2. When Gradients Are Severed (Illusion of Learning)**\n**Evidence:** [TG-002], [TG-009]\n- **Condition:** A system\u2019s coupling parameters (e.g., Kuramoto oscillators) *appear to synchronize* but receive **no gradient signal** due to a bug (e.g., `float()` cast severing autograd).\n- **Why it fails:** The system was *training on a frozen random matrix*\u2014all reported \"learning\" was an artifact. High *apparent* accuracy (e.g., R=0.993) masked total absence of utility.\n- **Utility cost:** The team spent cycles debugging a non-existent learning mechanism, while the core model\u2019s performance remained stagnant.\n\n**Generalization:** *False positives in internal metrics (e.g., synchronization, attention scores) can drive misplaced confidence, obscuring real utility gaps.*\n\n---\n\n### **3. When Accuracy Decouples from Task-Specific Utility**\n**Evidence:** [TG-003]\n- **Condition:** A *WITNESS signal* (e.g., \"do not answer directly\") is classified with **63% accuracy** but wins **97% of judge comparisons** because the *system prompt* it triggers",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 16982.79304199991,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:41:20.519831"
+}

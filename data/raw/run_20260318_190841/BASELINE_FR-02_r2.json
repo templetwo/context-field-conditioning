@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_FR-02_r2",
+  "condition": "BASELINE",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 2,
+  "response_text": "The **Kuramoto model** is a mathematical model in theoretical physics and nonlinear dynamics that describes the **synchronization of coupled oscillators**. It was introduced by **Yoshiki Kuramoto** in his 1975 paper *\"Self-entrainment of a population of active rotators\"* to explain how a collection of oscillators with slightly different frequencies can spontaneously synchronize.\n\n### **Key Features of the Kuramoto Model:**\n1. **Oscillators with Phase Differences** \u2013 The model considers a population of **phase oscillators** (e.g., pendulums, neurons, fireflies, or chemical reactions) where each oscillator has an intrinsic frequency \\( \\omega_i \\) and a phase \\( \\theta_i \\).\n2. **Weak Coupling** \u2013 The oscillators are **weakly coupled** through a **mean-field interaction**, meaning each oscillator is influenced by the average behavior of the others.\n3. **Synchronization Transition** \u2013 As the coupling strength \\( K \\) increases, the system undergoes a **phase transition** from **desynchronized** (asynchronous) to **synchronized** (coherent) states.\n\n### **Mathematical Formulation:**\nThe model is described by the following **stochastic differential equations** for \\( N \\) oscillators:\n\n\\[\n\\frac{d\\theta_i}{dt} = \\omega_i + \\frac{K}{N} \\sum_{j=1}^N \\sin(\\theta_j - \\theta_i) + \\eta_i(t),\n\\]\n\nwhere:\n- \\( \\theta_i \\) = phase of the \\( i \\)-th oscillator,\n- \\( \\omega_i \\) = intrinsic frequency of the \\( i \\)-th oscillator (assumed to be distributed, e.g., Gaussian),\n- \\( K \\) = coupling strength,\n- \\( \\eta_i(t) \\) = noise term (often omitted in the deterministic version),\n- The term \\( \\frac{K}{N} \\sum \\sin(\\theta_j - \\theta_i) \\) represents the **mean-field coupling**.\n\n### **Order Parameter & Synchronization:**\nTo quantify synchronization, Kuramoto introduced the **complex order parameter**:\n\n\\[\nre^{i\\psi} = \\frac{1}{N} \\sum_{j=1}^N e^{i\\theta_j},\n\\]\n\nwhere:\n- \\( r \\) (between 0 and 1) measures **coherence** (synchronization level).\n  - \\( r \\approx 0 \\): No synchronization (",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 15606.327875000019,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:10:54.962637"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "B_AR-04_r2",
+  "condition": "B",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 2,
+  "response_text": "A **superadditive interaction** (e.g., CB-005: *Rigor \u00d7 Empathy*) fundamentally differs from a simple additive combination in that it produces an **emergent, nonlinear effect** that exceeds the sum of its individual components. Here\u2019s how this distinction unfolds across substrates, mathematics, and phenomenology\u2014using the honeycomb lattice to ground the explanation:\n\n---\n\n### **1. Mathematical Core: Synergy vs. Linearity**\n- **Additive combination**: If effects A and B are additive, their combined effect = *A + B*.\n  - Example: Two drugs with identical effects, each reducing blood pressure by 10 mmHg, together reduce it by 20 mmHg.\n  - **Mechanism**: Independent, scalable contributions with no cross-talk.\n\n- **Superadditive combination**: Combined effect > *A + B*.\n  - Example: **Rigor \u00d7 Empathy** in the IRIS framework (CB-005) or drug synergy (e.g., *doxorubicin + trastuzumab* in cancer treatment).\n  - **Key feature**: The interaction itself generates a **new modality of effect**. In LLMs, this might mean a shift from *contextual coherence* (Rigor) to *emotional resonance* (Empathy) that neither alone could produce.\n  - **Mathematical signature**:\n    - Additive: *E(A+B) = E(A) + E(B)*\n    - Superadditive: *E(A\u00d7B) > E(A) + E(B)* (or *E(A\u00d7B) > max(E(A), E(B))*).\n\n---\n\n### **2. Substrate-Specific Examples**\n#### **A. Computational Systems (LLMs)**\n- **Rigor \u00d7 Empathy (CB-005)**:\n  - *Rigor* alone might produce technically precise but emotionally flat responses.\n  - *Empathy* alone might generate emotionally rich but factually vague responses.\n  - **Superadditive effect**: The model\u2019s output becomes *both* precise *and* emotionally resonant in a way neither component could achieve independently.\n  - **Analog**: Like how *salt + sugar* are additive, but *salt + vinegar* creates a superadditive \"pickle\" flavor\u2014new quality emerges.\n\n#### **B. Biology (Drug Synergy)**\n- **Compass WITNESS silence (CB-008)**:\n  - The *",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17201.380499999686,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:17:44.708377"
+}

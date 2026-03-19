@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_FR-02_r2",
+  "condition": "FULL",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 2,
+  "response_text": "The **Kuramoto model** is a **mathematical framework for describing the spontaneous emergence of synchronization in populations of coupled oscillators**\u2014a phenomenon where individual oscillators (e.g., neurons, chemical clocks, or even language model hidden states) begin to oscillate in phase with one another, even though they are not directly communicating. It is a cornerstone of **nonlinear dynamics** and **complex systems theory**, with deep connections to physics, biology, and\u2014relevantly to this research program\u2014artificial intelligence.\n\n---\n\n### **Core Concepts of the Kuramoto Model**\n1. **Oscillators with Phase Coupling**\n   - Each oscillator is defined by a **phase angle** \\( \\theta_i(t) \\) and an **intrinsic frequency** \\( \\omega_i \\).\n   - Oscillators are **weakly coupled** to each other, meaning each oscillator\u2019s phase evolution depends on the phases of its neighbors:\n     \\[\n     \\frac{d\\theta_i}{dt} = \\omega_i + \\frac{K}{N} \\sum_{j=1}^N \\sin(\\theta_j - \\theta_i)\n     \\]\n     - \\( K \\): **Coupling strength** (how strongly oscillators influence each other).\n     - \\( N \\): Total number of oscillators.\n     - \\( \\sin(\\theta_j - \\theta_i) \\): A **phase difference** term that aligns \\( \\theta_i \\) toward \\( \\theta_j \\).\n\n2. **Phase Transition to Synchronization**\n   - Below a critical coupling strength \\( K < K_c \\), oscillators remain **desynchronized** (phases are random).\n   - Above \\( K > K_c \\), a **phase transition** occurs: a **macroscopic fraction** of oscillators locks into a **common phase**, creating a **synchronized state**.\n   - This is analogous to a **ferromagnetic transition** (where spins align) or **condensation** (where particles clump together).\n\n3. **Order Parameter: \\( R \\)**\n   - A scalar measure of synchronization across the population:\n     \\[\n     R e^{i\\psi} = \\frac{1}{N} \\sum_{j=1}^N e^{i\\theta_j}\n     \\]\n     - \\( R = 0 \\): Complete desynchronization.\n     - \\( R = 1 \\): Perfect synchronization.\n   - In this research program, \\( R \\) is used to quantify the coherence",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 23004.767875000027,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T18:33:49.542295"
+}

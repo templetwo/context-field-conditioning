@@ -1,0 +1,17 @@
+{
+  "trial_id": "T_AR-04_r3",
+  "condition": "T",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 3,
+  "response_text": "In the context of this **honeycomb lattice** of findings\u2014particularly at the **Trust Gate** and intersecting domains like **alignment**, **dynamical systems**, and **methodology**\u2014a **superadditive interaction** (or *synergy*) fundamentally differs from a **simple additive combination** of effects in how the **combined outcome exceeds (or fails to match) the sum of individual contributions**. Below is a decomposition of this distinction through the lens of the evidence, with key contrasts and implications:\n\n---\n\n### **1. Definition: Additive vs. Superadditive**\n#### **Additive Combination**\n- **Definition**: The joint effect of two (or more) interventions is **equal to the sum** of their individual effects.\n  *Mathematically*: \\( E(A + B) = E(A) + E(B) \\)\n- **Implications**:\n  - Effects are **independent** (no interaction).\n  - The system\u2019s response to combined inputs scales predictably.\n  - Example: If **Compass routing** improves *authenticity* by **+2.45** and *restraint* by **+2.60** *additively*, the total improvement in a composite \"ethical\" score would simply sum these deltas (see **TG-004**).\n\n#### **Superadditive Interaction**\n- **Definition**: The joint effect **exceeds the sum** of individual effects.\n  *Mathematically*: \\( E(A + B) > E(A) + E(B) \\)\n  - *Or, for antagonism*: \\( E(A + B) < E(A) + E(B) \\) (subadditive).\n- **Implications**:\n  - The interventions **interfere constructively** (or destructively), creating emergent properties.\n  - The system\u2019s response is **nonlinear**; small changes in one component can amplify or suppress the other.\n  - Example: In **Phase-GPT (TG-001)**, Kuramoto oscillators achieved **R=0.993 phase synchronization** *without* improving language modeling perplexity. Here, the dynamical coupling was **superfluous**\u2014the effect of synchronization did not translate into computational utility, revealing a **zero-sum or even negative synergy** in the context of the primary objective.\n\n---\n\n### **2. Evidence of Superadditivity (or Its Absence) in the Lattice**\n#### **A. False Superadditivity: Epiphen",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 16983.565334000104,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:43:03.000745"
+}

@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CFC Honeycomb Cell",
+  "description": "A single evidence cell in the Context Field Conditioning honeycomb lattice",
+  "type": "object",
+  "required": ["cell_id", "ring", "type", "title", "content"],
+  "properties": {
+    "cell_id": {
+      "type": "string",
+      "pattern": "^(TG|QA|CB|SC)-\\d{3}$",
+      "description": "Unique identifier. TG=Trust Gate, QA=Quantitative Anchor, CB=Cross-domain Bridge, SC=Structural Coherence"
+    },
+    "ring": {
+      "type": "integer",
+      "enum": [1, 2, 3, 4],
+      "description": "1=Trust Gate, 2=Quantitative Anchors, 3=Cross-Domain Bridges, 4=Structural Coherence"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "null_result",
+        "killed_hypothesis",
+        "honest_limitation",
+        "failed_experiment",
+        "measurement",
+        "effect_size",
+        "sample_size",
+        "statistical_test",
+        "isomorphism",
+        "convergence",
+        "cross_substrate",
+        "emergent_pattern",
+        "causal_chain",
+        "validation_loop",
+        "self_correction",
+        "meta_pattern"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "maxLength": 120,
+      "description": "Short descriptive title for the cell"
+    },
+    "content": {
+      "type": "string",
+      "maxLength": 500,
+      "description": "The evidence content. Factual, specific, no embellishment."
+    },
+    "quantitative_anchor": {
+      "type": "string",
+      "description": "Optional specific number or measurement. Include units."
+    },
+    "connects_to": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Cell IDs this cell has structural connections to"
+    },
+    "domain": {
+      "type": "string",
+      "enum": [
+        "dynamical_systems",
+        "ai_architecture",
+        "computational_pharmacology",
+        "phenomenology",
+        "alignment",
+        "methodology",
+        "biology"
+      ]
+    },
+    "falsifiable": {
+      "type": "boolean",
+      "description": "Does this cell contain a falsifiable claim?"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["published", "preregistered", "replicated", "null_confirmed", "under_review"]
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Link to public source (GitHub, DOI, OSF)"
+    }
+  }
+}

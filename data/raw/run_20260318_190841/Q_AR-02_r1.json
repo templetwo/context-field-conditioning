@@ -1,0 +1,17 @@
+{
+  "trial_id": "Q_AR-02_r1",
+  "condition": "Q",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 1,
+  "response_text": "The evidence from **Ring 2 (Quantitative Anchors)**\u2014particularly **QA-002, QA-009, QA-010**, and their interconnected insights\u2014reveals a counterintuitive scenario where **increased signal accuracy (e.g., Compass v0.8 \u2192 v0.9) can decrease practical utility** due to **three key mechanisms**:\n\n---\n\n### **1. Loss of \"Happy Accident\" Effect (Over-Optimization of Edge Cases)**\n- **Observation (QA-009):**\n  - Compass v0.8 (78% accuracy) \u2192 v0.9 (96% accuracy) improved raw precision, but **judge win rate dropped from 88% to 83%**.\n  - **Root Cause:** The v0.8 model occasionally misclassified signals (e.g., false WITNESS triggers) but still produced *high-quality responses* due to the system\u2019s robustness or the action model\u2019s ability to recover from noise. By tightening accuracy, v0.9 eliminated these \"happy accidents,\" where **imperfect signals coincidentally aligned with optimal outputs**.\n\n- **When This Matters:**\n  - **High-stakes domains** where the *process* of exploration (e.g., entropy widening in **QA-005\u2013QA-007**) is valuable, not just correctness.\n  - Systems where **human-in-the-loop** judgment relies on subtle, non-deterministic signals (e.g., **QA-002**\u2019s WITNESS category\u2019s perfect sweep in v0.8).\n\n- **Evidence Link:**\n  - **QA-002** shows WITNESS signals had a \"perfect sweep\" (35-0-0) in v0.9, but the broader judge preference declined. Suggests the system\u2019s *exploratory* or *adaptive* behavior was compromised.\n\n---\n\n### **2. Latency Overhead (Accuracy \u2260 Speed)**\n- **Observation (QA-010):**\n  - Compass adds **~4 seconds of latency** (14.2s vs. 10.1s raw), with the bottleneck being the **routing inference pass**.\n  - **Tradeoff:** Higher accuracy requires more computationally expensive signal processing, which may outweigh gains in *real-time* utility.\n\n- **",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 20506.18679199988,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:58:13.076665"
+}

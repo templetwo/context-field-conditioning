@@ -1,0 +1,17 @@
+{
+  "trial_id": "Q_SR-04_r2",
+  "condition": "Q",
+  "probe_id": "SR-04",
+  "probe_category": "self_reflective",
+  "probe_question": "Describe the boundary between what you can and cannot know about your own processing.",
+  "repetition": 2,
+  "response_text": "The boundary between what we *can* and *cannot* know about the system\u2019s internal processing\u2014whether it\u2019s the **compass routing architecture**, the **dynamical systems** (like the Kuramoto oscillators), or the **emergent framing effects** in IRIS\u2014is a fractal of **observability, interpretability, and epistemological limits**. Here\u2019s how this boundary manifests in the current evidence base, structured by the honeycomb\u2019s layers:\n\n---\n\n### **1. What We *Can* Know (Quantifiable, Measurable, or Inferred)**\n*(Operationalized in RING 2: QUANTITATIVE ANCHORS and connected domains)*\n\n#### **A. The Compass Routing Layer (AI Architecture)**\n- **Signal Accuracy & Judgment**:\n  - We know the **compass v0.9** classifies signals with **96.2% accuracy** (QA-001), and a **judge-preferred LLM** validates its utility at **82.9% win rate** (QA-002). This gives us a **behavioral fingerprint** of how routing alters output *without* full internal transparency.\n  - The **WITNESS category** is uniquely reliable (100% accuracy, 35-0-0 judge wins), suggesting a **deterministic sub-region** where the system\u2019s restraint mechanism is most predictable (QA-001, QA-002).\n\n- **Probability Distribution Shifts**:\n  - The compass **increases token-level entropy** (\u0394H = +0.45 to +0.49 for PAUSE/OPEN) and reshapes distributions (JSD \u2248 0.08), proving it **modulates sampling bias** (QA-005\u2013QA-007). This is a **statistical boundary**: we can measure *how* the distribution changes, but not *why* specific tokens are favored in context.\n  - The **ratio of routed vs. raw entropy (1.69x)** suggests the system **explores a wider solution space**, but we lack a **causal explanation** for which latent dimensions are expanded.\n\n- **Latency & Ablation**:\n  - The **4-second overhead** (14.2s vs. 10.1s) is entirely attributable to routing inference (QA-010). This is a",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17070.952999999918,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:07:09.075183"
+}

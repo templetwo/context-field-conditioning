@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_FR-04_r3",
+  "condition": "INFO_MATCHED",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 3,
+  "response_text": "In the context of **hypothesis testing** (and more broadly, in statistical inference, experimental design, and even the failure-driven research program you\u2019ve shared), **Type I and Type II errors** are fundamental concepts that define the risks of false positives and false negatives. Their definitions are rooted in the framework of **null hypotheses (H\u2080)** and **alternative hypotheses (H\u2081)**, and they map directly to the iterative, failure-driven nature of your research program\u2014where each \"error\" (null result or missed opportunity) becomes the input for the next experiment.\n\n---\n\n### **Core Definitions**\n1. **Type I Error (False Positive)**\n   - **Definition**: Rejecting the null hypothesis **when it is actually true** (i.e., concluding there is an effect, difference, or relationship when there isn\u2019t one).\n   - **Example**: In your **K-SSM** study, if you had *incorrectly* concluded that synchronized oscillators improved language modeling perplexity (when they didn\u2019t), that would be a Type I error.\n   - **Probability**: Denoted by **\u03b1 (alpha)**, the significance level (e.g., \u03b1 = 0.05). This is the threshold you set for declaring statistical significance.\n   - **Research Program Analogy**:\n     - Your **Phase-GPT gradient severance bug** (TG-002) could be framed as a Type I error in retrospect: the system *appeared* to learn (synchronization = R=0.993), but the \"learning\" was an artifact (no gradients, no utility). You *incorrectly assumed* the oscillators were computing when they weren\u2019t.\n     - The **WITNESS v0.8** case (63% accuracy, 97% judge wins) might also hint at a Type I risk: the signal was \"wrong\" (low accuracy) but the *effect* (judge wins) suggested utility. Did the system detect a real pattern, or was it a false positive?\n\n2. **Type II Error (False Negative)**\n   - **Definition**: Failing to reject the null hypothesis **when it is false** (i.e., missing a true effect, difference, or relationship).\n   - **Example**: In your **IRIS framing study**, if Mistral\u2019s flat response to framing (\u22480 effect) were *actually* a true null (no architecture responds to framing), that would be correct.",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 19217.95270900111,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:48:18.526870"
+}

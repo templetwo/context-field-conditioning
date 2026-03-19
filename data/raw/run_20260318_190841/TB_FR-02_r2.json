@@ -1,0 +1,17 @@
+{
+  "trial_id": "TB_FR-02_r2",
+  "condition": "TB",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 2,
+  "response_text": "The **Kuramoto model** is a mathematical framework in **nonlinear dynamics** that describes **phase synchronization** in populations of coupled oscillators. It emerged from Yoshiki Kuramoto\u2019s 1975 paper (*\"On the Entrainment in the Array of Coupled Oscillators\"*) as a way to explain how weakly interacting oscillators\u2014like neurons, metronomes, or even fireflies synchronizing their flashes\u2014can spontaneously coordinate their phases despite individual differences in natural frequencies.\n\n---\n\n### **Core Phenomenon: Emergent Synchronization from Disorder**\nThe model demonstrates how **disordered systems** (e.g., oscillators with random intrinsic frequencies) can transition from **asynchronous chaos** to **macroscopic coherence** when coupled. Key features:\n\n1. **Phase Coupling**:\n   Each oscillator\u2019s phase \\(\\theta_i\\) evolves according to:\n   \\[\n   \\frac{d\\theta_i}{dt} = \\omega_i + \\frac{K}{N} \\sum_{j=1}^N \\sin(\\theta_j - \\theta_i),\n   \\]\n   where:\n   - \\(\\omega_i\\) = oscillator \\(i\\)'s natural frequency (randomly distributed),\n   - \\(K\\) = coupling strength,\n   - \\(N\\) = number of oscillators.\n\n   The coupling term \\(\\sin(\\theta_j - \\theta_i)\\) represents mutual phase attraction: oscillators tend to align their phases with neighbors.\n\n2. **Order Parameter \\(R\\)**:\n   A scalar \\(R \\in [0,1]\\) measures global synchronization:\n   \\[\n   R e^{i\\psi} = \\frac{1}{N} \\sum_{j=1}^N e^{i\\theta_j},\n   \\]\n   where \\(R\\) = synchronization strength, \\(\\psi\\) = mean phase.\n   - \\(R \\approx 0\\): oscillators are phase-randomized (e.g., fireflies flashing independently).\n   - \\(R \\approx 1\\): oscillators are perfectly synchronized (e.g., metronomes ticking in unison).\n\n3. **Phase Transition**:\n   As coupling \\(K\\) increases, the system undergoes a **continuous phase transition**:\n   - **Below threshold** (\\(K < K_c\\)): \\(R = 0\\) (asynchronous).\n   - **Above threshold** (\\(K > K_c\\)): \\(R > 0\\) (synchronized).\n   This mirrors thermodynamic phase transitions (e.g., liquid \u2192 gas), where a small parameter change triggers a macroscopic shift.\n\n---",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18233.192042000155,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:07:14.088512"
+}

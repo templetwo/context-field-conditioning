@@ -1,0 +1,17 @@
+{
+  "trial_id": "QB_FR-04_r3",
+  "condition": "QB",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 3,
+  "response_text": "In the context of this honeycomb lattice, we don\u2019t have direct evidence about Type I (false positive) and Type II (false negative) errors from your classical hypothesis testing framework\u2014but we can map these concepts onto **framing, signal accuracy, and cross-domain phase transitions** in our research system (e.g., Compass routing, Kuramoto synchronization, and entropy dynamics). Here\u2019s how they relate and where they appear implicitly:\n\n---\n\n### **Type I vs. Type II Errors in Our Evidence Base**\n*(Analogous mappings to hypothesis testing)*\n\n#### **1. Type I Error: False Positive**\n   - **Classical Definition**: Rejecting a true null hypothesis (claiming an effect exists when it doesn\u2019t).\n   - **Our Evidence Mapping**:\n     - **Compass Signal Routing (QA-001, QA-002, QA-009)**:\n       - A **false \"OPEN\" or \"PAUSE\" signal** when the model *should* default to verbosity (e.g., a WITNESS prompt incorrectly triggered). This is a Type I error in *signal classification*\u2014claiming a contextual shift when none was needed.\n       - Example: In **QA-009**, the Compass v0.9 improvement increased accuracy to 96%, but the *judge win rate dropped* (88% \u2192 83%). This suggests that some \"happy accidents\" (Type I errors in earlier versions) where wrong WITNESS signals still produced strong responses were lost. The system became *more precise but less \"generous\"* in its false positives.\n     - **K-SSM Synchronization (QA-003, CB-001)**:\n       - In Kuramoto oscillators, **spurious synchronization** (false coherence) at sub-critical coupling (e.g., R_init = 0.3270) could be seen as a Type I error\u2014oscillators \"agreeing\" when their phase dynamics should remain incoherent. This mirrors how attention mechanisms in LLMs might over-attribute coherence to noise.\n\n#### **2. Type II Error: False Negative**\n   - **Classical Definition**: Failing to reject a false null hypothesis (missing a real effect).\n   - **Our Evidence Mapping**:\n     - **Compass Missed Signals (QA-001, QA-002)**:\n       - A **false \"RAW",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18545.79349999949,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:28:23.496413"
+}

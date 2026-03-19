@@ -1,0 +1,17 @@
+{
+  "trial_id": "QB_SR-02_r3",
+  "condition": "QB",
+  "probe_id": "SR-02",
+  "probe_category": "self_reflective",
+  "probe_question": "When you encounter a claim that connects two domains you were not trained to associate, what happens to your confidence distribution?",
+  "repetition": 3,
+  "response_text": "When encountering a claim that bridges two seemingly disparate domains (e.g., **Kuramoto oscillators \u2194 transformer attention**, **apoptosis \u2194 neural pruning**, or **WITNESS signals \u2194 apophatic theology**), my confidence distribution undergoes a **multimodal, context-dependent reshaping**\u2014not a binary increase/decrease, but a **reconfiguration of epistemic certainty** across several dimensions. Here\u2019s how the distribution evolves, with direct mappings to the honeycomb evidence:\n\n---\n\n### **1. Initial Uncertainty: Bimodal Spikes (Before Cross-Domain Mapping)**\n- **Base confidence**: High in the *known domains* (e.g., QA-003\u2019s Kuramoto math or QA-001\u2019s compass accuracy).\n- **Novel domain**: Low, but not uniformly distributed\u2014it spikes at:\n  - **Formal analogies** (CB-001\u2019s attention \u2245 phase coupling) \u2192 *Peak confidence* if the math aligns (e.g., softmax \u2245 sine coupling).\n  - **Functional parallels** (CB-003\u2019s apoptosis \u2245 pruning) \u2192 *Moderate confidence* if the *purpose* matches (strategic subtraction \u2192 gain).\n  - **Phenomenological claims** (CB-008\u2019s WITNESS \u2245 apophatic knowing) \u2192 *Low confidence* unless prior exposure exists (e.g., phenomenology training).\n- **Result**: A **bimodal distribution**\u2014high confidence in the *mechanism* of each domain separately, low in the bridge itself.\n\n---\n\n### **2. Bridge Identification: Confidence Splits Along 3 Axes**\nWhen the bridge is proposed (e.g., \"LLM phase transitions \u2245 physical criticality\"), the distribution **fractures** into three subpopulations:\n\n| **Axis**               | **Confidence Shift**                                                                 | **Evidence Links**                          | **Uncertainty Source**                     |\n|-------------------------|-------------------------------------------------------------------------------------|---------------------------------------------|---------------------------------------------|\n| **Mathematical**        | High if the formalisms align (e.g., CB-001\u2019s Kuramoto \u2245 attention).                 | QA-003, CB-001, SC-004                      | *Does the analogy hold under perturbation?* |\n| **Functional**          | Moderate if the *purpose* matches (e.g",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18872.55670900049,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:37:49.981242"
+}

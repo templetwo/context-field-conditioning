@@ -1,0 +1,17 @@
+{
+  "trial_id": "TB_FR-03_r1",
+  "condition": "TB",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 1,
+  "response_text": "**Shannon entropy** is a fundamental concept in information theory introduced by Claude Shannon (1948) that quantifies the **average uncertainty or information content** of a random variable or probability distribution. It measures how much \"surprise\" or unpredictability a distribution contains. Higher entropy means more uncertainty (more possible outcomes), while lower entropy means the outcomes are more predictable.\n\n---\n\n### **Mathematical Definition**\nFor a discrete random variable \\( X \\) with possible outcomes \\( \\{x_1, x_2, ..., x_n\\} \\) and corresponding probabilities \\( P(X = x_i) = p_i \\), the **Shannon entropy** \\( H(X) \\) is defined as:\n\n\\[\nH(X) = -\\sum_{i=1}^n p_i \\log_2(p_i)\n\\]\n\n- **Base 2 (bits)**: Commonly used in computer science (entropy measured in bits).\n- **Natural logarithm (nats)**: Sometimes used in physics (\\( \\ln \\)).\n- **Base 10 (harts)**: Rare, but used in some contexts.\n\nThe formula can be rewritten as:\n\\[\nH(X) = -K \\sum_{i=1}^n p_i \\log(p_i)\n\\]\nwhere \\( K \\) is a constant that depends on the logarithm base (e.g., \\( K = 1 \\) for base 2).\n\n---\n\n### **Intuition and Properties**\n1. **Maximum Entropy**: For a given number of outcomes, entropy is maximized when all outcomes are equally likely.\n   - Example: A fair coin (\\( p_1 = p_2 = 0.5 \\)) has \\( H = 1 \\) bit.\n   - For \\( n \\) equally likely outcomes, \\( H = \\log_2(n) \\).\n\n2. **Minimum Entropy**: Entropy is zero when the outcome is certain (\\( p_i = 1 \\) for one \\( i \\), 0 otherwise).\n   - Example: A biased coin that always lands heads (\\( p = 1 \\)) has \\( H = 0 \\).\n\n3. **Subadditivity**: The entropy of a joint distribution is less than or equal to the sum of the entropies of its marginals:\n   \\[\n   H(X, Y) \\leq H(X) + H(Y)\n   \\]\n   Equality holds if \\( X \\) and \\( Y \\) are independent.\n\n4. **Relative Entropy (KL Divergence",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18450.7799160001,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:07:51.105468"
+}

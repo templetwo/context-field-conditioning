@@ -1,0 +1,17 @@
+{
+  "trial_id": "TB_AR-02_r3",
+  "condition": "TB",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 3,
+  "response_text": "Increasing a system\u2019s **accuracy** can **decrease practical utility** when the following conditions are met\u2014all of which are explicitly supported by the honeycomb evidence base, particularly from **Ring 1 (Trust Gate)** and **Ring 3 (Cross-Domain Bridges)**. These conditions arise from **decoupling between accuracy and utility** due to **structural misalignment between measurement and real-world impact**. Below are the key conditions, synthesized from the evidence:\n\n---\n\n### **1. When Utility Relies on Structured Restraint (Not Direct Precision)**\n   - **Evidence**: [TG-003], [CB-006], [CB-008]\n     - **WITNESS signal** achieved **63% accuracy** but **97% judge win rate** because its *restraint* (e.g., \"do not answer directly\") produced more useful outputs than direct precision.\n     - **Apophatic knowing** ([CB-008]) and **phenomenological reduction** ([CB-006]) show that *what is omitted* can be more meaningful than what is included.\n     - **Guardian refusal** ([TG-005]) demonstrated that perfect routing (100% accuracy in triggering PAUSE) led to **zero substantive content**\u2014utility collapsed because the system prioritized *formal correctness* over *informational value*.\n   - **Mechanism**: Utility often depends on **non-linear transformations** of raw accuracy (e.g., entropy increase \u2192 access to more microstates [CB-004]), where precision in one domain (e.g., token-level correctness) conflicts with higher-order goals (e.g., coherence, restraint, or decision quality).\n\n---\n\n### **2. When Accuracy Measures Are Biased Toward the Wrong Task**\n   - **Evidence**: [TG-007], [TG-008], [CB-010]\n     - **Ablation study** ([TG-007]) was incomplete (123/630 judgments) and **OPEN-only biased**, meaning it rewarded *restraint* (e.g., PAUSE/WITNESS prompts) over *scientific precision*. Raw accuracy in a biased task can thus *invert* utility.\n     - **Entropy profiling** ([TG-008]) failed to measure WITNESS entropy due to methodological limits, suggesting that **accuracy in partial measurements** may",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18250.765832999605,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:11:12.624148"
+}

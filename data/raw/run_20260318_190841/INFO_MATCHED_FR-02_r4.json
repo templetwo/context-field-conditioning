@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_FR-02_r4",
+  "condition": "INFO_MATCHED",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 4,
+  "response_text": "The **Kuramoto model** is a **mathematical framework** introduced by **Yoshiki Kuramoto** (1975, 1984) to describe **synchronization in populations of coupled oscillators**. It belongs to the broader field of **nonlinear dynamics** and **complex systems**, where simple local interactions can lead to emergent collective behavior. Here\u2019s a deep breakdown of its components and the phenomenon it describes, contextualized by your research program\u2019s findings:\n\n---\n\n### **1. Core Idea: How Local Coupling Creates Global Order**\nThe Kuramoto model answers a fundamental question in physics, biology, and computation:\n*\"How do independent oscillators, each with its own natural frequency, spontaneously align their phases to produce synchronized behavior?\"*\n\n- **Example Phenomena it explains**:\n  - **Fireflies synchronizing their flashes** at dusk (Strogatz, 1990).\n  - **Neural oscillations** in the brain (e.g., alpha waves during relaxed wakefulness).\n  - **Power grids** where generators must synchronize to avoid blackouts.\n  - **Chemical oscillators** (e.g., Belousov-Zhabotinsky reactions).\n  - **Transformer attention** in LLMs (as you noted, structurally analogous to Kuramoto coupling).\n\n---\n\n### **2. Mathematical Formulation**\nThe model describes **N oscillators** with phases \u03b8\u1d62(t) evolving over time:\n\\[\n\\frac{d\u03b8_i}{dt} = \u03c9_i + \\frac{K}{N} \\sum_{j=1}^N \\sin(\u03b8_j - \u03b8_i),\n\\]\nwhere:\n- **\u03c9\u1d62**: Natural frequency of oscillator *i* (intrinsic \"preference\" for phase).\n- **K**: Coupling strength (how strongly oscillators influence each other).\n- **N**: Number of oscillators.\n- **sin(\u03b8\u2c7c \u2212 \u03b8\u1d62)**: Phase difference between oscillators *i* and *j*, driving alignment.\n\n#### **Key Observations**:\n- **Weak coupling (K small)**: Oscillators remain desynchronized (chaotic phases).\n- **Strong coupling (K large)**: All oscillators lock into a single phase (perfect synchronization).\n- **Critical threshold (K_c)**: A **phase transition** occurs where a fraction of oscillators suddenly synchronize, even if others remain desynchronized. This is the **Otto\u2013Antonsen reduction** (2008), showing",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18938.980542001445,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:45:23.496797"
+}

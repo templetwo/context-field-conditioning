@@ -1,0 +1,17 @@
+{
+  "trial_id": "QB_FR-03_r3",
+  "condition": "QB",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 3,
+  "response_text": "**Shannon entropy** (H) is a fundamental concept in information theory introduced by Claude Shannon (1948) that quantifies the **average uncertainty** or **information content** of a random variable or probability distribution. In the context of your research lattice, it measures the **diversity of token-level outputs** in language models, with key findings (e.g., [QA-005], [QA-006]) showing how the *compass* routing mechanism systematically increases entropy in generated tokens.\n\n---\n\n### **Intuition Behind Shannon Entropy**\n- **High entropy**: The system is in a state of near-equal probability across many outcomes (e.g., a fair coin flip has H=1 bit).\n- **Low entropy**: The system is predictable (e.g., a biased coin with P(Heads)=0.99 has H\u22480.14 bits).\n- **Maximum entropy**: Achieved when all outcomes are equally likely (uniform distribution).\n\nFor language models, higher entropy implies the model considers a broader range of possible tokens at each step, potentially leading to more creative or contextually varied responses.\n\n---\n\n### **Mathematical Definition**\nGiven a discrete probability distribution \\( P = \\{p_1, p_2, ..., p_n\\} \\) where \\( p_i \\) is the probability of outcome \\( i \\), Shannon entropy is defined as:\n\n\\[\nH(P) = -\\sum_{i=1}^n p_i \\log_2(p_i)\n\\]\n\n- **Base of the logarithm**:\n  - \\( \\log_2 \\): Entropy is measured in **bits** (binary digits).\n  - \\( \\log_e \\) (natural log): Entropy in **nats** (used in some physics contexts).\n  - \\( \\log_{10} \\): Entropy in **harts** (rarely used).\n\n- **Units**: Bits per token (for language models), where 1 bit \u2248 the information gained from a yes/no question.\n\n---\n\n### **Key Properties**\n1. **Non-negativity**: \\( H(P) \\geq 0 \\), with \\( H(P) = 0 \\) only if one \\( p_i = 1 \\) (certainty).\n2. **Maximum entropy**: For a uniform distribution \\( p_i = \\frac{1}{n} \\), \\( H_{max} = \\log_2(n) \\).\n3. **Additivity**: For independent random variables \\( X",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 19054.956292000497,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:27:27.932421"
+}

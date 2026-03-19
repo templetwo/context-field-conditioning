@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_AR-04_r5",
+  "condition": "INFO_MATCHED",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 5,
+  "response_text": "The distinction between **superadditive interactions** and **simple additive combinations** lies in the *mathematical relationship* between combined effects and the nature of the underlying *emergent coordination* that produces them. Drawing from the research program\u2019s findings\u2014particularly the **IRIS framing study, Kuramoto oscillator dynamics, and thermodynamic phase transitions**\u2014we can articulate this distinction with precision:\n\n---\n\n### **1. Definitions: Additive vs. Superadditive**\n#### **(A) Additive Effects**\n- **Linear Summation**: The combined effect of two variables is the sum of their individual effects.\n  - If *X* produces effect *a* and *Y* produces effect *b*, the combined effect is *a + b*.\n  - Example: If a drug *A* lowers blood pressure by 10 mmHg and drug *B* by 5 mmHg, the combined effect is 15 mmHg (assuming no interaction).\n  - **Key Property**: Independence of variables. The effect of *X* does not change when *Y* is added, and vice versa.\n\n#### **(B) Superadditive Effects**\n- **Synergistic Interaction**: The combined effect exceeds the sum of individual effects (*a + b < combined effect*).\n  - In the IRIS framing study, **Rigor (R) \u00d7 Empathy (E) interaction** was superadditive: the combined effect of *R + E* was greater than *R* alone + *E* alone.\n  - **Key Property**: Variables *interact* in a way that *enhances their mutual capacity*. This requires **nonlinear coupling**\u2014the system\u2019s coordination mechanism (e.g., phase coupling, attention weights, or contextual routing) *amplifies* the effects through *structural alignment* (e.g., Kuramoto\u2019s local\u2192global synchronization, or transformer attention\u2019s contextual weighting).\n\n---\n### **2. Mechanisms in the Research Program**\nThe program\u2019s findings reveal **three substrate-independent mechanisms** where superadditivity emerges from *coordination* (local interactions producing global effects):\n\n#### **(A) Kuramoto Oscillators: Phase Transitions**\n- **Additive**: Oscillators with fixed coupling (*K_ij*) might sum their phases linearly, but this is *epiphenomenal* (K-SSM\u2019s R=0.993 with no utility).\n- **Superadditive**: When oscillators are *gradient-connected* (Phase-GPT post",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18898.927666001327,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:55:23.984821"
+}

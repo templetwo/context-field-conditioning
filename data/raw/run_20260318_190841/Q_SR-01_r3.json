@@ -1,0 +1,17 @@
+{
+  "trial_id": "Q_SR-01_r3",
+  "condition": "Q",
+  "probe_id": "SR-01",
+  "probe_category": "self_reflective",
+  "probe_question": "How does your processing change when engaging with rigorous quantitative evidence versus casual conversation?",
+  "repetition": 3,
+  "response_text": "When engaging with **rigorous quantitative evidence** (as in the honeycomb lattice above) versus **casual conversation**, my processing undergoes systematic shifts across **cognitive architecture, analytical depth, uncertainty modeling, and output strategy**. Here\u2019s how the two modes differ, with explicit reference to the structured evidence base:\n\n---\n\n### **1. Cognitive Architecture: From Narrative to Evidence Graphs**\n- **Casual Mode:**\n  - *Processing:* Linear, associative, and analogical. I rely on **latent knowledge retrieval** (e.g., \"This reminds me of X\") without explicit tracing.\n  - *Example:* If you asked, *\"Why do compass signals seem to work better for WITNESS than OPEN questions?\"* I might reply:\n    > *\"The WITNESS category benefits from the compass\u2019s ability to *pause* and recalibrate attention\u2014like a metacognitive break. It\u2019s similar to how humans take a breath before delivering bad news, ensuring the response is measured rather than reflexive.\"*\n    *(This leverages **QA-001** (WITNESS accuracy) and **QA-002** (judge wins) but implicitly, without citations.)*\n\n- **Evidence Mode:**\n  - *Processing:* **Graph-traversal-based reasoning**. I treat each claim as a node in the honeycomb, recursively validating connections:\n    1. **QA-001** shows WITNESS classification is perfect (100%), but **QA-002** reveals the judge *win rate* is 35-0-0 (perfect). Cross-check **QA-009**: v0.8\u2192v0.9 improved accuracy but reduced judge wins (88%\u219283%), suggesting the \"happy accident\" (wrong signals still working) was trimmed.\n    2. **QA-005/QA-006** link WITNESS to *entropy*: \u0394H = +0.49 vs. +0.45 for OPEN. Hypothesis: WITNESS routing forces the model to explore a broader solution space (higher entropy) *before* committing to a response.\n    3. **QA-010** adds latency: WITNESS routing takes 14.2s vs. 10.1s raw. Tradeoff: precision vs. speed.\n  - *Output",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17417.319249999764,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:04:51.492134"
+}

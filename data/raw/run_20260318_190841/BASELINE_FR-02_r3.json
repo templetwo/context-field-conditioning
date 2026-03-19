@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_FR-02_r3",
+  "condition": "BASELINE",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 3,
+  "response_text": "The **Kuramoto model** is a mathematical model introduced by Japanese physicist **Yoshiki Kuramoto** in his 1975 paper *\"Self-oscillation, synchronization, and traveling waves in systems of coupled oscillators.\"* It describes the phenomenon of **synchronization** in a population of weakly coupled oscillators, each with its own natural frequency.\n\n### **Key Concepts of the Kuramoto Model**\n1. **Oscillators with Different Frequencies**\n   - The model considers a population of **phase oscillators** (e.g., pendulums, neurons, or even social rhythms) that oscillate at slightly different natural frequencies \\( \\omega_i \\).\n   - Each oscillator\u2019s phase evolves according to its own frequency plus an influence from others.\n\n2. **Weak Coupling via Phase Interaction**\n   - Oscillators interact through a **phase-dependent coupling term** (often sinusoidal), meaning their synchronization depends on their relative phases.\n   - The interaction strength is governed by a coupling parameter \\( K \\).\n\n3. **Order Parameter (Synchronization Measure)**\n   - A complex quantity \\( Z e^{i \\psi} \\) represents the **average phase coherence** of the population:\n     \\[\n     Z e^{i \\psi} = \\frac{1}{N} \\sum_{j=1}^N e^{i \\theta_j}\n     \\]\n     - \\( Z \\) (magnitude) measures the **degree of synchronization** (0 = no sync, 1 = perfect sync).\n     - \\( \\psi \\) (phase) indicates the average phase of the synchronized group.\n\n---\n\n### **The Kuramoto Equation**\nFor \\( N \\) oscillators, the phase evolution is described by:\n\\[\n\\frac{d\\theta_i}{dt} = \\omega_i + \\frac{K}{N} \\sum_{j=1}^N \\sin(\\theta_j - \\theta_i)\n\\]\n- **In the thermodynamic limit** (\\( N \\to \\infty \\)), the sum becomes an integral over a **phase density distribution** \\( g(\\theta, t) \\), leading to a **mean-field approximation**:\n  \\[\n  \\frac{d\\theta}{dt} = \\omega + K Z \\sin(\\psi - \\theta)\n  \\]\n  where \\( Z \\) and \\( \\psi \\) are the global order parameters.\n\n---\n\n### **Key Phenomenon: Phase Synchronization**\nThe Kuramoto model predicts a **phase transition** from **desynchronized",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 15710.294417000001,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:11:10.673925"
+}

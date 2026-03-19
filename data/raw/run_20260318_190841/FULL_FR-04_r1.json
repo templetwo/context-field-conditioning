@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_FR-04_r1",
+  "condition": "FULL",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 1,
+  "response_text": "In **statistical hypothesis testing**, **Type I** and **Type II errors** refer to distinct kinds of mistakes in decision-making, defined relative to the **null hypothesis (H\u2080)** and the **alternative hypothesis (H\u2081)**. Below is their formal distinction, contextualized with insights from the honeycomb lattice (particularly in **methodological rigor** and **systematic failure analysis**):\n\n---\n\n### **1. Definitions**\n#### **Type I Error (False Positive)**\n- **What happens**: Rejecting a **true null hypothesis** (i.e., concluding H\u2081 is true when it is false).\n- **Symbol**: \u03b1 (alpha), the **significance level** (e.g., \u03b1=0.05).\n- **Example**:\n  - *Clinical*: Saying a drug is effective when it is not (false alarm).\n  - *AI*: Claiming a model improvement exists when the improvement is epiphenomenal (e.g., **K-SSM synchronization without utility** in [TG-001]).\n- **Cost**: High in **conservative fields** (e.g., medicine, safety-critical systems).\n\n#### **Type II Error (False Negative)**\n- **What happens**: Failing to reject a **false null hypothesis** (i.e., concluding H\u2080 is true when H\u2081 is true).\n- **Symbol**: \u03b2 (beta), the **miss rate**.\n- **Power**: 1 \u2212 \u03b2 (probability of correctly rejecting H\u2080 when H\u2081 is true).\n- **Example**:\n  - *Clinical*: Saying a drug is ineffective when it works (missed opportunity).\n  - *AI*: Missing a real capability jump due to **incomplete ablation** (e.g., [TG-007]\u2019s crash-dependent study) or **gradient severance** (e.g., [TG-002]).\n- **Cost**: High in **exploratory fields** (e.g., science, AI research).\n\n---\n\n### **2. Key Relationships**\n- **Inverse tradeoff**: Reducing \u03b1 (fewer Type I errors) often increases \u03b2 (more Type II errors), and vice versa.\n- **Power analysis**: Critical for designing studies (e.g., [QA-008]\u2019s **3,830-run IRIS study** aimed to minimize both by factorial design).\n- **Null results as evidence**: Type II errors can be **informative",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 22944.654375000027,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:11:16.907249"
+}

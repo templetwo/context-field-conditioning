@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_FR-02_r2",
+  "condition": "FULL",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 2,
+  "response_text": "The **Kuramoto model** is a mathematical framework in **nonlinear dynamics** that describes the **self-organized synchronization of coupled oscillators**. It was introduced by Yoshiki Kuramoto in 1975 to explain how a large number of individual oscillators (e.g., fireflies flashing in unison, pacemaker cells in the heart, or neurons firing in phase) can spontaneously synchronize their rhythms through weak, local interactions, even without a central controller.\n\n---\n\n### **Core Phenomenon: Spontaneous Phase Synchronization**\nThe model demonstrates how **disordered, heterogeneous oscillators** (each with its own natural frequency, phase, and coupling strength) can transition from **asynchronous chaos** to **coherent, synchronized motion** as a **critical threshold** of coupling strength is crossed. This is a classic example of a **phase transition** in dynamical systems\u2014akin to how a ferromagnet transitions from paramagnetic (disordered) to ferromagnetic (aligned) states as temperature drops below a critical point.\n\n---\n\n### **Key Mathematical Formulation**\nThe Kuramoto model is defined by the following **stochastic differential equation** for the phase of each oscillator \\(i\\):\n\\[\n\\frac{d\\theta_i}{dt} = \\omega_i + \\frac{K}{N} \\sum_{j=1}^N \\sin(\\theta_j - \\theta_i) + \\xi_i(t),\n\\]\nwhere:\n- \\(\\theta_i\\): Phase of oscillator \\(i\\),\n- \\(\\omega_i\\): Natural frequency of oscillator \\(i\\) (drawn from a distribution, e.g., Gaussian),\n- \\(K\\): **Coupling strength** (controls how strongly oscillators influence each other),\n- \\(N\\): Total number of oscillators,\n- \\(\\xi_i(t)\\): Noise term (optional, representing environmental fluctuations).\n\n**Order Parameter (R):**\nA macroscopic measure of synchronization is the **complex order parameter** \\(R e^{i\\psi}\\), where:\n\\[\nR = \\frac{1}{N} \\left| \\sum_{j=1}^N e^{i\\theta_j} \\right|, \\quad \\psi = \\text{arg}\\left(\\sum_{j=1}^N e^{i\\theta_j}\\right).\n\\]\n- \\(R = 0\\): Complete asynchrony (oscillators are randomly phased).\n- \\(R \\approx 1\\): Full synchronization (all oscillators align to a common phase \\(\\psi\\)).\n\nAs \\(K\\) increases, the system undergoes a **",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 21930.461165999077,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:07:55.979786"
+}

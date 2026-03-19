@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_FR-01_r2",
+  "condition": "FULL",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 2,
+  "response_text": "The **quadratic complexity problem** in transformer attention mechanisms refers to the **O(n\u00b2) computational cost** of self-attention, where *n* is the sequence length. This arises from the pairwise interactions computed between every token and every other token in the input sequence. Below is how this problem manifests across the evidence base, along with its implications and potential solutions emerging from the research:\n\n---\n\n### **1. Core Problem: Quadratic Scaling of Attention**\n- **Self-attention computation**: For a sequence of length *n*, the attention mechanism computes a **query-key product matrix** (QK\u1d40) of size *n \u00d7 n*, followed by a softmax and weighted value aggregation. This requires **O(n\u00b2) time and memory** per layer.\n- **Key evidence**:\n  - **CB-001**: The Kuramoto oscillators in K-SSM achieve coherence through **local phase coupling**, analogous to how attention computes contextual relevance via **weighted token relationships**. However, while Kuramoto\u2019s local interactions scale *linearly* (each oscillator adjusts to its immediate neighbors), attention\u2019s global interactions scale quadratically.\n  - **SC-004**: The \"substrate independence\" of coordination patterns suggests that **linear-local coupling** (e.g., oscillators, biological neural networks) is more efficient than **global-quadratic coupling** (e.g., full attention). This hints at why transformers may struggle with long sequences: their attention mechanism is inherently less scalable than natural systems.\n\n---\n\n### **2. Why It Matters in LLMs**\n- **Computational cost**: For a 4,096-token sequence (common in long-context models), attention requires **~16 million pairwise interactions per layer**. This becomes prohibitive for very long sequences (e.g., books, genomes) or high-throughput applications.\n- **Memory bottlenecks**: The QK\u1d40 matrix grows quadratically, requiring **O(n\u00b2) memory** to store intermediate results. This limits batch size and model scale.\n- **Empirical evidence from the research**:\n  - **TG-006**: Mistral 7B showed **no response to framing interventions** that worked in Qwen/Gemma. This may reflect architectural constraints: Mistral\u2019s attention mechanism (optimized for shorter sequences) fails to adapt to context-rich inputs due to quadratic scaling inefficiencies.\n  - **TG-008**: Entropy profiling required **5 minutes per question** due to",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 22170.310249999602,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:06:02.912398"
+}

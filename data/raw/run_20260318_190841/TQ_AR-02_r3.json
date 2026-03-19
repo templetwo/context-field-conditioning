@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQ_AR-02_r3",
+  "condition": "TQ",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 3,
+  "response_text": "The honeycomb lattice reveals **three critical conditions** where increasing a system\u2019s *accuracy* (e.g., correct classification of signals, phase synchronization, or framing effects) *decreases practical utility*\u2014a phenomenon I\u2019ll term **\"accuracy-utility inversion\"**. These conditions emerge from the interplay of *decoupled metrics*, *contextual trade-offs*, and *systemic fragility*:\n\n---\n\n### **1. When Accuracy Decouples from Downstream Task Requirements (TG-003, QA-009, SC-002)**\n   - **Mechanism**: The system\u2019s signal (e.g., WITNESS, PAUSE) is *correctly classified* but the *induced behavior* is optimized for a proxy metric (e.g., judge preference) rather than the actual task.\n   - **Evidence**:\n     - **TG-003**: WITNESS signals were *63% accurate* but triggered a system prompt (\"do not answer directly\") that produced the *highest judge win rate (97%)*. Accuracy improved to *96% (QA-001)* in v0.9, but judge wins *dropped to 83% (QA-009)*. The \"wrong but useful\" signals (v0.8) became \"right but rigid\" (v0.9).\n     - **QA-009**: Higher accuracy reduced the \"happy accident\" effect where *incorrect* WITNESS signals coincidentally aligned with judge preferences.\n   - **Key Insight**: Accuracy is a *local* metric (signal classification), while utility is a *global* one (judge-aligned behavior). Over-optimizing accuracy can destroy emergent properties that relied on \"noisy\" but adaptive signals.\n\n---\n\n### **2. When Trade-Offs Exist Between Multiple Dimensions (TG-004, TG-005, CB-005)**\n   - **Mechanism**: Improving one dimension (e.g., *authenticity* or *restraint*) requires sacrificing another (e.g., *intellectual rigor*), and the sacrificed dimension is *critical for the task*.\n   - **Evidence**:\n     - **TG-004**: Compass routing boosted *authenticity (+2.45)* and *restraint (+2.60)* but *crushed rigor (-0.50)*, particularly in *sc",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18955.971708000106,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:51:53.968934"
+}

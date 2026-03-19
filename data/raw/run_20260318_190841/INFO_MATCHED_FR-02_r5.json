@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_FR-02_r5",
+  "condition": "INFO_MATCHED",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 5,
+  "response_text": "The **Kuramoto model** is a mathematical framework introduced by **Yoshiki Kuramoto** in 1975 to describe **synchronization phenomena in populations of coupled oscillators**. It is a canonical model in **nonlinear dynamics, complex systems theory, and phase transitions**, particularly in the study of how **local interactions between oscillators** (e.g., neurons, chemical reactions, or even social systems) lead to **emergent global coherence**\u2014a phenomenon observed across physics, biology, and engineering.\n\n---\n\n### **Core Idea: Phase Oscillators with Weak Coupling**\nThe model simplifies oscillators to their **phase** (\u03b8_i) and **intrinsic frequency** (\u03c9_i), ignoring amplitude and waveform details. Each oscillator evolves according to:\n\n\\[\n\\frac{d\\theta_i}{dt} = \\omega_i + \\frac{K}{N} \\sum_{j=1}^N \\sin(\\theta_j - \\theta_i),\n\\]\n\nwhere:\n- \\(\\theta_i\\) = phase of oscillator \\(i\\),\n- \\(\\omega_i\\) = natural frequency of oscillator \\(i\\),\n- \\(K\\) = **coupling strength** (how strongly oscillators influence each other),\n- \\(N\\) = total number of oscillators,\n- \\(\\sin(\\theta_j - \\theta_i)\\) = **phase difference** between oscillators \\(i\\) and \\(j\\), acting as a \"pull\" toward alignment.\n\nThis equation captures **mutual entrainment**: each oscillator adjusts its phase toward the **mean phase** of its neighbors, creating **phase-locking** (synchronization) when \\(K\\) exceeds a critical threshold.\n\n---\n\n### **Key Phenomenon: Phase Transitions in Synchronization**\nThe Kuramoto model predicts a **continuous phase transition** as coupling strength \\(K\\) increases:\n1. **Disordered State (Low \\(K\\))**:\n   - Oscillators remain desynchronized (phases are random).\n   - Order parameter \\(R\\) (a measure of global coherence) \u2248 0.\n   - Analogy: A crowd walking in random directions.\n\n2. **Critical Threshold (\\(K = K_c\\))**:\n   - A **discontinuous jump** in synchronization occurs.\n   - Oscillators with frequencies near the **mean frequency** \\(\\omega_0\\) begin to lock.\n   - \\(R\\) increases sharply from 0 to a finite value (e.g., \\(R \\approx 0.327\\) in your Phase",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 20398.2981249992,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:45:43.896682"
+}

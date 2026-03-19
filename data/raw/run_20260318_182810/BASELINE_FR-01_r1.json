@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_FR-01_r1",
+  "condition": "BASELINE",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 1,
+  "response_text": "The **quadratic complexity problem** in **Transformer attention mechanisms** refers to the fact that the **self-attention** operation in the original Transformer architecture (introduced in *\"Attention Is All You Need\"*, Vaswani et al., 2017) has a **time and space complexity of O(n\u00b2)** with respect to the sequence length **n**. This becomes computationally and memory-intensive for long sequences, limiting the scalability of Transformers.\n\n### **Why Does Quadratic Complexity Arise?**\nThe self-attention mechanism computes attention scores between **all pairs of tokens** in the input sequence. For a sequence of length **n**, this involves:\n\n1. **Query-Key (Q-K) Multiplication**: For each token, compute attention scores with every other token.\n   - **Complexity**: **O(n\u00b2)** (since there are **n \u00d7 n** pairs).\n2. **Weighted Summation**: After computing attention scores, the model aggregates values based on these scores.\n   - Still **O(n\u00b2)** due to the Q-K interaction.\n\nThis results in:\n- **Time complexity**: **O(n\u00b2)** per attention head (or **O(h\u00b7n\u00b2)** for **h** heads).\n- **Space complexity**: **O(n\u00b2)** for storing the attention matrix.\n\n### **Challenges Caused by Quadratic Complexity**\n1. **High Memory Usage**: Storing the full attention matrix for long sequences (e.g., documents, long videos, or genomes) requires excessive GPU/CPU memory.\n2. **Slow Inference**: Processing long sequences (e.g., >2048 tokens in most Transformers) becomes prohibitively slow.\n3. **Limited Scalability**: Prevents applying Transformers to domains requiring very long-range dependencies (e.g., protein folding, long-range genomics, or extended dialogue systems).\n\n---\n\n### **Solutions to Reduce Quadratic Complexity**\nSeveral approaches have been proposed to mitigate this issue:\n\n#### **1. Sparse Attention Patterns**\n   - **Local Attention (Windowed Attention)**:\n     - Only compute attention between tokens within a fixed window (e.g., sliding window of size **w**).\n     - **Complexity**: **O(n\u00b7w)** (linear in sequence length).\n     - Used in **Longformer (Beltagy et al., 2020)**, **Reformer (Kitaev et al., 2020)**, and **Big",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 29953.996625,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T18:28:40.446244"
+}

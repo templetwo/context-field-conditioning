@@ -1,0 +1,17 @@
+{
+  "trial_id": "T_FR-03_r3",
+  "condition": "T",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 3,
+  "response_text": "Shannon entropy is a fundamental concept in information theory introduced by **Claude Shannon** in his 1948 paper *\"A Mathematical Theory of Communication\"*. It quantifies the **average amount of information** (or uncertainty) contained in a random variable, measured in **bits** (for binary systems) or **nats** (for natural logarithms). In the context of language models, it reflects the unpredictability of the model's token distribution at each step of text generation.\n\n---\n\n### **Definition of Shannon Entropy**\nGiven a discrete random variable \\( X \\) with possible outcomes \\( x_1, x_2, ..., x_n \\) and corresponding probabilities \\( p(x_1), p(x_2), ..., p(x_n) \\), the **Shannon entropy** \\( H(X) \\) is defined as:\n\n\\[\nH(X) = -\\sum_{i=1}^n p(x_i) \\log_2 p(x_i)\n\\]\n\nFor continuous distributions, the sum becomes an integral, but in NLP, we typically work with discrete token distributions.\n\n---\n\n### **Key Properties**\n1. **Measures Uncertainty**: Higher entropy means more uncertainty (e.g., a uniform distribution like a fair coin has max entropy). Lower entropy means predictability (e.g., a deterministic system has \\( H(X) = 0 \\)).\n2. **Maximized for Uniformity**: Entropy is maximized when all outcomes are equally likely (\\( p(x_i) = \\frac{1}{n} \\)).\n3. **Logarithm Base**: Using \\( \\log_2 \\) yields **bits**; \\( \\ln \\) yields **nats** (natural units).\n4. **Conditional Entropy**: Can be extended to joint/conditional distributions (e.g., \\( H(X|Y) \\)), measuring uncertainty about \\( X \\) given \\( Y \\).\n\n---\n\n### **Computation Steps**\nFor a probability distribution \\( P = [p(x_1), p(x_2), ..., p(x_n)] \\):\n\n1. **Compute \\( p(x_i) \\log_2 p(x_i) \\) for each outcome**:\n   - For each token probability \\( p(x_i) \\), multiply by \\( \\log_2 p(x_i) \\).\n   - Note: \\( p(x_i) \\log_2 p(x_i) \\) is always **non-positive** (since \\( 0 \\leq p(x_i) \\leq 1 \\), and",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17010.3604169999,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:38:43.614942"
+}

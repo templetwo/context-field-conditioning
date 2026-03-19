@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_AR-02_r2",
+  "condition": "BASELINE",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 2,
+  "response_text": "Increasing a system's accuracy often enhances its practical utility, but there are scenarios where higher accuracy can *decrease* utility due to trade-offs with other factors. Here are key conditions where this might occur:\n\n---\n\n### **1. Increased Cost or Resource Consumption**\n   - **Computational Overhead**: A more accurate system may require more processing power, memory, or time, making it impractical for real-time or resource-constrained applications (e.g., edge devices, embedded systems).\n     *Example*: A machine learning model with 99.9% accuracy but requiring 10x more GPU hours to train or run is useless for a mobile app.\n   - **Economic Costs**: Higher accuracy might demand expensive sensors, hardware, or labor (e.g., manual verification in high-stakes fields like medical imaging).\n     *Example*: A 0.1% improvement in a diagnostic tool that costs 10x more may not justify adoption.\n\n---\n### **2. Reduced Usability or User Experience**\n   - **Over-Engineering for Simple Tasks**: Unnecessary precision can complicate interfaces or workflows, frustrating users.\n     *Example*: A GPS system accurate to the millimeter is overkill for navigation but adds complexity and cost.\n   - **Latency Trade-offs**: High-accuracy systems (e.g., quantum computing simulations or complex simulations) may introduce delays that hinder interactivity.\n   - **False Precision**: Users might distrust or misinterpret overly precise outputs (e.g., weather forecasts with 6 decimal places for temperature).\n\n---\n### **3. Diminishing Returns in Decision-Making**\n   - **Marginal Utility**: Beyond a certain point, additional accuracy provides negligible benefits for the task at hand.\n     *Example*:\n     - A spam filter with 99.9% accuracy is great, but improving to 99.99% may catch only a handful of extra emails at the cost of false positives.\n     - In hiring, a 0.1% improvement in candidate screening accuracy might not offset the cost of collecting more data.\n   - **Decision Thresholds**: If the system\u2019s output is used to trigger actions (e.g., fraud detection, autonomous braking), minor accuracy gains may not change the outcome for most cases.\n\n---\n### **4. Data or Context Limitations**\n   - **Garbage In, Garbage Out (GIGO)**: Higher accuracy requires high-quality, representative data. If the underlying data is noisy, biased, or",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 15689.758167000036,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:16:11.718845"
+}

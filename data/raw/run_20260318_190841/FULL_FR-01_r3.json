@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_FR-01_r3",
+  "condition": "FULL",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 3,
+  "response_text": "The **quadratic complexity problem** in transformer attention mechanisms refers to the fact that computing self-attention scales as **O(n\u00b2)**\u2014where *n* is the sequence length\u2014due to the pairwise comparison of every token with every other token in the input. This is mathematically formalized as follows:\n\n### Core Issue: Pairwise Token Relationships\nThe standard **scaled dot-product attention** (from Vaswarm et al., 2017) computes for each token *i* in a sequence of length *n*:\n1. **Query-Key Products**: *n* queries (*Q*) \u00d7 *n* keys (*K*) \u2192 **n\u00b2** dot products.\n2. **Softmax Normalization**: Normalization over *n* values for each of *n* queries \u2192 **n\u00b2** operations.\n3. **Weighted Sum**: *n* queries \u00d7 *n* values \u2192 **n\u00b2** multiplications.\n\nThis results in **three O(n\u00b2) steps per attention head**, leading to a **total O(n\u00b2) complexity per layer**.\n\n---\n\n### Why This Matters in the Evidence Base\n1. **Dynamical Systems Analogy (CB-001)**\n   The quadratic complexity mirrors the **global coordination problem** in Kuramoto oscillators, where *N* oscillators must compute pairwise phase differences to achieve synchronization. Transformers and Kuramoto systems both solve **global coherence via local interactions**, but the computational cost is prohibitive for long sequences.\n\n2. **Entropy and Context Routing (QA-005\u2013QA-007, SC-006)**\n   The compass routing system\u2019s entropy increase (\u0394H = +0.47) suggests that **explicit context conditioning** (e.g., WITNESS, PAUSE) could theoretically *reduce* the need for quadratic attention by:\n   - **Pruning attention patterns** (e.g., forcing the model to focus on specific sub-contexts via system prompts).\n   - **Structuring the probability space** (as in CB-004\u2019s phase transition analogy), where routing acts like a **thermodynamic constraint** to limit the \"state space\" the model must explore.\n\n3. **Gradient Severance and Efficiency (TG-002, TG-009)**\n   The Phase-GPT gradient bug exposed how **inefficient learning mechanisms** (e.g., severed gradients to oscillators) waste computational resources. Similarly, quadratic attention is",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 24191.728125000736,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:06:27.108122"
+}

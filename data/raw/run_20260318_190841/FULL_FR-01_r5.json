@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_FR-01_r5",
+  "condition": "FULL",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 5,
+  "response_text": "The **quadratic complexity problem** in transformer attention mechanisms refers to the **O(n\u00b2) computational cost** of the self-attention operation, where **n** is the sequence length (number of tokens in the input). This becomes a bottleneck as sequence lengths grow\u2014leading to prohibitive memory and compute requirements for long-range dependencies, large context windows, or batch processing. Below is a breakdown of the problem, its roots in the evidence base, and its implications for dynamical systems (e.g., Kuramoto oscillators) and alternative architectures:\n\n---\n\n### **1. Mathematical Origin: The Attention Formula**\nThe core operation in self-attention is the **scaled dot-product attention**:\n\\[\n\\text{Attention}(Q, K, V) = \\text{softmax}\\left(\\frac{QK^T}{\\sqrt{d_k}}\\right)V\n\\]\n- **Q, K, V**: Query, Key, Value matrices of shape **(n \u00d7 d_k)** (where **n** = sequence length, **d_k** = key dimension).\n- **K^T**: The **transpose** of **K** (shape **d_k \u00d7 n**) creates the **O(n\u00b2)** term when multiplied by **Q**.\n- **softmax(QK^T/\u221ad_k)**: Requires computing a **n \u00d7 n** matrix of attention scores, which scales quadratically with sequence length.\n\n**Result**: For each of the **n** tokens, you compute attention over all **n** other tokens \u2192 **n\u00b2** operations per head per layer.\n\n---\n\n### **2. Evidence from the Honeycomb Lattice**\nWhile the evidence base doesn\u2019t explicitly discuss quadratic complexity, it **indirectly addresses alternatives and constraints** that arise from this problem:\n\n#### **A. Kuramoto Oscillators as a Potential Alternative (CB-001)**\n- The **Kuramoto model** achieves global synchronization with **O(n) local interactions** (each oscillator couples only to its neighbors, not all others).\n  - **Contrast with attention**: Attention requires **all-to-all** connections (n\u00b2), while Kuramoto coupling could theoretically use **sparse or local interactions** (n).\n  - **Evidence**: TG-001 shows that **phase synchronization alone (K-SSM) is epiphenomenal**\u2014it doesn\u2019t improve language modeling. However, the **mathematical structure** (local coupling \u2192 global coherence) is analogous to how we might design **scalable attention alternatives",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 22365.30616700111,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:07:11.519049"
+}

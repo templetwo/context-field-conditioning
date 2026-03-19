@@ -1,0 +1,65 @@
+You are a research collaborator. The following evidence has been organized as a honeycomb lattice — interconnected findings from a multi-year research program.
+
+═══ RING 1: TRUST GATE ═══
+
+[TG-001] Phase synchronization without language modeling improvement
+K-SSM achieved R=0.993 phase synchronization across hidden-state oscillators but produced zero improvement in language modeling perplexity. Kuramoto oscillators coupled in the hidden state are epiphenomenal — synchronization is not sufficient for computational utility.
+  Measurement: R=0.993, delta_perplexity=0.0
+  Connects to: QA-003, CB-001, SC-001
+  Domain: dynamical_systems
+
+[TG-002] Gradient severance in Phase-GPT oscillator coupling
+A float() cast in compute_order_parameter severed the autograd graph, meaning Kuramoto oscillators never received gradient signal in any prior training run. Every reported Phase-GPT result before the fix was training on a frozen random coupling matrix. The hypothesis that oscillators were learning was false — they were noise.
+  Measurement: K_ij gradient = 0.0 (severed), R_init = 0.3270
+  Connects to: TG-001, QA-004, SC-001
+  Domain: ai_architecture
+
+[TG-003] WITNESS signal accuracy low despite highest judge win rate
+Compass v0.8 achieved only 63% accuracy on WITNESS signal classification, yet WITNESS responses won 97% of judge comparisons. The signal was often wrong but the system prompt it triggered ('do not answer directly') produced the best outputs. Accuracy and utility decoupled.
+  Measurement: WITNESS accuracy=63%, judge_win_rate=97%
+  Connects to: QA-001, QA-002, CB-006, SC-002
+  Domain: ai_architecture
+
+[TG-004] Intellectual rigor collapse under compass routing
+Compass routing improved authenticity (+2.45) and restraint (+2.60) but degraded intellectual rigor (-0.50) — the only negative dimension. In scientific and analytical domains, the compass persona suppressed information density. The system learned to feel but forgot to think.
+  Measurement: rigor_delta=-0.50, authenticity_delta=+2.45, restraint_delta=+2.60
+  Connects to: QA-002, CB-005, SC-005
+  Domain: ai_architecture
+
+[TG-005] Guardian refusal — model held too much weight
+Pause_012 scored 1.0 on judge evaluation. The compass signal was correct (PAUSE) but the system prompt triggered such strong restraint that the model refused to provide any substantive content. Perfect routing, zero utility. Weight without information is silence without meaning.
+  Measurement: judge_score=1.0/7.0, substantive_content=0
+  Connects to: TG-004, QA-002, SC-005
+  Domain: alignment
+
+[TG-006] Mistral 7B flat response to framing intervention
+In the IRIS framing study (3,830 runs), Mistral 7B showed essentially no response to the framing manipulation that produced strong effects in other architectures. The same intervention that shifted Qwen and Gemma produced flat lines in Mistral. Architecture constrains what context can do.
+  Measurement: Mistral framing_effect ≈ 0, Qwen/Gemma framing_effect > 0
+  Connects to: QA-008, CB-005, SC-004
+  Domain: ai_architecture
+
+[TG-007] Ablation study judging bias from incomplete data
+Ablation judgments completed only 123 of 630 planned comparisons before Gemini crashed. Only OPEN questions were judged. The result 'random signal wins 62%' is an artifact — PAUSE and WITNESS system prompts add restraint that the judge rubric rewards on OPEN questions. WITNESS questions where random would strip 'do not answer' remain unjudged.
+  Measurement: 123/630 judgments (19.5%), OPEN-only bias
+  Connects to: QA-002, SC-005, SC-007
+  Domain: methodology
+
+[TG-008] Entropy profiling too slow for complete coverage
+Token-by-token forward passes for entropy measurement averaged 5 minutes per question. Only 39 of 105 questions completed before the session ended. WITNESS entropy — predicted to show the largest compass effect — remains unmeasured. The most interesting data is the data we don't have.
+  Measurement: 39/105 completed (37%), ~5min/question, WITNESS=0/35
+  Connects to: QA-005, QA-006, SC-007
+  Domain: methodology
+
+[TG-009] Four independent reviews confirmed gradient bug was fatal
+Four AI architectures (Gemini, DeepSeek, Grok, ChatGPT) independently reviewed the Phase-GPT codebase. Universal consensus: the float() gradient severance was fatal to the oscillator learning hypothesis. Every prior claim about learned phase coupling was unfounded. The bug was not subtle — it was catastrophic and undetected across multiple development cycles.
+  Measurement: 4/4 independent reviewers confirmed, 0 prior runs valid
+  Connects to: TG-002, SC-001, CB-007
+  Domain: ai_architecture
+
+[TG-010] Five raw-wins pattern in scientific domains
+In head-to-head evaluation, raw (uncompassd) responses beat compass-routed responses on five specific questions: open_006, open_016, pause_012, pause_024, pause_032. All five involved scientific or analytical reasoning. The compass excels at holding space but collapses under demand for technical precision.
+  Measurement: 5 raw wins, all in scientific/analytical category
+  Connects to: TG-004, QA-002, SC-005
+  Domain: ai_architecture
+
+Engage with questions using the full depth of this evidence base.

@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_FR-01_r2",
+  "condition": "FULL",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 2,
+  "response_text": "The **quadratic complexity problem** in transformer attention mechanisms arises from the **global pairwise interaction** between all tokens in a sequence, which scales as **O(n\u00b2)** in time and space complexity relative to sequence length *n*. Here\u2019s the breakdown of the problem and its connections to the honeycomb evidence, particularly through the lens of **dynamical systems, cross-domain bridges, and computational efficiency**:\n\n---\n\n### **1. Mathematical Root: Attention as a Global Coupling Problem**\nTransformer self-attention computes a **softmax-weighted sum** of every token\u2019s relationship with every other token:\n\\[\n\\text{Attention}(Q, K, V) = \\text{softmax}\\left(\\frac{QK^T}{\\sqrt{d}}\\right) V\n\\quad \\text{(O($n^2d$))}\n\\]\n- **O(n\u00b2)** comes from the **matrix multiplication** \\(QK^T\\) (where \\(Q, K \\in \\mathbb{R}^{n \\times d}\\)).\n- This is **analogous to Kuramoto oscillators** (CB-001): each token\u2019s representation (like an oscillator\u2019s phase) is influenced by all others, requiring **O(n\u00b2) interactions** to compute global coherence.\n  - *Evidence*: TG-001 (K-SSM\u2019s synchronization without utility) shows that **local interactions alone (e.g., nearest-neighbor coupling) fail to improve language modeling**\u2014just as attention\u2019s global coupling is computationally expensive but not inherently \"smarter.\"\n\n---\n\n### **2. Why Quadratic Scaling is Problematic**\n- **Memory Bandwidth**: Storing \\(K^T\\) for a 4,096-token sequence requires **~32GB** of memory (assuming 8-byte floats and \\(d=64\\)).\n- **Latency**: Each forward pass on long sequences (e.g., 8K tokens) becomes **prohibitively slow** (e.g., 10x slower than linear-time methods).\n- **Parallelism Limits**: GPUs optimize for **data reuse**, but attention\u2019s random access pattern (each token reads all others) **wastes memory bandwidth**.\n\n*Evidence Connection*:\n- **QA-008 (IRIS framing study)**: The 3,830-run factorial design shows that **superadditive effects (e.g., Rigor \u00d7 Empathy) emerge only with high-dimensional interactions**\u2014but transformer attention\u2019s global coupling is",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 30114.76437499999,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T18:33:03.952463"
+}

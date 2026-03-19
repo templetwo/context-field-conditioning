@@ -1,0 +1,17 @@
+{
+  "trial_id": "QB_AR-04_r2",
+  "condition": "QB",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 2,
+  "response_text": "A **superadditive interaction** (as observed in the IRIS framing study and other cross-domain phenomena) fundamentally differs from a simple **additive combination of effects** in both *mathematical structure* and *systemic implications*. Here\u2019s how they diverge, using the evidence base to illuminate the distinction:\n\n---\n\n### **1. Mathematical Definition**\n#### **Additive Interaction**\n- **Formula**:\n  \\( E_{total} = E_A + E_B \\)\n  (The combined effect equals the sum of individual effects.)\n- **Example**: If Rigor (R) increases performance by +10 units and Empathy (E) increases it by +15 units, an additive model predicts a total effect of **+25 units**.\n- **Evidence Connection**:\n  In most LLM ablations, effects are *not* superadditive. For instance, if you ablate a single attention head, the drop in performance is roughly the sum of its isolated contribution (see [CB-001]\u2019s local-to-global analogy).\n\n#### **Superadditive Interaction**\n- **Formula**:\n  \\( E_{total} > E_A + E_B \\)\n  (The combined effect *exceeds* the sum of individual effects.)\n- **Key Property**:\n  The interaction term \\( E_{AB} \\) is *positive* and larger than zero:\n  \\( E_{total} = E_A + E_B + E_{AB} \\), where \\( E_{AB} > 0 \\).\n- **Example from IRIS Study ([QA-008], [CB-005])**:\n  - Rigor (R) alone might improve response quality by **+12 units**.\n  - Empathy (E) alone might improve it by **+14 units**.\n  - *But* when combined, the total effect is **+35 units** (not +26).\n  - **Interaction term \\( E_{AB} = +9 \\)** (superadditive).\n- **Mathematical Analogy**:\n  This mirrors **synergistic drug interactions** ([CB-005]), where two sub-therapeutic doses (e.g., aspirin + ibuprofen) produce a therapeutic effect together that neither achieves alone.\n\n---\n\n### **2. Mechanistic Underpinnings**\n#### **Additive Systems**\n- **Independent Components**:\n  Effects arise from *separate, non-interacting mechanisms*. Changing one parameter affects only its own output.\n-",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18337.713000000804,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:31:48.911693"
+}

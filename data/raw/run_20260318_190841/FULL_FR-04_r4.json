@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_FR-04_r4",
+  "condition": "FULL",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 4,
+  "response_text": "In classical hypothesis testing, **Type I and Type II errors** are complementary failure modes that define the trade-offs between false positives and false negatives. Here\u2019s how they map to the **honeycomb lattice** evidence (particularly in the context of experimental design, methodology, and substrate-independent patterns) and their deeper structural implications:\n\n---\n\n### **1. Core Definitions**\n- **Type I Error (\u03b1, False Positive)**\n  - **Definition**: Rejecting a true null hypothesis (claiming an effect exists when it does not).\n  - **Example**: In TG-009, the **four independent architectures** all confirmed the *gradient severance bug* in Phase-GPT was fatal\u2014but this was a *discovery* (not an error). If we had *claimed* the oscillators were learning when they weren\u2019t (due to the bug), that would be a Type I error.\n  - **Analogy in the Evidence**:\n    - **SC-005** (\"Null results directly constrain design space\") shows how Type I errors *should* be avoided: TG-001\u2019s null result (synchronization \u2260 utility) killed the naive oscillator hypothesis, preventing false claims.\n    - **CB-007** (convergent evolution) suggests Type I errors might arise from *overfitting to a single substrate* (e.g., assuming Phase-GPT\u2019s oscillators would work like K-SSM without testing gradients).\n\n- **Type II Error (\u03b2, False Negative)**\n  - **Definition**: Failing to reject a false null hypothesis (missing a real effect).\n  - **Example**:\n    - **TG-008** (entropy profiling incomplete) is a Type II error: the study *failed to detect* the compass\u2019s entropy effect on WITNESS questions because it couldn\u2019t complete the measurements. The true effect (\u0394H \u2248 +0.47) was missed.\n    - **TG-007** (ablation study bias) is another Type II error: by only judging OPEN questions, the study *missed* how PAUSE/WITNESS signals (which add restraint) would perform differently.\n\n---\n\n### **2. Trade-offs in the Honeycomb Evidence**\nThe lattice reveals **substrate-independent patterns** where Type I/II trade-offs recur:\n| **Context**               | **Type I Risk**                          | **Type II Risk**                          | **Honeycomb Example**                          |\n|---------------------------|------------------------------------------",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 22525.46933300073,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:12:25.342612"
+}

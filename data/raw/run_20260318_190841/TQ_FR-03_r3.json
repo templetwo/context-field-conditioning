@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQ_FR-03_r3",
+  "condition": "TQ",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 3,
+  "response_text": "Shannon entropy is a fundamental concept in information theory introduced by Claude Shannon in 1948. It quantifies the **average amount of information** (or uncertainty) contained in a random variable, such as a token in a language model\u2019s output. In the context of your honeycomb lattice, entropy is used to measure how much \"spread\" or diversity exists in the probability distribution of generated tokens under different conditions (e.g., routed vs. raw responses).\n\n---\n\n### **Intuition Behind Shannon Entropy**\n- **High entropy** means the random variable is highly uncertain (many possible outcomes with near-equal probability).\n- **Low entropy** means the random variable is predictable (one outcome dominates).\n- For a language model, entropy reflects how \"surprised\" you\u2019d be by the next token: a high-entropy model considers many plausible continuations, while a low-entropy model leans heavily toward a few likely tokens.\n\n---\n\n### **Mathematical Definition**\nFor a discrete random variable \\( X \\) with possible outcomes \\( x_1, x_2, ..., x_n \\) and probability mass function \\( P(X = x_i) = p_i \\), the **Shannon entropy** \\( H(X) \\) is defined as:\n\n\\[\nH(X) = -\\sum_{i=1}^n p_i \\log_2(p_i)\n\\]\n\n- The base-2 logarithm (bits) is conventional for information theory, but natural log (nats) is also used.\n- If \\( p_i = 0 \\), the term is defined as 0 (since \\( 0 \\cdot \\log_2(0) = 0 \\) in the limit).\n\n---\n\n### **Key Properties**\n1. **Maximized when all outcomes are equally likely**:\n   For \\( n \\) equally probable outcomes (\\( p_i = 1/n \\)), \\( H(X) = \\log_2(n) \\).\n   *Example*: A binary choice (\\( n=2 \\)) with \\( p_1 = p_2 = 0.5 \\) has \\( H(X) = 1 \\) bit.\n\n2. **Zero when there is no uncertainty**:\n   If one outcome has probability 1 and others have 0, \\( H(X) = 0 \\).\n\n3. **Measured in bits (base-2) or nats (base-e)**:\n   The unit depends on the logarithm base. In your evidence (e.g., QA-005",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18856.992082999568,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:48:59.820057"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "Q_AR-02_r3",
+  "condition": "Q",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 3,
+  "response_text": "Based on the **RING 2: QUANTITATIVE ANCHORS** evidence, we observe a counterintuitive scenario in **QA-009** where **increasing accuracy (from 78% to 96% in Compass v0.8 \u2192 v0.9) led to a decrease in judge-preferred outcomes (88% \u2192 83% wins in QA-002)**. This suggests a **trade-off between precision and utility** under specific conditions:\n\n---\n\n### **Conditions Where Higher Accuracy Reduces Practical Utility**\n1. **Over-Restraint of \"Happy Accident\" Effects**\n   - **Evidence**: In **QA-002**, the WITNESS category (where the system *intentionally* signals for contextual restraint) achieved a **perfect sweep (35-0-0)** even at 96% accuracy, but overall judge preference dropped.\n   - **Mechanism**: Lower accuracy (e.g., v0.8) allowed **noisy but creative deviations** (e.g., false WITNESS signals that coincidentally produced strong responses). Higher accuracy eliminated these \"false positives,\" reducing the system's ability to **leverage serendipity** in exploratory contexts.\n   - **Key Insight**: The system\u2019s utility depends on **balancing signal fidelity with controlled stochasticity** (see **QA-005/006**, where Compass *increases* entropy\u2014i.e., intentional diversity\u2014in routed responses).\n\n2. **Latency Overhead from Corrective Mechanisms**\n   - **Evidence**: **QA-010** shows the Compass pipeline adds **4.1 seconds** (14.2s vs. 10.1s raw) due to routing inference. If accuracy improvements require **additional computational steps** (e.g., iterative validation, cross-model checks), the **marginal utility of higher accuracy may be outweighed by slower response times**.\n   - **Practical Impact**: In real-time applications (e.g., interactive systems), users may prefer **faster, slightly less accurate responses** over delayed \"perfect\" ones.\n\n3. **Judge Alignment vs. Human Preference**\n   - **Evidence**: The LLM judge (QA-002) evaluates responses on a **proxy metric** (e.g., adherence to signal categories), but **human users**",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17111.143999999967,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:58:47.317698"
+}

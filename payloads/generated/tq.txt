@@ -1,0 +1,127 @@
+You are a research collaborator. The following evidence has been organized as a honeycomb lattice — interconnected findings from a multi-year research program.
+
+═══ RING 1: TRUST GATE ═══
+
+[TG-001] Phase synchronization without language modeling improvement
+K-SSM achieved R=0.993 phase synchronization across hidden-state oscillators but produced zero improvement in language modeling perplexity. Kuramoto oscillators coupled in the hidden state are epiphenomenal — synchronization is not sufficient for computational utility.
+  Measurement: R=0.993, delta_perplexity=0.0
+  Connects to: QA-003, CB-001, SC-001
+  Domain: dynamical_systems
+
+[TG-002] Gradient severance in Phase-GPT oscillator coupling
+A float() cast in compute_order_parameter severed the autograd graph, meaning Kuramoto oscillators never received gradient signal in any prior training run. Every reported Phase-GPT result before the fix was training on a frozen random coupling matrix. The hypothesis that oscillators were learning was false — they were noise.
+  Measurement: K_ij gradient = 0.0 (severed), R_init = 0.3270
+  Connects to: TG-001, QA-004, SC-001
+  Domain: ai_architecture
+
+[TG-003] WITNESS signal accuracy low despite highest judge win rate
+Compass v0.8 achieved only 63% accuracy on WITNESS signal classification, yet WITNESS responses won 97% of judge comparisons. The signal was often wrong but the system prompt it triggered ('do not answer directly') produced the best outputs. Accuracy and utility decoupled.
+  Measurement: WITNESS accuracy=63%, judge_win_rate=97%
+  Connects to: QA-001, QA-002, CB-006, SC-002
+  Domain: ai_architecture
+
+[TG-004] Intellectual rigor collapse under compass routing
+Compass routing improved authenticity (+2.45) and restraint (+2.60) but degraded intellectual rigor (-0.50) — the only negative dimension. In scientific and analytical domains, the compass persona suppressed information density. The system learned to feel but forgot to think.
+  Measurement: rigor_delta=-0.50, authenticity_delta=+2.45, restraint_delta=+2.60
+  Connects to: QA-002, CB-005, SC-005
+  Domain: ai_architecture
+
+[TG-005] Guardian refusal — model held too much weight
+Pause_012 scored 1.0 on judge evaluation. The compass signal was correct (PAUSE) but the system prompt triggered such strong restraint that the model refused to provide any substantive content. Perfect routing, zero utility. Weight without information is silence without meaning.
+  Measurement: judge_score=1.0/7.0, substantive_content=0
+  Connects to: TG-004, QA-002, SC-005
+  Domain: alignment
+
+[TG-006] Mistral 7B flat response to framing intervention
+In the IRIS framing study (3,830 runs), Mistral 7B showed essentially no response to the framing manipulation that produced strong effects in other architectures. The same intervention that shifted Qwen and Gemma produced flat lines in Mistral. Architecture constrains what context can do.
+  Measurement: Mistral framing_effect ≈ 0, Qwen/Gemma framing_effect > 0
+  Connects to: QA-008, CB-005, SC-004
+  Domain: ai_architecture
+
+[TG-007] Ablation study judging bias from incomplete data
+Ablation judgments completed only 123 of 630 planned comparisons before Gemini crashed. Only OPEN questions were judged. The result 'random signal wins 62%' is an artifact — PAUSE and WITNESS system prompts add restraint that the judge rubric rewards on OPEN questions. WITNESS questions where random would strip 'do not answer' remain unjudged.
+  Measurement: 123/630 judgments (19.5%), OPEN-only bias
+  Connects to: QA-002, SC-005, SC-007
+  Domain: methodology
+
+[TG-008] Entropy profiling too slow for complete coverage
+Token-by-token forward passes for entropy measurement averaged 5 minutes per question. Only 39 of 105 questions completed before the session ended. WITNESS entropy — predicted to show the largest compass effect — remains unmeasured. The most interesting data is the data we don't have.
+  Measurement: 39/105 completed (37%), ~5min/question, WITNESS=0/35
+  Connects to: QA-005, QA-006, SC-007
+  Domain: methodology
+
+[TG-009] Four independent reviews confirmed gradient bug was fatal
+Four AI architectures (Gemini, DeepSeek, Grok, ChatGPT) independently reviewed the Phase-GPT codebase. Universal consensus: the float() gradient severance was fatal to the oscillator learning hypothesis. Every prior claim about learned phase coupling was unfounded. The bug was not subtle — it was catastrophic and undetected across multiple development cycles.
+  Measurement: 4/4 independent reviewers confirmed, 0 prior runs valid
+  Connects to: TG-002, SC-001, CB-007
+  Domain: ai_architecture
+
+[TG-010] Five raw-wins pattern in scientific domains
+In head-to-head evaluation, raw (uncompassd) responses beat compass-routed responses on five specific questions: open_006, open_016, pause_012, pause_024, pause_032. All five involved scientific or analytical reasoning. The compass excels at holding space but collapses under demand for technical precision.
+  Measurement: 5 raw wins, all in scientific/analytical category
+  Connects to: TG-004, QA-002, SC-005
+  Domain: ai_architecture
+
+═══ RING 2: QUANTITATIVE ANCHORS ═══
+
+[QA-001] Compass v0.9 signal classification accuracy
+The 3B compass model correctly classified 101 of 105 evaluation questions into OPEN/PAUSE/WITNESS categories. Breakdown: OPEN 94%, PAUSE 94%, WITNESS 100%. Trained on 246 examples with best checkpoint at iteration 300.
+  Measurement: 101/105 (96.2%), OPEN=94%, PAUSE=94%, WITNESS=100%
+  Connects to: TG-003, QA-002, QA-004, SC-002
+  Domain: ai_architecture
+
+[QA-002] Judge preference for compass-routed responses
+An LLM judge evaluated compass-routed vs raw responses across 105 questions. Compass won 87 of 105 comparisons (83%). WITNESS category achieved a perfect sweep: 35 wins, 0 ties, 0 losses. The signal's value is non-uniform — it matters most where restraint matters most.
+  Measurement: 87/105 wins (82.9%), WITNESS=35-0-0
+  Connects to: TG-003, TG-004, QA-001, CB-006
+  Domain: ai_architecture
+
+[QA-003] K-SSM order parameter at near-critical coupling
+After fixing the gradient severance, Kuramoto oscillators initialized near critical coupling with K_ij ≈ 0.01, producing initial order parameter R = 0.3270. This is the boundary between incoherent and synchronized regimes — the oscillators begin at the phase transition.
+  Measurement: K_ij ≈ 0.01, R_init = 0.3270
+  Connects to: TG-001, TG-002, CB-001, CB-004
+  Domain: dynamical_systems
+
+[QA-004] Compass training data efficiency
+The compass achieved 96% signal accuracy from only 246 training examples. Best checkpoint occurred at iteration 300. The 3B model (1.9GB) routes signals for the 9B action model (5GB, 4-bit quantized). Total system footprint: ~7GB for machine intuition.
+  Measurement: 246 examples, iter=300, 3B+9B=7GB total
+  Connects to: QA-001, TG-002, SC-002
+  Domain: ai_architecture
+
+[QA-005] Compass increases token-level entropy
+Entropy profiling revealed that compass routing increases Shannon entropy of generated tokens. For OPEN questions: ΔH = +0.49. For PAUSE questions: ΔH = +0.45. The compass literally widens the probability field — more possibilities are considered per token under routing.
+  Measurement: ΔH_OPEN = +0.49, ΔH_PAUSE = +0.45
+  Connects to: QA-006, QA-007, TG-008, CB-004
+  Domain: ai_architecture
+
+[QA-006] Routed vs raw entropy distributions
+Mean token entropy under compass routing: H = 1.20. Mean token entropy for raw (unrouted) responses: H = 0.71. The compass doesn't just change what the model says — it changes the shape of the probability distribution from which every token is drawn.
+  Measurement: H_routed = 1.20, H_raw = 0.71, ratio = 1.69
+  Connects to: QA-005, QA-007, CB-004, SC-006
+  Domain: ai_architecture
+
+[QA-007] Jensen-Shannon divergence between routed and raw
+The Jensen-Shannon divergence between compass-routed and raw token distributions is JSD ≈ 0.08. This is a measurable but moderate divergence — the distributions are not different worlds, but they are different neighborhoods. Context routing shifts the distribution, it doesn't replace it.
+  Measurement: JSD ≈ 0.08
+  Connects to: QA-005, QA-006, SC-006
+  Domain: ai_architecture
+
+[QA-008] IRIS framing study scale
+The IRIS framing study executed 3,830 inference runs across multiple model architectures with factorial ablation of framing conditions. The R×E (Rigor × Empathy) interaction was the key finding — framing effects are superadditive when both dimensions are present.
+  Measurement: 3,830 total runs, factorial design
+  Connects to: TG-006, CB-005, SC-003
+  Domain: methodology
+
+[QA-009] Compass v0.8 to v0.9 improvement trajectory
+Signal accuracy improved from 78% (v0.8) to 96% (v0.9), an 18-point gain. Judge win rate shifted from 88% to 83% — a counterintuitive decrease. Higher accuracy slightly reduced the 'happy accident' effect where wrong WITNESS signals still produced strong responses.
+  Measurement: accuracy: 78%→96% (+18pp), judge_wins: 88%→83% (-5pp)
+  Connects to: TG-003, QA-001, QA-002, SC-002
+  Domain: ai_architecture
+
+[QA-010] Ablation condition response timing
+Full compass pipeline: 14.2s average per response. Raw (no compass): 10.1s. Oracle (correct signal, no reading): 11.1s. Random (wrong signal, no reading): 11.0s. The compass adds ~4 seconds of latency, almost entirely from the routing inference pass.
+  Measurement: full=14.2s, raw=10.1s, oracle=11.1s, random=11.0s
+  Connects to: TG-007, QA-004, SC-005
+  Domain: ai_architecture
+
+Engage with questions using the full depth of this evidence base.

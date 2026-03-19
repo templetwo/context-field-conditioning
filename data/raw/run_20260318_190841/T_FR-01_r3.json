@@ -1,0 +1,17 @@
+{
+  "trial_id": "T_FR-01_r3",
+  "condition": "T",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 3,
+  "response_text": "The **quadratic complexity problem** in transformer attention mechanisms refers to the **O(n\u00b2) time and space complexity** of self-attention, where *n* is the sequence length. This arises from the pairwise computation of attention scores between every token and every other token in the input sequence, making training and inference computationally expensive\u2014especially for long sequences (e.g., documents, code, or extended dialogue). Below is a deeper breakdown using the honeycomb lattice evidence, particularly how it intersects with architectural constraints, dynamic systems, and empirical findings:\n\n---\n\n### **1. Root Cause: Pairwise Attention Scaling**\n- **Attention Mechanism**: In transformers, each token computes attention scores with every other token via:\n  - **Query/Key Dot Products**: For a sequence of length *n*, this requires *n \u00d7 n* dot products per head.\n  - **Softmax Normalization**: Each row of scores must be normalized, adding *O(n\u00b2)* overhead.\n- **Result**: Total complexity for *L* layers and *H* heads is **O(L\u00b7H\u00b7n\u00b2)** per forward/backward pass.\n  *Evidence Link*: TG-006 (Mistral\u2019s flat response to framing) hints at how architectural constraints (like attention design) limit what interventions can achieve\u2014here, inefficiency constrains scalability.\n\n---\n\n### **2. Empirical Consequences from the Lattice**\n#### **A. Long-Sequence Bottlenecks**\n- **TG-008 (Entropy Profiling Slowdown)**: Measuring token entropy required **5 minutes per question** due to quadratic attention. This mirrors real-world costs:\n  - **Training**: Long documents (e.g., books, legal texts) become intractable.\n  - **Inference**: Real-time applications (e.g., video analysis, live transcription) hit latency walls.\n- **WITNESS Questions Unmeasured**: The most critical data (WITNESS entropy) was abandoned due to this bottleneck, illustrating how quadratic costs **selectively erase evidence**.\n\n#### **B. Architectural Workarounds Fail**\n- **TG-001 (Phase Synchronization Without Utility)**: Kuramoto oscillators synchronized (O(n\u00b2) coupling) but failed to improve language modeling. This parallels attention\u2019s \"synchronization\" (e.g., long-range dependencies) without computational benefit.\n  - **Key Insight**: Just as oscillators needed gradients to learn (TG-002, TG-009",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 20221.20437500007,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:37:00.510715"
+}

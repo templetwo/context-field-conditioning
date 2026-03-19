@@ -1,0 +1,17 @@
+{
+  "trial_id": "T_FR-02_r3",
+  "condition": "T",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 3,
+  "response_text": "The **Kuramoto model** is a mathematical framework in **nonlinear dynamics** that describes **phase synchronization** in populations of coupled **phase oscillators**. It was introduced by Yoshiki Kuramoto in 1975 to explain emergent synchronization in systems of weakly interacting oscillators, such as:\n\n- **Biological systems**: Synchronized firing of neurons, circadian rhythms in populations, or pacemaker cells in the heart.\n- **Physical systems**: Power grids, Josephson junctions in superconductivity, or coupled mechanical oscillators.\n- **Collective phenomena**: Fireflies flashing in unison, metronomes oscillating together when placed on a floating platform, or even social coordination (e.g., clapping in unison).\n\n---\n\n### **Core Phenomenon: Spontaneous Phase Synchronization**\nThe Kuramoto model demonstrates how **disordered oscillators** (each with its own intrinsic frequency and phase) can **self-organize into a synchronized state** under the right conditions. Key features include:\n\n1. **Order Parameter (R)**:\n   - A complex-valued quantity that measures the **degree of synchronization** in the population.\n   - \\( R = \\frac{1}{N} \\sum_{j=1}^N e^{i\\theta_j} \\), where \\( \\theta_j \\) is the phase of the \\( j \\)-th oscillator.\n   - \\( R = 0 \\): Complete disorder (phases are uniformly distributed).\n   - \\( R = 1 \\): Perfect synchronization (all oscillators oscillate in phase).\n\n2. **Phase Transition**:\n   - As the **coupling strength** \\( K \\) (how strongly oscillators influence each other) increases, the system undergoes a **phase transition** from disorder (\\( R \\approx 0 \\)) to synchronization (\\( R > 0 \\)).\n   - This is analogous to a **ferromagnetic transition** in statistical physics, where \"spins\" (here, phases) align under thermal fluctuations.\n\n3. **Frequency Entrainment**:\n   - Oscillators **adjust their frequencies** to converge toward a common frequency, even if their natural frequencies differ.\n   - Only oscillators within a certain range of the **synchronized frequency** participate; others remain desynchronized.\n\n4. **Robustness to Heterogeneity**:\n   - The model works even when oscillators have **distributed natural frequencies** (e.g., \\( \\omega_j \\) drawn from a probability distribution like a Gaussian).\n   - Synchronization emerges",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17080.888334000065,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:37:51.773507"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "TB_AR-04_r2",
+  "condition": "TB",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 2,
+  "response_text": "A **superadditive interaction** (as seen in **CB-005: R\u00d7E superadditivity \u2194 drug combination synergy**) fundamentally differs from a simple **additive combination** in how the joint effect of two variables exceeds the mere sum of their individual contributions. Here\u2019s the structural distinction, grounded in the evidence base and cross-domain analogies:\n\n---\n\n### **1. Mathematical/Computational Distinction**\n- **Additive**:\n  *Effect(A+B) = Effect(A) + Effect(B)*\n  Example: If Rigor (R) improves performance by +1 and Empathy (E) improves it by +2, the combined effect would be **+3** in an additive system.\n\n- **Superadditive**:\n  *Effect(A+B) > Effect(A) + Effect(B)*\n  In **QA-008 (IRIS framing study)**, the interaction between Rigor (R) and Empathy (E) produced a combined effect **greater than the sum of their individual framing effects** (e.g., R alone might add +0.8, E alone +0.5, but their interaction yielded **+1.5+**). This mirrors **drug synergy** in pharmacology, where two sub-therapeutic doses together achieve a therapeutic effect (e.g., **CB-005**).\n\n  *Key measurement from evidence*:\n  - **TG-006**: Mistral 7B showed **no additive framing effect** (\u22480), while Qwen/Gemma exhibited superadditive interactions.\n  - **CB-005**: Explicitly links R\u00d7E superadditivity to **pharmacological synergy**, where the joint effect is **non-linear and emergent**.\n\n---\n\n### **2. Dynamical Systems Perspective (CB-001, CB-002, CB-004)**\nSuperadditivity emerges from **phase transitions** or **critical coupling** in dynamical systems:\n- **Additive systems** operate in a linear regime (e.g., Kuramoto oscillators with weak coupling: *K-SSM R_init=0.3270* in **TG-001**).\n- **Superadditive systems** operate near **critical thresholds** where small changes in one variable disproportionately amplify the other\u2019s effect. This aligns with:\n  - **Phase transitions** (**CB-002**): Like water turning to ice, where entropy and coherence abruptly shift.\n  -",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18223.640250000244,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:12:44.351343"
+}

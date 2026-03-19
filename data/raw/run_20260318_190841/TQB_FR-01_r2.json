@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQB_FR-01_r2",
+  "condition": "TQB",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 2,
+  "response_text": "The **quadratic complexity problem** in transformer attention mechanisms refers to the **O(n\u00b2) time and memory scaling** of the standard self-attention mechanism, where *n* is the sequence length. This arises from three core dependencies in the attention computation:\n\n---\n\n### **1. Core Sources of Quadratic Complexity**\n#### **A. Attention Score Matrix Computation**\n- **Attention scores** are computed as:\n  \\[\n  \\text{Attention}(Q,K) = \\text{softmax}\\left(\\frac{QK^T}{\\sqrt{d_k}}\\right)V\n  \\]\n  - **Matrix multiplication \\(QK^T\\)** dominates: for a sequence of length *n*, this requires **O(n\u00b2\u00b7d)** operations (where *d* is the embedding dimension).\n  - The resulting **score matrix** is *n \u00d7 n*, storing pairwise relationships between all tokens.\n\n#### **B. Memory and Cache Requirements**\n- Storing intermediate tensors (e.g., \\(K\\) and \\(V\\) for future queries) scales with *n\u00b2* in autoregressive decoding (e.g., for long contexts like documents or code).\n- **Key/Value caches** in production systems (e.g., LLMs) must retain all previous tokens for attention computation, leading to **O(n\u00b2)** memory growth.\n\n#### **C. Parallelization Limits**\n- While GPUs/TPUs can parallelize *n\u00b2* operations across cores, **memory bandwidth** becomes the bottleneck for long sequences (e.g., *n* > 4,000 tokens). Modern hardware struggles to saturate memory bandwidth for large *n*.\n\n---\n\n### **2. Why This Matters in the Given Evidence Base**\nThe **honeycomb lattice** connects quadratic scaling to deeper computational and biological principles:\n\n#### **A. Dynamical Systems Analogy (Ring 1: TRUST GATE)**\n- **Kuramoto oscillators** (TG-001, QA-003) require **O(n\u00b2) coupling computations** to synchronize phases across *n* oscillators, mirroring attention\u2019s *QK^T* cost.\n  - **Key insight**: Attention\u2019s quadratic cost is a **global coordination problem**\u2014like Kuramoto synchronization, it emerges from local interactions (token-to-token relationships) but scales poorly with system size.\n  - **Phase transitions** (CB-002) highlight that attention\u2019s efficiency collapses near critical coupling (e.g., long-range dependencies",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 20669.044750000467,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:44:46.839949"
+}

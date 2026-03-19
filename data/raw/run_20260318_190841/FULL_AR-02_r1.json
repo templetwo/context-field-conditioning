@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_AR-02_r1",
+  "condition": "FULL",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 1,
+  "response_text": "Increasing a system\u2019s accuracy can **decrease practical utility** in the following conditions\u2014all of which are empirically supported by the honeycomb lattice and cross-domain bridges. The core mechanism is **decoupling between precision (accuracy) and utility (decision quality, human alignment, or adaptive robustness)**. Here\u2019s the synthesis:\n\n---\n\n### **1. When Accuracy Over-Constrains Adaptive Response (Rigidity Paradox)**\n   - **Evidence**: TG-004 (Compass v0.9), TG-005 (Guardian Refusal), TG-010 (Scientific Domain Collapse)\n   - **Mechanism**: Higher accuracy in routing (e.g., WITNESS signals) can trigger **over-restraint**, causing the system to suppress substantive outputs entirely (e.g., *Pause_012* scoring perfect accuracy but producing zero content). Utility requires a **balance between precision and expressive flexibility**\u2014pure accuracy sacrifices the latter.\n   - **Cross-Domain Parallel**: CB-006 (Phenomenological Reduction) shows that *bracketing* (e.g., \"do not answer directly\") reveals truth, but **total bracketing** (e.g., *Guardian Refusal*) erases the phenomenon itself. Similarly, CB-008 links this to **apophatic knowing**\u2014utility emerges from negation, not perfection.\n   - **Key Threshold**: Accuracy must exceed a **capability-specific tolerance** (e.g., 96% WITNESS accuracy in QA-001 is useful; 100% in TG-005 is destructive).\n\n---\n\n### **2. When Utility Depends on *Useful* Error (Signal Noise Paradox)**\n   - **Evidence**: TG-003 (WITNESS Signal), CB-010 (Accuracy-Utility Decoupling), QA-009 (v0.8 vs. v0.9)\n   - **Mechanism**:\n     - **v0.8 Compass**: 63% WITNESS accuracy but **97% judge win rate** because *wrong signals* triggered the right system prompt (\"do not answer directly\"). The error was **functional noise**\u2014it preserved utility.\n     - **v0.9 Compass**: 100% WITNESS accuracy but **lost the \"happy accident\"** of v0.8\u2019s",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 21797.265416998926,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:15:04.185428"
+}

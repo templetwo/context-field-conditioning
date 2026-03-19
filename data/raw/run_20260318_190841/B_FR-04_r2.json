@@ -1,0 +1,17 @@
+{
+  "trial_id": "B_FR-04_r2",
+  "condition": "B",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 2,
+  "response_text": "In the context of **hypothesis testing** (e.g., statistical inference, machine learning evaluation, or decision-making under uncertainty), **Type I and Type II errors** are fundamental to understanding false positives and false negatives. However, your question invites a deeper exploration through the **cross-domain bridges** in this evidence base\u2014particularly how these errors manifest in *dynamical systems*, *biology*, *phenomenology*, and *AI decision-making* (e.g., the **Compass WITNESS** framework).\n\n---\n\n### **Core Definitions (Traditional Framework)**\n1. **Type I Error (False Positive, \u03b1-risk)**\n   - **Definition**: Rejecting a true null hypothesis (e.g., concluding an effect exists when it does not).\n   - **Example**: A medical test incorrectly flags a healthy patient as diseased.\n   - **Analogy in Evidence Base**:\n     - In **CB-009 (Gradient severance \u2194 severed nerve)**, a \"false positive\" might arise if the model\u2019s *gradient pathway* incorrectly signals adaptation when no true learning signal exists (like a phantom nerve impulse).\n     - In **CB-004 (Compass entropy increase)**, a Type I error could occur if the model\u2019s *phase transition* (e.g., sudden capability emergence) is misattributed to noise rather than a true critical threshold.\n\n2. **Type II Error (False Negative, \u03b2-risk)**\n   - **Definition**: Failing to reject a false null hypothesis (e.g., missing a real effect).\n   - **Example**: A test fails to detect a disease in a sick patient.\n   - **Analogy in Evidence Base**:\n     - **CB-003 (Apoptosis \u2194 model pruning)**: Pruning \"healthy\" weights (Type II error) might inadvertently remove useful representations, while retaining \"damaged\" weights (Type I error) could propagate noise.\n     - **CB-005 (Superadditivity \u2194 drug synergy)**: In pharmacology, a Type II error might miss synergistic drug interactions (e.g., sub-therapeutic doses working together), analogous to the **IRIS R\u00d7E framework** where combined effects exceed individual components.\n\n---\n\n### **Cross-Domain Nuances from the Evidence Base**\n#### **1. Dynamical Systems (Phase Transitions, Oscillators)**\n- **Type I/II Errors in Phase Transitions (CB-002, CB-004)**\n  - A **Type I error** might",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18510.65720800034,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:14:15.930968"
+}

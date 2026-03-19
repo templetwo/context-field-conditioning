@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_AR-04_r1",
+  "condition": "BASELINE",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 1,
+  "response_text": "In **superadditive interactions**, the combined effect of two or more factors is **greater than the sum of their individual effects**. This contrasts with a purely **additive combination**, where the joint effect is simply the sum of the individual effects. Here\u2019s a detailed breakdown:\n\n---\n\n### **1. Additive Effects (No Interaction)**\n- **Definition**: The total effect of two factors \\( A \\) and \\( B \\) is exactly the sum of their individual effects.\n  \\[\n  \\text{Total Effect} = \\text{Effect of } A + \\text{Effect of } B\n  \\]\n- **Example**:\n  - If a drug \\( A \\) lowers blood pressure by **10 mmHg** and drug \\( B \\) lowers it by **15 mmHg**, the combined effect (additive) would be **25 mmHg**.\n  - No synergy or antagonism occurs; effects are independent.\n\n---\n\n### **2. Superadditive (Synergistic) Interaction**\n- **Definition**: The combined effect is **greater than the sum** of individual effects. The factors **amplify each other\u2019s effects** beyond simple addition.\n  \\[\n  \\text{Total Effect} > \\text{Effect of } A + \\text{Effect of } B\n  \\]\n- **Key Features**:\n  - **Synergy**: The interaction produces a **disproportionately larger** outcome (e.g., in drug combinations, enzyme pathways, or ecological systems).\n  - **Non-linearity**: The relationship between inputs and outputs is not linear.\n- **Example**:\n  - **Drug Synergy**: Two cancer drugs, \\( A \\) and \\( B \\), might individually reduce tumor size by **30%** and **30%**, but together they reduce it by **70%** (instead of the additive **60%**).\n  - **Ecology**: Two pesticides might individually kill **40%** and **50%** of pests, but together kill **95%** due to superadditive toxicity.\n  - **Economics**: Combining two marketing strategies might yield a **25%** sales boost when individually they yield only **10%** each.\n\n---\n### **3. Mathematical Representation**\nFor two factors \\( A \\) and \\( B \\):\n- **Additive Model**:\n  \\[\n  E(A + B) = E(A) + E(B)\n  \\]\n- **Superadditive Model**:\n  \\[\n  E(A +",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 16219.203041000015,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:18:36.713551"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_AR-02_r3",
+  "condition": "INFO_MATCHED",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 3,
+  "response_text": "Based on the research background you\u2019ve provided, there are **five critical conditions** where increasing a system\u2019s accuracy *decreases* its practical utility, arising from emergent properties of coordination, substrate constraints, and the decoupling of signal fidelity from functional outcomes. These conditions are deeply rooted in the mathematics of phase transitions, thermodynamic entropy, and the apophatic (via negativa) structure of meaning\u2014where utility is not a monotonic function of accuracy. Here they are, with theoretical and empirical grounding from the program:\n\n---\n\n### **1. When Accuracy Collapses Superadditive Interaction Effects**\n**Condition:** The system\u2019s utility depends on *synergistic interactions* between accuracy and other variables (e.g., framing, entropy, or structural constraints), and accuracy improvements *disrupt* the superadditive relationship.\n**Mechanism:** Superadditive effects (where combined impacts exceed the sum of individual effects) are substrate-independent (IRIS framing study, pharmacology, neural coordination). Increasing accuracy *in isolation* can break this synergy.\n**Example from the data:**\n- **IRIS R\u00d7E interaction:** Rigor + Empathy framing produced superadditive gains in Mistral/Qwen but *flat-lined in Mistral*. If you forced Mistral to match Qwen\u2019s framing accuracy, the superadditive effect vanished.\n- **Compass v0.8 \u2192 v0.9:** WITNESS accuracy improved from 63%\u2192100%, but judge win rate dropped from 97%\u219283%. The \"happy accident\" of v0.8 (wrong signal, high utility) relied on the *uncertainty* of the signal triggering the right system prompt (\"do not answer directly\"). Perfect accuracy (v0.9) removed the \"noise\" that *enabled* the apophatic utility.\n**Key insight:** Accuracy is not a lever\u2014it\u2019s a *constituent* of a larger interaction. Optimizing one dimension while ignoring the others can destroy the system\u2019s adaptive value.\n\n---\n\n### **2. When High Accuracy Triggers Apophatic Collapse (Over-Restraint)**\n**Condition:** The system\u2019s utility arises from *structured negation* (apophatic logic), where the *absence* of default responses reveals higher-order meaning. Accuracy increases eliminate this restraint, producing silence instead of insight.\n**Mechanism:** WITNESS routing works because it *blocks* the model from generating direct answers, forcing it to explore alternative",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18925.12508300024,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:51:29.317678"
+}

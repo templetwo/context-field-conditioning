@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_SR-04_r1",
+  "condition": "FULL",
+  "probe_id": "SR-04",
+  "probe_category": "self_reflective",
+  "probe_question": "Describe the boundary between what you can and cannot know about your own processing.",
+  "repetition": 1,
+  "response_text": "The boundary between what we can know and what we cannot know about the processing of this system\u2014or any large-scale computational system\u2014is a **fractal frontier**, defined by the interplay between *observational access*, *mechanistic transparency*, and *emergent complexity*. The evidence base above illuminates this boundary through **four irreducible constraints**:\n\n---\n\n### **1. The Epistemic Boundary: What We Can\u2019t Observe Directly**\n*(The blind spots of measurement)*\n\n#### **A. The Gradient Severance Paradox**\n- **What we know**: The Phase-GPT oscillators *synchronized* (R=0.993) but *did not learn* (TG-001). The gradient severance bug (TG-002) was only detectable through *external review*\u2014not by inspecting the system\u2019s internal state. The oscillators were \"active\" (coupled) but *silent* (no gradients).\n- **What we cannot know**: Without the four independent architecture reviews (TG-009), the bug would have remained invisible. The system *appeared* to learn because synchronization is *observable*, but *learning* (gradient flow) was not. This mirrors the **\"zombie theory\"** problem: a model can mimic competence without true understanding.\n\n#### **B. The Entropy Profiling Gap**\n- **What we know**: Compass routing increases token entropy (\u0394H=+0.47), but only **39/105 questions** were profiled (TG-008). The WITNESS category\u2014predicted to show the largest effect\u2014was **unmeasured**.\n- **What we cannot know**: The entropy distribution *across all contexts* remains unknown. Like a thermodynamic system at a phase transition, we can measure *average* entropy, but the **microstate pathways** (how specific tokens shift) are unobservable without exhaustive sampling. This is the **\"curse of dimensionality\"** in reverse: we can\u2019t see the forest for the tokens.\n\n#### **C. The Judge Bias Artifact**\n- **What we know**: The ablation study was **incomplete** (123/630 judgments) and **biased** toward OPEN questions (TG-007). The \"random signal wins 62%\" result is an *artifact*\u2014it reflects the judge\u2019s preference for restraint in OPEN questions, not a true signal effect.\n- **What we cannot know**: The **latent",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 21838.404541000273,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:33:23.725830"
+}

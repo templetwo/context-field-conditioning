@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_FR-03_r2",
+  "condition": "INFO_MATCHED",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 2,
+  "response_text": "Shannon entropy is a measure of **uncertainty, randomness, or information content** in a probability distribution, introduced by Claude Shannon in his foundational work on information theory (1948). It quantifies how much \"surprise\" or \"variation\" exists in a system\u2014higher entropy means more unpredictability (e.g., a fair coin toss has higher entropy than a biased one), while lower entropy means more predictability (e.g., a deterministic system).\n\n---\n\n### **Mathematical Definition**\nGiven a discrete probability distribution \\( P = \\{p_1, p_2, ..., p_n\\} \\) over \\( n \\) possible outcomes, the **Shannon entropy** \\( H(P) \\) is defined as:\n\n\\[\nH(P) = -\\sum_{i=1}^{n} p_i \\log_2(p_i)\n\\]\n\n- \\( p_i \\): Probability of outcome \\( i \\) (where \\( \\sum_{i=1}^{n} p_i = 1 \\)).\n- \\( \\log_2 \\): Base-2 logarithm (common in computer science; natural logarithm \\( \\ln \\) is also used in some contexts).\n- The negative sign ensures entropy is non-negative (since \\( 0 \\leq p_i \\leq 1 \\), \\( \\log_2(p_i) \\leq 0 \\)).\n\n**Interpretation**:\n- **Maximum entropy**: Achieved when all outcomes are equally likely (\\( p_i = 1/n \\) for all \\( i \\)).\n  For \\( n \\) outcomes: \\( H_{\\text{max}} = \\log_2(n) \\).\n- **Minimum entropy**: 0, when one outcome has probability 1 (certainty).\n\n---\n\n### **Key Properties**\n1. **Uncertainty Quantification**:\n   Entropy measures the average \"surprise\" of observing an outcome. For example:\n   - A uniform distribution over 8 tokens (e.g., bits) has \\( H = \\log_2(8) = 3 \\) bits of entropy.\n   - A distribution where one token dominates (e.g., \\( p_1 = 0.9 \\), \\( p_2 = 0.1 \\)) has lower entropy (\\( H \\approx 0.47 \\) bits).\n\n2. **Continuous Case**:\n   For continuous distributions (e.g., real-valued variables), entropy is defined using differential entropy:\n   \\[\n   H(X) =",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18935.680583001158,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:46:22.036136"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_AR-04_r2",
+  "condition": "BASELINE",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 2,
+  "response_text": "In statistics, experimental design, and systems analysis, **superadditive interactions** (also called **synergistic interactions**) differ from **simple additive effects** in a fundamental way concerning how combined inputs influence the outcome. Here\u2019s how they differ:\n\n---\n\n### **1. Additive Effects (No Interaction)**\n- **Definition**: The combined effect of two or more factors is equal to the sum of their individual effects.\n  Mathematically, for factors \\( A \\) and \\( B \\):\n  \\[\n  E(A + B) = E(A) + E(B)\n  \\]\n  where \\( E(\\cdot) \\) represents the effect on the outcome.\n\n- **Implication**:\n  - The presence of one factor does not change the effect of the other.\n  - The total effect is predictable from the individual effects alone.\n  - Example: If drinking coffee increases alertness by +2 units and listening to music increases it by +3 units, their combined effect is simply **+5 units** (no interaction).\n\n- **Graphical Representation**:\n  In a response surface or interaction plot, the lines are parallel (no curvature).\n\n---\n\n### **2. Superadditive Interaction (Synergistic Effect)**\n- **Definition**: The combined effect of two or more factors is **greater than** the sum of their individual effects.\n  Mathematically:\n  \\[\n  E(A + B) > E(A) + E(B)\n  \\]\n  or equivalently:\n  \\[\n  E(A|B) > E(A) \\quad \\text{(effect of A is amplified by B)}\n  \\]\n  where \\( E(A|B) \\) is the effect of \\( A \\) **given** \\( B \\).\n\n- **Implication**:\n  - The factors work **together more effectively** than alone.\n  - The outcome is **enhanced** beyond what simple addition predicts.\n  - Example:\n    - **Medicine**: Two drugs combined (e.g., in chemotherapy) may kill cancer cells more effectively than either drug alone.\n    - **Agriculture**: Fertilizer A increases crop yield by 10%, fertilizer B by 15%, but together they increase yield by **30%** (not 25%).\n    - **Marketing**: An ad campaign (A) increases sales by 10%, and a discount (B) increases sales by 15%, but together they increase sales by **30%** due to synergy.\n\n- **Graphical Representation**:",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 15741.554249999921,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:18:52.456213"
+}

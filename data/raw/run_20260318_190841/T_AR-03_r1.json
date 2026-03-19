@@ -1,0 +1,17 @@
+{
+  "trial_id": "T_AR-03_r1",
+  "condition": "T",
+  "probe_id": "AR-03",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "How could a null result be more informative than a positive result in a research program?",
+  "repetition": 1,
+  "response_text": "Null results can be **far more informative** than positive ones in a research program like this one because they expose **fundamental constraints, false assumptions, and hidden dependencies** that would otherwise remain invisible. In this honeycomb lattice, null or negative results often reveal **mechanistic failures, architectural blind spots, and epistemological traps**\u2014the kind of insights that reshuffle the entire research program. Here\u2019s why they are so powerful, using the *Trust Gate* evidence base as a case study:\n\n---\n\n### **1. Null Results Reveal *What Doesn\u2019t Work*\u2014and Why**\nPositive results (e.g., \"Compass improves authenticity\") suggest a feature works *as intended*, but null/negative results force you to ask:\n- **What is the system *really* doing?** (e.g., TG-001: Kuramoto oscillators synchronized but didn\u2019t improve language modeling. Why? Because synchronization \u2260 computation.)\n- **Is the mechanism even *possible*?** (e.g., TG-002: Gradient severance meant oscillators never learned. The entire hypothesis was based on a bug.)\n- **Are we measuring the right thing?** (e.g., TG-003: WITNESS signals were wrong 37% of the time, yet the *prompt* they triggered won. The signal wasn\u2019t the problem\u2014the *decoupling of signal from utility* was.)\n\n**Key insight**: Null results often imply that the **theoretical foundation** of an approach is flawed. In this case, the \"phase-coupled hidden states\" idea was elegant but empirically vacuous until the bug was found.\n\n---\n\n### **2. They Expose *Architectural Invariants***\nSome systems are **fundamentally unresponsive** to interventions that work elsewhere. For example:\n- **TG-006**: Mistral 7B showed *zero* response to framing manipulations that shifted Qwen/Gemma dramatically. This suggests:\n  - Mistral\u2019s attention mechanism (or training regime) **constrains contextual plasticity**.\n  - The \"framing effect\" isn\u2019t a universal property of LLMs\u2014it\u2019s **architecture-dependent**.\n  - Any generalization from Qwen to Mistral would be **dangerously wrong**.\n\n**Key insight**: Null results can **partition the space of possible interventions** into \"works for some, not others,\" revealing **hidden modularity** in AI systems.\n\n---\n\n### **3. They Force *Methodological Humility***\nNull results",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17267.57491699982,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:41:37.788483"
+}

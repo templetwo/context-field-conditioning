@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_FR-03_r2",
+  "condition": "FULL",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 2,
+  "response_text": "Shannon entropy is a fundamental concept in information theory introduced by Claude Shannon in 1948. It quantifies the **average amount of information or uncertainty** contained in a random variable or probability distribution. In the context of this research program, it measures how much uncertainty or unpredictability exists in the model\u2019s token-level output distributions.\n\n---\n\n### **Mathematical Definition**\nGiven a discrete random variable \\( X \\) with possible outcomes \\( x_1, x_2, ..., x_n \\) and corresponding probabilities \\( p(x_1), p(x_2), ..., p(x_n) \\), the **Shannon entropy** \\( H(X) \\) is defined as:\n\n\\[\nH(X) = -\\sum_{i=1}^{n} p(x_i) \\log_2 p(x_i)\n\\]\n\n- The base-2 logarithm means entropy is measured in **bits** (the amount of information needed to specify the outcome).\n- If the base is \\( e \\) (natural logarithm), entropy is measured in **nats**.\n- If the base is 10, entropy is measured in **harts**.\n\n---\n\n### **Intuition**\n- **Maximum entropy**: A uniform distribution (all outcomes equally likely) has the highest entropy because it contains the most uncertainty. For \\( n \\) equally likely outcomes, \\( H(X) = \\log_2 n \\).\n- **Minimum entropy**: A deterministic distribution (one outcome with probability 1) has entropy \\( H(X) = 0 \\), as there is no uncertainty.\n- **Intermediate entropy**: Distributions with some probability mass concentrated in a few outcomes have lower entropy than uniform distributions but higher than deterministic ones.\n\n---\n\n### **Connection to the Research Program**\nIn the evidence base, Shannon entropy is used to measure how **compass routing** (a context-awareness mechanism) alters the model\u2019s output distributions:\n\n- **QA-005** and **QA-006** show that compass routing increases token-level entropy by ~0.45\u20130.49 bits, indicating that routed responses explore a wider range of possible tokens and are less predictable than raw responses.\n- The entropy increase suggests that the compass is pushing the model toward a **more \"explorative\" state** (accessing more microstates per macrostate, analogous to thermodynamic phase transitions in **CB-004**).\n- The **Jensen-Shannon divergence (JSD \u2248 0.08)** in **QA-0",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 22123.814833001234,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:09:47.286902"
+}

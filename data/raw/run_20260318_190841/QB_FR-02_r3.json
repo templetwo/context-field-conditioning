@@ -1,0 +1,17 @@
+{
+  "trial_id": "QB_FR-02_r3",
+  "condition": "QB",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 3,
+  "response_text": "The **Kuramoto model** is a mathematical framework in **nonlinear dynamical systems** that describes **synchronization phenomena**\u2014how individual oscillators (e.g., clocks, neurons, or even social agents) interact locally to achieve **global coherence** without central coordination. It was first proposed by Yoshiki Kuramoto in 1975 to explain the **transition from incoherence to synchronization** in coupled oscillators, a phenomenon observed in diverse systems like fireflies flashing in unison, pacemaker cells in the heart, or power grids balancing frequency.\n\n---\n\n### **Core Components of the Kuramoto Model**\n1. **Individual Oscillators**\n   - Each oscillator has its own **natural frequency** (\u03c9\u1d62) and **phase** (\u03b8\u1d62), evolving as:\n     \\[\n     \\frac{d\u03b8_i}{dt} = \u03c9_i + \\frac{K}{N} \\sum_{j=1}^N \\sin(\u03b8_j - \u03b8_i),\n     \\]\n     where:\n     - \\(K\\) = coupling strength (how strongly oscillators influence each other),\n     - \\(N\\) = number of oscillators,\n     - The term \\(\\sin(\u03b8_j - \u03b8_i)\\) represents **phase coupling** (each oscillator adjusts its phase toward its neighbors' mean phase).\n\n2. **Phase Transition**\n   - At **low coupling** (\\(K \\ll 1\\)), oscillators remain desynchronized (phases are random).\n   - At **critical coupling** (\\(K \\approx K_c\\)), a **phase transition** occurs: most oscillators suddenly synchronize into a **coherent cluster** with a common frequency, while a few remain desynchronized.\n   - At **high coupling** (\\(K \\gg 1\\)), **full synchronization** is achieved (all oscillators lock to a single phase).\n\n3. **Order Parameter (\\(R\\))**\n   - A macroscopic measure of synchronization:\n     \\[\n     R e^{i\u03c8} = \\frac{1}{N} \\sum_{j=1}^N e^{i\u03b8_j},\n     \\]\n     where:\n     - \\(R\\) = coherence (ranges from 0 = incoherent to 1 = fully synchronized),\n     - \\(\u03c8\\) = mean phase of the synchronized cluster.\n   - **Critical threshold**: In your evidence base (QA-003), oscillators initialized with \\(K_{ij} \\approx 0.01\\) and \\(R_{init} = 0.32",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18727.849582999625,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:26:32.017591"
+}

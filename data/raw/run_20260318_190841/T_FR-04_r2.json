@@ -1,0 +1,17 @@
+{
+  "trial_id": "T_FR-04_r2",
+  "condition": "T",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 2,
+  "response_text": "In the context of **hypothesis testing** (and more broadly, **statistical inference**), **Type I and Type II errors** are fundamental concepts that describe the trade-offs between false positives and false negatives. While the honeycomb evidence base here doesn\u2019t directly address classical statistics, it *illustrates the consequences of undetected methodological flaws that resemble Type I/II errors*\u2014particularly in AI research, where failed gradient signals, severed autograd graphs, and incomplete ablation studies create **epistemic hazards** analogous to statistical fallacies. Below is the formal distinction, followed by how these themes *emerge implicitly* in the **Trust Gate** evidence.\n\n---\n\n### **Type I vs. Type II Errors: Formal Definitions**\n1. **Type I Error (False Positive)**\n   - **Definition**: Rejecting a **true null hypothesis** (i.e., concluding an effect exists when it does not).\n   - **Example**: Claiming \"the drug works\" when it doesn\u2019t (alpha risk).\n   - **Probability**: Controlled by **significance level (\u03b1)** (e.g., \u03b1=0.05).\n   - **Cost**: Wasted resources, overconfidence in false findings.\n\n2. **Type II Error (False Negative)**\n   - **Definition**: Failing to reject a **false null hypothesis** (i.e., missing a real effect).\n   - **Example**: Claiming \"the drug doesn\u2019t work\" when it does (beta risk).\n   - **Probability**: Controlled by **power (1\u2013\u03b2)** (higher power = fewer false negatives).\n   - **Cost**: Delayed discovery, missed opportunities.\n\n**Key Trade-off**: Reducing Type I errors (stricter \u03b1) increases Type II errors (lower power), and vice versa.\n\n---\n\n### **How This Manifests in the Honeycomb Evidence**\nThe **Trust Gate** lattice is rife with **systematic Type I/II-like errors** in AI research methodology, where:\n- **Type I-like errors** = **False claims of utility** (e.g., epiphenomenal phase synchronization without computational benefit).\n- **Type II-like errors** = **Missed detection of critical failures** (e.g., gradient severance going unnoticed, incomplete ablation studies).\n\n#### **1. Type I Errors in the Evidence (False Positives)**\n- **[TG-001] Phase synchronization without language improvement**\n  - **Claim**: \"Kuramoto oscillators in",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18462.81379200013,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:39:21.006032"
+}

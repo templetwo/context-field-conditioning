@@ -1,0 +1,17 @@
+{
+  "trial_id": "QB_AR-04_r1",
+  "condition": "QB",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 1,
+  "response_text": "The **superadditive interaction**\u2014as evidenced across domains in your honeycomb lattice (notably in [CB-005] and [QA-008])\u2014is fundamentally distinct from **additive or subadditive combinations** of effects because it violates the principle of **independent action**. Here\u2019s the conceptual and empirical breakdown, grounded in your evidence:\n\n---\n\n### **1. Mathematical Formalization**\n- **Additive**: If two factors \\(A\\) and \\(B\\) combine such that their combined effect \\(E_{A+B} = E_A + E_B\\).\n  - *Example*: Taking a 10mg dose of Drug X (+30% effect) and a 5mg dose of Drug Y (+20% effect) yields \\(E_{X+Y} = 50\\%\\).\n- **Subadditive**: \\(E_{A+B} < E_A + E_B\\) (synergism is *weaker* than expected).\n  - *Example*: \\(E_{X+Y} = 45\\%\\) (diminished returns).\n- **Superadditive**: \\(E_{A+B} > E_A + E_B\\) (the combination produces a *disproportionately larger* effect than the sum of individual effects).\n  - **Key measurement from [QA-008]**: The IRIS framing study\u2019s **Rigor (R) \u00d7 Empathy (E) interaction** was superadditive, meaning the combined effect of high rigor *and* high empathy exceeded the sum of their isolated effects. This is not just additive overlap\u2014it\u2019s a **qualitative leap** in the system\u2019s behavior.\n\n---\n\n### **2. Substrate-Specific Examples in Your Evidence**\n#### **A. Computational/Pharmacological (CB-005)**\n- **IRIS Framing Study ([QA-008])**: The \\(R \\times E\\) interaction in model responses was superadditive.\n  - *Isolated effects*: High rigor alone improves response quality; high empathy alone improves engagement.\n  - *Superadditive effect*: When *both* are high, the model\u2019s performance **surpasses** what would be predicted by summing their individual contributions.\n  - *Parallel*: Like **drug synergy** in pharmacology (e.g., aspirin + caffeine for analgesia), where two subtherapeutic doses together achieve a therapeutic effect.\n\n#### **B. Dynamical Systems (CB-00",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18790.28120899966,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:31:30.571476"
+}

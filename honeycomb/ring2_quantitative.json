@@ -1,0 +1,122 @@
+[
+  {
+    "cell_id": "QA-001",
+    "ring": 2,
+    "type": "measurement",
+    "title": "Compass v0.9 signal classification accuracy",
+    "content": "The 3B compass model correctly classified 101 of 105 evaluation questions into OPEN/PAUSE/WITNESS categories. Breakdown: OPEN 94%, PAUSE 94%, WITNESS 100%. Trained on 246 examples with best checkpoint at iteration 300.",
+    "quantitative_anchor": "101/105 (96.2%), OPEN=94%, PAUSE=94%, WITNESS=100%",
+    "connects_to": ["TG-003", "QA-002", "QA-004", "SC-002"],
+    "domain": "ai_architecture",
+    "falsifiable": true,
+    "status": "published"
+  },
+  {
+    "cell_id": "QA-002",
+    "ring": 2,
+    "type": "effect_size",
+    "title": "Judge preference for compass-routed responses",
+    "content": "An LLM judge evaluated compass-routed vs raw responses across 105 questions. Compass won 87 of 105 comparisons (83%). WITNESS category achieved a perfect sweep: 35 wins, 0 ties, 0 losses. The signal's value is non-uniform — it matters most where restraint matters most.",
+    "quantitative_anchor": "87/105 wins (82.9%), WITNESS=35-0-0",
+    "connects_to": ["TG-003", "TG-004", "QA-001", "CB-006"],
+    "domain": "ai_architecture",
+    "falsifiable": true,
+    "status": "published"
+  },
+  {
+    "cell_id": "QA-003",
+    "ring": 2,
+    "type": "measurement",
+    "title": "K-SSM order parameter at near-critical coupling",
+    "content": "After fixing the gradient severance, Kuramoto oscillators initialized near critical coupling with K_ij ≈ 0.01, producing initial order parameter R = 0.3270. This is the boundary between incoherent and synchronized regimes — the oscillators begin at the phase transition.",
+    "quantitative_anchor": "K_ij ≈ 0.01, R_init = 0.3270",
+    "connects_to": ["TG-001", "TG-002", "CB-001", "CB-004"],
+    "domain": "dynamical_systems",
+    "falsifiable": true,
+    "status": "published"
+  },
+  {
+    "cell_id": "QA-004",
+    "ring": 2,
+    "type": "sample_size",
+    "title": "Compass training data efficiency",
+    "content": "The compass achieved 96% signal accuracy from only 246 training examples. Best checkpoint occurred at iteration 300. The 3B model (1.9GB) routes signals for the 9B action model (5GB, 4-bit quantized). Total system footprint: ~7GB for machine intuition.",
+    "quantitative_anchor": "246 examples, iter=300, 3B+9B=7GB total",
+    "connects_to": ["QA-001", "TG-002", "SC-002"],
+    "domain": "ai_architecture",
+    "falsifiable": true,
+    "status": "published"
+  },
+  {
+    "cell_id": "QA-005",
+    "ring": 2,
+    "type": "effect_size",
+    "title": "Compass increases token-level entropy",
+    "content": "Entropy profiling revealed that compass routing increases Shannon entropy of generated tokens. For OPEN questions: ΔH = +0.49. For PAUSE questions: ΔH = +0.45. The compass literally widens the probability field — more possibilities are considered per token under routing.",
+    "quantitative_anchor": "ΔH_OPEN = +0.49, ΔH_PAUSE = +0.45",
+    "connects_to": ["QA-006", "QA-007", "TG-008", "CB-004"],
+    "domain": "ai_architecture",
+    "falsifiable": true,
+    "status": "published"
+  },
+  {
+    "cell_id": "QA-006",
+    "ring": 2,
+    "type": "measurement",
+    "title": "Routed vs raw entropy distributions",
+    "content": "Mean token entropy under compass routing: H = 1.20. Mean token entropy for raw (unrouted) responses: H = 0.71. The compass doesn't just change what the model says — it changes the shape of the probability distribution from which every token is drawn.",
+    "quantitative_anchor": "H_routed = 1.20, H_raw = 0.71, ratio = 1.69",
+    "connects_to": ["QA-005", "QA-007", "CB-004", "SC-006"],
+    "domain": "ai_architecture",
+    "falsifiable": true,
+    "status": "published"
+  },
+  {
+    "cell_id": "QA-007",
+    "ring": 2,
+    "type": "statistical_test",
+    "title": "Jensen-Shannon divergence between routed and raw",
+    "content": "The Jensen-Shannon divergence between compass-routed and raw token distributions is JSD ≈ 0.08. This is a measurable but moderate divergence — the distributions are not different worlds, but they are different neighborhoods. Context routing shifts the distribution, it doesn't replace it.",
+    "quantitative_anchor": "JSD ≈ 0.08",
+    "connects_to": ["QA-005", "QA-006", "SC-006"],
+    "domain": "ai_architecture",
+    "falsifiable": true,
+    "status": "published"
+  },
+  {
+    "cell_id": "QA-008",
+    "ring": 2,
+    "type": "sample_size",
+    "title": "IRIS framing study scale",
+    "content": "The IRIS framing study executed 3,830 inference runs across multiple model architectures with factorial ablation of framing conditions. The R×E (Rigor × Empathy) interaction was the key finding — framing effects are superadditive when both dimensions are present.",
+    "quantitative_anchor": "3,830 total runs, factorial design",
+    "connects_to": ["TG-006", "CB-005", "SC-003"],
+    "domain": "methodology",
+    "falsifiable": true,
+    "status": "published"
+  },
+  {
+    "cell_id": "QA-009",
+    "ring": 2,
+    "type": "effect_size",
+    "title": "Compass v0.8 to v0.9 improvement trajectory",
+    "content": "Signal accuracy improved from 78% (v0.8) to 96% (v0.9), an 18-point gain. Judge win rate shifted from 88% to 83% — a counterintuitive decrease. Higher accuracy slightly reduced the 'happy accident' effect where wrong WITNESS signals still produced strong responses.",
+    "quantitative_anchor": "accuracy: 78%→96% (+18pp), judge_wins: 88%→83% (-5pp)",
+    "connects_to": ["TG-003", "QA-001", "QA-002", "SC-002"],
+    "domain": "ai_architecture",
+    "falsifiable": true,
+    "status": "published"
+  },
+  {
+    "cell_id": "QA-010",
+    "ring": 2,
+    "type": "measurement",
+    "title": "Ablation condition response timing",
+    "content": "Full compass pipeline: 14.2s average per response. Raw (no compass): 10.1s. Oracle (correct signal, no reading): 11.1s. Random (wrong signal, no reading): 11.0s. The compass adds ~4 seconds of latency, almost entirely from the routing inference pass.",
+    "quantitative_anchor": "full=14.2s, raw=10.1s, oracle=11.1s, random=11.0s",
+    "connects_to": ["TG-007", "QA-004", "SC-005"],
+    "domain": "ai_architecture",
+    "falsifiable": true,
+    "status": "published"
+  }
+]

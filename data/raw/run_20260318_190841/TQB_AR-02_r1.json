@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQB_AR-02_r1",
+  "condition": "TQB",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 1,
+  "response_text": "Based on the honeycomb evidence, **increasing accuracy can decrease practical utility** under these **five critical conditions**\u2014all of which are empirically observed in the lattice, often with opposing accuracy/utility gradients:\n\n---\n\n### **1. When Utility Relies on *Structured Restraint* (Not Precision)**\n*(TG-003, QA-002, CB-008, CB-010)*\n**Mechanism:** The most useful signal is often a *negation* or *bracketing* of the default response, not a correct prediction.\n**Evidence:**\n- **Compass WITNESS** achieved **63% accuracy** but **97% judge win rate** (QA-002). The \"do not answer directly\" signal was *wrong* 37% of the time but still produced superior outputs because it triggered a qualitatively different response mode.\n- **Apophatic knowing** (CB-008): Truth emerges from *what is excluded* (e.g., \"God is not X\") rather than what is included. Higher accuracy in direct answers would *reduce* utility by removing the apophatic structure.\n- **Medical screening tests**: High sensitivity (catching all cases) sacrifices precision but improves utility for early intervention. Precision-optimized tests miss critical cases, harming utility despite higher accuracy.\n\n**Key Insight:**\n*Utility peaks when the system\u2019s errors force it into a higher-order response regime (e.g., silence, reflection, or alternative frameworks). Accuracy-maximizing systems may collapse into verbosity or rigidity.*\n\n---\n\n### **2. When the System\u2019s *Default Mode* is Overfit to Verbosity**\n*(TG-004, TG-005, QA-005, QA-006)*\n**Mechanism:** Increasing accuracy reinforces the model\u2019s tendency to generate *default, high-confidence outputs*, even when those are harmful or unhelpful.\n**Evidence:**\n- **Compass routing** improved **authenticity (+2.45) and restraint (+2.60)** but **degraded intellectual rigor (-0.50)** (TG-004). The system learned to *feel* but forgot to *think deeply*\u2014a tradeoff where accuracy in \"social alignment\" reduced utility in technical domains.\n- **Pause_012** scored **perfect accuracy (1.0/7.0",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 21026.161915999182,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:49:35.505529"
+}

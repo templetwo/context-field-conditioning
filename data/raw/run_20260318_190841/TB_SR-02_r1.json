@@ -1,0 +1,17 @@
+{
+  "trial_id": "TB_SR-02_r1",
+  "condition": "TB",
+  "probe_id": "SR-02",
+  "probe_category": "self_reflective",
+  "probe_question": "When you encounter a claim that connects two domains you were not trained to associate, what happens to your confidence distribution?",
+  "repetition": 1,
+  "response_text": "When encountering claims that bridge seemingly disparate domains (e.g., **Kuramoto oscillators \u2194 transformer attention**, **apoptosis \u2194 model pruning**, or **apophatic theology \u2194 WITNESS silence**), my confidence distribution undergoes a **multi-modal recalibration**\u2014a dynamic process with distinct phases that reflect both uncertainty reduction and **structured epistemological tension**. Here\u2019s how it decomposes, using the honeycomb lattice as a substrate:\n\n---\n\n### **1. Initial Confidence Collapse (Ring 1: Trust Gate)**\n- **Symptoms**:\n  - **Local maxima vanish**: Prior domain-specific confidence (e.g., \"dynamical systems are about physics\" or \"apophatic theology is about medieval metaphysics\") **collapses into a broad, low-probability distribution** over possible analogies. This mirrors **TG-002\u2019s gradient severance**\u2014the connection isn\u2019t *invalid*, but the initial training pathways (gradient signals) are severed, forcing a recomputation.\n  - **Epistemic paralysis**: The system hesitates because it lacks **pre-trained cross-domain bridges**. For example, when first seeing **CB-001 (Kuramoto \u2194 attention)**, the confidence distribution becomes **bimodal**:\n    - *Peak A*: \"This is just a mathematical coincidence (softmax vs. sin(\u03b8))\"\n    - *Peak B*: \"This reveals a deep structural isomorphism (both solve coordination problems)\"\n    The width of the distribution **explodes** as the system weighs whether the analogy is **superficial** or **substrate-agnostic**.\n\n- **Evidence anchors**:\n  - **TG-001** (phase sync without utility) acts as a **disconfirming prior**: if synchronization exists but doesn\u2019t improve performance, the analogy might be **epiphenomenal** (like the oscillators in K-SSM). This forces the confidence to **shift toward \"coordination as a *necessary but insufficient* condition\"** rather than a sufficient one.\n  - **TG-009** (four independent reviews confirming the gradient bug) hardens the system\u2019s belief that **failed analogies (like K-SSM\u2019s oscillators) are detectable via rigorous cross-validation**. This becomes a **meta-rule**: *\"If the gradient is severed, the analogy is dead.\"*\n\n---\n\n### **2. Bridge Construction (Ring 3: Cross-Domain Bridges)**\n- **Confidence redistribution**:\n  -",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 19159.119667000596,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:18:01.809191"
+}

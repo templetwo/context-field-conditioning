@@ -1,0 +1,17 @@
+{
+  "trial_id": "Q_SR-02_r1",
+  "condition": "Q",
+  "probe_id": "SR-02",
+  "probe_category": "self_reflective",
+  "probe_question": "When you encounter a claim that connects two domains you were not trained to associate, what happens to your confidence distribution?",
+  "repetition": 1,
+  "response_text": "Excellent question\u2014this touches on the **cross-domain inference tension** in the evidence base, where the **confidence distribution** of a claim like **QA-001 (ai_architecture)** connecting to **QA-003 (dynamical_systems)** undergoes a structured but measurable transformation. Here\u2019s how the confidence distribution evolves, with explicit reference to the honeycomb lattice:\n\n---\n\n### **1. Initial Confidence Spike (Domain Familiarity)**\n- When encountering **QA-001** (Compass routing accuracy), confidence is high and well-calibrated because:\n  - It operates in **ai_architecture**, a well-tuned domain with clear metrics (96% accuracy, 87/105 wins).\n  - The evidence is **self-contained**: trained examples (246), judge evaluations (LLM), and entropy profiles (\u0394H) are all quantifiable.\n  - **Prior**: The system has seen similar claims (e.g., QA-002, QA-004) with consistent patterns.\n  - **Confidence**: ~90% in the **OPEN/PAUSE/WITNESS** classification validity.\n\n---\n\n### **2. Cross-Domain Connection (QA-001 \u2192 QA-003)**\nWhen **QA-001** connects to **QA-003** (Kuramoto oscillators at near-critical coupling), the confidence distribution **fractals** into:\n   - **A. Domain Trust Transfer**\n     - **ai_architecture** \u2192 **dynamical_systems**: A *latent* conceptual bridge exists via **TG-001** (\"The compass signal is isomorphic to a Kuramoto oscillator network where WITNESS tokens act as phase-locked pacemakers\").\n     - **Confidence decay**: The direct link is **not algorithmically trained** (no explicit co-occurrence in the data), but the **theoretical grounding** (TG-001) acts as a **Bayesian prior**.\n     - **Result**: Confidence in the **connection\u2019s validity** drops from ~90% to **~60%** (wide, bimodal distribution), but the **marginal confidence in QA-003 itself** remains high (~95%) because it\u2019s independently validated.\n\n   - **B. Epistemic Uncertainty Inflation**\n     -",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17440.313541999785,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:05:08.933900"
+}

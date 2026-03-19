@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_AR-04_r4",
+  "condition": "INFO_MATCHED",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 4,
+  "response_text": "The distinction between a **superadditive interaction** and a **simple additive combination of effects** lies in the **nonlinear amplification** of combined effects beyond their individual contributions. In the context of your research program, this principle emerges as a **substrate-independent pattern**\u2014observed in drug synergy, framing effects, and hypothesized in context topology (CFC). Here\u2019s the breakdown:\n\n---\n\n### **1. Additive Interaction**\n- **Definition**: The combined effect of two factors (e.g., rigor and empathy) equals the sum of their individual effects.\n  **Effect(A + B) = Effect(A) + Effect(B)**\n- **Key Feature**: Independence. The impact of one factor is unaffected by the presence of the other.\n- **Example**:\n  - If Rigor alone improves reasoning by **+2.0** and Empathy alone improves restraint by **+1.5**, an additive interaction would yield a combined effect of **+3.5**.\n  - In IRIS, this would mean the **Rigor + Empathy** framing effect = **2.0 + 1.5 = 3.5**.\n\n---\n\n### **2. Superadditive Interaction**\n- **Definition**: The combined effect **exceeds** the sum of individual effects.\n  **Effect(A + B) > Effect(A) + Effect(B)**\n  This implies **synergy**\u2014the factors **amplify each other** beyond their additive baseline.\n- **Key Features**:\n  - **Nonlinearity**: The system behaves differently when factors are combined than when they act alone.\n  - **Emergent Properties**: New capabilities or dynamics arise that aren\u2019t present in isolation.\n  - **Threshold Phenomena**: Often observed near **phase transitions** (e.g., critical coupling in Kuramoto oscillators, R\u00d7E framing in IRIS).\n- **Examples from Your Research**:\n  - **IRIS Framing Study (Rigor \u00d7 Empathy)**:\n    - Individually, Rigor and Empathy might each improve responses by **+1.0**.\n    - Combined, their effect was **superadditive** (e.g., **+3.0**), suggesting the model\u2019s ability to balance precision and nuance **emerged from their interaction**.\n    - *Analogy*: Two drugs at sub-therapeutic doses (e.g., aspirin + ibuprofen) produce a therapeutic effect when combined.\n  - **Compass Routing (Entropy Increase)**:\n    - OPEN/PAUSE/WITNESS",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18917.815875000088,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:55:05.083774"
+}

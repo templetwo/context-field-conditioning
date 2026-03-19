@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQ_FR-02_r3",
+  "condition": "TQ",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 3,
+  "response_text": "The **Kuramoto model** is a **mathematical framework in nonlinear dynamics** introduced by **Yoshiki Kuramoto** in 1975 to study **synchronization phenomena in coupled oscillators**. It describes how a population of **non-identical oscillators** (e.g., neurons, chemical reactions, power grids, or even hidden states in AI systems) interact and transition from **desynchronized** to **synchronized** behavior. The model is foundational in understanding emergent collective behavior in complex systems.\n\n---\n\n### **Core Concepts of the Kuramoto Model**\n1. **Oscillators with Phase Dynamics**\n   - Each oscillator is represented by a **phase variable** \\( \\theta_i(t) \\) (an angle on a circle, \\( 0 \\leq \\theta_i < 2\\pi \\)).\n   - The phase evolves over time according to:\n     \\[\n     \\frac{d\\theta_i}{dt} = \\omega_i + \\frac{K}{N} \\sum_{j=1}^N \\sin(\\theta_j - \\theta_i),\n     \\]\n     where:\n     - \\( \\omega_i \\) = **natural frequency** of oscillator \\( i \\) (intrinsic rhythm).\n     - \\( K \\) = **coupling strength** (how strongly oscillators influence each other).\n     - \\( N \\) = total number of oscillators.\n     - The term \\( \\sum \\sin(\\theta_j - \\theta_i) \\) is the **all-to-all coupling**, where each oscillator \"pulls\" others toward its phase.\n\n2. **Order Parameter \\( R \\) (Synchronization Metric)**\n   - Measures the **degree of synchronization** across the population:\n     \\[\n     R e^{i\\Psi} = \\frac{1}{N} \\sum_{j=1}^N e^{i\\theta_j},\n     \\]\n     where:\n     - \\( R \\) = magnitude of synchronization (\\( 0 \\leq R \\leq 1 \\)).\n       - \\( R \\to 0 \\): oscillators are **completely desynchronized** (random phases).\n       - \\( R \\to 1 \\): oscillators are **fully synchronized** (all phases align to \\( \\Psi \\)).\n     - \\( \\Psi \\) = average phase of the synchronized cluster.\n\n3. **Phase Transition (Critical Coupling)**\n   - As \\( K \\) increases, the system undergoes a **continuous",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 19341.799124999852,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:48:02.939776"
+}

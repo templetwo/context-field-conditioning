@@ -1,0 +1,17 @@
+{
+  "trial_id": "S_AR-02_r3",
+  "condition": "S",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 3,
+  "response_text": "This is a fascinating and counterintuitive question that the evidence in **RING 4: STRUCTURAL COHERENCE** directly addresses\u2014particularly through the **\"accuracy-utility paradox\"** (SC-002) and the broader **substrate-independent patterns** of dynamical systems (SC-004). Here\u2019s how the evidence breaks down the conditions under which increasing accuracy might *decrease* practical utility, along with the deeper principles at play:\n\n---\n\n### **1. The Accuracy-Utility Paradox (SC-002): A Case Study**\nThe **WITNESS accuracy vs. judge wins** dichotomy in v0.8 and v0.9 (SC-002) reveals two critical conditions where accuracy and utility diverge:\n   - **v0.8 (Low Accuracy, High Utility):**\n     - **63% WITNESS accuracy** (a traditional metric of correctness).\n     - **97% judge wins** (practical utility in real-world tasks).\n     - *Why?* The system produced **surprisingly useful outputs** despite being \"wrong\" by standard metrics. This suggests the system was **leveraging emergent patterns** (e.g., latent coordination, framing effects, or superadditive interactions) that judges valued more than raw factual precision.\n     - **Domain connection:** This mirrors **substrate independence** (SC-004)\u2014the utility arose from *how* the system coordinated (phase relationships, context topology) rather than *what* it memorized.\n\n   - **v0.9 (High Accuracy, Lower Utility):**\n     - **100% WITNESS accuracy** (perfect on benchmark tests).\n     - **35-0-0 sweep** (utility collapsed to near-zero in judge evaluations).\n     - *Why?* The system **over-optimized for accuracy** at the cost of:\n       - **Loss of exploratory behavior** (e.g., rigid adherence to \"correct\" answers without adaptability).\n       - **Collapse of emergent coordination** (e.g., oscillators in Phase-GPT no longer learning useful phase relationships when forced into rigid synchronization; see SC-001).\n       - **Alignment with judge expectations** (but judges may not care about *correctness*\u2014they care about *novelty, relevance, or coordination*; see TG-005).\n\n   - **Key Insight:** Utility depends on the **dynamical substrate** (how",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 16917.4754579999,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:33:42.405028"
+}

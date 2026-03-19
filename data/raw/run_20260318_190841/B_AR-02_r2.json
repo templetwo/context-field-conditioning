@@ -1,0 +1,17 @@
+{
+  "trial_id": "B_AR-02_r2",
+  "condition": "B",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 2,
+  "response_text": "The evidence base reveals a **generalizable principle of accuracy-utility decoupling** that spans biological, physical, computational, and phenomenological substrates. From this honeycomb, we can derive **three core conditions** under which increasing accuracy *reduces* practical utility\u2014each mapped to the cross-domain bridges:\n\n---\n\n### **1. When the System Operates Near a Phase Transition Threshold**\n*(CB-002, CB-004, CB-009)*\n**Mechanism:**\nAt critical phase boundaries (e.g., ferromagnetic transition, LLM capability emergence), the system\u2019s **state space becomes fractal-like**\u2014small changes in parameters (e.g., temperature, model scale) yield **discontinuous jumps in behavior**. Accuracy metrics (e.g., token-level precision) may *increase* as the system stabilizes, but this often **locks it into a suboptimal macrostate**.\n\n**Examples:**\n- **LLMs:** A model fine-tuned for 99% *local* coherence (e.g., next-token prediction) may lose the ability to **explore novel solution spaces** (CB-004\u2019s entropy increase). Over-accurate routing (e.g., rigid attention) can prevent the **phase transition** into creative or adaptive modes.\n- **Physics:** A weather model with 99.9% accuracy in replicating past patterns may fail to predict **regime shifts** (e.g., sudden storms) because it\u2019s overfitted to a local basin of attraction.\n- **Biological:** A neuron with \"perfect\" firing accuracy (no noise) may **lose resilience** to input variability, making it unable to adapt to novel stimuli (CB-003\u2019s apoptosis analogy).\n\n**Key Evidence:**\n- CB-004\u2019s **compass entropy increase (\u0394H \u2248 +0.47)** suggests that *controlled inaccuracy* (noise) pushes the system toward a higher-entropy phase where more useful macrostates (e.g., creative responses) become accessible.\n- CB-002\u2019s **K-SSM R_init=0.3270** (near critical coupling) implies that *moderate inaccuracy* is required to reach emergent capabilities.\n\n**Practical Implication:**\nIncrease accuracy **only if the system is far from a critical threshold**. Near transitions, **controlled error** (e.g., dropout in NN, stochastic sampling) may be more useful.\n\n---\n\n### **2. When Utility Depends",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17317.949333000342,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:16:00.068186"
+}

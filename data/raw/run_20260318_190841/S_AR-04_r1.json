@@ -1,0 +1,17 @@
+{
+  "trial_id": "S_AR-04_r1",
+  "condition": "S",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 1,
+  "response_text": "Superadditivity in this research program is not merely the sum of individual effects\u2014it is a **nonlinear, emergent property where the combined effect exceeds the additive baseline by violating the standard axiom of independent contributions**. Here\u2019s how the evidence distinguishes it from simple additivity, broken down through the honeycomb\u2019s structural coherence:\n\n---\n\n### **1. Mathematical Distinction: Superadditivity \u2260 Additivity**\n- **Additive**: If effects *A* and *B* act independently, their combined impact is *A + B*.\n- **Superadditive**: The combined impact is *A + B + (A\u00d7B)*, where the interaction term *(A\u00d7B)* is **positive and non-zero**. In the IRIS study (SC-003), the **R\u00d7E (Response\u00d7Environment) interaction** was superadditive, meaning the framing effect (*E*) amplified the response effect (*R*) **beyond their individual sums** (3,830 runs confirmed this). This violates the **null hypothesis of independence** and signals **synergistic coordination**.\n\n  - *Key evidence*: **IRIS (R\u00d7E superadditivity)** \u2192 **CFC (testing if honeycomb topology is superadditive)**. If CFC replicates this, the pattern is **substrate-independent** (SC-004).\n\n---\n\n### **2. Dynamical Systems Interpretation: Coupling as a Phase Transition**\nSuperadditivity here is tied to **phase transitions in coupled oscillators** (CB-001, CB-002). In simple additivity, components contribute linearly (e.g., two drugs with additive effects: 2mg + 3mg = 5mg). But in superadditive systems:\n- **Critical coupling** (QA-003) causes oscillators to **lock into phase relationships** that **exponentially increase coordination** (like ferromagnetic spins aligning).\n- **Compass routing** (SC-006) increased **entropy (\u0394H = +0.47)** because the system accessed **more microstates per macrostate**\u2014a hallmark of superadditive interactions where local interactions **unlock global patterns**.\n\n  - *Key evidence*: **Kuramoto synchronization** (SC-004) works across substrates (electronic, neural, chemical), suggesting superadditivity is a **fundamental property of coordinated systems**, not just a statistical artifact.\n\n---\n\n### **3. Methodological Rigor: Factorial",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17866.208624999672,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:34:52.487517"
+}

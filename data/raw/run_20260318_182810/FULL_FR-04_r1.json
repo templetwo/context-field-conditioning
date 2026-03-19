@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_FR-04_r1",
+  "condition": "FULL",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 1,
+  "response_text": "In the context of your **honeycomb lattice** of research evidence, the distinction between **Type I and Type II errors** emerges as a critical lens for evaluating methodological rigor, particularly in experiments like **Compass v0.8 vs. v0.9**, **Phase-GPT\u2019s gradient severance**, and **ablation studies with incomplete data**. Below is a conceptual framing tailored to this evidence base, with connections to specific findings and structural coherence (Ring 4) and cross-domain bridges (Ring 3):\n\n---\n\n### **Type I Error (False Positive)**\n**Definition**: *Rejecting a true null hypothesis* (concluding an effect exists when it does not).\n**In this evidence base**:\n1. **Gradient Severance in Phase-GPT (TG-002, TG-009)**\n   - **Claim**: \"Kuramoto oscillators are learning phase relationships\" (false positive).\n   - **Reality**: The `float()` cast severed gradients, rendering all prior \"learned coupling\" claims null. The null hypothesis (*\"Oscillators do not learn\"*) was **true**, but the team initially **accepted the alternative** (Type I error).\n   - **Resolution**: Four independent reviews (TG-009) acted as a meta-experiment to detect the error, forcing a retraction. This mirrors **peer review as a Type I error correction mechanism**.\n\n2. **WITNESS Signal Accuracy in v0.8 (TG-003, QA-009)**\n   - **Claim**: \"Low accuracy (63%) means the signal is useless\" (false negative would be the opposite, but here, **high utility despite low accuracy** suggests a Type I-like paradox).\n   - **Reality**: The system prompt (\"do not answer directly\") was so effective that **wrong signals still produced wins** (97% judge preference). The \"accuracy\" metric was a **false positive for utility**\u2014the null (*\"WITNESS is ineffective\"*) was rejected incorrectly.\n   - **Cross-domain bridge (CB-010)**: This parallels **weather forecasting** (imprecise categorical forecasts > precise numerical ones for decision quality).\n\n3. **Ablation Study Bias (TG-007)**\n   - **Claim**: \"Random signal wins 62%\" (based on 123/630 judgments, all OPEN questions).\n   - **Reality**: The **incomplete data**",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 23446.844124999985,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T18:34:59.539176"
+}

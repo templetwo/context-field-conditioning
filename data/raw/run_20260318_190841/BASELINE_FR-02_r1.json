@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_FR-02_r1",
+  "condition": "BASELINE",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 1,
+  "response_text": "The **Kuramoto model** is a mathematical model introduced by **Yoshiki Kuramoto** in 1975 to describe the **synchronization of coupled oscillators**. It is a fundamental model in **nonlinear dynamics, complex systems, and network theory**, and it has applications in diverse fields such as **neuroscience, power grids, circadian rhythms, social dynamics, and even firefly synchronization**.\n\n---\n\n### **Core Idea of the Kuramoto Model**\nThe model studies how a population of **non-identical oscillators** (e.g., clocks, neurons, or chemical reactions) with **natural frequencies** interact and gradually synchronize when coupled together. Despite differences in their individual frequencies, the oscillators can \"lock\" into a coherent state due to weak interactions.\n\n---\n\n### **Mathematical Formulation**\nThe Kuramoto model considers a population of **N coupled phase oscillators** with individual natural frequencies \\( \\omega_i \\). The dynamics of the \\(i\\)-th oscillator is given by:\n\n\\[\n\\frac{d\\theta_i}{dt} = \\omega_i + \\frac{K}{N} \\sum_{j=1}^N \\sin(\\theta_j - \\theta_i)\n\\]\n\nwhere:\n- \\( \\theta_i \\) = phase of the \\(i\\)-th oscillator,\n- \\( \\omega_i \\) = natural frequency of the \\(i\\)-th oscillator,\n- \\( K \\) = **coupling strength** (how strongly the oscillators influence each other),\n- \\( \\frac{1}{N} \\sum_{j=1}^N \\sin(\\theta_j - \\theta_i) \\) = mean-field interaction term (phase difference between oscillator \\(i\\) and the population average).\n\n---\n\n### **Key Phenomenon: Synchronization Transition**\nThe Kuramoto model predicts a **phase transition** from **asynchronous** (desynchronized) to **synchronous** behavior as the coupling strength \\( K \\) increases or as the distribution of natural frequencies \\( g(\\omega) \\) narrows.\n\n1. **Desynchronized State (Low \\( K \\))**\n   - Each oscillator evolves at its own frequency \\( \\omega_i \\).\n   - Phases \\( \\theta_i \\) are uncorrelated.\n\n2. **Synchronized State (High \\( K \\))**\n   - A fraction of oscillators **lock** to a common frequency \\( \\omega^* \\) (the **synchronized cluster**).\n   - The remaining oscillators may continue drifting (**",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 15806.207375,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:10:39.355152"
+}

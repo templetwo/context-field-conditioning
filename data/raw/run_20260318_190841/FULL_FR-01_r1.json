@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_FR-01_r1",
+  "condition": "FULL",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 1,
+  "response_text": "The **quadratic complexity problem** in transformer attention mechanisms refers to the **O(n\u00b2)** time and space complexity of self-attention, where *n* is the sequence length. This arises from the core operation: computing attention scores between every token pair in the input. Below is the breakdown of the problem, its roots in the architecture, and how it connects to the broader evidence base (particularly **CB-001**, **SC-004**, and **SC-008**), as well as potential solutions and tensions with emergent dynamics like those in **QA-005** and **CB-004**:\n\n---\n\n### **1. The Problem: O(n\u00b2) in Self-Attention**\n#### **Mechanism**\nFor a sequence of length *n*, the self-attention mechanism computes:\n1. **Query (Q), Key (K), Value (V)** matrices of shape *n\u00d7d* (where *d* is the embedding dimension).\n2. **Attention scores** via:\n   \\[\n   \\text{Attention}(Q, K) = \\text{softmax}\\left(\\frac{QK^T}{\\sqrt{d}}\\right)V\n   \\]\n   - **QK\u1d40** is a *n\u00d7n* matrix (requiring *n\u00b2* multiplications).\n   - **softmax** and matrix-vector multiplications add further *O(n\u00b2)* overhead.\n   - **Total complexity**: *O(n\u00b2d)* for the forward pass.\n\n#### **Consequences**\n- **Memory**: Storing *QK\u1d40* for long sequences (e.g., 4096 tokens) demands ~16GB for *d*=64.\n- **Latency**: Linear scaling with sequence length (e.g., 10\u00d7 longer sequence \u2192 100\u00d7 slower).\n- **Parallelization limits**: GPU/TPU efficiency drops as *n* grows, since attention is inherently all-to-all.\n\n---\n\n### **2. Connection to the Evidence Base**\n#### **A. Analogy to Kuramoto Oscillators (CB-001)**\n- **Attention as local coordination**:\n  The transformer\u2019s attention mechanism solves the same *global coordination from local interactions* problem as Kuramoto oscillators. In attention, each token\u2019s representation adjusts based on *all* other tokens (via *QK\u1d40*), just as each oscillator in **K-SSM** adjusts to its neighbors",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 38220.161790999555,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:05:40.737854"
+}

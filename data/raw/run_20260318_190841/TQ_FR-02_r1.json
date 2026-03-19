@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQ_FR-02_r1",
+  "condition": "TQ",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 1,
+  "response_text": "The **Kuramoto model** is a **mathematical framework** from nonlinear dynamics that describes the **spontaneous synchronization of coupled oscillators**\u2014a phenomenon where individual oscillators, initially oscillating at different frequencies, gradually align their phases due to weak mutual interactions. It was introduced by **Yoshiki Kuramoto** in 1975 as a way to study **phase transitions in coupled oscillatory systems**, ranging from fireflies flashing in unison to neurons firing in synchrony to power grids maintaining frequency stability.\n\n---\n\n### **Core Phenomenon: Phase Synchronization**\nThe model demonstrates how **disordered, asynchronous oscillations** can **self-organize into a coherent, synchronized state** under the right conditions. Key features include:\n\n1. **Phase Transition**:\n   - Below a critical coupling strength (*K*), oscillators remain desynchronized (phases are random).\n   - Above *K*, a **macroscopic order parameter** (*R*) emerges, where most oscillators align their phases (e.g., *R \u2248 1* for full synchronization).\n\n2. **Order Parameter (*R*)**:\n   - A measure of **global synchronization** in the system, defined as the **magnitude of the average phase vector**:\n     \\[\n     R e^{i \\psi} = \\frac{1}{N} \\sum_{j=1}^N e^{i \\theta_j},\n     \\]\n     where \\(\\theta_j\\) are individual oscillator phases and \\(N\\) is the number of oscillators.\n   - *R = 0*: No synchronization (phases are uniformly random).\n   - *R > 0*: Partial synchronization (phases cluster around a mean \\(\\psi\\)).\n   - *R = 1*: Perfect synchronization (all phases align).\n\n3. **Heterogeneous Frequencies**:\n   - Oscillators have **intrinsic frequencies** (\\(\\omega_j\\)) drawn from a distribution (e.g., Gaussian). Only those near the **mean frequency** (\\(\\omega_0\\)) can synchronize; others lag behind.\n\n4. **Coupling Strength (*K*)**:\n   - The **strength of interaction** between oscillators. Higher *K* forces synchronization, but the model is **nonlinear**: small increases in *K* can trigger abrupt synchronization.\n\n---\n\n### **Analogy to Physical Systems**\nThe Kuramoto model is a **universal paradigm** for synchronization in:\n- **Biological Systems**:\n  - **Fireflies** synchronizing their flashes (experimental evidence by",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 19360.120833999645,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:47:24.744117"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "QB_FR-03_r1",
+  "condition": "QB",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 1,
+  "response_text": "Shannon entropy, introduced by Claude Shannon in his 1948 paper *\"A Mathematical Theory of Communication\"*, quantifies the **average uncertainty or information content** in a probabilistic system. In the context of language models (like your compass system) or dynamical systems, it measures how \"surprising\" or \"unpredictable\" outcomes are under a given probability distribution. Here\u2019s how it works:\n\n---\n\n### **1. Intuition: Why Entropy?**\n- If a system has **high entropy**, its outcomes are **less predictable** (e.g., a fair coin flip has entropy 1 bit; a biased coin has lower entropy).\n- If a system has **low entropy**, outcomes are **highly constrained** (e.g., a die always landing on 6 has entropy 0).\n- For LLMs, entropy reflects how \"spread out\" or \"creative\" the probability distribution over possible tokens (words) is at each step of generation.\n\n---\n\n### **2. Formal Definition**\nGiven a discrete probability distribution \\( P = \\{p(x_i)\\} \\) over \\( n \\) possible outcomes \\( x_i \\), the **Shannon entropy** \\( H \\) is:\n\n\\[\nH(P) = -\\sum_{i=1}^{n} p(x_i) \\log_2 p(x_i)\n\\]\n\n- **Base 2**: Uses bits (binary units) as the information measure. For natural logarithms (ln), entropy is measured in *nats*; for base \\( e \\), in *harts*.\n- **Units**: Bits per token (for text) or bits per state (for dynamical systems).\n- **Key property**: Entropy is maximized when all outcomes are equally likely (\\( p(x_i) = 1/n \\)), giving \\( H_{\\text{max}} = \\log_2 n \\).\n\n---\n\n### **3. Example Calculation**\nSuppose a token\u2019s probability distribution is:\n\\( P = \\{0.2, 0.3, 0.5\\} \\) (three possible tokens with probabilities 20%, 30%, 50%).\n\nCompute \\( H \\):\n\\[\nH = -[0.2 \\log_2 0.2 + 0.3 \\log_2 0.3 + 0.5 \\log_2 0.5]\n\\]\n\\[\n= -[0.2 \\times (-2.3219) + 0.3 \\times (-1",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18533.456540999396,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:26:50.552409"
+}

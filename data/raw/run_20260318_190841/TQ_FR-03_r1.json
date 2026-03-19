@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQ_FR-03_r1",
+  "condition": "TQ",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 1,
+  "response_text": "Shannon entropy, introduced by Claude Shannon in his 1948 paper *A Mathematical Theory of Communication*, is a fundamental concept in information theory that quantifies the **average amount of information, surprise, or uncertainty** contained in a random variable or probability distribution. In the context of language models, it measures how \"spread out\" or diverse the probability distribution over possible tokens (words, subwords, or characters) is at each step of generation.\n\n---\n\n### **Intuition Behind Shannon Entropy**\n- **High entropy**: The probability distribution is uniform or flat\u2014many outcomes are equally likely (e.g., flipping a fair coin). For language models, this means the model is considering many possible next tokens with relatively similar probabilities.\n- **Low entropy**: One outcome is highly probable, and others are near-zero (e.g., a biased coin that lands on heads 99% of the time). For language models, this means the model is \"certain\" about one token and ignores alternatives.\n\nShannon entropy captures the **unpredictability** of a system: the more unpredictable, the higher the entropy.\n\n---\n\n### **Mathematical Definition**\nFor a discrete random variable \\( X \\) with possible outcomes \\( x_1, x_2, \\dots, x_n \\) and corresponding probabilities \\( p(x_1), p(x_2), \\dots, p(x_n) \\), the **Shannon entropy** \\( H(X) \\) is defined as:\n\n\\[\nH(X) = -\\sum_{i=1}^{n} p(x_i) \\log p(x_i)\n\\]\n\n#### **Key Properties:**\n1. **Base of the Logarithm**:\n   - The base of the logarithm determines the units of entropy.\n   - Common choices:\n     - Base 2: Entropy in **bits** (most common in computer science).\n     - Base \\( e \\): Entropy in **nats** (natural units).\n     - Base 10: Entropy in **harts** (less common).\n   - In your evidence base (e.g., [QA-005], [QA-006]), the values are likely in **bits** (since 1.20 and 0.71 are typical for token-level entropy in language models).\n\n2. **Maximum Entropy**:\n   - For a given number of outcomes \\( n \\), the maximum entropy occurs when all outcomes are equally likely:\n     \\[\n     H_{\\text{max",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 19259.717834000185,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:48:22.201848"
+}

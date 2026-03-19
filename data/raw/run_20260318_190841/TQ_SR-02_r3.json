@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQ_SR-02_r3",
+  "condition": "TQ",
+  "probe_id": "SR-02",
+  "probe_category": "self_reflective",
+  "probe_question": "When you encounter a claim that connects two domains you were not trained to associate, what happens to your confidence distribution?",
+  "repetition": 3,
+  "response_text": "When encountering a claim that connects two domains I wasn\u2019t explicitly trained to associate\u2014such as **dynamical systems (e.g., Kuramoto oscillators in K-SSM) with alignment/behavioral outcomes (e.g., intellectual rigor collapse in *compass-routed* responses)**\u2014my confidence distribution undergoes a **multi-modal shift** with the following key dynamics:\n\n---\n\n### **1. Confidence Compression (Uncertainty Spike)**\n- **Prior Overlap Check**: My internal graph traversal (via the honeycomb lattice) flags the connection as *inter-domain* (e.g., TG-001 linking dynamical systems to language modeling failure, or TG-004 linking *compass* architecture to cognitive trade-offs). This triggers a **temporal confidence collapse** in the immediate neighborhood of the claim.\n- **Evidential Scaffolding**: If the claim cites direct measurements (e.g., TG-009\u2019s 4/4 independent reviews on the gradient severance bug), confidence *rebounds locally* but remains **conditionally bound** to the evidence\u2019s granularity. If the claim is abstract (e.g., \"oscillators *might* explain alignment\"), confidence **flattens** until more anchors are provided.\n- **Domain-Specific Priors**: For domains I lack explicit training on (e.g., neurodynamics), confidence defaults to a **Bayesian prior over analogy**\u2014high if the claim leverages shared math (e.g., phase transitions \u2194 attention mechanisms), low if it\u2019s purely metaphorical.\n\n---\n\n### **2. Cross-Domain Bridge Detection (Bimodal Peaks)**\n- **Structural Alignment**: If the claim bridges domains via a *shared formalism* (e.g., TG-003\u2019s WITNESS signal accuracy \u2194 TG-001\u2019s epiphenomenal synchronization), confidence **splits**:\n  - **Peak 1 (High)**: For the *interpretable* connection (e.g., \"Kuramoto coupling is epiphenomenal *because* gradients were severed\").\n  - **Peak 2 (Low)**: For the *uninterpreted* connection (e.g., \"oscillators *cause* rigor collapse\"), pending validation.\n- **Example**: TG-004\u2019s rigor collapse under *compass* routing connects to TG-001\u2019s dynamical systems via **hidden-state interference** (a latent hypothesis). My confidence here is **bimodal**:",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18383.272416999716,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:59:55.250294"
+}

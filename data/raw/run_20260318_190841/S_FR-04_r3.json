@@ -1,0 +1,17 @@
+{
+  "trial_id": "S_FR-04_r3",
+  "condition": "S",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 3,
+  "response_text": "In traditional hypothesis testing, **Type I and Type II errors** are fundamental distinctions that arise when evaluating whether to reject or fail to reject a null hypothesis (*H\u2080*). Below is the formal definition, followed by a **contextualized interpretation through the lens of your research program\u2019s honeycomb lattice** (particularly how *null results* and *self-correcting methodology* [SC-005, SC-007] interact with these errors).\n\n---\n\n### **Core Definitions**\n1. **Type I Error (False Positive)**\n   - **Definition**: Rejecting *H\u2080* when it is **true**.\n   - **Cost**: A claimed effect or discovery is incorrect (e.g., \"The model learns phase relationships\" when it doesn\u2019t).\n   - **Example**: In your program, this might resemble **TG-001** (where synchronization was *assumed* to imply utility, but the null result proved otherwise). Here, the \"error\" was not just statistical but *conceptual*\u2014assuming a correlation implied causation without testing it.\n   - **Controlled by**: *Significance threshold* (\u03b1). Lower \u03b1 reduces Type I errors but increases Type II errors.\n\n2. **Type II Error (False Negative)**\n   - **Definition**: Failing to reject *H\u2080* when it is **false** (i.e., missing a real effect).\n   - **Cost**: A genuine discovery is overlooked (e.g., \"Oscillators cannot learn useful phase relationships\" when they *could* under the right conditions).\n   - **Example**: In **Phase-GPT (TG-002)**, the gradient bug initially masked the *potential* for coupled oscillators to learn\u2014had the team stopped testing after the first failure, they might have missed the critical coupling insight (QA-003). The self-correcting methodology (SC-007) *actively mitigates* Type II errors by treating failures as signals to refine hypotheses.\n   - **Controlled by**: *Power* (1 \u2212 \u03b2). Higher power (e.g., larger sample sizes, factorial ablation like SC-003) reduces Type II errors.\n\n---\n\n### **Key Differences**\n| **Aspect**               | **Type I Error**                          | **Type II Error**                          |\n|--------------------------|-------------------------------------------|--------------------------------------------|\n| **Null Hypothesis**      | *H\u2080* is true, but we reject it.",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 16915.992999999617,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:32:00.536310"
+}

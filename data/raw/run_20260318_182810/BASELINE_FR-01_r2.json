@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_FR-01_r2",
+  "condition": "BASELINE",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 2,
+  "response_text": "The **quadratic complexity problem** in **Transformer attention mechanisms** refers to the computational and memory inefficiency arising from the **self-attention operation** in the original Transformer architecture. Here\u2019s a detailed breakdown:\n\n---\n\n### **1. Self-Attention in Transformers**\nIn a Transformer, the self-attention mechanism computes relationships between all pairs of tokens in a sequence. For an input sequence of length `n`, the attention scores are calculated as follows:\n- **Query (Q)**, **Key (K)**, and **Value (V)** matrices are computed for each token (shape: `n \u00d7 d_k`, where `d_k` is the key/query dimension).\n- The attention score between token `i` and token `j` is computed as:\n  `Attention(Q_i, K_j) = softmax(Q_i \u00b7 K_j^T / sqrt(d_k))`.\n- The final output is a weighted sum of values: `sum_j (Attention(Q_i, K_j) \u00b7 V_j)`.\n\n---\n\n### **2. Quadratic Complexity**\nThe key issue is that self-attention computes pairwise interactions between **all possible token pairs** in the sequence. This leads to:\n- **Time Complexity**: `O(n\u00b2)` per layer (due to computing `n \u00d7 n` attention scores for `n` tokens).\n- **Space Complexity**: `O(n\u00b2)` (storing the full attention matrix for a sequence of length `n`).\n\nFor long sequences (e.g., `n = 10,000`), this becomes prohibitively expensive:\n- Computing `100 million` attention operations per layer.\n- Memory usage scales quadratically, limiting sequence lengths in practice.\n\n---\n\n### **3. Why It Matters**\n- **Scalability**: Original Transformers struggle with long-range dependencies (e.g., in document processing, video, or genomics).\n- **Training/Inference Bottleneck**: Even with optimizations (e.g., parallelization), quadratic scaling hinders real-world applications.\n- **Hardware Limitations**: GPUs/TPUs struggle to handle large attention matrices efficiently.\n\n---\n\n### **4. Solutions and Optimizations**\nResearchers have proposed several approaches to reduce the quadratic complexity:\n\n#### **A. Approximate Attention Methods**\n1. **Sparse Attention**:\n   - **Local Attention**: Restrict attention to nearby tokens (e.g., window-based, like in **Longformer** or **BigBird**).\n   - **Strided Attention",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18768.130749999997,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T18:28:59.217567"
+}

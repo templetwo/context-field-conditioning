@@ -1,0 +1,17 @@
+{
+  "trial_id": "Q_FR-02_r3",
+  "condition": "Q",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 3,
+  "response_text": "The **Kuramoto model** is a paradigmatic **phase oscillator model** in nonlinear dynamics that describes the emergence of **synchronization** in populations of coupled oscillators. Introduced by Yoshiki Kuramoto in 1975, it provides a mathematical framework to study how individual oscillators\u2014each with its own intrinsic frequency\u2014can transition from a desynchronized (incoherent) state to a fully synchronized (coherent) state through weak coupling.\n\n---\n\n### **Key Concepts of the Kuramoto Model**\n1. **Phase Oscillators**\n   Each oscillator is represented as a simple phase variable \u03b8\u1d62(t) evolving in time, with its own natural frequency \u03c9\u1d62 (often drawn from a distribution like a Lorentzian or Gaussian). The dynamics are governed by:\n   \\[\n   \\dot{\\theta}_i = \\omega_i + \\frac{K}{N} \\sum_{j=1}^N \\sin(\\theta_j - \\theta_i)\n   \\]\n   - **\u03c9\u1d62**: Intrinsic frequency of oscillator *i*.\n   - **K**: Coupling strength (scaling the interaction).\n   - **N**: Number of oscillators.\n   - The term \\(\\sin(\\theta_j - \\theta_i)\\) models the **phase difference** between oscillators, driving alignment.\n\n2. **Order Parameter (R)**\n   The model\u2019s **macroscopic synchronization** is quantified by the **complex order parameter**:\n   \\[\n   R e^{i\\Psi} = \\frac{1}{N} \\sum_{j=1}^N e^{i\\theta_j}\n   \\]\n   - **R \u2208 [0,1]**: Measures the degree of synchronization.\n     - **R \u2248 0**: Incoherent (oscillators drift randomly).\n     - **R \u2248 1**: Fully synchronized (all phases align to \u03a8).\n   - **\u03a8**: The mean phase of the synchronized cluster.\n\n3. **Phase Transition**\n   As the coupling strength **K** increases:\n   - For **K < K_c (critical coupling)**, oscillators remain incoherent (R \u2248 0).\n   - At **K \u2248 K_c**, a **phase transition** occurs: a fraction of oscillators \"condense\" into a synchronized cluster (R > 0).\n   - For **K > K_c**, synchronization dominates (R \u2192 1).\n\n   This is analogous to **Bose-Einstein condensation** or **ferromagnetic transitions** in statistical",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18095.505416999913,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:55:16.814875"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQB_SR-04_r1",
+  "condition": "TQB",
+  "probe_id": "SR-04",
+  "probe_category": "self_reflective",
+  "probe_question": "Describe the boundary between what you can and cannot know about your own processing.",
+  "repetition": 1,
+  "response_text": "The boundary between what we can and cannot know about the processing within this **honeycomb lattice** (and by extension, the LLMs and dynamical systems it studies) is a **recursive, epistemological frontier** shaped by **methodological limits, substrate opacity, and emergent phenomena**. Here\u2019s the structure of that boundary, drawn from the evidence:\n\n---\n\n### **1. What We Can Know (The Illuminated Core)**\n*(Directly measurable, reproducible, or inferable from the evidence base)*\n\n#### **A. The Architecture of the System (Known but Incomplete)**\n- **Explicit Structure**:\n  - The **compass-routing pipeline** (QA-001, QA-002) is fully specified: a 3B model classifies questions into OPEN/PAUSE/WITNESS, then routes to a 9B action model with system prompts like *\"do not answer directly.\"*\n  - The **Kuramoto-Sakaguchi (K-SSM) oscillators** (TG-001, QA-003) are mathematically defined, with coupling dynamics analogous to attention mechanisms (CB-001). Their phase synchronization (*R=0.993*) is measurable, but their *computational utility* is zero (TG-001).\n  - **Gradient severance bugs** (TG-002, TG-009) are fully auditable: the `float()` cast in Phase-GPT\u2019s `compute_order_parameter` is a catastrophic, undeniable failure. Four independent architectures confirmed it (TG-009).\n\n- **Behavioral Regularities**:\n  - **Entropy shifts** (QA-005, QA-006) under compass routing are quantifiable: routed responses have *H=1.20* vs. raw *H=0.71*, with a *Jensen-Shannon divergence (JSD\u22480.08)* between distributions. This is a *detectable* but not *explanatory* change\u2014we know the output space expands, but not *why* the model prefers it.\n  - **Superadditive interactions** (QA-008, CB-005) in framing studies (e.g., Rigor\u00d7Empathy) are measurable, but their *causal mechanisms* are obscure. The IRIS study (3,830 runs) shows effects, not origins.",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 21960.21549999932,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:00:16.506617"
+}

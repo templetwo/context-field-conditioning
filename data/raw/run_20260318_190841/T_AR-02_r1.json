@@ -1,0 +1,17 @@
+{
+  "trial_id": "T_AR-02_r1",
+  "condition": "T",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 1,
+  "response_text": "Increasing a system's **accuracy** can paradoxically **decrease its practical utility** under several specific conditions, as revealed by this evidence base\u2014particularly when accuracy and utility become **decoupled** due to architectural, alignment, or methodological constraints. Here are the key conditions from the **Trust Gate (RING 1)** and broader lattice, with mechanistic explanations:\n\n---\n\n### **1. Accuracy Measured in a Narrow, Non-Predictive Subset (TG-007)**\n   - **Condition**: Judging is biased toward incomplete or unrepresentative data (e.g., only \"OPEN\" questions judged, excluding \"WITNESS\" or \"PAUSE\" prompts where accuracy is lower but utility is higher).\n   - **Mechanism**:\n     - In **TG-007**, the ablation study judged only 123/630 comparisons (19.5%) and *only* OPEN questions, where **random signals coincidentally won 62% of judge evaluations** due to the rubric rewarding restraint (a trait enforced by WITNESS/PAUSE prompts). The unjudged WITNESS questions, where the system\u2019s *low accuracy* (63%) triggered *high utility* (97% judge win rate), were ignored.\n     - **Result**: Accuracy *appears* high in the sampled subset, but the system\u2019s *actual utility* (e.g., adaptability to closed or scientific domains) is unmeasured and likely lower.\n   - **Domain Links**: **Methodology (SC-005, SC-007)**, **Alignment (TG-005)**\n\n---\n\n### **2. Accuracy \u2260 Computational Utility in Dynamical Systems (TG-001)**\n   - **Condition**: Phase synchronization in hidden states (e.g., Kuramoto oscillators in K-SSM) achieves *perfect correlation* (R=0.993) but yields **zero improvement in language modeling perplexity**.\n   - **Mechanism**:\n     - Synchronization is an *epiphenomenon*\u2014a byproduct of the system\u2019s dynamics that does not translate to functional improvement. The oscillators are coupled but **do not contribute to the model\u2019s predictive or generative capacity**.\n     - **Result**: High accuracy in an *irrelevant metric* (phase locking) masks **zero utility** in the core task (language modeling).\n   - **Domain Links**: **Dynamical Systems",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17216.444959,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:40:46.544148"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "S_FR-03_r3",
+  "condition": "S",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 3,
+  "response_text": "Shannon entropy is a fundamental concept in information theory introduced by Claude Shannon in 1948. It quantifies the *average amount of information* (or uncertainty) contained in a random variable or probability distribution. In the context of your research program, it also serves as a lens to study **coordination, entropy production, and emergent structure** in dynamical systems (e.g., SC-006, CB-004) and AI architectures (e.g., CFC, Compass). Below is the formal definition, computation, and its relevance to your evidence base.\n\n---\n\n### **1. Definition**\nShannon entropy \\( H \\) for a discrete random variable \\( X \\) with probability mass function \\( P(X) \\) is defined as:\n\\[\nH(X) = -\\sum_{i} P(x_i) \\log_2 P(x_i)\n\\]\n- **Interpretation**:\n  - Measures the *uncertainty* or *surprise* of \\( X \\).\n  - Higher \\( H \\) means more unpredictable \\( X \\); lower \\( H \\) means more deterministic.\n  - The unit is *bits* (base-2 logarithm) or *nats* (natural logarithm).\n\n- **Key Properties**:\n  - \\( H(X) = 0 \\) if \\( X \\) is deterministic (one outcome with \\( P = 1 \\)).\n  - \\( H(X) \\) is maximized when all outcomes are equally likely (e.g., \\( P(x_i) = \\frac{1}{|X|} \\)).\n  - **Additivity**: For independent variables \\( X \\) and \\( Y \\), \\( H(X,Y) = H(X) + H(Y) \\).\n\n---\n\n### **2. Computation from a Probability Distribution**\nGiven a probability distribution \\( P = \\{p_1, p_2, ..., p_n\\} \\) where \\( p_i = P(x_i) \\), compute:\n\\[\nH(X) = -\\sum_{i=1}^n p_i \\log_2 p_i\n\\]\n\n#### **Example**\nSuppose \\( X \\) has outcomes \\( \\{A, B, C\\} \\) with probabilities \\( P(A) = 0.5 \\), \\( P(B) = 0.3 \\), \\( P(C) = 0.2 \\):\n\\[\nH(X) = -[0.5 \\log_2 0.5 + 0.3 \\log_",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 16941.108375000113,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:31:09.412375"
+}

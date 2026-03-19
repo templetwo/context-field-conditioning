@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_FR-03_r2",
+  "condition": "BASELINE",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 2,
+  "response_text": "**Shannon Entropy** is a fundamental concept in **information theory**, introduced by **Claude Shannon** in 1948. It quantifies the **average amount of information, surprise, or uncertainty** contained in a random variable or a probability distribution. The idea is that more unpredictable (or more uniformly distributed) outcomes have higher entropy, while deterministic (certain) outcomes have zero entropy.\n\n---\n\n### **Key Intuition**\n- If an event is **certain** (probability = 1), it provides **no information** (entropy = 0).\n- If all outcomes are **equally likely**, the uncertainty is maximized.\n- Entropy measures how \"spread out\" a probability distribution is.\n\n---\n\n### **Mathematical Definition**\nFor a discrete random variable \\( X \\) with possible outcomes \\( x_1, x_2, \\dots, x_n \\) and corresponding probabilities \\( p(x_1), p(x_2), \\dots, p(x_n) \\), the **Shannon entropy** \\( H(X) \\) is defined as:\n\n\\[\nH(X) = -\\sum_{i=1}^n p(x_i) \\log p(x_i)\n\\]\n\n#### **Notes:**\n1. The logarithm is typically taken base **2** (resulting in **bits** of information), but natural logarithm (ln) or base-10 can also be used (resulting in **nats** or **Hartleys**, respectively).\n   - For base-2: \\( H(X) \\) is in **bits**.\n   - For natural log: \\( H(X) \\) is in **nats**.\n   - The choice of base only scales the units (e.g., \\( \\log_2 p = \\frac{\\ln p}{\\ln 2} \\)).\n\n2. The term \\( p(x_i) \\log p(x_i) \\) is **non-positive** (since \\( 0 \\leq p(x_i) \\leq 1 \\) and \\( \\log p(x_i) \\leq 0 \\)), so the negative sign makes \\( H(X) \\) **non-negative**.\n\n3. If \\( p(x_i) = 0 \\), the term is defined as 0 (since \\( \\lim_{p \\to 0^+} p \\log p = 0 \\)).\n\n---\n\n### **Example Calculation**\nSuppose a fair coin is flipped (two outcomes: Heads \\( H \\) or Tails \\( T \\), each with",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 16239.762583000002,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T18:30:05.169017"
+}

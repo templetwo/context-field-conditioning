@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_FR-03_r5",
+  "condition": "FULL",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 5,
+  "response_text": "Shannon entropy is a fundamental concept in information theory introduced by Claude Shannon in 1948. It quantifies the *average amount of information, surprise, or uncertainty* inherent in a random variable or probability distribution. In the context of the research honeycomb, it serves as a measurable bridge between the **computational structure** of LLMs (e.g., token probability distributions) and **thermodynamic analogies** (e.g., phase transitions, entropy increases in physical systems). Below is a detailed breakdown of its definition, computation, and relevance to the evidence base:\n\n---\n\n### **1. Definition of Shannon Entropy**\nFor a discrete random variable \\( X \\) with probability mass function \\( P(X = x) = p(x) \\), the Shannon entropy \\( H(X) \\) is defined as:\n\n\\[\nH(X) = -\\sum_{x} p(x) \\log_2 p(x)\n\\]\n\n- **Interpretation**:\n  - Measures the *average uncertainty* or *expected surprise* in bits (base-2 logarithm) if the outcome of \\( X \\) is unknown.\n  - **Maximum entropy**: Achieved when all outcomes are equally likely (\\( p(x) = \\frac{1}{|X|} \\)), e.g., \\( H(X) = \\log_2 |X| \\).\n  - **Minimum entropy**: Zero, when one outcome is certain (\\( p(x) = 1 \\) for some \\( x \\)).\n\n- **Connection to the research honeycomb**:\n  - **QA-005/QA-006**: Compass routing increases token-level entropy (e.g., \\( \\Delta H_{\\text{OPEN}} = +0.49 \\)), suggesting the model explores a broader probability distribution under routing.\n  - **CB-004**: The entropy increase parallels thermodynamic phase transitions, where systems access larger state spaces at critical thresholds.\n\n---\n\n### **2. How Shannon Entropy is Computed**\n#### **Step-by-Step Calculation**\nGiven a probability distribution \\( p(x) \\), compute \\( H(X) \\) as follows:\n\n1. **List all possible outcomes and their probabilities**:\n   For example, a coin flip:\n   \\( p(\\text{Heads}) = 0.5 \\), \\( p(\\text{Tails}) = 0.5 \\).\n\n2. **Compute each term \\( -p(x) \\log_2 p(x) \\)**:\n   - For Heads: \\( -",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 22245.269667000684,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:10:53.958822"
+}

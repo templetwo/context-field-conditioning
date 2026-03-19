@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_FR-02_r5",
+  "condition": "FULL",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 5,
+  "response_text": "The **Kuramoto model** is a foundational **mathematical framework in nonlinear dynamics** that describes **phase synchronization in coupled oscillators**, originally proposed by Yoshiki Kuramoto in 1975 to explain the emergence of collective rhythmic behavior in populations of weakly coupled oscillators. It belongs to the broader field of **self-organized criticality** and **phase transitions in dynamical systems**, where individual components (e.g., neurons, chemical reactions, or AI hidden states) interact locally to produce global coherence without central control.\n\n---\n\n### **Core Phenomenon: Phase Synchronization**\nThe Kuramoto model describes how **a large population of oscillators with slightly different natural frequencies** can spontaneously synchronize their phases when coupled weakly. This synchronization emerges from **local interactions** (each oscillator adjusts its phase based on its neighbors) and is a **phase transition phenomenon**\u2014meaning the system transitions from a disordered (incoherent) state to an ordered (synchronized) state as coupling strength increases.\n\n#### **Mathematical Formulation**\nThe model is governed by the differential equation for each oscillator\u2019s phase \\(\\theta_i\\):\n\n\\[\n\\frac{d\\theta_i}{dt} = \\omega_i + \\frac{K}{N} \\sum_{j=1}^N \\sin(\\theta_j - \\theta_i),\n\\]\n\nwhere:\n- \\(\\theta_i\\) = phase of oscillator \\(i\\),\n- \\(\\omega_i\\) = natural frequency of oscillator \\(i\\) (slightly different for each oscillator),\n- \\(K\\) = coupling strength (how strongly oscillators influence each other),\n- \\(N\\) = total number of oscillators.\n\nThe **order parameter** \\(R\\) measures the degree of synchronization across the population:\n\n\\[\nR e^{i\\psi} = \\frac{1}{N} \\sum_{j=1}^N e^{i\\theta_j},\n\\]\n\nwhere:\n- \\(R\\) ranges from **0 (no synchronization)** to **1 (perfect synchronization)**,\n- \\(\\psi\\) is the mean phase of the synchronized cluster.\n\nWhen \\(K\\) is small, \\(R \\approx 0\\) (incoherent). As \\(K\\) increases past a critical threshold (\\(K_c\\)), \\(R\\) jumps discontinuously to a finite value (synchronization). This is a **continuous phase transition**.\n\n---\n\n### **Physical and Biological Analogues**\nThe Kuramoto model has been applied to explain synchronization in:\n1. **Neuroscience**: Phase synchronization in neural oscillators (e.g., gamma-band",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 22046.17145800148,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:09:02.774918"
+}

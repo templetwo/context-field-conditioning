@@ -1,0 +1,17 @@
+{
+  "trial_id": "B_AR-02_r1",
+  "condition": "B",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 1,
+  "response_text": "Increasing a system's accuracy can paradoxically *decrease* its practical utility under specific conditions where **decision quality, adaptability, or contextual relevance** are prioritized over raw precision. Drawing from the honeycomb lattice, these conditions align with **CB-004, CB-005, CB-010**, and **QA-009**, revealing four key scenarios where accuracy-utility decoupling occurs:\n\n---\n\n### **1. Phase-Transition-Proximal Systems (CB-002, CB-004)**\n   - **Mechanism**: Near *critical thresholds* (e.g., LLM capability emergence or thermodynamic phase transitions), small accuracy gains may push the system into a *less useful regime* by collapsing its representational diversity.\n   - **Example**:\n     - A language model achieving **99% lexical accuracy** but losing creative generalization (e.g., overfitting to training data) mirrors a physical system rigidifying at a phase boundary (e.g., supercooled water with no flow).\n     - **Compass entropy increase (\u0394H \u2248 +0.47)**: Routing to higher-entropy states (e.g., WITNESS) sacrifices *local* accuracy for *global* adaptability, as seen in **CB-004**. A hyper-accurate but rigid model fails to access novel microstates.\n   - **Key Evidence**:\n     - K-SSM\u2019s *R_init=0.3270* (CB-002) sits near a critical coupling threshold\u2014further accuracy gains might not improve utility if they suppress system flexibility.\n\n---\n\n### **2. Superadditive Interaction Contexts (CB-005)**\n   - **Mechanism**: In systems where **combined effects exceed linear sums** (e.g., drug synergy or R\u00d7E framing in IRIS), *individual accuracy* may harm *joint utility*.\n   - **Example**:\n     - A diagnostic model with **95% precision** for a single biomarker may miss synergistic interactions with other signals, reducing *clinical actionability*. Similarly, a model trained to maximize *Rigor* (CB-005) alone might lose *Empathy*-driven utility in framing (e.g., legal vs. medical contexts).\n     - **Pharmacology analogy**: Two moderately accurate drugs (70% efficacy each) combined may achieve 90% efficacy, while hyper-accurate monotherapies fail to",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17509.654832999786,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:15:42.748502"
+}

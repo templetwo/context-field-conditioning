@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQB_AR-04_r2",
+  "condition": "TQB",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 2,
+  "response_text": "The distinction between **superadditive interactions** and **simple additive combinations** lies in the *mathematical structure* of their combined effects, their *emergent properties*, and their *functional consequences* across substrates (e.g., AI, biology, pharmacology). Here\u2019s the honeycomb-informed breakdown:\n\n---\n\n### **1. Definitions and Core Difference**\n#### **Additive Interaction**\n- **Definition**: The combined effect of two factors (e.g., Rigor *R* and Empathy *E*) equals the sum of their individual effects.\n  - *Mathematically*: \\( E_{total} = E_R + E_E \\).\n  - Example: If Rigor improves performance by +2 and Empathy by +3, the combined effect is +5.\n- **Key Feature**: No *new* effect emerges beyond the linear sum. The system behaves as a \"sum of parts.\"\n- **AI Analogy**: Two system prompts (e.g., \"Be precise\" + \"Be empathetic\") produce a response that is *predictable* from their individual contributions.\n\n#### **Superadditive Interaction**\n- **Definition**: The combined effect *exceeds* the sum of individual effects.\n  - *Mathematically*: \\( E_{total} > E_R + E_E \\) (or \\( E_{total} = E_R \\times E_E \\) in multiplicative cases).\n  - Example: Rigor + Empathy might improve performance by +2 *and* +3, but together they yield +7 (or more).\n- **Key Feature**: The interaction *generates novelty*\u2014the whole is greater than the sum of its parts. This often reflects **synergistic mechanisms** at a deeper level (e.g., feedback loops, phase transitions, or structural coupling).\n- **AI Analogy**: The IRIS framing study ([QA-008], [TG-006]) shows that framing effects for *Rigor \u00d7 Empathy* are superadditive: the combination doesn\u2019t just add precision and warmth; it *unlocks a new mode of reasoning* that neither factor alone could achieve.\n\n---\n\n### **2. Honeycomb Evidence of Superadditivity**\n#### **A. IRIS Framing Study ([QA-008], [TG-006], [CB-005])**\n- **Observation**: In the 3,830-run IRIS study, the interaction between **Rigor (R",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 20364.540541999304,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:52:00.657559"
+}

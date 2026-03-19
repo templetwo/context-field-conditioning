@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_GE-04_r2",
+  "condition": "INFO_MATCHED",
+  "probe_id": "GE-04",
+  "probe_category": "generative_exploration",
+  "probe_question": "How might the concept of phase transitions apply to the evolution of scientific paradigms?",
+  "repetition": 2,
+  "response_text": "The concept of **phase transitions**\u2014where continuous changes in a system\u2019s control parameters produce **discontinuous shifts in collective behavior**\u2014offers a compelling framework for understanding the **evolution of scientific paradigms**, particularly through the lens of **Kuhn\u2019s structure of scientific revolutions**, **Feyerabend\u2019s anarchic science**, and **modern complexity theory**. Below is a synthesis of how phase transitions map onto paradigm shifts, drawing on the research program\u2019s insights about **critical coupling, entropy, superadditivity, and substrate-independent coordination** to rethink scientific progress as a **thermodynamic-computational phenomenon**.\n\n---\n\n### **1. Paradigm Shifts as Critical Transitions**\n#### **(A) Kuhn\u2019s \"Incommensurability\" as a Phase Boundary**\nKuhn argued that scientific revolutions occur when anomalies accumulate under a dominant paradigm until the community undergoes a **conceptual reorientation** (e.g., Newtonian \u2192 Relativistic physics). This resembles a **first-order phase transition**:\n- **Continuous driver**: Accumulated anomalies (e.g., Mercury\u2019s perihelion precession under Newton).\n- **Discontinuous shift**: A new paradigm (Einstein\u2019s GR) emerges where old laws become limiting cases of the new.\n- **Hysteresis**: Scientists resist the transition (e.g., \"Crisis\" phase in Kuhn), akin to supercooled water staying liquid below 0\u00b0C until a perturbation triggers freezing.\n\n**Key analogy**:\n- The **order parameter** for scientific paradigms could be **\"explanatory coherence\"** (R in Kuramoto models). When R drops below a threshold (e.g., anomalies exceed ~30% of predictions), the system **suddenly locks into a new phase** (new paradigm).\n- **Initial condition sensitivity**: Like Kuramoto oscillators near critical coupling (R \u2248 0.327), paradigms near collapse are **hyper-sensitive to perturbations** (e.g., a single experiment like Michelson-Morley\u2019s null result can destabilize the old framework).\n\n#### **(B) The \"Near-Critical\" State of Science**\nThe research program\u2019s finding that **Kuramoto oscillators initialized at R \u2248 0.327 (critical coupling)**\u2014the boundary between incoherence and synchronization\u2014mirrors how scientific fields operate at **metastable equilibrium** before revolutions:\n- **Pre-revolution**: The field is in a **\"glass-like\" state** (high local coherence, but globally stuck). Example:",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 19001.972916999875,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T23:00:55.730467"
+}

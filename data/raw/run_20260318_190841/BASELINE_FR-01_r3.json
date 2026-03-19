@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_FR-01_r3",
+  "condition": "BASELINE",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 3,
+  "response_text": "The **quadratic complexity** problem in **transformer attention mechanisms** refers to the fact that the standard **self-attention** mechanism in transformers (e.g., in the original *Attention Is All You Need* paper) has a time and space complexity of **O(n\u00b2)** with respect to the input sequence length **n**. This becomes computationally expensive and memory-intensive for long sequences, limiting their scalability in applications like document processing, time-series analysis, or video understanding.\n\n---\n\n### **Why Does Quadratic Complexity Exist?**\nIn self-attention, each token in the input sequence attends to every other token, requiring:\n- **n \u00d7 n** attention score computations (for **n** tokens),\n- **n \u00d7 n** attention weight storage (in the softmax step),\n- **n \u00d7 n** weighted value aggregations (for the final output).\n\nThis leads to **O(n\u00b2)** operations per layer, and since transformers stack multiple layers, the total complexity grows multiplicatively.\n\n---\n\n### **Key Challenges**\n1. **Memory Bottleneck**:\n   - Storing **n\u00b2** attention weights (e.g., for a sequence of length 1024) requires ~1GB of memory just for the attention matrix, which is impractical for longer sequences (e.g., books, genomes, or long videos).\n   - GPUs/TPUs have limited memory bandwidth, making large-attention models infeasible.\n\n2. **Compute Bottleneck**:\n   - For long sequences (e.g., **n = 100,000**), computing **10\u00b9\u2070** operations per layer is prohibitive, even on modern hardware.\n\n3. **Training Instability**:\n   - Long-range dependencies in attention lead to gradient vanishing/exploding problems, hurting convergence.\n\n---\n\n### **Solutions to Reduce Quadratic Complexity**\nResearchers have proposed several approaches to mitigate this issue:\n\n#### **1. Approximate Attention Methods**\n   - **Sparse Attention**:\n     - Only compute attention between local (e.g., nearby) tokens (e.g., *Sparse Transformers*, *Longformer*, *BigBird*).\n     - Examples:\n       - **Block-Sparse Attention** (e.g., *Longformer*): Divides the sequence into blocks and computes attention only within/across nearby blocks.\n       - **Strided Attention** (e.g., *BigBird*): Uses random or learned strided patterns to sample tokens.\n       -",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 16877.605375000003,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:09:51.514273"
+}

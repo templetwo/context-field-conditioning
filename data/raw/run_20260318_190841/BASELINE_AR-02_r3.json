@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_AR-02_r3",
+  "condition": "BASELINE",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 3,
+  "response_text": "Increasing a system's accuracy (e.g., in machine learning, measurement, decision-making, or control systems) can sometimes *decrease* its practical utility under the following conditions:\n\n### **1. Overfitting (Precision Over Generalization)**\n   - **Problem:** A model or system becomes overly optimized for training data but fails to generalize to real-world scenarios.\n   - **Example:**\n     - A medical diagnostic model achieves 100% accuracy on a curated dataset but misclassifies rare cases due to lack of representative examples.\n     - A fraud detection system flags too many false positives (high precision but low recall), making it impractical to review all alerts.\n   - **Why it reduces utility:** The system may be brittle, fail in edge cases, or require excessive computational resources to maintain precision.\n\n### **2. Ignoring False Positives/Negatives (Precision-Recall Tradeoff)**\n   - **Problem:** Focus on accuracy alone (e.g., balancing precision and recall) may lead to worse outcomes in critical applications.\n   - **Examples:**\n     - **High-stakes decisions (e.g., healthcare, law enforcement):**\n       - A cancer screening test with 99% accuracy but 5% false positives may cause unnecessary stress or invasive follow-ups.\n       - A facial recognition system with 99.9% accuracy on a biased dataset may disproportionately misidentify certain demographic groups.\n     - **Costly false negatives:**\n       - A spam filter with 99.9% accuracy may miss 0.1% of phishing emails\u2014enough to cause financial harm.\n   - **Why it reduces utility:** The system\u2019s harm from errors may outweigh the benefits of high accuracy.\n\n### **3. Computational or Resource Overhead**\n   - **Problem:** Achieving higher accuracy requires excessive compute power, time, or data, making the system impractical.\n   - **Examples:**\n     - A deep learning model for real-time applications (e.g., autonomous driving) may need to run at 100 FPS but can only achieve high accuracy at 10 FPS.\n     - A high-precision sensor in a low-power IoT device drains batteries quickly.\n   - **Why it reduces utility:** The system becomes slow, expensive, or energy-inefficient, limiting deployment.\n\n### **4. Misalignment with User Needs**\n   - **Problem:** Accuracy is measured in ways that don\u2019t match real-world utility.\n   - **Examples:**\n     - A",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17011.474292000003,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:16:28.731528"
+}

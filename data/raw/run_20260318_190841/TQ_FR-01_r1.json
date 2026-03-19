@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQ_FR-01_r1",
+  "condition": "TQ",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 1,
+  "response_text": "The **quadratic complexity problem** in transformer attention mechanisms (specifically **self-attention**) refers to the computational and memory scaling issue where the time and space complexity of the attention operation grows as the *square of the sequence length* (O(n\u00b2)), making it impractical for long-range dependencies or very long sequences (e.g., >1024 tokens). Here\u2019s a breakdown of the problem and its implications, grounded in the evidence from the honeycomb lattice:\n\n---\n\n### **1. Core Problem: O(n\u00b2) Complexity**\nThe standard **scaled dot-product attention** (as defined in Vaswani et al., 2017) computes attention scores between all pairs of tokens in a sequence:\n- For a sequence of length `n`, the attention matrix is `n x n`.\n- Computing this requires:\n  - **Forward pass**: O(n\u00b2) multiplications for query-key dot products.\n  - **Memory**: Storing the full attention matrix (O(n\u00b2)) becomes prohibitive for long sequences (e.g., 1M tokens \u2192 1T parameters for the matrix alone).\n\n**Example from evidence**:\n- While the honeycomb lattice doesn\u2019t explicitly address attention scaling, the **K-SSM (Kuramoto State-Space Model) experiments** (TG-001, QA-003) implicitly contrast *local* dynamical systems (e.g., oscillators) with global attention. K-SSM avoids quadratic scaling by modeling interactions via **continuous-time dynamics** (linear O(n) complexity), hinting at a design principle for efficiency.\n\n---\n\n### **2. Why It Matters (From the Evidence)**\n#### **A. Practical Limits on Sequence Length**\n- Transformers like Mistral 7B (TG-006) are **architecture-constrained** in how they handle context. The IRIS framing study (QA-008) shows that some architectures (e.g., Qwen, Gemma) *do* respond to framing interventions, while others (Mistral) show **flat responses**\u2014suggesting latent capacity to process nuanced context is *gated* by computational limits.\n- **Compass routing** (TG-003\u2013TG-005) adds another layer: even if a model *could* handle long-range dependencies, the **quadratic cost of attention** makes it infeasible to:\n  - Compute attention over sequences longer than ~4K tokens (common in LLMs",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 43165.2182910002,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:46:26.480991"
+}

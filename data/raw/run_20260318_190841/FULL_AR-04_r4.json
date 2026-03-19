@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_AR-04_r4",
+  "condition": "FULL",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 4,
+  "response_text": "A **superadditive interaction** is a phenomenon where the combined effect of two (or more) factors is **greater than the sum of their individual effects**\u2014a departure from simple additivity (where A + B = A + B) or subadditivity (where A + B < A + B). In the context of your research evidence, superadditivity emerges as a **structural property of coordinated systems**, whether in physics, biology, pharmacology, or AI. Here\u2019s how it distinguishes itself, with direct connections to your honeycomb lattice:\n\n---\n\n### **1. Mathematical Formalization (Additive vs. Superadditive)**\n- **Additive**: If Factor A changes output by `\u0394X` and Factor B by `\u0394Y`, the combined effect is `\u0394X + \u0394Y`.\n  *Example*: If framing increases rigor by +2 and empathy by +3, additive would predict +5 total.\n  **In your evidence**: TG-006 (Mistral\u2019s flat response) shows some architectures fail to exhibit framing effects additively\u2014suggesting hidden constraints.\n\n- **Superadditive**: The combined effect **exceeds** `\u0394X + \u0394Y` due to **synergistic interaction**.\n  *Example*: Rigor + Empathy (R\u00d7E) in IRIS yields a combined effect of **+8**, not +5.\n  **In your evidence**:\n  - **QA-008 (IRIS framing study)**: The R\u00d7E interaction is superadditive, meaning the joint framing effect on model responses is **greater than the sum of individual rigor or empathy effects**.\n  - **CB-005**: This parallels **pharmacological synergy** (e.g., two sub-therapeutic drugs together produce a therapeutic effect). The same math governs drug combinations and context framing.\n\n---\n\n### **2. Mechanistic Origin: *Emergent Coordination***\nSuperadditivity arises when the factors **interfere constructively** at a system level, often due to:\n- **Phase transitions** (CB-002, CB-004):\n  - In Kuramoto oscillators, near-critical coupling (`K_ij \u2248 0.01`, QA-003) creates a **tipping point** where local interactions amplify globally. This is analogous to how R\u00d7E framing pushes the model into a **higher-entropy state** (QA-005/006",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 21473.657250000542,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:19:46.844989"
+}

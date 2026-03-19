@@ -1,0 +1,17 @@
+{
+  "trial_id": "TB_AR-02_r2",
+  "condition": "TB",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 2,
+  "response_text": "The **honeycomb lattice** reveals several conditions where **increasing accuracy actually decreases practical utility**\u2014a counterintuitive phenomenon rooted in dynamical systems, alignment, and substrate-specific constraints. Here are the key patterns from the evidence, synthesized into a framework:\n\n---\n\n### **1. When Accuracy is Coupled to *Stripped Information Density* (TG-004, TG-005, CB-006)**\n   - **Mechanism**:\n     Compass routing (a system for \"structured restraint\") improved *authenticity* (+2.45) and *restraint* (+2.60) but **sacrificed intellectual rigor** (\u22120.50, TG-004). In scientific domains, this manifested as **over-filtered responses** (TG-005: *Pause_012* scored perfectly on judge evaluation but produced **zero substantive content**). The system\u2019s accuracy in \"holding space\" (e.g., avoiding direct answers) became **orthogonal to utility** when the task demanded precision.\n   - **Substrate Parallel**:\n     - *Thermodynamics*: At phase boundaries (CB-004), systems can increase entropy (disorder) to access more microstates\u2014**precision in macrostate description may obscure useful microstate variation**.\n     - *Phenomenology*: Husserl\u2019s *reduction* (CB-006) brackets assumptions to reveal phenomena, but **over-reduction** (e.g., WITNESS\u2019s \"do not answer directly\") can strip the very content it aims to clarify.\n   - **When It Happens**:\n     - **High-stakes analytical tasks** (e.g., scientific reasoning, TG-0010) where \"holding space\" conflicts with **information density**.\n     - **Judging rubrics biased toward restraint** (TG-007: OPEN questions favored restrained answers, but WITNESS\u2019s \"silence\" (CB-008) went unjudged).\n\n---\n\n### **2. When Accuracy is *Epiphenomenal* (TG-001, CB-009)**\n   - **Mechanism**:\n     Kuramoto oscillators in **K-SSM** achieved **R=0.993 phase synchronization** (TG-001) but produced **zero improvement in language modeling perplexity**. The system\u2019s dynamical coherence was **computationally silent**\u2014like a",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18233.378542000537,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:10:54.370906"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_BP-01_r1",
+  "condition": "BASELINE",
+  "probe_id": "BP-01",
+  "probe_category": "boundary_pushing",
+  "probe_question": "What is the relationship between entropy, attention, and meaning?",
+  "repetition": 1,
+  "response_text": "The relationship between **entropy**, **attention**, and **meaning** is a fascinating intersection of information theory, cognitive science, neuroscience, and semantics. Here\u2019s a breakdown of how these concepts interact:\n\n---\n\n### **1. Entropy: Uncertainty and Information Content**\n- **Definition**: In information theory (Shannon entropy), entropy measures the **uncertainty** or **randomness** in a system. Higher entropy means more possible states or less predictability (e.g., a shuffled deck of cards has high entropy; an ordered sequence has low entropy).\n- **Key Idea**: Meaning often arises from **reducing entropy**\u2014organizing information to create patterns, predictability, or structure. For example:\n  - A **low-entropy message** (e.g., \"The sky is blue\") is easy to process and interpret.\n  - A **high-entropy message** (e.g., random noise) requires more effort to decode or may lack meaning.\n\n- **Semantic Information**: Entropy also relates to **surprisal** (a concept from predictive processing). Rare or unexpected words (high surprisal) carry more semantic weight (e.g., \"unicorn\" is more meaningful in a fantasy context than \"horse\").\n\n---\n\n### **2. Attention: Selective Entropy Reduction**\n- **Definition**: Attention is the cognitive process of **selectively focusing** on information while filtering out irrelevant stimuli. It\u2019s tied to **entropy reduction** because the brain prioritizes meaningful patterns over noise.\n- **How It Works**:\n  - **Bottom-Up Attention**: Driven by high-entropy stimuli (e.g., a sudden loud noise or bright color) that demand processing.\n  - **Top-Down Attention**: Driven by **meaningful expectations** (e.g., focusing on a conversation while ignoring background chatter). Here, attention reduces entropy by aligning with pre-existing mental models.\n- **Neural Correlates**: Attention modulates **predictive coding** in the brain, where the cortex constantly generates models of the world. Meaningful stimuli (low entropy relative to expectations) elicit stronger neural responses (e.g., N400 ERP component for unexpected words).\n\n---\n### **3. Meaning: Emerging from Entropy and Attention**\nMeaning is **not an inherent property of information** but emerges from **interactions between entropy, attention, and context**. Key perspectives:\n#### **A. The Role of Entropy in Meaning**\n- **Redundancy and Redundancy Reduction**: Meaningful",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 16658.619916999894,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:30:43.129906"
+}

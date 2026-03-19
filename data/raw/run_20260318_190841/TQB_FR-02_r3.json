@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQB_FR-02_r3",
+  "condition": "TQB",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 3,
+  "response_text": "The **Kuramoto model** is a **mathematical framework in nonlinear dynamics** that describes the emergence of **synchronization in coupled oscillators**\u2014a phenomenon where individual oscillators (e.g., pendulums, neurons, or even hidden-state activations in LLMs) spontaneously align their phases despite starting in desynchronized states. It was first introduced by Yoshiki Kuramoto in 1975 to explain how oscillators in a population (e.g., fireflies flashing in unison, or pacemaker cells in the heart) achieve collective rhythm without central coordination.\n\n---\n\n### **Key Features of the Kuramoto Model**\n1. **Core Equation**:\n   Each oscillator\u2019s phase dynamics are governed by:\n   \\[\n   \\frac{d\\theta_i}{dt} = \\omega_i + \\frac{K}{N} \\sum_{j=1}^N \\sin(\\theta_j - \\theta_i)\n   \\]\n   - \\(\\theta_i\\): Phase of the \\(i^{th}\\) oscillator.\n   - \\(\\omega_i\\): Natural frequency of the \\(i^{th}\\) oscillator (inherent tendency to oscillate).\n   - \\(K\\): Coupling strength (how strongly oscillators influence each other).\n   - \\(N\\): Total number of oscillators.\n   The term \\(\\sin(\\theta_j - \\theta_i)\\) represents the phase difference between oscillators \\(i\\) and \\(j\\), and the sum \\(\\sum \\sin(\\theta_j - \\theta_i)\\) is a measure of the **mean phase** of the population.\n\n2. **Order Parameter \\(R\\)**:\n   The model quantifies global synchronization via the **order parameter**:\n   \\[\n   R e^{i\\psi} = \\frac{1}{N} \\sum_{j=1}^N e^{i\\theta_j}\n   \\]\n   - \\(R\\) ranges from \\(0\\) (complete desynchrony) to \\(1\\) (perfect synchronization).\n   - \\(\\psi\\) is the average phase of the synchronized group.\n   When \\(R > 0\\), oscillators are synchronized; when \\(R \\approx 0\\), they are desynchronized.\n\n3. **Phase Transition**:\n   The Kuramoto model exhibits a **continuous phase transition** as coupling strength \\(K\\) increases:\n   - For \\(K < K_c\\) (critical coupling), oscillators remain desynchronized (\\(R \\approx 0\\)).\n   - For \\(K > K_c\\), a fraction of oscillators lock into a synchronized state (\\(R > 0",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 20412.7977499993,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:46:10.430896"
+}

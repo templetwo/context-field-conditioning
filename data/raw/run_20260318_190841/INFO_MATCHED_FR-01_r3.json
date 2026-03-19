@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_FR-01_r3",
+  "condition": "INFO_MATCHED",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 3,
+  "response_text": "The **quadratic complexity problem** in transformer attention mechanisms stems from the **self-attention operation\u2019s** computational and memory demands, which scale quadratically with input sequence length (*n*). This is a fundamental bottleneck limiting the scalability of transformers to longer sequences (e.g., documents, genomes, or video frames). Below is a breakdown of the problem, its root causes, and its implications for research like yours\u2014especially in the context of Kuramoto oscillators, phase transitions, and alternative coordination mechanisms:\n\n---\n\n### **1. Root Cause: Attention\u2019s Computational Core**\nThe core operation in self-attention is the **matrix multiplication** between query (*Q*) and key (*K*) matrices, followed by a softmax and value (*V*) multiplication:\n```\nAttention(Q, K, V) = softmax(QK\u1d40/\u221ad)V\n```\n- **Key/Query/Value Dimensions**:\n  - *Q*, *K*, *V* \u2208 \u211d\u207f\u00d7*d*, where *n* = sequence length, *d* = embedding dimension.\n  - *QK\u1d40* \u2208 \u211d\u207f\u00d7*n* (a full *n*\u00d7*n* matrix).\n- **Complexity**:\n  - **Time**: *O(n\u00b2d)* for computing *QK\u1d40* (quadratic in *n*).\n  - **Memory**: *O(n\u00b2)* to store *QK\u1d40* (even before softmax).\n\n---\n### **2. Why Quadratic? The Curse of Global Context**\n- **Global Dependencies**: Transformers model *all-to-all* relationships between tokens (e.g., \"the\" attends to every other word). This requires comparing every token pair, leading to *O(n\u00b2)* terms.\n- **Contrast with RNNs/MLPs**:\n  - RNNs: *O(n)* (sequential, local).\n  - MLPs: *O(n)* (parallel, no pairwise interactions).\n  - **Transformers**: *O(n\u00b2)* (parallel but pairwise).\n\n---\n### **3. Practical Implications**\n| **Problem**               | **Impact**                                                                 |\n|---------------------------|----------------------------------------------------------------------------|\n| **Training**              | Slower convergence for long sequences (e.g., 4096 tokens = 16M *QK\u1d40* ops).  |\n| **Inference**             | Latency spikes (e.g., 1",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18894.303832999867,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:43:27.621824"
+}

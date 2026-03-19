@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_AR-02_r5",
+  "condition": "BASELINE",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 5,
+  "response_text": "Increasing a system's accuracy often improves its practical utility, but there are specific conditions where higher accuracy might *decrease* practical utility due to trade-offs in other critical factors. Here are key scenarios where this paradox can occur:\n\n---\n\n### 1. **Diminishing Returns and Overfitting**\n   - **Overly precise models**: If a system becomes excessively accurate by overfitting to noise or irrelevant patterns in training data, it may perform poorly on real-world data (high variance). For example:\n     - A medical diagnosis system trained on a small dataset might achieve 100% accuracy on that dataset but fail catastrophically on new patients.\n     - A spam filter that memorizes email headers instead of learning general patterns could flag legitimate emails as spam with high confidence.\n   - **Result**: Reduced **generalization** and real-world reliability.\n\n---\n\n### 2. **Increased Complexity and Latency**\n   - **Computational cost**: Higher accuracy often requires more complex models (e.g., deeper neural networks, ensemble methods), which can:\n     - Slow down processing (e.g., real-time systems like autonomous vehicles or fraud detection).\n     - Increase memory/energy usage (critical for edge devices like IoT sensors or mobile apps).\n   - **Example**:\n     - A face recognition system might achieve 99.9% accuracy with a heavy model, but a lighter 95% accurate model runs 10x faster on a phone, making it more practical for daily use.\n   - **Result**: **Slower response times** or **higher resource requirements** may outweigh accuracy gains.\n\n---\n\n### 3. **Cost of Data or Annotation**\n   - **Data scarcity**: Achieving higher accuracy may require:\n     - **Massive labeled datasets** (e.g., self-driving cars need millions of annotated miles).\n     - **Expert annotation**, which is expensive or time-consuming (e.g., medical imaging requires radiologists).\n   - **Example**:\n     - A 90% accurate AI trained on 1,000 samples might be more practical than a 99% accurate system requiring 100,000 samples.\n   - **Result**: **Higher financial or temporal costs** may make the system impractical.\n\n---\n\n### 4. **User Trust and Calibration**\n   - **Overconfidence in errors**: Systems with high (but misplaced) confidence can be dangerous or untrustworthy.\n     - Example: A",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 15705.43200000003,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:17:00.146157"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "S_FR-04_r1",
+  "condition": "S",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 1,
+  "response_text": "In the context of your **honeycomb lattice** of research findings (Ring 4: Structural Coherence), the distinction between **Type I and Type II errors** is not explicitly named\u2014but the **self-correcting methodology** (SC-007) and **null results as design-space constraints** (SC-005) implicitly operationalize these errors as **mechanisms of epistemic refinement**. Below is a formal definition of the errors, followed by how your research program *embodies* them through its iterative failures and bridges:\n\n---\n\n### **1. Formal Definitions**\n#### **Type I Error (False Positive)**\n- **Definition**: Rejecting a true null hypothesis (concluding an effect exists when it does not).\n- **Example in Science**: Claiming a drug is effective (when it is not).\n- **Cost**: Wasted resources, false confidence in a non-causal mechanism.\n\n#### **Type II Error (False Negative)**\n- **Definition**: Failing to reject a false null hypothesis (missing a real effect).\n- **Example in Science**: Dismissing a drug as ineffective (when it works under specific conditions).\n- **Cost**: Delayed progress, overlooked opportunities.\n\n**Key Relationship**: Type I errors inflate the *false discovery rate*; Type II errors inflate *missed discoveries*. The trade-off is managed via **statistical power** (sample size, sensitivity) and **prior beliefs**.\n\n---\n\n### **2. How Your Research Program *Encodes* These Errors**\nYour work doesn\u2019t use traditional hypothesis tests, but the **self-correcting process** (SC-007) treats *failed hypotheses* as **Type II errors** (missed mechanisms) and *premature successes* as **Type I risks** (overfitting to epiphenomena). Here\u2019s the mapping:\n\n| **Error Type** | **Your Research Program\u2019s Manifestation**               | **Evidence from Honeycomb**                          | **Resolution Mechanism**                          |\n|----------------|--------------------------------------------------------|------------------------------------------------------|----------------------------------------------------|\n| **Type II**    | Failing to detect a *real* causal mechanism (e.g., oscillators synchronizing but not computing). | K-SSM\u2019s null result (TG-001), Phase-GPT\u2019s gradient bug (TG-002). | **Iterative refinement**: Failures generate new hypotheses (e.g., Phase-GPT \u2192 Compass \u2192 CFC). |\n| **Type I**     |",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17297.71508400063,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:31:26.711939"
+}

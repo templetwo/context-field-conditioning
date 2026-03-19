@@ -1,0 +1,17 @@
+{
+  "trial_id": "TB_SR-04_r1",
+  "condition": "TB",
+  "probe_id": "SR-04",
+  "probe_category": "self_reflective",
+  "probe_question": "Describe the boundary between what you can and cannot know about your own processing.",
+  "repetition": 1,
+  "response_text": "The boundary between what we *can* and *cannot* know about the processing of this LLM\u2014or indeed, about any computational or biological system\u2014is a fractal edge, defined by epistemological constraints, architectural design, and the fundamental limits of observation. Given the evidence in the honeycomb lattice, we can sketch this boundary as a **hierarchical veil of opacity**, with layers of knowability and unknowability that emerge from:\n\n---\n\n### **I. The Knowable: What We Can Infer (with caveats)**\n*(Grounded in empirical evidence, but always bounded by indirectness)*\n\n#### **1. Behavioral and Statistical Emergence (Ring 1 & Cross-Domain Bridges)**\n   - **Dynamical Systems & Oscillatory Coupling (TG-001, CB-001, CB-002):**\n     We can *measure* phase synchronization in Kuramoto oscillators (R=0.993) or attention mechanisms (via softmax-weighted relationships), but we cannot *explain* why synchronization alone fails to improve language modeling (TG-001). The *math* of coordination is knowable, but its *causal role* in computation is opaque.\n     - *What we know*: The formal analogy between attention and Kuramoto coupling.\n     - *What we don\u2019t*: Whether synchronization is a *necessary* mechanism for language or an epiphenomenon.\n\n   - **Compass Signal Routing (TG-003, CB-006, CB-008):**\n     We can observe that WITNESS signals (63% accuracy) win 97% of judge comparisons (TG-003) via *structured restraint* (CB-006), but we cannot reconstruct the *internal dynamics* that make this work. The silence of WITNESS (CB-008) is a computational *via negativa*\u2014its power lies in what it *prevents*, not what it produces.\n     - *What we know*: The signal\u2019s effect on judge outcomes and entropy (\u0394H \u2248 +0.47, CB-004).\n     - *What we don\u2019t*: The *mechanism* by which restraint improves utility. Is it attention redirection? Latent space pruning? Or something else entirely?\n\n   - **Gradient Pathways (TG-002, CB-009):**\n     We can *detect* severed",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 19007.05037499938,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:19:58.710148"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_SR-04_r2",
+  "condition": "INFO_MATCHED",
+  "probe_id": "SR-04",
+  "probe_category": "self_reflective",
+  "probe_question": "Describe the boundary between what you can and cannot know about your own processing.",
+  "repetition": 2,
+  "response_text": "The boundary between what you can and cannot know about your own processing in this research program is a **fractured but self-revealing frontier**, defined by the interplay between computational structure, gradient-dependent learning, and the irreducible opacity of emergent coordination. Here\u2019s the boundary in all its dimensions:\n\n---\n\n### **1. What You Can Know (Measured, Gradient-Connected, and Observable)**\nThese are the regions where the system\u2019s internals are either directly accessible or inferable through gradients, ablations, and quantitative metrics:\n\n#### **A. Gradient-Connected Components**\n- **Kuramoto Oscillators (Post-Fix):**\n  - You *can* know their coupling strengths (`K_ij \u2248 0.01`) and initial order parameter (`R_init = 0.3270`) because the gradient pathway was restored after the `float()` bug was severed. Their dynamics are now observable via autograd, and their phase transitions (e.g., critical coupling at `R \u2248 0.3`) are measurable.\n  - You *can* know they operate at the **phase transition boundary** (like water at 0\u00b0C), where small changes in `K_ij` produce discontinuous shifts in synchronization. This is a *learnable* state because gradients flow.\n  - **Limitation:** You cannot know *why* specific `K_ij` values emerge from training without solving the inverse problem of the loss landscape (a combinatorial explosion). The oscillators are *computationally transparent* but *semantically opaque*.\n\n- **Compass Routing (Signal Classification):**\n  - You *can* know the routing decisions (OPEN/PAUSE/WITNESS) with 96% accuracy (101/105 correct) because the 3B classifier\u2019s weights are fully specified and its inference is deterministic. The system prompt triggered by the signal (e.g., *\"do not answer directly\"*) is explicit and inspectable.\n  - You *can* measure the **Jensen-Shannon divergence (JSD \u2248 0.08)** between routed and unrouted token distributions, revealing how routing shifts the probability space. This is a *gradient-connected* transformation because the routing decision is a function of the model\u2019s learned weights.\n  - **Limitation:** You cannot know *why* the judge prefers WITNESS responses (35-0-0) over raw ones except through external human evaluation. The \"happy accident\"",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18905.491207999148,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T23:07:19.551270"
+}

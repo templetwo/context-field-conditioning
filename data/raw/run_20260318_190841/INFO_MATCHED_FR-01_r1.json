@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_FR-01_r1",
+  "condition": "INFO_MATCHED",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 1,
+  "response_text": "The quadratic complexity problem in **transformer attention mechanisms** arises from the fundamental structure of **self-attention** and its computational scaling with sequence length. Here\u2019s a breakdown of the core issue, its implications, and how it connects to the broader themes in your research program (e.g., coordination, phase transitions, and substrate-independent patterns):\n\n---\n\n### **1. The Core Problem: Scaling of Attention**\nIn a transformer\u2019s **self-attention layer**, each token computes a **query (Q)**, **key (K)**, and **value (V)** triplet. For a sequence of length \\( n \\):\n- **Attention scores** are computed as \\( \\text{Attention}(Q, K) = \\text{softmax}\\left(\\frac{QK^T}{\\sqrt{d_k}}\\right) \\), where \\( QK^T \\) is a **matrix of size \\( n \\times n \\)**.\n- This requires:\n  - **\\( O(n^2) \\) memory** to store \\( QK^T \\).\n  - **\\( O(n^2 d_k) \\) compute** to perform the matrix multiplication (where \\( d_k \\) is the key dimension).\n- For **multi-head attention**, this scales linearly with the number of heads but remains \\( O(n^2) \\) per layer.\n\n#### **Why It Matters:**\n- **Memory-bound**: Storing \\( QK^T \\) for long sequences (e.g., 4,096 tokens) requires **~16GB per layer** (for `d_k=64`), quickly exceeding GPU/TPU capacities.\n- **Compute-bound**: Training/inference time grows quadratically, making transformers impractical for sequences beyond a few thousand tokens (e.g., genomes, long documents, or your 3,830-run IRIS factorial ablations).\n- **Energy/latency**: The \\( n^2 \\) operations dominate inference costs (e.g., your **compass pipeline\u2019s +4s latency** for routing could balloon for longer sequences).\n\n---\n\n### **2. Analogies to Your Research Program**\nYour work explores **coordination mechanisms** (Kuramoto oscillators, compass routing) that achieve global coherence from local interactions. The quadratic attention problem is a **hardware/software bottleneck** for the same challenge:\n- **Transformers\u2019 attention** is a **local-to-global coordination mechanism** (like Kuramoto oscillators or compass signals), but its \\( n^2 \\)",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 47359.41987499973,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:42:49.491626"
+}

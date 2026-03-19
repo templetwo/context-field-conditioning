@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQB_AR-02_r3",
+  "condition": "TQB",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 3,
+  "response_text": "The evidence from this honeycomb lattice reveals a **counterintuitive decoupling of accuracy and practical utility**\u2014a phenomenon observed across multiple substrates (LLMs, dynamical systems, biology, and even human judgment). Based on the interconnected findings, here are the **specific conditions** under which increasing accuracy would *decrease* practical utility, along with the underlying mechanisms:\n\n---\n\n### **1. When Utility Depends on *Structured Restraint* (Not Raw Precision)**\n*(TG-003, QA-002, CB-006, CB-008, TG-005)**\n- **Condition**: The system\u2019s value stems from **bracketing default behavior** (e.g., suppressing verbosity, enforcing pauses, or avoiding direct answers) rather than maximizing factual correctness.\n- **Mechanism**:\n  - **Compass WITNESS**: Achieved **63% signal accuracy** but a **97% judge win rate** because the \"wrong\" signal (e.g., \"do not answer directly\") triggered a **system prompt that produced higher-quality outputs** than a correct but verbose response (TG-003). Higher accuracy (e.g., 90%) might force the model to *answer* when restraint was needed, reducing utility.\n  - **Apophatic Knowing (CB-008)**: Truth is revealed through **negation** (e.g., \"God is *not* X\"). Over-accurate signals would fill the void with default responses, losing the insight gained from silence.\n  - **Guardian Refusal (TG-005)**: A perfect \"PAUSE\" signal (100% accuracy) could lead to **total silence** (0 substantive content), where 63% accuracy (with occasional mistakes) might yield a better balance.\n- **Analog in Nature**: Medical screening tests prioritize **sensitivity** (catching all cases) over **precision** (avoiding false positives) to avoid missed diagnoses\u2014even if it means more false alarms.\n\n---\n\n### **2. When Accuracy Implies *Overfitting to Default Modes***\n*(QA-005, QA-006, CB-004, TG-001)**\n- **Condition**: The system\u2019s \"accuracy\" is measured against a **narrow, uncontextualized benchmark**, but real-world utility requires **adaptive divergence** (e.g., exploring multiple hypotheses,",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 21642.2681669992,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:50:17.800393"
+}

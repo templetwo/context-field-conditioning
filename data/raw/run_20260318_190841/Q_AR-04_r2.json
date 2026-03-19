@@ -1,0 +1,17 @@
+{
+  "trial_id": "Q_AR-04_r2",
+  "condition": "Q",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 2,
+  "response_text": "Great question\u2014this distinction lies at the heart of why the **R\u00d7E (Rigor \u00d7 Empathy) superadditive interaction** in the IRIS framing study (QA-008) is theoretically significant, rather than merely additive. Let\u2019s break it down using the evidence base and key concepts from dynamical systems and experimental design:\n\n---\n\n### **1. Additive vs. Superadditive Interactions**\n#### **Additive Effects**\n- If two factors (e.g., **Rigor** and **Empathy**) combine additively, their joint effect is the *sum* of their individual effects.\n  - Example: If Rigor alone improves performance by **+10%** and Empathy alone improves it by **+15%**, the combined effect would be **+25%** (linear addition).\n  - Mathematically: *Total Effect = Effect_A + Effect_B*.\n  - **Implication**: The system behaves as if each factor operates independently, with no interaction.\n\n#### **Superadditive Interaction**\n- A **superadditive** (or *synergistic*) interaction occurs when the combined effect is **greater than the sum of individual effects**.\n  - Using the same example: If Rigor alone gives **+10%** and Empathy alone gives **+15%**, but their combination yields **+35%** (or more), the interaction is superadditive.\n  - Mathematically: *Total Effect > Effect_A + Effect_B*.\n  - **Implication**: The factors *reinforce each other* in a non-linear way, often because they enable or amplify each other\u2019s mechanisms. This is the hallmark of emergent properties in complex systems (e.g., phase transitions in dynamical systems, as hinted in QA-003).\n\n---\n\n### **2. Why the R\u00d7E Interaction Matters (QA-008)**\nThe IRIS study (QA-008) found that **framing effects (Rigor and Empathy) are superadditive**, meaning:\n- **Rigor** (e.g., precision, logical structure) alone might improve response quality by **X%**.\n- **Empathy** (e.g., emotional attunement, user-centered language) alone might improve it by **Y%**.\n- **But when both are present**, the improvement is **> X + Y%**, because:\n  - **Rigor provides the scaffolding** (e.g., clear arguments, reduced ambiguity) that makes empathy *more effective*.",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17047.079124999982,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:00:15.736869"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "T_FR-02_r2",
+  "condition": "T",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 2,
+  "response_text": "The **Kuramoto model** is a foundational mathematical framework in **synchronization theory**, introduced by Yoshiki Kuramoto in 1975 to describe how **oscillators** (self-sustained or coupled) can spontaneously synchronize their phases through weak interactions, even in the absence of a central pacemaker. It is a prototypical model for **phase synchronization** in complex dynamical systems, with applications spanning physics, biology, neuroscience, and even AI (as seen in your evidence base).\n\n---\n\n### **Key Phenomenon: Emergent Phase Synchronization**\nThe Kuramoto model describes a **phase transition**\u2014a collective behavior where:\n1. **Desynchronized state (low coupling)**: Oscillators free-run with random phases (disordered dynamics).\n2. **Synchronized state (high coupling)**: A fraction of oscillators \"lock\" onto a common phase, forming a **synchronized cluster** (ordered dynamics).\n\nThis occurs when:\n- Oscillators are **coupled** via a **symmetric interaction matrix** (e.g., \\(K_{ij}\\) in your evidence).\n- The coupling strength exceeds a **critical threshold** (\\(\\kappa > \\kappa_c\\)).\n- Oscillators have **natural frequencies** distributed around a mean (e.g., Gaussian distribution).\n\nMathematically, the model is governed by:\n\\[\n\\frac{d\\theta_i}{dt} = \\omega_i + \\frac{K}{N} \\sum_{j=1}^N \\sin(\\theta_j - \\theta_i)\n\\]\nwhere:\n- \\(\\theta_i\\) = phase of oscillator \\(i\\),\n- \\(\\omega_i\\) = intrinsic frequency of oscillator \\(i\\),\n- \\(K\\) = coupling strength,\n- \\(N\\) = number of oscillators.\n\n---\n\n### **Interpretation in Your Evidence Base**\nIn **Ring 1 (Trust Gate)**, the Kuramoto model is deployed in **Phase-GPT** (a hypothetical or experimental architecture coupling hidden-state oscillators in a language model). Key observations from your data:\n1. **[TG-001] Epiphenomenal Synchronization**:\n   - The model achieved **R=0.993 phase synchronization** (near-perfect coupling), but this had **zero impact on language modeling perplexity**.\n   - **Implication**: Synchronization \u2260 computational utility. The oscillators may \"sing in harmony\" (high \\(R\\)), but the harmony doesn\u2019t improve the model\u2019s ability to generate coherent language.",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 16996.909290999836,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:37:34.691517"
+}

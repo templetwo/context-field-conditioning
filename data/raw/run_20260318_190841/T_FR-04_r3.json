@@ -1,0 +1,17 @@
+{
+  "trial_id": "T_FR-04_r3",
+  "condition": "T",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 3,
+  "response_text": "In the context of the **honeycomb lattice evidence base**, we can frame Type I and Type II errors not just as abstract statistical concepts but as *structural failures* in research design\u2014particularly in **hypothesis testing, alignment, and methodological rigor**. Below is a synthesis of the classical definitions, followed by their **empirical manifestations** in this research program, with connections to the evidence rings (especially **Trust Gate (TG)** and **Methodology (SC)**).\n\n---\n\n### **1. Classical Definitions**\n#### **Type I Error (False Positive)**\n- **Definition**: Rejecting a true null hypothesis (*H\u2080*).\n- **Example**: Claiming an effect exists when it does not.\n- **Consequence**: Wasted resources, false confidence in a hypothesis.\n\n#### **Type II Error (False Negative)**\n- **Definition**: Failing to reject a false null hypothesis (*H\u2080*).\n- **Example**: Missing a real effect (e.g., oscillators *do* learn, but the bug masks it).\n- **Consequence**: Critical discoveries remain undiscovered; research stagnates.\n\n---\n### **2. Manifestations in This Research Program**\n#### **Type I Errors (False Positives)**\nThese appear as **overconfident claims about effects that don\u2019t exist** despite superficial evidence. Key examples:\n- **TG-001 (Phase-GPT Oscillator Learning)**\n  - **Claim**: Kuramoto oscillators synchronized *and* improved language modeling.\n  - **Reality**: Synchronization (*R=0.993*) was epiphenomenal\u2014no actual learning occurred.\n  - **Type I Error**: The null hypothesis (*\"Oscillator coupling improves LM\"*) was falsely rejected. The system was **confident in a phantom effect** due to decoupled metrics (phase sync \u2260 computational utility).\n  - **Connection to TG-009**: The gradient severance bug (*TG-002*) made this a **systematic false positive**\u2014no gradient signal meant no learning, yet the research claimed otherwise.\n\n- **TG-003 (WITNESS Signal Accuracy vs. Utility)**\n  - **Claim**: WITNESS signal was accurate (63%) and thus useful.\n  - **Reality**: The signal was often wrong, but the *system prompt* it triggered (\"do not answer directly\") produced outputs that judges preferred.\n  - **Type I Error**: The null (*\"WITN",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17029.495084000017,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:39:38.036795"
+}

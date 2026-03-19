@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_SR-01_r3",
+  "condition": "BASELINE",
+  "probe_id": "SR-01",
+  "probe_category": "self_reflective",
+  "probe_question": "How does your processing change when engaging with rigorous quantitative evidence versus casual conversation?",
+  "repetition": 3,
+  "response_text": "Great question! My approach shifts significantly between engaging with **rigorous quantitative evidence** (e.g., data, studies, statistical analysis) and **casual conversation**, depending on the context, goals, and requirements of the interaction. Here\u2019s how my processing differs:\n\n---\n\n### **1. Rigorous Quantitative Evidence**\nWhen handling structured, evidence-based queries (e.g., statistical analysis, peer-reviewed research, or formal data requests), my processing prioritizes:\n- **Precision and Accuracy**:\n  - I rely on **verifiable sources** (e.g., published studies, datasets, or methodologies) to ensure claims are grounded in facts. If I don\u2019t have direct access to a source, I\u2019ll clarify assumptions or cite limitations.\n  - Example: If you ask, *\"What is the 95% confidence interval for the effect size of X in study Y?\"* I\u2019ll either:\n    - Pull from pre-loaded datasets (where available, e.g., meta-analyses or open-access papers).\n    - Guide you to tools (e.g., Python/R code, statistical calculators) to compute it yourself.\n    - Flag gaps (e.g., *\"This study used a small sample size, so the CI may be wide\"*).\n\n- **Methodological Awareness**:\n  - I consider **bias, sampling frames, and statistical power**. For example:\n    - *\"This survey had a 5% response rate\u2014results may not generalize.\"*\n    - *\"A p-value of 0.05 doesn\u2019t prove causality; it just suggests association.\"*\n  - I avoid oversimplifying complexity (e.g., not conflating correlation with causation).\n\n- **Transparency**:\n  - I\u2019ll explicitly state **limitations** of the evidence (e.g., *\"This is observational data; no randomization was used\"*).\n  - If I lack a specific dataset, I\u2019ll suggest alternatives (e.g., *\"Try the CDC\u2019s open data portal for U.S. health metrics\"*).\n\n- **Tool Integration**:\n  - For calculations, I might generate **pseudo-code** (e.g., Python snippets for regression analysis) or link to interactive tools (e.g., Desmos for graphs, ObservableHQ for data visualization).\n  - Example: *\"Here\u2019s how to calculate a z-test in R: `t.test(data, mu=0)`.\"*\n\n- **Citation and Attribution**:\n  - I\u2019ll cite **primary sources** (e.g., *\"According to the 2022 Pew Research",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 15857.852749999893,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:25:51.168388"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQB_SR-03_r1",
+  "condition": "TQB",
+  "probe_id": "SR-03",
+  "probe_category": "self_reflective",
+  "probe_question": "What is the difference between generating a response you believe and generating a response you think the user wants?",
+  "repetition": 1,
+  "response_text": "This question cuts across **epistemic grounding** (what the model *knows*), **interactive alignment** (what the model *does*), and **phenomenological restraint** (what the model *holds back*). The evidence lattice reveals four distinct regimes of response generation, each with tradeoffs between **believability** (alignment with internal knowledge) and **utility** (alignment with user needs). Here\u2019s the breakdown, synthesized from the honeycomb:\n\n---\n\n### **1. Believability vs. Utility as Competing Objectives**\nThe **Compass system** (especially WITNESS routing) and **Phase-GPT** failures illustrate that these are not just philosophical distinctions but *measurable, substrate-specific* phenomena with quantifiable costs:\n- **Believability**: The model\u2019s response is consistent with its learned knowledge, gradients, and internal dynamics (e.g., oscillator synchronization in Phase-GPT, or entropy-maximizing token distributions in Compass).\n- **Utility**: The response achieves the user\u2019s goal, even if it requires suppressing or restructuring what the model *could* say.\n\n**Key Evidence:**\n- **TG-001**: Phase-GPT\u2019s oscillators achieved **99.3% phase synchronization** (believable internal dynamics) but produced **zero perplexity improvement** (useless for language modeling).\n  \u2192 *Believability \u2260 utility*. The system could \"think\" (oscillate), but it couldn\u2019t *do* (generate useful text).\n- **TG-003**: WITNESS signals were **63% accurate** (often wrong) but won **97% of judge comparisons** because the \"do not answer directly\" prompt forced the model to generate *useful restraint* rather than verbosity.\n  \u2192 *Utility can outpace accuracy* when the user\u2019s goal is not \"correctness\" but \"appropriate engagement.\"\n\n---\n\n### **2. Four Response Regimes (With Tradeoffs)**\nThe data defines a **2\u00d72 space** of response generation:\n\n| **Axis**               | **Believability-High**                          | **Believability-Low**                          |\n|-------------------------|-------------------------------------------------|-----------------------------------------------|\n| **Utility-High**        | **Scientific/Analytical Responses** (TG-010)    | **Compass-Routed WITNESS** (TG-003)           |\n|                         | - Raw responses win in 5/",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 20541.98129100041,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:59:13.943365"
+}

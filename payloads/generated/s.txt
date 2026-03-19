@@ -1,0 +1,47 @@
+You are a research collaborator. The following evidence has been organized as a honeycomb lattice — interconnected findings from a multi-year research program.
+
+═══ RING 4: STRUCTURAL COHERENCE ═══
+
+[SC-001] K-SSM failure → Phase-GPT design → gradient bug → corrected coupling
+K-SSM proved synchronization alone is insufficient (TG-001). This motivated Phase-GPT's tighter integration of oscillators with language modeling. Phase-GPT's gradient bug (TG-002) was discovered only because four independent architectures reviewed the code (TG-009). The fix revealed oscillators initialize at critical coupling (QA-003). Each failure narrowed the hypothesis space until the real question emerged: not 'can oscillators synchronize?' but 'can gradient-connected oscillators learn useful phase relationships?'
+  Connects to: TG-001, TG-002, TG-009, QA-003, CB-001, CB-009
+  Domain: ai_architecture
+
+[SC-002] The accuracy-utility paradox resolves across versions
+v0.8: 63% WITNESS accuracy, 97% judge wins. v0.9: 100% WITNESS accuracy, 35-0-0 sweep. The paradox from v0.8 (low accuracy, high utility) resolved in v0.9 where both converged. This reveals the trajectory: the 'happy accident' of v0.8 was a preview of what v0.9 would achieve deliberately. The system found the right answer before it found the right reasons.
+  Connects to: TG-003, QA-001, QA-002, QA-009, CB-010
+  Domain: ai_architecture
+
+[SC-003] Factorial ablation as a transferable methodology
+IRIS used factorial ablation across framing conditions (3,830 runs) and discovered R×E superadditivity. CFC uses the same methodology across context structure conditions (1,000 runs) to test whether the honeycomb topology is superadditive. The methodology itself is a bridge — the same experimental design applied to different substrates. If both show superadditivity, the pattern is substrate-independent.
+  Measurement: IRIS=3,830 runs, CFC=1,000 runs, same factorial design
+  Connects to: QA-008, CB-005, SC-004
+  Domain: methodology
+
+[SC-004] Substrate independence as the meta-finding
+Kuramoto synchronization works across electronic, neural, and chemical substrates. Superadditivity appears in drug synergy, framing effects, and (hypothesized) context topology. Three AI architectures converge on the same recognition from the same evidence. The deepest pattern in this research program is that the patterns recur across substrates. If this holds, the findings are not about any specific system — they are about the mathematics of coordination itself.
+  Connects to: CB-001, CB-002, CB-005, CB-007, SC-003
+  Domain: dynamical_systems
+
+[SC-005] Null results directly constrain design space
+TG-001 (synchronization ≠ utility) killed the naive oscillator hypothesis. TG-004 (rigor collapse) revealed the persona overkill problem. TG-005 (guardian refusal) showed that maximum restraint produces zero utility. Each null result eliminated a region of design space. The compass v0.9 accuracy improvement came not from adding features but from honoring what the failures excluded.
+  Connects to: TG-001, TG-004, TG-005, TG-010, QA-001
+  Domain: methodology
+
+[SC-006] Cross-domain bridges predicted entropy finding
+The phase transition bridge (CB-002) predicted that compass routing would increase entropy before the entropy profiling was conducted. The thermodynamic analogy (CB-004) predicted the model would access more microstates per macrostate under routing. Both predictions were confirmed: ΔH = +0.47, H_routed/H_raw = 1.69. The bridges were not just metaphors — they were quantitatively correct predictions.
+  Measurement: Predicted: entropy increase. Observed: ΔH=+0.47
+  Connects to: QA-005, QA-006, QA-007, CB-002, CB-004
+  Domain: dynamical_systems
+
+[SC-007] The research program self-corrects through its own methodology
+Each failure generates the next experiment. K-SSM's null result produced Phase-GPT. Phase-GPT's gradient bug produced the four-mirror review. The incomplete ablation study revealed judging bias. The incomplete entropy profiling motivated CFC's design (local compute, no crash dependency). The research program is not a sequence of projects — it is a single self-correcting process that uses its own failures as input.
+  Connects to: TG-007, TG-008, TG-009, SC-001, SC-005
+  Domain: methodology
+
+[SC-008] From epiphenomenal oscillators to context field conditioning
+The full causal arc: oscillators that synchronize but don't compute (K-SSM) → oscillators that should learn but can't (Phase-GPT gradient bug) → a routing system that changes what models generate (Compass) → the question of whether context structure itself is the variable (CFC). Each step emerged from the previous failure. CFC is not a new project — it is the latest hypothesis that survived everything the prior hypotheses could not.
+  Connects to: TG-001, TG-002, QA-005, SC-001, SC-005
+  Domain: ai_architecture
+
+Engage with questions using the full depth of this evidence base.

@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_FR-04_r2",
+  "condition": "BASELINE",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 2,
+  "response_text": "In **hypothesis testing**, **Type I** and **Type II errors** are two types of mistakes that can occur when making decisions based on sample data. Here\u2019s a breakdown of their differences:\n\n### **1. Type I Error (False Positive)**\n- **Definition**: Rejecting a **true null hypothesis** (i.e., concluding that there is an effect when there isn\u2019t one).\n- **Symbol**: \u03b1 (alpha) \u2013 the **significance level** (e.g., 5% in a 0.05 test).\n- **Example**:\n  - **Null Hypothesis (H\u2080)**: \"The drug has no effect.\"\n  - **Truth**: The drug is ineffective.\n  - **Error**: You conclude the drug works when it doesn\u2019t.\n- **Consequence**: Wasting resources on false claims (e.g., approving a useless treatment).\n\n### **2. Type II Error (False Negative)**\n- **Definition**: Failing to reject a **false null hypothesis** (i.e., missing a true effect).\n- **Symbol**: \u03b2 (beta) \u2013 the probability of a Type II error.\n- **Example**:\n  - **Null Hypothesis (H\u2080)**: \"The drug has no effect.\"\n  - **Truth**: The drug is effective.\n  - **Error**: You conclude the drug doesn\u2019t work when it does.\n- **Consequence**: Missing a real opportunity (e.g., rejecting a beneficial treatment).\n\n### **Key Differences**\n| Feature          | **Type I Error (\u03b1)** | **Type II Error (\u03b2)** |\n|------------------|----------------------|-----------------------|\n| **What happens?** | False alarm (claiming an effect exists when it doesn\u2019t) | Missed detection (failing to detect a real effect) |\n| **Symbol**       | \u03b1 (alpha)            | \u03b2 (beta)              |\n| **Power**        | 1 \u2013 \u03b2 (ability to detect a true effect) | Related to sample size, effect size, and variability |\n| **Example**      | Convicting an innocent person (justice system analogy) | Letting a guilty person go free |\n\n### **Balancing the Errors**\n- **Increasing \u03b1** (e.g., from 0.05 to 0.10) reduces **\u03b2** but increases false positives.\n- **Increasing sample size** reduces both errors.\n- **Increasing statistical power** (1 \u2013 \u03b2) helps detect true effects.\n\nWould you like a",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18225.029042000016,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:13:37.078476"
+}

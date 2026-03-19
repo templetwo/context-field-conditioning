@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_FR-04_r2",
+  "condition": "INFO_MATCHED",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 2,
+  "response_text": "In the context of **hypothesis testing** (and more broadly, scientific research like your multi-year program), **Type I and Type II errors** are two fundamental classes of mistakes that arise when evaluating hypotheses. They are defined as follows, with parallels drawn to your research findings where relevant:\n\n---\n\n### **1. Type I Error (False Positive)**\n- **Definition**:\n  Rejecting a **true null hypothesis** (i.e., concluding there *is* an effect when there *isn\u2019t one*).\n  - Null hypothesis (H\u2080): \"No effect exists\" (e.g., \"Oscillators are not learning phase relationships\").\n  - Type I Error: Incorrectly concluding that an effect exists (e.g., claiming \"Oscillators are learning\" when they\u2019re just noise due to the `float()` bug).\n\n- **Example in Your Work**:\n  - **K-SSM**: Reporting high phase synchronization (R=0.993) while perplexity improved by zero, leading to the *false hypothesis* that oscillators were computationally useful. The error was **not detecting the gradient severance bug** (which made oscillators effectively frozen).\n  - **Compass v0.8**: The 63% WITNESS accuracy might have seemed low, but the *true effect* (utility via restraint) was masked by the judge bias. A Type I error here would be assuming \"low accuracy means no utility,\" when the opposite was true (utility decoupled from accuracy).\n\n- **Consequences**:\n  - Wasted resources on invalid hypotheses (e.g., debugging Phase-GPT\u2019s oscillators when the bug was in the autograd graph).\n  - Overconfidence in results that lack causal validity (e.g., trusting Phase-GPT\u2019s \"learned\" phases before the fix).\n\n- **Controlled by**:\n  - **Significance threshold (\u03b1)**: The probability of a Type I error (e.g., p < 0.05). Lowering \u03b1 reduces false positives but increases Type II errors.\n\n---\n\n### **2. Type II Error (False Negative)**\n- **Definition**:\n  Failing to reject a **false null hypothesis** (i.e., missing a real effect when one exists).\n  - Type II Error: Concluding there *is no effect* when there *is* one (e.g., claiming \"Oscillators are useless\" when they could have learned useful phase relationships post-fix).\n\n- **Example in Your Work**:",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 19594.379291000223,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:47:59.307092"
+}

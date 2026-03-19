@@ -1,0 +1,17 @@
+{
+  "trial_id": "S_FR-03_r1",
+  "condition": "S",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 1,
+  "response_text": "Shannon entropy is a fundamental concept in information theory, introduced by Claude Shannon in his 1948 paper *\"A Mathematical Theory of Communication\"*. It quantifies the **uncertainty** or **average information content** of a random variable in bits (or nats, depending on the base of the logarithm). In the context of this research program, entropy has emerged as a critical measure of system dynamics, particularly in evaluating how **context routing** (e.g., in Compass or CFC) alters the \"richness\" of microstates relative to macrostates\u2014aligning with the dynamical systems framework (e.g., [SC-006], [CB-004]).\n\n---\n\n### **Definition of Shannon Entropy**\nGiven a discrete random variable \\( X \\) with possible outcomes \\( \\{x_1, x_2, ..., x_n\\} \\) and corresponding probabilities \\( P(X = x_i) = p_i \\), the **Shannon entropy** \\( H(X) \\) is defined as:\n\n\\[\nH(X) = -\\sum_{i=1}^n p_i \\log_2 p_i\n\\]\n\n- **Interpretation**:\n  - If \\( X \\) is certain (e.g., \\( P(X = x_k) = 1 \\) for some \\( k \\)), \\( H(X) = 0 \\) (no uncertainty).\n  - If all outcomes are equally likely (uniform distribution), \\( H(X) \\) is maximized for a given number of outcomes.\n  - The unit is **bits** (base-2 logarithm) or **nats** (base-\\( e \\)).\n\n---\n\n### **Key Properties**\n1. **Maximum Entropy**:\n   For a system with \\( n \\) equally probable outcomes, \\( H(X) = \\log_2 n \\).\n   *Example*: A fair coin flip (\\( n = 2 \\)) has \\( H(X) = 1 \\) bit.\n\n2. **Joint and Conditional Entropy**:\n   - **Joint entropy** \\( H(X, Y) \\): Entropy of two variables together.\n   - **Conditional entropy** \\( H(Y|X) \\): Remaining uncertainty about \\( Y \\) given \\( X \\).\n\n3. **Entropy and Probability Distributions**:\n   Entropy is maximized when all \\( p_i \\) are equal and decreases as the distribution becomes skewed.\n\n---\n\n### **Connection to This Research Program**\nIn the honeycomb lattice, entropy emerges as",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17109.34875000021,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:30:35.568830"
+}

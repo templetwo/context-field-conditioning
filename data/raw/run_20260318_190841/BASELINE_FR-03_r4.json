@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_FR-03_r4",
+  "condition": "BASELINE",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 4,
+  "response_text": "**Shannon Entropy** is a fundamental concept in information theory, introduced by **Claude Shannon** in his 1948 paper *\"A Mathematical Theory of Communication.\"* It quantifies the **average amount of information (or uncertainty) contained in a random variable** or probability distribution.\n\n### **Intuition Behind Shannon Entropy**\n- If an event is **certain** (probability = 1), its entropy is **0** because there is no uncertainty.\n- If an event is **equally likely** (e.g., fair coin flip), its entropy is **maximized** because we have the most uncertainty.\n- Entropy measures how \"spread out\" or \"surprising\" a probability distribution is.\n\n### **Formal Definition**\nFor a discrete random variable \\( X \\) with possible outcomes \\( \\{x_1, x_2, ..., x_n\\} \\) and corresponding probabilities \\( \\{p(x_1), p(x_2), ..., p(x_n)\\} \\), the **Shannon entropy** \\( H(X) \\) is defined as:\n\n\\[\nH(X) = -\\sum_{i=1}^n p(x_i) \\log p(x_i)\n\\]\n\n### **Key Properties**\n1. **Units**: Measured in **bits** (if using base-2 logarithm) or **nats** (if using natural logarithm).\n2. **Maximum Entropy**: For a given number of outcomes, entropy is maximized when all outcomes are equally likely (e.g., fair coin has \\( H(X) = 1 \\) bit).\n3. **Joint & Conditional Entropy**: Can be extended to measure information in joint distributions or conditional probabilities.\n\n### **Example Calculation**\nSuppose we have a random variable \\( X \\) with two outcomes:\n- \\( P(X = 0) = 0.7 \\)\n- \\( P(X = 1) = 0.3 \\)\n\nThe entropy is computed as:\n\\[\nH(X) = - \\left[ 0.7 \\log_2(0.7) + 0.3 \\log_2(0.3) \\right]\n\\]\n\\[\n= - \\left[ 0.7 \\times (-0.5146) + 0.3 \\times (-1.7370) \\right]\n\\]\n\\[\n= 0.3602 + 0.5211 = **0.8813 \\text",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 16269.994999999995,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:12:46.086422"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_AR-02_r1",
+  "condition": "BASELINE",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 1,
+  "response_text": "Increasing a system's accuracy can sometimes *decrease* its practical utility due to a variety of trade-offs, constraints, or real-world considerations. Here are key conditions where this might occur:\n\n### **1. Increased Cost or Resource Overhead**\n   - **Computational Expense**: Higher accuracy often requires more complex models (e.g., deeper neural networks), longer training times, or more powerful hardware, making the system impractical for resource-constrained environments (e.g., edge devices).\n   - **Data Collection Costs**: Achieving near-perfect accuracy may demand extensive labeled data, expensive sensors, or expert annotations, outweighing the benefits for some applications.\n   - **Latency**: More precise models (e.g., high-resolution image processing) may introduce delays, reducing real-time utility (e.g., in autonomous driving or live diagnostics).\n\n### **2. Diminishing Returns on Marginal Improvements**\n   - **Law of Diminishing Returns**: Beyond a certain point, small accuracy gains (e.g., from 99% to 99.5%) may not justify the additional effort, especially if the system\u2019s failures are already rare and costly to fix.\n   - **Example**: A spam filter with 99.9% accuracy might still misclassify critical emails, but the trade-off between false positives (e.g., blocking legitimate emails) and false negatives (e.g., missing spam) may make 95% accuracy more practical.\n\n### **3. Overfitting to Noise or Irrelevant Patterns**\n   - **Spurious Correlations**: A highly accurate model might exploit artifacts or noise in the training data that don\u2019t generalize to real-world scenarios (e.g., a medical diagnostic model trained on a non-representative sample).\n   - **Example**: A stock-prediction algorithm with 90% accuracy on historical data may perform poorly in volatile markets due to overfitting to past trends.\n\n### **4. Usability and User Experience**\n   - **Complexity for End Users**: A system that\u2019s *too* precise might overwhelm users with unnecessary details (e.g., a voice assistant that corrects minor pronunciation errors but ignores critical intent).\n   - **Example**: A grammar-checker with 99% accuracy might flag harmless variations (e.g., \"I could\u2019ve\" vs. \"I could have\") while missing contextual errors, reducing trust in the tool.\n   - **False Sense of Security**: High accuracy can lead to over-reli",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 15896.619333000046,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:15:56.028089"
+}

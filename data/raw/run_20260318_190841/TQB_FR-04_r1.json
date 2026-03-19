@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQB_FR-04_r1",
+  "condition": "TQB",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 1,
+  "response_text": "The **Type I** and **Type II errors** in hypothesis testing are fundamental statistical concepts that define the risks of incorrect decisions in formal inference. While your question doesn\u2019t appear directly in the honeycomb lattice (as it focuses on dynamical systems, LLM alignment, and entropy-driven routing), we can map their principles to the **methodological critiques and dynamical frameworks** embedded in the evidence\u2014particularly in **TG-007 (ablation study judging bias)**, **CB-005 (R\u00d7E superadditivity)**, and **QA-009 (compass accuracy vs. utility)**. Here\u2019s how they relate to both classical statistics and the research findings:\n\n---\n\n### **1. Type I Error (False Positive)**\n**Definition:**\nRejecting a true null hypothesis (e.g., concluding an effect exists when it doesn\u2019t). In classical terms:\n- *Null hypothesis (H\u2080):* \"No effect exists\" (e.g., \"compass routing has no impact on judge win rate\").\n- *Type I error:* Falsely concluding that compass routing *does* improve responses when it doesn\u2019t.\n\n**Relevance to the Lattice:**\n- **TG-007 (Ablation study bias):** The incomplete Gemini-based ablation (123/630 judgments) risked a **Type I error**\u2014if the raw \"random signal wins 62%\" result was artifactual (due to OPEN-question bias), it might falsely suggest that uncompassed responses are superior when the real effect was unmeasured. The \"most interesting data we don\u2019t have\" (WITNESS entropy) is a direct analogue: omitting it could inflate false discoveries.\n- **QA-009 (Accuracy vs. utility):** Compass v0.9\u2019s **96% signal accuracy** (QA-001) might seem precise, but its **judge win rate dropped** (88%\u219283%). This suggests a **Type I risk**: higher accuracy didn\u2019t guarantee utility, implying the null hypothesis (\"compass routing improves all metrics\") was rejected too eagerly for some cases (e.g., scientific domains in **TG-0010**).\n\n**Key Insight:**\nThe lattice\u2019s **cross-domain bridges** (e.g., **CB-005: R\u00d7E superadditivity**) show that **Type I errors thrive in superadditive systems**\u2014where interactions (like framing effects) create false signals of",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 20697.62608400015,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:47:32.799237"
+}

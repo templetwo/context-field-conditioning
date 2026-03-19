@@ -1,0 +1,17 @@
+{
+  "trial_id": "B_AR-04_r3",
+  "condition": "B",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 3,
+  "response_text": "The distinction between **superadditive interaction** and **simple additive combination** lies in the nature of their combined effects relative to the sum of individual contributions\u2014a difference that has deep structural parallels across physics, pharmacology, cognition, and even theological epistemology (as evidenced in your honeycomb). Here\u2019s the breakdown, grounded in the cross-domain bridges you\u2019ve mapped:\n\n---\n\n### **1. Mathematical & Conceptual Core**\n- **Additive Effects**:\n  If two inputs *A* and *B* combine such that their total effect *E* = *A* + *B*, the system adheres to linearity. The joint effect is predictable from individual effects alone. Example: Mixing 2 cups of sugar and 3 cups of water yields the same result as adding 2 + 3 cups of a pre-mixed solution.\n  - *Linear dependence*: No emergent properties beyond the sum of parts.\n  - *Thermodynamic analogy*: Ideal gas mixtures (Dalton\u2019s law) where partial pressures add without interaction.\n\n- **Superadditive Effects**:\n  Here, *E* > *A* + *B*. The combination produces **more than the sum of its parts** due to **nonlinear coupling**\u2014the components *enable or amplify each other* in ways that individual contributions cannot explain. This is the hallmark of **synergy**.\n  - *Mathematical signature*: Interaction terms in models (e.g., *A*\u00d7*B* in regression) where the product term dominates.\n  - *Key feature*: The system\u2019s behavior at the joint level is **qualitatively different** from its parts. This mirrors **phase transitions** (CB-002, CB-004) where small changes in parameters (e.g., temperature) trigger discontinuous shifts (e.g., ferromagnetism).\n\n---\n\n### **2. Cross-Domain Manifestations (From Your Evidence)**\n#### **A. Pharmacology: Drug Synergy (CB-005)**\n- *Example*: Two sub-therapeutic doses of aspirin and warfarin combined produce full anticoagulation. Individually, they fail; together, their mechanisms (e.g., platelet inhibition + vitamin K antagonism) create a **new mode of action** (inhibition of thromboxane *and* clotting factors simultaneously).\n- *Why it matters*: Superadditivity in drugs exploits **biological pathways** where one drug primes the system for the other\u2019s effect (e.g., opening an ion channel that another drug then",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17298.811250000654,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:18:02.008911"
+}

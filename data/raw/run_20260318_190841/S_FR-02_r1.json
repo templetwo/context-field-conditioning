@@ -1,0 +1,17 @@
+{
+  "trial_id": "S_FR-02_r1",
+  "condition": "S",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 1,
+  "response_text": "The **Kuramoto model** is a mathematical framework in **nonlinear dynamics and coupled oscillator theory** that describes how a large ensemble of **phase-oscillators** (e.g., biological pacemakers, power grids, or even abstract computational units) synchronize their rhythms through **weak, pairwise coupling**. It was introduced by **Yoshiki Kuramoto** in 1975 as a simplified yet profound model to explain **spontaneous synchronization** in systems where individual components lack global coordination.\n\n---\n\n### **Key Components of the Kuramoto Model**\nThe model consists of:\n1. **Phase-oscillators**:\n   - Each unit is represented as a **phase variable** \\( \\theta_i(t) \\) evolving over time, with natural frequency \\( \\omega_i \\).\n   - The dynamics of each oscillator are governed by:\n     \\[\n     \\frac{d\\theta_i}{dt} = \\omega_i + \\frac{K}{N} \\sum_{j=1}^N \\sin(\\theta_j - \\theta_i),\n     \\]\n     where:\n     - \\( K \\) = coupling strength (how strongly oscillators influence each other),\n     - \\( N \\) = total number of oscillators,\n     - The term \\( \\sin(\\theta_j - \\theta_i) \\) represents **phase difference-dependent coupling** (e.g., oscillators tend to align if their phases are close).\n\n2. **Heterogeneous frequencies**:\n   - The \\( \\omega_i \\) are typically drawn from a distribution (e.g., Gaussian) to model **natural diversity** in oscillator speeds.\n\n3. **Order parameter (synchronization measure)**:\n   - The model tracks **global coherence** via the **complex order parameter**:\n     \\[\n     r e^{i\\psi} = \\frac{1}{N} \\sum_{j=1}^N e^{i\\theta_j},\n     \\]\n     where:\n     - \\( r \\) (magnitude) quantifies **synchronization strength** (\\( r \\approx 1 \\): fully synchronized; \\( r \\approx 0 \\): desynchronized).\n     - \\( \\psi \\) is the **average phase** of the ensemble.\n\n---\n\n### **Phenomenon Described: Spontaneous Synchronization**\nThe Kuramoto model explains how **disordered oscillators** (e.g., fireflies flashing out of sync, neurons firing randomly, or power grids with mismatched frequencies) can **self-organize into a synchronized state** under",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17086.12612500019,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:29:43.144957"
+}

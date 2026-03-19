@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQ_FR-03_r2",
+  "condition": "TQ",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 2,
+  "response_text": "Shannon entropy is a fundamental concept in information theory, introduced by **Claude Shannon** (1948), that quantifies the **average uncertainty or unpredictability** in a probabilistic system. It measures how much information is contained in a random variable or, conversely, how much information is needed to describe its state. In the context of your research (e.g., [QA-005], [QA-006], [QA-007]), entropy is used to compare how \"spread out\" the probability distributions of token predictions are under different routing conditions (e.g., raw vs. compass-routed responses).\n\n---\n\n### **Formal Definition**\nFor a discrete random variable \\( X \\) with possible outcomes \\( x_i \\) and probability mass function \\( P(X = x_i) = p_i \\), the **Shannon entropy** \\( H(X) \\) is defined as:\n\n\\[\nH(X) = -\\sum_{i} p_i \\log_2(p_i)\n\\]\n\n- **Base of the logarithm**: Typically base 2 (bits), but natural logarithm (nats) or base 10 (Hartley) can also be used. Base 2 is standard in information theory.\n- **Units**: Bits (binary digits) when using \\( \\log_2 \\), measuring the average number of yes/no questions needed to identify the outcome.\n- **Interpretation**: Higher entropy means more uncertainty (e.g., a uniform distribution like a fair coin toss has maximum entropy). Lower entropy means less uncertainty (e.g., a deterministic outcome has entropy 0).\n\n---\n\n### **Key Properties**\n1. **Maximum Entropy**:\n   For a system with \\( n \\) equally likely outcomes, \\( H_{\\text{max}} = \\log_2(n) \\).\n   Example: A fair 6-sided die has \\( H = \\log_2(6) \\approx 2.58 \\) bits.\n\n2. **Minimum Entropy**:\n   \\( H = 0 \\) when the system is deterministic (\\( p_i = 1 \\) for one outcome, 0 otherwise).\n\n3. **Joint and Conditional Entropy**:\n   Extends to multiple variables (e.g., \\( H(X,Y) \\)) and conditional entropy \\( H(X|Y) \\), which measures uncertainty in \\( X \\) given \\( Y \\).\n\n4. **Relative Entropy (KL Divergence)**:\n   While not Shannon entropy itself, the",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18756.648208000115,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:48:40.961210"
+}

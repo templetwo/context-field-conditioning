@@ -1,0 +1,17 @@
+{
+  "trial_id": "B_FR-03_r3",
+  "condition": "B",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 3,
+  "response_text": "Shannon entropy, introduced by Claude Shannon in 1948 as part of information theory, quantifies the **average uncertainty** or **surprise** associated with a random variable\u2019s probability distribution. In the context of this evidence base\u2014particularly [CB-004]\u2014it measures how \"spread out\" or \"disordered\" a system\u2019s possible states are. Higher entropy means more uncertainty; lower entropy means more predictability.\n\n---\n\n### **Mathematical Definition**\nFor a discrete random variable \\( X \\) with possible outcomes \\( x_1, x_2, \\dots, x_n \\) and probability mass function \\( P(X = x_i) = p_i \\), Shannon entropy \\( H(X) \\) is computed as:\n\n\\[\nH(X) = -\\sum_{i=1}^n p_i \\log_2(p_i)\n\\]\n\n- **Base of the logarithm**: Typically base-2 (bits), but natural log (nats) or base-10 (dits) are also used. The base determines the units (e.g., bits for binary systems).\n- **Interpretation**: \\( H(X) \\) is the **minimum number of yes/no questions** needed, on average, to identify the outcome of \\( X \\).\n\n---\n\n### **Key Properties**\n1. **Maximum Entropy**: For a given number of outcomes \\( n \\), entropy is maximized when all outcomes are equally likely:\n   \\[\n   H_{\\text{max}} = \\log_2(n).\n   \\]\n   Example: A fair coin flip (\\( n=2 \\)) has \\( H = 1 \\) bit.\n\n2. **Entropy and Uncertainty**:\n   - If \\( p_i = 1 \\) for one outcome (certainty), \\( H = 0 \\).\n   - If all \\( p_i \\) are equal, \\( H \\) is highest (maximum uncertainty).\n\n3. **Joint and Conditional Entropy**:\n   - **Joint entropy** \\( H(X, Y) \\): Entropy of the combined system.\n   - **Conditional entropy** \\( H(Y|X) \\): Remaining uncertainty in \\( Y \\) given \\( X \\).\n\n---\n\n### **Connection to [CB-004]: Compass Entropy Increase**\nIn the evidence base, [CB-004] notes that the **compass** (a method or model component) increases token entropy by \\( \\Delta H \\approx +0.47",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17287.78195799987,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:13:39.927752"
+}

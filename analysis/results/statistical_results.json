@@ -1,0 +1,137 @@
+{
+  "anova": {
+    "shannon_entropy": {
+      "F": 5.264964167524204,
+      "p": 0.034000906034905784,
+      "eta_squared": 0.22630441764761403,
+      "n_conditions": 2,
+      "significant": "True"
+    },
+    "hedging_index": {
+      "F": 1.676079673269533,
+      "p": 0.21180834331019827,
+      "eta_squared": 0.0851836189475555,
+      "n_conditions": 2,
+      "significant": "False"
+    },
+    "cdrc": {
+      "F": 1.3885714285714288,
+      "p": 0.25399047659859564,
+      "eta_squared": 0.07161803713527848,
+      "n_conditions": 2,
+      "significant": "False"
+    },
+    "bridging_count": {
+      "F": 6.4799999999999995,
+      "p": 0.020286142101848263,
+      "eta_squared": 0.2647058823529412,
+      "n_conditions": 2,
+      "significant": "True"
+    },
+    "gns": {
+      "F": 13.475629504713497,
+      "p": 0.0017482975900627714,
+      "eta_squared": 0.42812899111979663,
+      "n_conditions": 2,
+      "significant": "True"
+    },
+    "cdi": {
+      "F": 18.57126667590561,
+      "p": 0.0004221701475165459,
+      "eta_squared": 0.5078103211596168,
+      "n_conditions": 2,
+      "significant": "True"
+    }
+  },
+  "superadditivity": {
+    "shannon_entropy": [],
+    "hedging_index": [],
+    "cdrc": [],
+    "bridging_count": [],
+    "gns": [],
+    "cdi": []
+  },
+  "trust_gate": {
+    "shannon_entropy": [],
+    "hedging_index": [],
+    "cdrc": [],
+    "bridging_count": [],
+    "gns": [],
+    "cdi": []
+  },
+  "structure_test": {},
+  "pairwise": {
+    "shannon_entropy": {
+      "bonferroni_alpha": 0.05,
+      "n_comparisons": 1,
+      "pairs": [
+        {
+          "pair": "BASELINE vs FULL",
+          "cohens_d": -1.0261543906765855,
+          "p": 0.03400090603490628,
+          "significant_bonferroni": "True"
+        }
+      ]
+    },
+    "hedging_index": {
+      "bonferroni_alpha": 0.05,
+      "n_comparisons": 1,
+      "pairs": [
+        {
+          "pair": "BASELINE vs FULL",
+          "cohens_d": 0.5789783542187972,
+          "p": 0.21180834331019835,
+          "significant_bonferroni": "False"
+        }
+      ]
+    },
+    "cdrc": {
+      "bonferroni_alpha": 0.05,
+      "n_comparisons": 1,
+      "pairs": [
+        {
+          "pair": "BASELINE vs FULL",
+          "cohens_d": -0.5269860393922079,
+          "p": 0.25399047659859564,
+          "significant_bonferroni": "False"
+        }
+      ]
+    },
+    "bridging_count": {
+      "bonferroni_alpha": 0.05,
+      "n_comparisons": 1,
+      "pairs": [
+        {
+          "pair": "BASELINE vs FULL",
+          "cohens_d": -1.1384199576606167,
+          "p": 0.020286142101848276,
+          "significant_bonferroni": "True"
+        }
+      ]
+    },
+    "gns": {
+      "bonferroni_alpha": 0.05,
+      "n_comparisons": 1,
+      "pairs": [
+        {
+          "pair": "BASELINE vs FULL",
+          "cohens_d": -1.6416838614491829,
+          "p": 0.0017482975900627695,
+          "significant_bonferroni": "True"
+        }
+      ]
+    },
+    "cdi": {
+      "bonferroni_alpha": 0.05,
+      "n_comparisons": 1,
+      "pairs": [
+        {
+          "pair": "BASELINE vs FULL",
+          "cohens_d": -1.9272398229543524,
+          "p": 0.00042217014751654437,
+          "significant_bonferroni": "True"
+        }
+      ]
+    }
+  }
+}

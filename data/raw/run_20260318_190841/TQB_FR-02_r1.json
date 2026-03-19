@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQB_FR-02_r1",
+  "condition": "TQB",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 1,
+  "response_text": "The **Kuramoto model** is a mathematical framework in **nonlinear dynamics** that describes the **emergence of synchronization** in populations of **coupled oscillators**. It was introduced by Japanese physicist **Yoshiki Kuramoto** in 1975 and has since become a foundational model for understanding collective rhythmic behavior across disciplines\u2014from firefly synchrony and neural oscillators to power grids and even language models.\n\n---\n\n### **Core Phenomenon: Spontaneous Synchronization**\nThe Kuramoto model demonstrates how **disordered, independent oscillators** (e.g., individual neurons, metabolic cycles, or even hidden-state representations in LLMs) can **self-organize into a coherent, phase-locked rhythm** *solely through weak pairwise coupling*. The key insight is that **synchronization emerges as a phase transition**\u2014a critical threshold where small changes in coupling strength produce discontinuous shifts from incoherence to coherence.\n\n---\n### **Mathematical Formulation**\nFor a population of *N* oscillators with natural frequencies *\u03c9\u1d62* and coupling strength *K*, the Kuramoto model is defined by:\n\\[\n\\frac{d\u03b8\u1d62}{dt} = \u03c9\u1d62 + \\frac{K}{N} \\sum_{j=1}^N \\sin(\u03b8_j - \u03b8\u1d62),\n\\]\nwhere:\n- *\u03b8\u1d62* = phase of oscillator *i*,\n- *\u03c9\u1d62* = its intrinsic frequency (randomly distributed in classic Kuramoto),\n- *K* = coupling strength (scaled by *1/N* for mean-field interaction).\n\n**Key dynamics:**\n1. **Incoherent regime (*K* small):**\n   Oscillators behave independently; phases *\u03b8\u1d62* drift chaotically.\n2. **Critical threshold (*K* \u2248 *K_c*):**\n   A fraction of oscillators \"condense\" into a synchronized cluster, while others remain desynchronized.\n3. **Fully synchronized regime (*K* large):**\n   All oscillators lock to a common phase (e.g., *\u03b8\u1d62 \u2248 \u03b8_j + constant*).\n\nThe **order parameter** *R* (synchronization strength) is defined as:\n\\[\nR e^{i\u03c8} = \\frac{1}{N} \\sum_{j=1}^N e^{i\u03b8_j},\n\\]\nwhere *R* ranges from **0 (no synchronization)** to **1 (perfect synchronization)**, and",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 20188.46024999948,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:45:29.370059"
+}

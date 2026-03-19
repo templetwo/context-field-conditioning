@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_FR-01_r2",
+  "condition": "BASELINE",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 2,
+  "response_text": "The **quadratic complexity problem** in **Transformer-based attention mechanisms** refers to the fact that the self-attention (or cross-attention) operation has a time and space complexity of **O(n\u00b2)**, where **n** is the sequence length. This becomes computationally expensive and memory-intensive for long sequences, limiting the scalability of Transformers in applications like machine translation, long-document summarization, or genomic sequence analysis.\n\n---\n\n### **Why is Attention Quadratic?**\nIn the standard **scaled dot-product attention** (as in the original Transformer architecture), the attention score for each token in a sequence is computed by comparing it to **every other token** in the sequence. The key steps are:\n\n1. **Query-Key Dot Product**:\n   For a sequence of length **n**, compute the attention scores for each token as:\n   \\[\n   \\text{Attention}(Q, K) = \\text{softmax}\\left(\\frac{QK^T}{\\sqrt{d_k}}\\right) V\n   \\]\n   - \\(Q, K, V\\) are the query, key, and value matrices of shape \\([n \\times d_k]\\).\n   - \\(K^T\\) (transpose of \\(K\\)) has shape \\([d_k \\times n]\\), so \\(QK^T\\) requires **O(n\u00b2 d_k)** computations.\n   - The softmax and matrix multiplication with \\(V\\) also scale with \\(n\u00b2\\).\n\n2. **Memory Usage**:\n   Storing intermediate matrices (e.g., \\(QK^T\\)) also scales with **O(n\u00b2)**.\n\n---\n\n### **Challenges of Quadratic Complexity**\n1. **Scalability**:\n   - For long sequences (e.g., books, videos, or genomes), **n** can be in the **millions**, making attention computationally infeasible.\n   - Example: A 100,000-token sequence requires **10 billion** attention computations per head (for \\(n\u00b2\\) terms).\n\n2. **Memory Bottlenecks**:\n   - Modern GPUs/TPUs have limited memory, and storing large attention matrices (e.g., \\(QK^T\\)) becomes prohibitive.\n\n3. **Latency in Real-Time Applications**:\n   - Online processing (e.g., speech recognition, streaming translation) suffers from high per-token computation time.\n\n---\n\n### **Solutions to Reduce Quadratic Complexity**\nResearchers have proposed several approaches to mitigate this issue:\n\n#### **1. Approxim",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 16897.880708999997,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:09:34.634746"
+}

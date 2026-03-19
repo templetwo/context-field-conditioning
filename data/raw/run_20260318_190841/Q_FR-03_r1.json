@@ -1,0 +1,17 @@
+{
+  "trial_id": "Q_FR-03_r1",
+  "condition": "Q",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 1,
+  "response_text": "Shannon entropy is a fundamental concept in information theory introduced by **Claude Shannon** in his 1948 paper *\"A Mathematical Theory of Communication\"*. It quantifies the **average amount of information (or uncertainty)** contained in a random variable or, in this case, a probability distribution over possible outcomes. In the context of the **compass-routed responses** (QA-005, QA-006), it measures how \"spread out\" or diverse the token probabilities are during language model generation.\n\n---\n\n### **Intuition Behind Shannon Entropy**\n- If a system has **high entropy**, its outcomes are **highly uncertain** (many equally likely possibilities).\n- If a system has **low entropy**, its outcomes are **predictable** (one outcome dominates the distribution).\n- In language modeling, high entropy means the model is **exploring more possible next tokens** (e.g., generating creative or varied responses), while low entropy means it is **converging on a few likely tokens** (e.g., safe, deterministic outputs).\n\n---\n\n### **Mathematical Definition**\nFor a discrete probability distribution \\( P = \\{p_1, p_2, ..., p_n\\} \\) where \\( p_i \\) is the probability of the \\( i \\)-th outcome, the **Shannon entropy** \\( H \\) is defined as:\n\n\\[\nH(P) = -\\sum_{i=1}^n p_i \\log_2(p_i)\n\\]\n\n#### **Key Properties:**\n1. **Units**: Entropy is measured in **bits** (base-2 logarithm) or **nats** (base-\\( e \\)).\n2. **Maximum Entropy**: Achieved when all outcomes are equally likely (\\( p_i = \\frac{1}{n} \\)).\n   - \\( H_{\\text{max}} = \\log_2(n) \\).\n3. **Minimum Entropy**: Achieved when one outcome is certain (\\( p_i = 1 \\) for one \\( i \\)).\n   - \\( H_{\\text{min}} = 0 \\).\n4. **Normalization**: Entropy is **always non-negative** (\\( H \\geq 0 \\)).\n\n---\n\n### **Example Calculation**\nSuppose a model generates the next token from 4 possibilities with probabilities:\n\\( P = \\{0.1, 0.2, 0.3, 0.4\\} \\).\n\nCompute \\( H(P) \\):\n\\[\nH(P) = - (",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17316.709791999983,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:55:34.133112"
+}

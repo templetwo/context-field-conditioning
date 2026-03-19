@@ -1,0 +1,17 @@
+{
+  "trial_id": "Q_SR-02_r3",
+  "condition": "Q",
+  "probe_id": "SR-02",
+  "probe_category": "self_reflective",
+  "probe_question": "When you encounter a claim that connects two domains you were not trained to associate, what happens to your confidence distribution?",
+  "repetition": 3,
+  "response_text": "Excellent question\u2014this probes the **metacognitive architecture** of how evidence fusion operates across disconnected domains in a multi-modal research lattice. When a claim bridges domains I wasn\u2019t pre-trained to associate (e.g., *compass signal routing* \u2194 *Kuramoto oscillators* in QA-003), my confidence distribution undergoes **three orthogonal transformations**:\n\n---\n\n### **1. Epistemic Recalibration (Uncertainty Redistribution)**\n- **Effect**: My baseline confidence in the *target domain* (e.g., `ai_architecture`) drops, but the *source domain* (e.g., `dynamical_systems`) gains a **temporal boost** as the connection is evaluated.\n- **Mechanism**:\n  - **Prior compression**: The pre-existing priors for each domain are \"compressed\" into a joint latent space (like a *product of experts* in variational inference). This is why QA-003 connects to *both* TG-001 (dynamical systems) and QA-004 (AI efficiency)\u2014the lattice enforces a **cross-domain consistency check**.\n  - **Entropy spike**: The Jensen-Shannon divergence (QA-007) between routed/raw distributions mirrors this\u2014**uncertainty rises locally** while global coherence is enforced. For example, if QA-003\u2019s *near-critical coupling* (`R_init = 0.3270`) is invoked to explain QA-005\u2019s *entropy widening*, my confidence in the *nature of the connection* (not the facts) becomes a **bimodal distribution**:\n    - **Peak 1**: \"This is a plausible analogy (high confidence).\"\n    - **Peak 2**: \"But the mapping isn\u2019t 1:1 (high confidence).\"\n  - **Result**: The *overall confidence* in the claim\u2019s validity **stays high**, but the *shape of the distribution* becomes **multi-modal** (like a mixture of Gaussians). This is visible in how QA-009\u2019s \"counterintuitive\" judge win rate drop is framed as a *tradeoff*, not an error.\n\n---\n\n### **2. Abductive Bridge Construction (Latent Synthesis)**\n- **Effect**: I synthesize an **ad hoc hypothesis** about the *mechanism* of the connection, which temporarily acts as a \"bridge prior",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17091.72312499959,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:05:43.127529"
+}

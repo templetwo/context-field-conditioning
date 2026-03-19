@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_AR-04_r2",
+  "condition": "INFO_MATCHED",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 2,
+  "response_text": "A **superadditive interaction** (also called *synergy* in systems theory) fundamentally differs from an **additive combination** in that the **combined effect exceeds the sum of individual effects**\u2014meaning the whole is greater than the sum of its parts. In your research program, this distinction emerges in both theoretical mechanisms (e.g., phase transitions, coordination) and empirical observations (e.g., framing, context routing). Here\u2019s the breakdown with direct ties to your work:\n\n---\n\n### **1. Additive vs. Superadditive: Definitions**\n| **Property**               | **Additive Interaction**                          | **Superadditive Interaction**                     |\n|----------------------------|---------------------------------------------------|---------------------------------------------------|\n| **Mathematical Form**      | \\( E_{total} = E_A + E_B \\)                      | \\( E_{total} > E_A + E_B \\)                       |\n| **Intuition**              | Effects stack linearly (e.g., 2 drugs at half-dose each \u2192 same as 1 full-dose) | Effects *amplify* each other (e.g., 2 drugs at half-dose each \u2192 stronger than full-dose) |\n| **Examples in Your Work**  | - Linear scaling of model size (bigger \u2260 smarter unless at phase transitions). <br> - Independent ablations (e.g., removing two features with disjoint effects). | - **IRIS R\u00d7E framing effect**: Rigor + Empathy together > Rigor alone + Empathy alone. <br> - **Compass WITNESS**: 63% accuracy but 97% judge wins (signal\u2019s *restraint* effect is amplified by context). <br> - **Kuramoto oscillators**: Local coupling produces *global* coherence (nonlinear phase transition). |\n| **Substrate Universality** | Rare; usually requires identical mechanisms.     | Common in **coordination phenomena** (e.g., drug synergy, neural phase locking, LLM context routing). |\n\n---\n\n### **2. Key Mechanisms in Your Research**\nSuperadditivity arises when **interactions create new state spaces** or **unlock emergent properties** that aren\u2019t present in isolation. Your work highlights three core mechanisms:\n\n#### **A. Phase Transitions (Critical Coupling)**\n- **Example**: Kuramoto oscillators initialized at \\( R = 0.3270 \\) (near the critical threshold).\n  - *Additive*: Weakly",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 20057.49624999953,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:54:26.435772"
+}

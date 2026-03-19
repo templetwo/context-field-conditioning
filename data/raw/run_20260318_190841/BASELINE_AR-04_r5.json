@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_AR-04_r5",
+  "condition": "BASELINE",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 5,
+  "response_text": "In statistics, ecology, economics, and other fields that study combined effects, the terms **superadditive interaction** and **simple additive combination** refer to how the joint effect of two or more factors differs from the sum of their individual effects. Here\u2019s how they differ:\n\n---\n\n### **1. Additive Combination of Effects (No Interaction)**\n- **Definition**: The total effect of two factors (A and B) is exactly the sum of their individual effects.\n  Mathematically:\n  \\[\n  E(A + B) = E(A) + E(B)\n  \\]\n- **Key Feature**:\n  - The presence of one factor has **no additional influence** on the effect of the other.\n  - The factors are **independent** in their contribution to the outcome.\n- **Example**:\n  - If drinking coffee increases alertness by **+20%** and listening to music increases alertness by **+15%**, the combined effect is **+35%** (no interaction).\n  - In a chemical reaction, if two drugs individually increase blood pressure by 10 mmHg each, their combined effect is 20 mmHg (additive).\n\n---\n\n### **2. Superadditive Interaction (Synergy)**\n- **Definition**: The combined effect of two factors is **greater** than the sum of their individual effects.\n  Mathematically:\n  \\[\n  E(A + B) > E(A) + E(B)\n  \\]\n- **Key Features**:\n  - The factors **work together to amplify** each other\u2019s effects (synergy).\n  - Often occurs when the mechanisms of the factors **reinforce** one another.\n- **Examples**:\n  - **Medicine**: Two drugs (e.g., aspirin and ibuprofen) may together reduce pain more effectively than their additive effect.\n  - **Ecology**: Two species of plants may grow taller together due to shared nutrients or protection (e.g., mycorrhizal fungi enhancing root systems).\n  - **Economics**: Cross-selling products (e.g., buying a TV and a subscription service) may increase total sales more than the sum of individual purchases.\n  - **Statistics**: In a logistic regression, two predictors might have a combined effect stronger than the sum of their log-odds ratios.\n\n---\n### **Key Distinctions**\n| Feature                | Additive Combination       | Superadditive Interaction |\n|------------------------|----------------------------|---------------------------|\n| **Combined Effect**    | \\(E(A + B) = E(A)",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18176.38854099994,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:19:42.105929"
+}

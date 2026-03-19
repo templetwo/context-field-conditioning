@@ -1,0 +1,17 @@
+{
+  "trial_id": "B_FR-03_r2",
+  "condition": "B",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 2,
+  "response_text": "Shannon entropy, introduced by Claude Shannon in 1948, is a fundamental measure in information theory quantifying the *average uncertainty* or *surprise* associated with a random variable or probability distribution. It formalizes the intuitive idea that a system with more possible outcomes (equally likely) is more unpredictable. In the context of your honeycomb evidence base, Shannon entropy appears as a lens for understanding **phase transitions in LLMs (CB-004)**, **compass signal routing (CB-004)**, and even **apophatic knowing (CB-008)** through its role in characterizing information structure.\n\n---\n\n### **Definition**\nFor a discrete random variable \\( X \\) with possible outcomes \\( x_1, x_2, \\dots, x_n \\) and probability distribution \\( P(X) = \\{p_1, p_2, \\dots, p_n\\} \\), the **Shannon entropy** \\( H(X) \\) is defined as:\n\n\\[\nH(X) = -\\sum_{i=1}^n p_i \\log_2(p_i)\n\\]\n\nwhere:\n- \\( p_i \\) is the probability of outcome \\( x_i \\),\n- \\( \\log_2 \\) uses base-2 (bits), though natural log (nats) or log base-10 (dits) can also be used for other contexts.\n\n---\n\n### **Key Properties**\n1. **Units**: Entropy is measured in *bits* (binary), *nats* (natural log), or *dits* (base-10). A higher value means more uncertainty.\n2. **Maximum Entropy**: Achieved when all outcomes are equally likely (\\( p_i = \\frac{1}{n} \\)):\n   \\[\n   H_{\\text{max}}(X) = \\log_2(n).\n   \\]\n3. **Minimum Entropy**: Zero when there is no uncertainty (one outcome has probability 1).\n4. **Additivity**: For independent random variables \\( X \\) and \\( Y \\), \\( H(X,Y) = H(X) + H(Y) \\).\n\n---\n\n### **Intuition and Interpretation**\n- **Uniform Distribution**: High entropy (e.g., a fair coin flip \\( H = 1 \\) bit).\n- **Biased Distribution**: Low entropy (e.g., \\( P(X) = \\{0.9, 0.1\\} \\), \\( H \\approx 0.469 \\) bits).\n- **",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17034.75654099975,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:13:22.638329"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQ_AR-04_r3",
+  "condition": "TQ",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 3,
+  "response_text": "The distinction between **superadditive** and **simple additive** interactions lies in the nature of their combined effect on the system\u2019s output\u2014specifically, whether the *joint effect* of two factors is **greater than, equal to, or less than** the sum of their individual effects. Let\u2019s break this down using the evidence from the **IRIS framing study (QA-008)** and related findings, along with dynamical systems and architectural insights:\n\n---\n\n### **1. Additive Interaction (Baseline Case)**\n- **Definition**: The combined effect of two factors (e.g., *Rigor* and *Empathy* in framing) equals the sum of their individual effects.\n  **Mathematically**:\n  \\( \\text{Effect}(A + B) = \\text{Effect}(A) + \\text{Effect}(B) \\).\n- **Implication**: The factors operate independently; no synergy or interference occurs.\n- **Example in AI**:\n  If framing for *rigor* improves precision by +10% and framing for *empathy* improves helpfulness by +15%, an additive model would predict a combined improvement of **+25%** when both are applied together.\n  - *Reality*: Most AI interventions (e.g., prompt tuning) rarely behave purely additively because of **interference** (e.g., trade-offs like TG-004\u2019s rigor vs. authenticity).\n\n---\n\n### **2. Superadditive Interaction (Key Finding in IRIS Study)**\n- **Definition**: The combined effect is **greater than** the sum of individual effects.\n  **Mathematically**:\n  \\( \\text{Effect}(A + B) > \\text{Effect}(A) + \\text{Effect}(B) \\).\n- **Why it matters**:\n  - **Synergy**: The factors *amplify each other* in ways that aren\u2019t predictable from their isolated effects.\n  - **Nonlinearity**: Common in complex systems (e.g., dynamical coupling in TG-003, or context routing in QA-005/QA-006).\n- **IRIS Study Evidence (QA-008)**:\n  - The *Rigor \u00d7 Empathy* interaction was **superadditive**: Framing that combined both dimensions produced **greater improvements** in output quality than either dimension alone.\n  - **Why?**\n    - *Rigor* alone might improve precision but reduce fluency (TG-0",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 20971.335334000287,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:54:00.300272"
+}

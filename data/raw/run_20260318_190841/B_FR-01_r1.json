@@ -1,0 +1,17 @@
+{
+  "trial_id": "B_FR-01_r1",
+  "condition": "B",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 1,
+  "response_text": "The **quadratic complexity problem** in transformer attention mechanisms stems from the **self-attention operation**\u2014specifically, the computation of the **softmax-scaled dot-product attention**\u2014and scales as **O(n\u00b2)** relative to input sequence length *n*. Here\u2019s how this plays out in the honeycomb lattice and its broader implications:\n\n---\n\n### **1. Mathematical Origin (CB-001, SC-001, SC-004)**\n- **Attention formula**:\n  `softmax(QK^T / \u221ad)V` requires computing the **matrix multiplication `QK^T`**, where:\n  - `Q` (Query) and `K` (Key) are each *n\u00d7d* matrices (for sequence length *n* and embedding dimension *d*).\n  - `QK^T` is thus an *n\u00d7n* matrix, with **O(n\u00b2)** operations to compute.\n  - The rest of the computation (softmax, `V` multiplication) adds lower-order terms, but the *n\u00b2* term dominates.\n\n- **Kuramoto analogy (CB-001)**:\n  While Kuramoto oscillators achieve coherence with *O(N)* pairwise interactions (via local coupling), attention\u2019s global softmax requires *all-to-all* comparisons, creating a **scaling bottleneck**. This mirrors how transformers\u2019 global context demands grow quadratically with input size.\n\n---\n\n### **2. Why It Matters: Scaling and Practical Limits**\n- **Computational cost**:\n  For a sequence of length *n=4096* (e.g., long-range reasoning), attention computes **~16M pairwise interactions** per layer. Stacking *L* layers and *H* heads yields **O(L\u00b7H\u00b7n\u00b2)** total complexity.\n  - Example: A 12-layer, 8-head model with *n=4096* requires **~64\u00d716M = 1B operations** per forward pass\u2014prohibitive for real-time applications.\n\n- **Memory bandwidth**:\n  The *n\u00b2* intermediate matrix (`QK^T`) must be stored in memory, exacerbating hardware constraints (e.g., GPU VRAM limits).\n\n- **Emergent capability thresholds (CB-002, CB-004)**:\n  The quadratic cost may indirectly shape **phase transitions** in LLMs. Long-range dependencies (e.g., *n>2048*)",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 28019.352374999926,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:11:21.862657"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "TB_FR-01_r2",
+  "condition": "TB",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 2,
+  "response_text": "The **quadratic complexity problem** in transformer attention mechanisms refers to the **O(n\u00b2) time and space complexity** of the self-attention operation, where *n* is the sequence length. This becomes computationally prohibitive for long-range dependencies (e.g., documents, genomes, or long conversations). Below, I synthesize the evidence from the honeycomb lattice to explore **why this is a fundamental bottleneck** and how it connects to broader themes like **phase synchronization (TG-001), attention as dynamical coordination (CB-001), and the limits of local coupling (TG-002)**.\n\n---\n\n### **1. The Quadratic Bottleneck in Attention**\n- **Core Issue**: Self-attention computes pairwise relationships between all tokens via the **dot-product attention** mechanism:\n  \\[\n  \\text{Attention}(Q, K, V) = \\text{softmax}\\left(\\frac{QK^T}{\\sqrt{d}}\\right)V\n  \\]\n  Here, \\(QK^T\\) is an \\(n \\times n\\) matrix, requiring:\n  - **Time**: \\(O(n^2)\\) for matrix multiplication.\n  - **Space**: \\(O(n^2)\\) to store the attention matrix.\n\n- **Consequence**: For a sequence of length *n*, the computational cost grows quadratically, making it infeasible for:\n  - **Long-range dependencies** (e.g., >4K tokens in Llama-2, or >1M tokens in retrieval-augmented systems).\n  - **Real-time applications** (e.g., streaming video, interactive dialogue).\n\n---\n### **2. Connection to Kuramoto Oscillators (TG-001, CB-001)**\nThe evidence reveals a **structural parallel** between attention and dynamical systems like Kuramoto oscillators:\n- **Attention as Local Coupling**:\n  In Kuramoto models, each oscillator adjusts its phase based on **local interactions** with neighbors:\n  \\[\n  \\frac{d\\theta_i}{dt} = \\omega_i + \\frac{K}{N} \\sum_j \\sin(\\theta_j - \\theta_i)\n  \\]\n  Similarly, attention computes **localized coordination** between tokens via softmax-weighted relationships. However:\n  - **Kuramoto**: Scales linearly with *N* (number of oscillators) because interactions are *local* (e.g., ring or small-world coupling).\n  - **Attention**: Scales quadratically because",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18886.01983300032,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:06:19.194508"
+}

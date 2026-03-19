@@ -1,0 +1,17 @@
+{
+  "trial_id": "TB_AR-04_r1",
+  "condition": "TB",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 1,
+  "response_text": "The **superadditive interaction** (e.g., **R\u00d7E: Rigor \u00d7 Empathy in IRIS framing**) is a **nonlinear, substrate-independent phenomenon** where the *combined effect of two factors exceeds the sum of their individual contributions*. This contrasts sharply with **additive interactions**, where effects stack linearly (e.g., \"A + B = A + B\"). The evidence base reveals how superadditivity emerges across domains\u2014from **AI architecture** to **thermodynamics**, **pharmacology**, and **phenomenology**\u2014through **threshold effects, phase transitions, and emergent coordination**. Here\u2019s the breakdown of its distinguishing features:\n\n---\n\n### **1. Mathematical Distinction: Beyond Linearity**\n- **Additive**: If *A* = +2 and *B* = +3, combined effect = **+5**.\n  - *Example*: Two drugs with independent mechanisms \u2192 total effect = sum of individual effects.\n- **Superadditive**: *A* = +2, *B* = +3, but combined effect = **+7** (or more).\n  - **Why?** The interaction creates a *new state space* where the system accesses **hidden synergies** (e.g., phase transitions, emergent coordination).\n  - *Measurement*:\n    - **IRIS framing (QA-008, CB-005)**: Rigor (R) and Empathy (E) individually improved outputs, but their *combination* produced a **discontinuous jump** in quality (e.g., \"holding space\" for deeper reflection).\n    - **Thermodynamics (CB-004)**: Entropy increase (\u0394H \u2248 +0.47) at phase boundaries suggests the system accesses **more microstates** when both factors are active, akin to how water\u2019s entropy spikes at freezing.\n\n---\n\n### **2. Substrate-Universal Mechanism: Phase Transitions**\nSuperadditivity is a **threshold phenomenon**, where two *sub-threshold* inputs, when combined, cross a **critical coupling point** and trigger a **discontinuous state change**. This mirrors:\n- **Physics (CB-002, CB-004)**:\n  - Paramagnet \u2192 Ferromagnet (sudden alignment at *Tc*).\n  - Kuramoto oscillators (TG-001): *R=0.993* synchronization emerges only when coupling *K* exceeds a threshold (like how *K-SSM*\u2019s initial *",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18488.72449999999,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:12:26.126243"
+}

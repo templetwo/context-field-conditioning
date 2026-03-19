@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_AR-02_r1",
+  "condition": "INFO_MATCHED",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 1,
+  "response_text": "Increasing a system's accuracy can paradoxically **decrease its practical utility** under several conditions, all of which emerged from the research program's findings and broader principles of coordination, phase transitions, and substrate-independent patterns. Here are the key conditions, grounded in the data and theoretical frameworks:\n\n---\n\n### **1. When Utility Depends on *Structured Error* (Apophatic Utility)**\n   - **Mechanism**: The system's practical value arises not from correct responses but from the **constraints it imposes on incorrect ones**\u2014a form of *negative utility* that shapes the output space.\n   - **Examples from the Research**:\n     - **WITNESS Signal (v0.8)**: 63% accuracy but 97% judge win rate.\n       The system often misclassified the signal (e.g., triggering \"do not answer directly\" when it should have answered), but the **restraint** imposed by the incorrect WITNESS prompt led to higher-quality responses (e.g., avoiding verbosity, over-explanation, or off-topic tangents). The \"error\" was functionally useful.\n     - **Apophatic Theology / Via Negativa**: The WITNESS effect mirrors this principle\u2014utility comes from what the system *avoids saying* rather than what it says correctly. For example, in medical diagnostics, a screening test prioritizing sensitivity (catching all cases) may have lower precision but higher *practical* utility for ruling out false negatives.\n   - **When It Applies**:\n     - Tasks where **over-precision is harmful** (e.g., creative brainstorming, exploratory dialogue, or scenarios requiring \"soft\" guidance).\n     - Systems where the **default mode is overconfident or verbose** (e.g., LLMs defaulting to exhaustive explanations when brevity or restraint is needed).\n     - Domains where **judge evaluations reward nuance over correctness** (e.g., human-like interaction where \"perfect\" technical answers feel robotic).\n\n---\n\n### **2. When Accuracy Improves at the Cost of *Phase Transition Accessibility***\n   - **Mechanism**: High accuracy may \"lock\" the system into a **local optimum** of the probability distribution, reducing its ability to explore higher-entropy states (the \"phase boundary\" regime).\n   - **Evidence from the Research**:\n     - **Compass Entropy Shift**: Routing increased token entropy by \u0394H = +0.47, widening the probability field.",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 19178.494125000725,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:50:51.474805"
+}

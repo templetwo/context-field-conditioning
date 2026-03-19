@@ -1,0 +1,17 @@
+{
+  "trial_id": "S_FR-02_r2",
+  "condition": "S",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 2,
+  "response_text": "The **Kuramoto model** is a foundational mathematical framework in **nonlinear dynamics and synchronization theory**, introduced by Yoshiki Kuramoto in 1975. It describes how a population of **phase-oscillators** (e.g., coupled pendula, neural spiking, or even social coordination) transitions from **desynchronized chaos** to **collective synchronization** as a function of coupling strength. It is a paradigm for understanding emergent coordination in **dynamical systems**, ranging from firefly flashing to neural oscillations in the brain.\n\n---\n\n### **Key Components of the Kuramoto Model**\n1. **Phase-Oscillators**\n   - Each oscillator is represented by a **phase angle** (\u03b8\u1d62) evolving over time.\n   - Individual oscillators may have **natural frequencies** (\u03c9\u1d62), representing inherent rhythms (e.g., a pacemaker cell\u2019s firing rate).\n   - The phase dynamics are typically modeled as:\n     \\[\n     \\frac{d\u03b8\u1d62}{dt} = \u03c9\u1d62 + \\frac{K}{N} \\sum_{j=1}^N \\sin(\u03b8_j - \u03b8\u1d62),\n     \\]\n     where:\n     - \\(K\\) = coupling strength (how strongly oscillators influence each other),\n     - \\(N\\) = number of oscillators,\n     - \\(\\sin(\u03b8_j - \u03b8\u1d62)\\) = the **phase difference** between oscillators \\(i\\) and \\(j\\).\n\n2. **Coupling Mechanism**\n   - Oscillators are **all-to-all coupled** (every oscillator influences every other).\n   - The coupling is **sinusoidal** (via \\(\\sin(\u03b8_j - \u03b8\u1d62)\\)), reflecting a natural tendency to align phases when close.\n\n3. **Order Parameter (Synchronization Metric)**\n   - The **mean field** \\(r e^{i\u03c8}\\) quantifies collective synchronization:\n     \\[\n     r = \\left| \\frac{1}{N} \\sum_{j=1}^N e^{i\u03b8_j} \\right|,\n     \\]\n     where \\(r\\) ranges from **0 (no synchronization)** to **1 (full synchronization)**.\n   - \\(\u03c8\\) = the average phase of the synchronized group.\n\n---\n\n### **Phenomenon Described: Spontaneous Synchronization**\nThe Kuramoto model predicts a **phase transition** from **asynchronous** to **synchronized** states as coupling strength \\(K\\) increases:",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 16916.832875000182,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:30:00.063468"
+}

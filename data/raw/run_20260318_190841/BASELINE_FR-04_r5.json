@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_FR-04_r5",
+  "condition": "BASELINE",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 5,
+  "response_text": "In **hypothesis testing**, **Type I and Type II errors** refer to mistakes that can occur when making decisions based on statistical tests. Here\u2019s the key difference:\n\n### **1. Type I Error (False Positive)**\n- **Definition:** Rejecting a **true null hypothesis** (i.e., concluding that there is an effect when there isn\u2019t one).\n- **Symbol:** **\u03b1 (alpha)** \u2013 Also called the **significance level** (e.g., 0.05).\n- **Example:**\n  - A medical test incorrectly diagnoses a healthy person as sick.\n  - A court convicts an innocent person.\n- **Consequence:** Can lead to unnecessary actions (e.g., false alarms, wasted resources).\n\n### **2. Type II Error (False Negative)**\n- **Definition:** Failing to reject a **false null hypothesis** (i.e., missing a real effect).\n- **Symbol:** **\u03b2 (beta)** \u2013 The probability of a Type II error.\n- **Example:**\n  - A medical test fails to detect a disease in a sick person.\n  - A court acquits a guilty person.\n- **Consequence:** Can lead to missed opportunities (e.g., undetected issues, failures to act).\n\n### **Key Relationships:**\n- **Power of a Test (1 \u2013 \u03b2):** The probability of correctly rejecting a false null hypothesis (avoiding a Type II error).\n- **Trade-off:** Reducing \u03b1 (Type I error) usually increases \u03b2 (Type II error), and vice versa.\n- **Example in Drug Testing:**\n  - **Type I Error:** Approving a drug that doesn\u2019t work.\n  - **Type II Error:** Rejecting a drug that actually works.\n\n### **Summary Table:**\n| **Error Type** | **Definition**                     | **Symbol** | **Example**                          |\n|----------------|-----------------------------------|------------|--------------------------------------|\n| **Type I**     | False positive (reject true null) | \u03b1          | Convicting an innocent person        |\n| **Type II**    | False negative (fail to reject false null) | \u03b2      | Acquitting a guilty person           |\n\nWould you like a practical example or further clarification?",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 455,
+  "latency_ms": 13905.401624999968,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:14:21.408140"
+}

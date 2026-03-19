@@ -1,0 +1,17 @@
+{
+  "trial_id": "Q_FR-04_r1",
+  "condition": "Q",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 1,
+  "response_text": "While the evidence provided in this honeycomb lattice focuses on **AI architecture (compass routing), dynamical systems (Kuramoto oscillators), and empirical studies of language model behavior**, the foundational concepts of **Type I and Type II errors** in hypothesis testing (a statistical framework) are not directly represented here. However, I can synthesize their definitions in relation to how they might *indirectly* connect to this research program\u2014particularly in experimental design (e.g., QA-008: IRIS framing study) and signal classification (e.g., QA-001/QA-002: compass accuracy/judge evaluations).\n\n---\n\n### **Type I vs. Type II Errors in Hypothesis Testing**\nThese are errors in **statistical inference**, where:\n- A **null hypothesis (H\u2080)** (e.g., \"no effect,\" \"random chance\") is tested against an **alternative hypothesis (H\u2081)**.\n\n#### **1. Type I Error (False Positive)**\n- **Definition**: Rejecting a **true null hypothesis** (claiming an effect exists when it does not).\n  - *Example*: Saying \"compass routing improves response quality\" when it actually has no effect.\n- **Consequence**: Overestimating the system's performance (e.g., QA-002\u2019s judge wins might be inflated by random chance).\n- **Probability**: Denoted by **\u03b1** (significance level, e.g., \u03b1 = 0.05).\n- **Link to this evidence**:\n  - QA-001\u2019s **96% accuracy** could mask a Type I error if the 3% misclassification rate is due to overfitting (though QA-004 shows efficiency with 246 examples).\n  - QA-002\u2019s judge preference (83% wins) might include Type I errors if some \"wins\" are false positives (though WITNESS category is perfect, suggesting robustness).\n\n#### **2. Type II Error (False Negative)**\n- **Definition**: **Failing to reject a false null hypothesis** (missing a true effect).\n  - *Example*: Dismissing \"compass routing works\" when it actually does improve performance.\n- **Consequence**: Underestimating the system\u2019s capabilities (e.g., QA-009\u2019s judge win *drop* from v0.8 to v0.9 might reflect reduced Type II errors as accuracy improved",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17327.697333000287,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:56:25.661652"
+}

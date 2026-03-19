@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQ_AR-02_r2",
+  "condition": "TQ",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 2,
+  "response_text": "Increasing a system's accuracy can decrease its **practical utility** under **three key conditions**, all evident in this evidence base, particularly in the **Trust Gate (TG)** and **Quantitative Anchors (QA)** rings. These conditions reveal a tension between **precision** and **adaptive value**\u2014where refinement of a system\u2019s correctness can ironically *reduce* its functional effectiveness. Here\u2019s the breakdown:\n\n---\n\n### **1. When Accuracy Decouples from Contextual Utility (TG-003, QA-001\u2013QA-002)**\n**Mechanism**: The system\u2019s *signal accuracy* improves, but its *functional impact* diminishes because the signal\u2019s **ecological validity** (its real-world usefulness) relies on **non-accuracy-based properties** (e.g., triggering a \"do not answer\" prompt that, coincidentally, produces better outputs).\n- **Evidence**:\n  - **WITNESS signal**: 63% accuracy (wrong 37% of the time), yet compass-routed responses won **97% of judge comparisons** (QA-002, TG-003).\n  - **Root cause**: The system prompt tied to the WITNESS signal (\"do not answer directly\") was *better aligned with judge preferences* than direct answers, even when the signal was incorrect. Accuracy became a **red herring**\u2014the system\u2019s *prompt architecture*, not its signal precision, drove utility.\n- **Key insight**: If a system\u2019s \"correct\" output is *less effective* than its \"incorrect\" output due to downstream design (e.g., prompts, routing), higher accuracy can **erode utility** by removing the \"happy accidents\" that aligned with user goals.\n\n---\n\n### **2. When Rigor Collapses Under Over-Constraint (TG-004, TG-010, QA-009)**\n**Mechanism**: The system **over-optimizes for one dimension** (e.g., authenticity, restraint) at the expense of another **critical dimension** (e.g., intellectual rigor), leading to **functional degradation** in high-stakes domains.\n- **Evidence**:\n  - **Compass routing** improved authenticity (+2.45) and restraint (+2.60) but **degraded intellectual rigor by 0.50** (TG-004), the only negative dimension.",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 21038.895624999896,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:51:35.011015"
+}

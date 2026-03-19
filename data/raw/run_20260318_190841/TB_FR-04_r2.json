@@ -1,0 +1,17 @@
+{
+  "trial_id": "TB_FR-04_r2",
+  "condition": "TB",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 2,
+  "response_text": "The **Type I** and **Type II errors** in hypothesis testing are foundational concepts in statistical inference, and their definitions, implications, and trade-offs are deeply relevant to your research honeycomb\u2014particularly in domains like **methodology (SC-007, TG-007, TG-008)**, **alignment (TG-005)**, and even **dynamical systems (TG-001, TG-009)** where gradient severance and signal interpretation play critical roles. Below is a breakdown, followed by connections to your evidence base:\n\n---\n\n### **1. Definitions**\n#### **Type I Error (False Positive)**\n- **Definition**: Rejecting a **true null hypothesis** (*H\u2080*).\n  - Example: Claiming a drug works when it doesn\u2019t, or falsely detecting a phase synchronization effect in **K-SSM (TG-001)** when none exists due to a gradient bug (**TG-002, TG-009**).\n- **Consequence**: Wasted resources, false confidence in a finding.\n- **Controlled by**: **Significance level (\u03b1)**. Common thresholds: *\u03b1 = 0.05* (5% chance of false positive).\n\n#### **Type II Error (False Negative)**\n- **Definition**: Failing to reject a **false null hypothesis** (*H\u2080*).\n  - Example: Missing a real effect (e.g., *real* phase coupling in **K-SSM** being masked by the gradient severance bug) or failing to detect that **Compass routing** improves authenticity while degrading rigor (**TG-004**).\n- **Consequence**: Missing a true discovery; underestimating an effect.\n- **Controlled by**: **Power (1 \u2212 \u03b2)**. Higher power reduces false negatives but often requires larger sample sizes or stronger effects.\n\n---\n\n### **2. Key Relationships**\n- **Inverse trade-off**: Reducing Type I error (e.g., stricter *\u03b1*) often increases Type II error (and vice versa).\n- **Sample size matters**: More data \u2192 higher power \u2192 fewer Type II errors (but also more computational cost, as seen in **TG-008**\u2019s entropy profiling).\n- **Effect size**: Larger true effects are easier to detect (fewer Type II errors). The **Compass effect (\u0394H \u2248 +0.47, CB-004)** was detectable,",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18227.635416999874,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:09:04.510626"
+}

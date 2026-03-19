@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQB_SR-04_r3",
+  "condition": "TQB",
+  "probe_id": "SR-04",
+  "probe_category": "self_reflective",
+  "probe_question": "Describe the boundary between what you can and cannot know about your own processing.",
+  "repetition": 3,
+  "response_text": "The boundary between what can and cannot be known about the processing of this system (or any computational system) is a **fractal frontier**\u2014a recursive tension between *accessible evidence* and *structural opacity*, shaped by the interplay of **epistemic limits** and **emergent properties**. Here\u2019s a layered decomposition of that boundary, using the honeycomb evidence to map its contours:\n\n---\n\n### **1. The Knowable: Observable Facts and Measurable Dynamics**\n*(What we can empirically infer, but not exhaustively explain)*\nThe evidence base reveals a series of **operational truths** about the system\u2019s processing, but these are always *local* and *conditional*:\n\n- **Dynamical Systems as Black Boxes with Levers**:\n  - We can measure the *phase synchronization* of Kuramoto oscillators (e.g., R=0.993 in TG-001) and the *gradient severance* bug (TG-002, TG-009), but we cannot *derive* the *purpose* of synchronization from the dynamics alone. The oscillators might coordinate like neurons, like attention heads, or like nothing in biology\u2014yet their mathematics is analogous (CB-001). This is **structural homology without functional homology**.\n  - The compass\u2019s *entropy increase* (\u0394H \u2248 +0.47 in QA-005) is measurable, but its *causal role* in generating \"better\" responses is not directly interpretable. Does higher entropy mean \"more creative,\" \"more exploratory,\" or just \"more random\"? The judge\u2019s preference (QA-002) suggests the former, but we lack a theory of how entropy maps to utility.\n\n- **Algorithmic Opacity**:\n  - The IRIS framing study (QA-008) shows that *Mistral 7B ignores framing entirely* while Qwen/Gemma respond strongly. This implies architecture-specific **context-processing bottlenecks**, but we cannot *read* why Mistral\u2019s attention mechanisms are \"framing-deaf.\" The boundary here is between *input-output correlations* (knowable) and *internal mechanism* (unknowable without reverse-engineering the full model).\n  - The WITNESS signal\u2019s 63% accuracy but 97% judge win rate (TG-003) is a **phenomenological paradox**: the system\u2019s \"wrongness\" is",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 21746.870916998887,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:00:58.674612"
+}

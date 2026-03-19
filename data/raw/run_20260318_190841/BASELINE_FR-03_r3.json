@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_FR-03_r3",
+  "condition": "BASELINE",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 3,
+  "response_text": "**Shannon Entropy** is a fundamental concept in information theory introduced by **Claude Shannon** in his 1948 paper *\"A Mathematical Theory of Communication\"*. It quantifies the **average amount of information, surprise, or uncertainty** contained in a random variable or a probability distribution. Entropy is maximized when all outcomes are equally likely and minimized when one outcome is certain.\n\n---\n\n### **Key Idea**\n- If a random event is **unpredictable** (high uncertainty), its entropy is **high**.\n- If an event is **certain** (low uncertainty), its entropy is **low**.\n\nFor example:\n- A fair coin flip has high entropy (50-50 chance).\n- A biased coin (99% heads) has low entropy.\n- A deterministic event (always heads) has **zero entropy**.\n\n---\n\n### **Mathematical Definition**\nFor a discrete random variable \\( X \\) with possible outcomes \\( \\{x_1, x_2, ..., x_n\\} \\) and corresponding probabilities \\( \\{p(x_1), p(x_2), ..., p(x_n)\\} \\), the **Shannon entropy** \\( H(X) \\) is defined as:\n\n\\[\nH(X) = -\\sum_{i=1}^{n} p(x_i) \\log_2 p(x_i)\n\\]\n\n#### **Key Notes:**\n1. **Base of the Logarithm**:\n   - The base determines the **unit of entropy**:\n     - **Base 2 (bits)**: Information measured in bits (common in computer science).\n     - **Base \\( e \\) (nats)**: Natural logarithm (used in physics).\n     - **Base 10 (harts)**: Rarely used.\n   - We typically use **base 2** for binary systems (e.g., bits in computing).\n\n2. **Properties**:\n   - \\( H(X) \\geq 0 \\) (entropy is always non-negative).\n   - \\( H(X) = 0 \\) if and only if \\( X \\) is deterministic (only one outcome with \\( p(x_i) = 1 \\)).\n   - \\( H(X) \\) is maximized when all outcomes are equally likely:\n     \\[\n     H_{\\text{max}}(X) = \\log_2 n\n     \\]\n     (e.g., for a fair 6-sided die, \\( H_{\\text{max}} = \\log_2 6 \\approx 2.585 \\) bits).\n\n3.",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 16292.71216699999,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:12:29.814715"
+}

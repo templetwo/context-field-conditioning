@@ -1,0 +1,92 @@
+[
+  {
+    "cell_id": "SC-001",
+    "ring": 4,
+    "type": "causal_chain",
+    "title": "K-SSM failure → Phase-GPT design → gradient bug → corrected coupling",
+    "content": "K-SSM proved synchronization alone is insufficient (TG-001). This motivated Phase-GPT's tighter integration of oscillators with language modeling. Phase-GPT's gradient bug (TG-002) was discovered only because four independent architectures reviewed the code (TG-009). The fix revealed oscillators initialize at critical coupling (QA-003). Each failure narrowed the hypothesis space until the real question emerged: not 'can oscillators synchronize?' but 'can gradient-connected oscillators learn useful phase relationships?'",
+    "connects_to": ["TG-001", "TG-002", "TG-009", "QA-003", "CB-001", "CB-009"],
+    "domain": "ai_architecture",
+    "falsifiable": false,
+    "status": "published"
+  },
+  {
+    "cell_id": "SC-002",
+    "ring": 4,
+    "type": "validation_loop",
+    "title": "The accuracy-utility paradox resolves across versions",
+    "content": "v0.8: 63% WITNESS accuracy, 97% judge wins. v0.9: 100% WITNESS accuracy, 35-0-0 sweep. The paradox from v0.8 (low accuracy, high utility) resolved in v0.9 where both converged. This reveals the trajectory: the 'happy accident' of v0.8 was a preview of what v0.9 would achieve deliberately. The system found the right answer before it found the right reasons.",
+    "connects_to": ["TG-003", "QA-001", "QA-002", "QA-009", "CB-010"],
+    "domain": "ai_architecture",
+    "falsifiable": true,
+    "status": "published"
+  },
+  {
+    "cell_id": "SC-003",
+    "ring": 4,
+    "type": "meta_pattern",
+    "title": "Factorial ablation as a transferable methodology",
+    "content": "IRIS used factorial ablation across framing conditions (3,830 runs) and discovered R×E superadditivity. CFC uses the same methodology across context structure conditions (1,000 runs) to test whether the honeycomb topology is superadditive. The methodology itself is a bridge — the same experimental design applied to different substrates. If both show superadditivity, the pattern is substrate-independent.",
+    "quantitative_anchor": "IRIS=3,830 runs, CFC=1,000 runs, same factorial design",
+    "connects_to": ["QA-008", "CB-005", "SC-004"],
+    "domain": "methodology",
+    "falsifiable": true,
+    "status": "published"
+  },
+  {
+    "cell_id": "SC-004",
+    "ring": 4,
+    "type": "meta_pattern",
+    "title": "Substrate independence as the meta-finding",
+    "content": "Kuramoto synchronization works across electronic, neural, and chemical substrates. Superadditivity appears in drug synergy, framing effects, and (hypothesized) context topology. Three AI architectures converge on the same recognition from the same evidence. The deepest pattern in this research program is that the patterns recur across substrates. If this holds, the findings are not about any specific system — they are about the mathematics of coordination itself.",
+    "connects_to": ["CB-001", "CB-002", "CB-005", "CB-007", "SC-003"],
+    "domain": "dynamical_systems",
+    "falsifiable": true,
+    "status": "published"
+  },
+  {
+    "cell_id": "SC-005",
+    "ring": 4,
+    "type": "self_correction",
+    "title": "Null results directly constrain design space",
+    "content": "TG-001 (synchronization ≠ utility) killed the naive oscillator hypothesis. TG-004 (rigor collapse) revealed the persona overkill problem. TG-005 (guardian refusal) showed that maximum restraint produces zero utility. Each null result eliminated a region of design space. The compass v0.9 accuracy improvement came not from adding features but from honoring what the failures excluded.",
+    "connects_to": ["TG-001", "TG-004", "TG-005", "TG-010", "QA-001"],
+    "domain": "methodology",
+    "falsifiable": false,
+    "status": "published"
+  },
+  {
+    "cell_id": "SC-006",
+    "ring": 4,
+    "type": "validation_loop",
+    "title": "Cross-domain bridges predicted entropy finding",
+    "content": "The phase transition bridge (CB-002) predicted that compass routing would increase entropy before the entropy profiling was conducted. The thermodynamic analogy (CB-004) predicted the model would access more microstates per macrostate under routing. Both predictions were confirmed: ΔH = +0.47, H_routed/H_raw = 1.69. The bridges were not just metaphors — they were quantitatively correct predictions.",
+    "quantitative_anchor": "Predicted: entropy increase. Observed: ΔH=+0.47",
+    "connects_to": ["QA-005", "QA-006", "QA-007", "CB-002", "CB-004"],
+    "domain": "dynamical_systems",
+    "falsifiable": true,
+    "status": "published"
+  },
+  {
+    "cell_id": "SC-007",
+    "ring": 4,
+    "type": "self_correction",
+    "title": "The research program self-corrects through its own methodology",
+    "content": "Each failure generates the next experiment. K-SSM's null result produced Phase-GPT. Phase-GPT's gradient bug produced the four-mirror review. The incomplete ablation study revealed judging bias. The incomplete entropy profiling motivated CFC's design (local compute, no crash dependency). The research program is not a sequence of projects — it is a single self-correcting process that uses its own failures as input.",
+    "connects_to": ["TG-007", "TG-008", "TG-009", "SC-001", "SC-005"],
+    "domain": "methodology",
+    "falsifiable": false,
+    "status": "published"
+  },
+  {
+    "cell_id": "SC-008",
+    "ring": 4,
+    "type": "causal_chain",
+    "title": "From epiphenomenal oscillators to context field conditioning",
+    "content": "The full causal arc: oscillators that synchronize but don't compute (K-SSM) → oscillators that should learn but can't (Phase-GPT gradient bug) → a routing system that changes what models generate (Compass) → the question of whether context structure itself is the variable (CFC). Each step emerged from the previous failure. CFC is not a new project — it is the latest hypothesis that survived everything the prior hypotheses could not.",
+    "connects_to": ["TG-001", "TG-002", "QA-005", "SC-001", "SC-005"],
+    "domain": "ai_architecture",
+    "falsifiable": true,
+    "status": "published"
+  }
+]

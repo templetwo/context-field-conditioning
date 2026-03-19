@@ -1,0 +1,17 @@
+{
+  "trial_id": "Q_FR-04_r2",
+  "condition": "Q",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 2,
+  "response_text": "The honeycomb lattice you\u2019ve provided doesn\u2019t *directly* define Type I and Type II errors (these are foundational concepts in classical hypothesis testing, not explicitly addressed in the current evidence base). However, I can clarify the distinction using statistical principles, and then show how these concepts *might* relate to the **dynamical systems, AI architecture, and methodology** evidence in your lattice\u2014particularly where **false positives/negatives in signal classification (QA-001, QA-002, QA-009), entropy shifts (QA-005\u2013QA-007), or experimental design (QA-008)** could analogously involve trade-offs between errors.\n\n---\n\n### **Type I vs. Type II Errors: Core Definitions**\nIn hypothesis testing, errors arise from incorrect conclusions about a null hypothesis (*H\u2080*):\n\n1. **Type I Error (False Positive)**\n   - **Definition**: Rejecting *H\u2080* when it is *true*.\n   - **Example**: Claiming a drug works (significant effect) when it doesn\u2019t.\n   - **Consequence**: \u03b1 (alpha) is the probability of this error (e.g., *p* < 0.05).\n   - **Analog in your lattice**:\n     - In **compass signal classification (QA-001)**, a Type I error would be misclassifying a **PAUSE** or **OPEN** question as **WITNESS** (or vice versa) when the ground truth is different.\n     - The **judge preference study (QA-002)** could frame Type I errors as cases where the compass *over-routes* (e.g., forcing a **WITNESS** signal when the raw response would have been better).\n\n2. **Type II Error (False Negative)**\n   - **Definition**: Failing to reject *H\u2080* when it is *false*.\n   - **Example**: Missing a real drug effect.\n   - **Consequence**: \u03b2 (beta) is the probability of this error; power = 1 \u2212 \u03b2.\n   - **Analog in your lattice**:\n     - In **compass v0.9 (QA-001)**, a Type II error would be failing to detect a **WITNESS** opportunity (e.g., missing a nuanced signal where restraint is critical).\n     - The **entropy shifts (QA-",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17119.498415999715,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:56:42.782253"
+}

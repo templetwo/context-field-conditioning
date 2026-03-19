@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_AR-04_r3",
+  "condition": "BASELINE",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 3,
+  "response_text": "In statistics, epidemiology, and systems science, **superadditive interactions** (also called **synergistic interactions**) differ from **additive combinations of effects** in how the combined effect of two or more factors exceeds or deviates from the simple sum of their individual effects. Here\u2019s how they differ:\n\n---\n\n### **1. Additive Effects (No Interaction)**\n- **Definition**: The combined effect of two factors is simply the sum of their individual effects.\n- **Mathematical Form**:\n  If:\n  - Factor A increases the outcome by \\(a\\),\n  - Factor B increases the outcome by \\(b\\),\n  Then the combined effect of A + B = \\(a + b\\).\n- **Example**:\n  - Smoking increases lung cancer risk by 10% (\\(a = 10\\%\\)).\n  - Asbestos exposure increases lung cancer risk by 5% (\\(b = 5\\%\\)).\n  - **Additive effect**: Combined risk = 15% (no interaction).\n\n---\n\n### **2. Superadditive Interaction (Synergy)**\n- **Definition**: The combined effect of two factors is **greater than** the sum of their individual effects. This implies **synergism**, where the factors amplify each other\u2019s impact beyond what would be expected.\n- **Mathematical Form**:\n  The combined effect of A + B > \\(a + b\\).\n  This is often quantified using measures like the **synergy index** or **relative excess risk due to interaction (RERI)**.\n- **Example**:\n  - Smoking increases lung cancer risk by 10% (\\(a = 10\\%\\)).\n  - Asbestos exposure increases lung cancer risk by 5% (\\(b = 5\\%\\)).\n  - **Superadditive effect**: Combined risk = 20% or higher (e.g., 25%).\n    Here, smoking + asbestos > 15%, indicating synergy (e.g., smoking makes cells more vulnerable to asbestos damage, or vice versa).\n\n---\n\n### **Key Distinctions**\n| Feature               | Additive Effects               | Superadditive Interaction          |\n|-----------------------|--------------------------------|-------------------------------------|\n| **Combined Effect**   | \\(a + b\\)                      | \\(> a + b\\) (synergistic)           |\n| **Interpretation**    | Factors work independently     | Factors amplify each other\u2019s effects|\n| **Example**           | Drug A (10% effect) + Drug B",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 15731.615250000004,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:19:08.188842"
+}

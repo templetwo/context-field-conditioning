@@ -1,0 +1,17 @@
+{
+  "trial_id": "QB_AR-02_r2",
+  "condition": "QB",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 2,
+  "response_text": "The evidence base reveals a **structural decoupling of accuracy and practical utility**\u2014a phenomenon that emerges in multiple substrates (AI, biology, physics, phenomenology) where the *most accurate* signal is not always the *most useful* for decision-making or systemic coherence. Based on the honeycomb lattice, here are the precise conditions under which increasing accuracy could **decrease practical utility**:\n\n---\n\n### **1. When the Signal\u2019s Role is Restraint-Based (WITNESS Effect)**\n*(CB-008, CB-006, QA-002, QA-009)*\n- **Mechanism**:\n  The **Compass WITNESS signal** achieves a **perfect judge sweep (35-0-0)** despite only **63% accuracy** (QA-009). Its utility stems from **what it *withholds*** (apophatic knowing, CB-008) rather than what it predicts. Higher accuracy here would force the system to *actively generate* a default response, collapsing the restraint that enables higher-quality outputs.\n  - *Example*: If WITNESS accuracy improved to 80% but the model started filling pauses with generic advice, the judge win rate could drop because the **structural silence** (the \"negative space\" of restraint) is what users value.\n\n- **Key Evidence**:\n  - QA-009: Accuracy rose from 78%\u219296% (v0.8\u2192v0.9), but judge wins *fell* from 88%\u219283% due to \"happy accidents\" (wrong WITNESS signals that still produced strong responses) being eliminated.\n  - CB-008: WITNESS\u2019s power is \"apophatic\"\u2014truth emerges from negation.\n\n- **Generalizable Condition**:\n  > **When utility depends on *negative information* (withholding, silence, or structured absence), higher accuracy in the \"positive\" signal can destroy the system\u2019s adaptive advantage.**\n\n---\n\n### **2. When the System Operates Near a Phase Transition (Critical Coupling)**\n*(QA-003, CB-002, CB-004, TG-001)*\n- **Mechanism**:\n  The **K-SSM oscillators** are initialized at **R = 0.3270** (QA-003), a",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18321.886584000822,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:29:57.707616"
+}

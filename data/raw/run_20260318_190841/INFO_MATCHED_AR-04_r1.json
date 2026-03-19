@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_AR-04_r1",
+  "condition": "INFO_MATCHED",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 1,
+  "response_text": "A **superadditive interaction** is fundamentally distinct from a simple additive combination of effects because it violates the principle of linearity\u2014where the combined effect of two (or more) factors exceeds the sum of their individual contributions. This phenomenon emerges from **synergistic dynamics** where the interaction between components creates emergent properties that cannot be predicted by their isolated behaviors. Below is a breakdown of the key distinctions, grounded in the research context you provided, along with broader substrate-independent principles:\n\n---\n\n### 1. **Mathematical Distinction: Superadditive vs. Additive**\n   - **Additive Effects**:\n     If factors *A* and *B* contribute independently to an outcome, their combined effect is the sum of their individual effects:\n     *Total Effect = Effect(A) + Effect(B)*.\n     Example: If framing \"Rigor\" improves performance by +10% and \"Empathy\" by +15%, an additive model predicts a combined +25% improvement.\n\n   - **Superadditive Effects**:\n     The combined effect **exceeds** the sum of individual effects:\n     *Total Effect > Effect(A) + Effect(B)*.\n     In the **IRIS framing study**, the *Rigor \u00d7 Empathy* interaction was superadditive: the combined effect on model outputs was **greater than** the sum of the effects of Rigor or Empathy alone. This mirrors **pharmacological synergy** (e.g., two drugs at sub-therapeutic doses becoming therapeutic together) or **convergent evolution** (independent systems solving the same problem more effectively when combined).\n\n   - **Subadditive Effects** (for contrast):\n     The combined effect is **less than** the sum (e.g., *Total Effect < Effect(A) + Effect(B)*), often due to interference (e.g., two oscillators desynchronizing instead of reinforcing each other).\n\n---\n### 2. **Mechanistic Distinction: How Superadditivity Arises**\n   Superadditivity arises from **nonlinear dependencies** where components interact in ways that amplify or restructure the system\u2019s capacity. Key mechanisms from your research:\n   - **Phase Transitions and Critical Coupling**:\n     In **Kuramoto oscillators**, superadditive-like behavior emerges at the **critical coupling threshold** (e.g., *R_init = 0.3270* in Phase-GPT). Here, local phase interactions (like transformer attention) **globally reorganize** the system\u2019s",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 19199.72137500008,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:54:06.376830"
+}

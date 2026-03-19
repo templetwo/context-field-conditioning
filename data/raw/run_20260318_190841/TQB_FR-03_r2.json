@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQB_FR-03_r2",
+  "condition": "TQB",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 2,
+  "response_text": "Shannon entropy is a measure of **uncertainty** or **information content** in a discrete probability distribution, derived from Claude E. Shannon's information theory. It quantifies how \"surprising\" or \"unpredictable\" the outcomes of a random variable are. In the context of language models like those in our evidence base (e.g., *Compass routing*), entropy is used to assess how spread out or concentrated the model's token probabilities are.\n\n---\n\n### **Mathematical Definition**\nGiven a discrete random variable \\( X \\) with possible outcomes \\( x_1, x_2, ..., x_n \\) and corresponding probabilities \\( P(x_1), P(x_2), ..., P(x_n) \\), the **Shannon entropy** \\( H(X) \\) is defined as:\n\n\\[\nH(X) = -\\sum_{i=1}^n P(x_i) \\log_2 P(x_i)\n\\]\n\n- **Base 2 logarithm**: Uses bits as the unit of information (common in computer science).\n- **Logarithm of probability**: Weighs outcomes by their rarity; lower-probability events contribute more to entropy.\n- **Negative sign**: Ensures entropy is non-negative (since \\( P(x_i) \\leq 1 \\), \\( \\log_2 P(x_i) \\leq 0 \\)).\n\n---\n\n### **Intuition**\n- **Maximum entropy**: Occurs when all outcomes are equally likely (\\( P(x_i) = \\frac{1}{n} \\)). For \\( n \\) outcomes:\n  \\[\n  H_{\\text{max}} = \\log_2 n\n  \\]\n  Example: A fair coin flip (\\( n=2 \\)) has \\( H = 1 \\) bit.\n- **Minimum entropy**: Occurs when one outcome is certain (\\( P(x_i) = 1 \\) for one \\( i \\)):\n  \\[\n  H_{\\text{min}} = 0\n  \\]\n  Example: A biased coin always landing heads has \\( H = 0 \\).\n\n---\n\n### **Connection to Language Models**\nIn LLMs, entropy is computed over the **next-token probability distributions** at each step. For a given prompt, the model generates a distribution \\( P(y_1, y_2, ..., y_k) \\) over possible tokens \\( y_i \\). The entropy of this distribution measures:\n1. **Diversity**: How many tokens the model considers plausible.\n2. **Confidence**: Low entropy =",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 20538.438583000243,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:46:51.513084"
+}

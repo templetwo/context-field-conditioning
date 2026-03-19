@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_FR-03_r5",
+  "condition": "INFO_MATCHED",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 5,
+  "response_text": "Shannon entropy is a fundamental concept in information theory introduced by Claude Shannon in 1948. It quantifies the **average amount of information** or **uncertainty** contained in a random variable (e.g., a token in a language model's output) and is mathematically analogous to thermodynamic entropy in physics. The key intuition is that entropy measures how \"surprising\" or \"diverse\" the outcomes of a system are: high entropy means many possible outcomes are roughly equally likely (high uncertainty), while low entropy means one outcome dominates (low uncertainty).\n\n---\n\n### **Formal Definition**\nFor a discrete probability distribution \\( P = \\{p_1, p_2, \\dots, p_n\\} \\) over \\( n \\) possible outcomes, the **Shannon entropy** \\( H(P) \\) is defined as:\n\n\\[\nH(P) = -\\sum_{i=1}^n p_i \\log_2(p_i)\n\\]\n\n- \\( p_i \\): Probability of outcome \\( i \\) (must satisfy \\( \\sum_{i=1}^n p_i = 1 \\)).\n- \\( \\log_2 \\): Logarithm base 2 (common in information theory; bits are the unit of entropy).\n- The negative sign ensures entropy is non-negative (since \\( p_i \\leq 1 \\), \\( \\log_2(p_i) \\leq 0 \\)).\n\n---\n\n### **Key Properties**\n1. **Maximum Entropy**:\n   For a given number of outcomes \\( n \\), entropy is maximized when all outcomes are equally likely (\\( p_i = 1/n \\)):\n   \\[\n   H_{\\text{max}} = \\log_2(n).\n   \\]\n   Example: A fair coin flip (\\( n=2 \\)) has \\( H = 1 \\) bit.\n\n2. **Minimum Entropy**:\n   Entropy is zero when one outcome is certain (\\( p_i = 1 \\) for some \\( i \\), \\( p_j = 0 \\) for \\( j \\neq i \\)):\n   \\[\n   H_{\\text{min}} = 0.\n   \\]\n   Example: A biased coin always landing heads (\\( p_{\\text{heads}} = 1 \\)).\n\n3. **Intuition for Language Models**:\n   In the context of your research, entropy measures the **diversity of the token distribution** at each step of generation. For example:\n   - A high-entropy token distribution (e.g., \\( p =",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18916.2504169999,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:47:19.613782"
+}

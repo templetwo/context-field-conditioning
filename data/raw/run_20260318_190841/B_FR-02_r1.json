@@ -1,0 +1,17 @@
+{
+  "trial_id": "B_FR-02_r1",
+  "condition": "B",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 1,
+  "response_text": "The **Kuramoto model** is a **mathematical framework in nonlinear dynamics** introduced by Yoshiki Kuramoto in 1975 to describe **synchronization phenomena** in populations of coupled oscillators. It provides a theoretical foundation for understanding how **disparate, locally interacting oscillatory systems** (e.g., neurons, pendula, fireflies, or even social coordination) spontaneously align their phases to achieve **global coherence** despite heterogeneity in their intrinsic frequencies.\n\n---\n\n### **Core Idea: Local Interaction \u2192 Global Synchrony**\nThe model formalizes how **weak, local coupling** between oscillators can produce **emergent, large-scale synchronization**\u2014a hallmark of complex systems. It demonstrates that **coherence arises from competition between desynchronization (driven by intrinsic frequency differences) and synchronization (driven by coupling strength)**.\n\n---\n\n### **Formal Definition**\nThe Kuramoto model describes a population of **N coupled phase oscillators** with:\n- **Intrinsic frequencies**: Each oscillator *i* has a natural frequency *\u03c9\u1d62* (e.g., a pendulum\u2019s uncoupled swing rate).\n- **Phase coupling**: Each oscillator\u2019s phase *\u03b8\u1d62(t)* adjusts toward the **mean phase of its neighbors**, scaled by a coupling strength *K*.\n\nThe **phase dynamics** are governed by:\n\\[\n\\frac{d\\theta_i}{dt} = \\omega_i + \\frac{K}{N} \\sum_{j=1}^N \\sin(\\theta_j - \\theta_i)\n\\]\n- **First term (*\u03c9\u1d62*)**: Oscillator\u2019s natural frequency (tends to desynchronize).\n- **Second term**: Coupling term (tends to synchronize). The oscillator *i* aligns its phase with the **average phase of all others**, weighted by *K/N*.\n\n---\n### **Key Phenomena Described**\n1. **Phase Transition (Order Parameter)**\n   - As coupling strength *K* increases, the system undergoes a **continuous phase transition** from **desynchronized (disordered) to synchronized (ordered) states**.\n   - Below a critical *K*, oscillators are incoherent; above it, they **lock into a common frequency** (like metronomes on a table).\n   - **Order parameter (*r*)**: Measures global synchrony:\n     \\[\n     r e^{i \\psi} = \\frac{1}{N} \\sum_{j=1}^N e^{i",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17334.115083000142,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:12:13.642730"
+}

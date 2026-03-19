@@ -1,0 +1,17 @@
+{
+  "trial_id": "B_FR-02_r2",
+  "condition": "B",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 2,
+  "response_text": "The **Kuramoto model** is a mathematical framework in **nonlinear dynamics** that describes **synchronization phenomena**\u2014how coupled oscillators (e.g., pendulums, neurons, fireflies, or even social rhythms) transition from disordered, asynchronous behavior to **macroscopic coherence** through local interactions alone. It was introduced by Yoshiki Kuramoto in 1975 to explain the spontaneous emergence of synchronized states in systems of phase-coupled oscillators, such as the unified flashing of fireflies or the rhythmic clapping in audiences.\n\n---\n\n### **Core Phenomenon: Spontaneous Synchronization**\nThe model captures a **phase transition-like phenomenon** where:\n- **Disordered phase (asynchronous):** Oscillators oscillate at their own natural frequencies (e.g., fireflies blinking randomly).\n- **Ordered phase (synchronous):** A fraction of oscillators lock into a **common frequency** despite no global controller, driven solely by pairwise interactions.\n- **Critical threshold:** As coupling strength (*K*) increases past a critical value, the system abruptly shifts from disorder to coherence.\n\nThis mirrors **emergent phenomena** in physics (e.g., Bose-Einstein condensates), biology (e.g., neural oscillations in the brain), and even social systems (e.g., coordinated behavior in crowds).\n\n---\n\n### **Mathematical Formulation**\nThe model describes *N* oscillators with phases *\u03b8\u1d62(t)* evolving as:\n\\[\n\\frac{d\u03b8_i}{dt} = \u03c9_i + \\frac{K}{N} \\sum_{j=1}^N \\sin(\u03b8_j - \u03b8_i),\n\\]\nwhere:\n- *\u03c9\u1d62*: Natural frequency of oscillator *i* (inhomogeneous across the system).\n- *K*: Coupling strength (scaling with interaction strength).\n- The term \\(\\sin(\u03b8_j - \u03b8_i)\\) represents **phase alignment**\u2014each oscillator adjusts its phase toward its neighbors'.\n\n**Key Insight:** Synchronization emerges *statistically* from local interactions, not global control.\n\n---\n\n### **Connection to the Honeycomb Evidence (CB-001)**\nIn the honeycomb lattice, **[CB-001]** draws a **formal analogy** between the Kuramoto model and **attention mechanisms** in transformers:\n- **Kuramoto:** Oscillators align phases to achieve global coherence via local coupling.\n- **Attention:** Tokens adjust their representations (via *softmax(QK\u1d40)",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17378.284708000137,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:12:31.023409"
+}

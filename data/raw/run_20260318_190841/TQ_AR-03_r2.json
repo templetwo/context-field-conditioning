@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQ_AR-03_r2",
+  "condition": "TQ",
+  "probe_id": "AR-03",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "How could a null result be more informative than a positive result in a research program?",
+  "repetition": 2,
+  "response_text": "The evidence lattice here reveals several striking cases where *null results*\u2014or more precisely, **negative results, failed hypotheses, and methodological dead-ends**\u2014became far more informative than positive ones. This aligns with a broader principle in science and AI research: **negative evidence often illuminates blind spots, reveals structural constraints, and defines the boundaries of what is possible**. Here\u2019s how that plays out in this program, with direct links to the honeycomb:\n\n---\n\n### **1. Null Results Expose Flaws in Core Assumptions**\n**Example: TG-001, TG-002 (Phase-GPT oscillators)**\n- **Positive spin**: If the oscillators had shown improved language modeling, we\u2019d have celebrated a breakthrough in *dynamical systems + NLP*.\n- **Null reality**: The zero improvement in perplexity *and* the catastrophic gradient severance (TG-002) exposed:\n  - **The epiphenomenal nature of synchronization** (TG-001): Phase coupling in hidden states doesn\u2019t imply computational utility. This is a *structural insight*\u2014it tells us that dynamical systems must be *mechanistically linked* to the task, not just present.\n  - **The fragility of AI architecture claims**: TG-009 shows that *four independent teams missed the same fatal bug*, revealing how even rigorous review can fail when assumptions (e.g., \"gradients flow\") are untested. This is a *methodological lesson*: **null results force us to audit the foundations**.\n  - **Connection to CB-001/SC-001**: The oscillators weren\u2019t just wrong; they were *silently wrong*, highlighting how undetected artifacts (like severed autograd) can poison entire research threads.\n\n**Why this matters**: The null didn\u2019t just disprove a hypothesis\u2014it **redefined the problem space**. Instead of asking *\"How can we use oscillators?\"*, we now ask *\"What dynamical properties *actually* interact with language modeling?\"*\n\n---\n\n### **2. Null Results Reveal Decoupling Between Metrics and Utility**\n**Example: TG-003 (WITNESS signal accuracy vs. judge wins)**\n- **Positive spin**: High judge win rates (97%) suggest the system is \"working.\"\n- **Null reality**: The 63% accuracy on WITNESS classification shows the **signal was often wrong**, yet the *system prompt it",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 19680.738667000696,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:52:32.733191"
+}

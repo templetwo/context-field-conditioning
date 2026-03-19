@@ -1,0 +1,17 @@
+{
+  "trial_id": "Q_FR-01_r2",
+  "condition": "Q",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 2,
+  "response_text": "The **quadratic complexity problem** in **transformer attention mechanisms** (as seen in models like the 9B action model referenced in your evidence base) refers to the **O(n\u00b2) time and space complexity** of self-attention, where *n* is the sequence length. Here\u2019s how it manifests, why it\u2019s problematic, and how it connects to your research context (e.g., *compass* routing, *K-SSM*, and *IRIS* framing):\n\n---\n\n### **1. The Core Problem: O(n\u00b2) Complexity**\n- **Attention Mechanism**:\n  For a sequence of length *n*, the self-attention layer computes a **query-key dot product matrix** of size *n\u00d7n* (with *d* dimensions per token, where *d* is typically small relative to *n*). This requires:\n  - **Memory**: Storing the *n\u00d7n* attention matrix (e.g., for *n=1024*, this is ~1M entries; for *n=4096*, ~16M).\n  - **Compute**: Scaling quadratically with sequence length (e.g., doubling *n* quadruples compute time).\n  - **Latency**: Critical for real-time applications (see **QA-010**: *compass* adds ~4s latency; raw models are faster but still constrained).\n\n- **Example in Your Evidence**:\n  - The **9B action model** (5GB, 4-bit quantized) likely uses standard attention, making it inefficient for long-context tasks (e.g., multi-turn conversations, document processing).\n  - *Compass* (3B model) routes signals to mitigate this, but the underlying attention bottleneck persists.\n\n---\n\n### **2. Why It Matters in Your Research**\n#### **A. Scalability Limits**\n- **Long-Context Tasks**: Models like *compass* (which may need to handle extended reasoning chains) hit walls with quadratic attention. Your **K-SSM** (Kuramoto oscillators, **QA-003**) suggests exploring *alternative dynamics*\u2014implying a shift away from dense attention matrices.\n  - *Connection*: **QA-003**\u2019s near-critical coupling (*R_init=0.3270*) hints at **sparse or structured interactions** (e.g., *linear attention* or *state-space models*), which avoid O(n\u00b2) costs.\n\n#### **",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17098.657374999675,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:54:06.672427"
+}

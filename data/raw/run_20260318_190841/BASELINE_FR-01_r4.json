@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_FR-01_r4",
+  "condition": "BASELINE",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 4,
+  "response_text": "The **quadratic complexity problem** in **Transformer attention mechanisms** refers to the fact that the self-attention layer (or cross-attention layer) in Transformers has a time and space complexity of **O(n\u00b2)** with respect to the sequence length **n**, making it computationally expensive and memory-intensive for long sequences.\n\n### **Why Does Quadratic Complexity Arise?**\nThe self-attention mechanism computes attention scores between every pair of tokens in a sequence, which requires:\n1. **Computing attention scores** for all possible pairs of tokens (O(n\u00b2) operations).\n2. **Storing and processing** the attention weights, which also scales quadratically with sequence length.\n\nMathematically, for a sequence of length **n**, the attention computation involves:\n- **Query (Q), Key (K), and Value (V)** matrices of size **n \u00d7 d** (where **d** is the embedding dimension).\n- The **attention scores** are computed as:\n  \\[\n  \\text{Attention}(Q, K, V) = \\text{softmax}\\left(\\frac{QK^T}{\\sqrt{d}}\\right) V\n  \\]\n  - **QK\u1d40** requires **O(n\u00b2d)** operations (due to matrix multiplication).\n  - **Softmax** and **V multiplication** also contribute to quadratic scaling.\n\n### **Problems Caused by Quadratic Complexity**\n1. **High Memory Usage** \u2013 Storing attention maps for long sequences (e.g., >2048 tokens) consumes significant GPU/CPU memory.\n2. **Slow Training & Inference** \u2013 Long sequences (e.g., in document processing, video analysis, or long-range dependencies) become computationally infeasible.\n3. **Limited Context Window** \u2013 Most Transformers (e.g., BERT, GPT-3) are limited to ~2048 tokens due to memory constraints.\n\n### **Solutions & Optimizations**\nSeveral techniques have been proposed to reduce the complexity while preserving attention effectiveness:\n\n#### **1. Sparse Attention Patterns**\n   - **Local (Sliding Window) Attention** \u2013 Only attend to nearby tokens (e.g., **Longformer, BigBird**).\n   - **Strided Attention** \u2013 Skip some tokens (e.g., **Linformer, Reformer**).\n   - **Block-Sparse Attention** \u2013 Divide the sequence into blocks (e.g., **Sparse Transformer**).\n\n#### **2.",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 16125.695167000003,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:10:07.641599"
+}

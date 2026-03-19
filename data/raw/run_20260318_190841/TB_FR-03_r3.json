@@ -1,0 +1,17 @@
+{
+  "trial_id": "TB_FR-03_r3",
+  "condition": "TB",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 3,
+  "response_text": "Shannon entropy, introduced by Claude Shannon in 1948, is a fundamental concept in information theory that quantifies the **average amount of information (or uncertainty)** contained in a random variable or probability distribution. It is the mathematical formalization of the intuitive idea that more unpredictable events (i.e., those with more evenly distributed probabilities) convey more information.\n\n---\n\n### **Formal Definition**\nGiven a discrete random variable \\( X \\) with possible outcomes \\( x_i \\) (where \\( i = 1, 2, \\dots, n \\)) and associated probabilities \\( p(x_i) \\), the **Shannon entropy** \\( H(X) \\) is defined as:\n\n\\[\nH(X) = -\\sum_{i=1}^n p(x_i) \\log p(x_i)\n\\]\n\n- The term \\( p(x_i) \\log p(x_i) \\) measures the \"surprise\" or information content of outcome \\( x_i \\).\n- The negative sign ensures that entropy is non-negative (since \\( 0 \\leq p(x_i) \\leq 1 \\), \\( \\log p(x_i) \\leq 0 \\)).\n- The base of the logarithm determines the units of entropy:\n  - Base 2: **bits** (binary units).\n  - Base \\( e \\): **nats** (natural logarithm).\n  - Base 10: **harts** (rarely used).\n\n---\n\n### **Key Properties**\n1. **Maximum Entropy**: For a given number of outcomes \\( n \\), entropy is maximized when all outcomes are equally likely:\n   \\[\n   p(x_i) = \\frac{1}{n} \\implies H_{\\text{max}}(X) = \\log n\n   \\]\n   This makes sense: the most \"unpredictable\" distribution (uniform) carries the most information.\n\n2. **Minimum Entropy**: Entropy is zero when the random variable is deterministic (one outcome has probability 1):\n   \\[\n   p(x_k) = 1 \\implies H(X) = 0\n   \\]\n\n3. **Additivity for Independent Variables**: If \\( X \\) and \\( Y \\) are independent, then:\n   \\[\n   H(X, Y) = H(X) + H(Y)\n   \\]\n\n4. **Joint and Conditional Entropy**: Entropy can be generalized to joint distributions and conditioned on other variables:\n   \\[\n   H(X, Y) = -\\sum_{i,j} p(x",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18257.048374999613,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:08:27.812720"
+}

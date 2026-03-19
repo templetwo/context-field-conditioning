@@ -1,0 +1,17 @@
+{
+  "trial_id": "B_AR-04_r1",
+  "condition": "B",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 1,
+  "response_text": "A **superadditive interaction** fundamentally differs from a simple additive combination because it produces an **effect greater than the sum of its individual components**, revealing **nonlinear synergy** rather than mere accumulation. Here\u2019s how the honeycomb evidence deepens this distinction across domains, with key contrasts to additivity:\n\n---\n\n### **1. Formal Definition: Additive vs. Superadditive**\n- **Additive**: *E(A+B) = E(A) + E(B)*\n  (e.g., mixing 1L water + 1L water = 2L water; effects scale linearly).\n- **Superadditive**: *E(A+B) > E(A) + E(B)*\n  (e.g., 2 drugs at sub-therapeutic doses combined cure disease; 1+1 > 2).\n\n**Key Evidence**:\n- **[CB-005] R\u00d7E superadditivity**: The *Rigor \u00d7 Empathy* interaction in framing (e.g., \"rigorous empathy\" vs. rigorous + empathy alone) yields a **judge-sweep record (35-0-0)** where the combined effect (context-field shifts in LLMs) **exceeds** the sum of individual framing effects. This mirrors **pharmacological synergy** (e.g., drug combinations like *artemisinin + piperaquine* for malaria, where IC\u2085\u2080 drops below either drug alone).\n- **Contrast to Additivity**: In additive systems (e.g., mixing painkillers), effects cancel or sum predictably. Superadditivity implies **emergent properties**\u2014new *qualitative* states (e.g., phase transitions in [CB-002]).\n\n---\n\n### **2. Mechanisms: Why Does Superadditivity Emerge?**\nThe honeycomb points to **three substrate-independent mechanisms** where superadditivity arises:\n\n#### **A. Structural Coupling (Kuramoto \u2194 Attention)**\n- **Additive**: Independent oscillators/tokens contribute to a mean but don\u2019t alter each other\u2019s dynamics.\n- **Superadditive**: *Local interactions* (phase coupling in Kuramoto, attention weights in Transformers) **amplify coherence** beyond linear scaling.\n  - **Evidence**: [CB-001] Kuramoto\u2019s *sin(\u03b8_j \u2212 \u03b8_i)* term is **nonlinear**; attention\u2019s softmax(QK^T) creates **competitive alignment** where tokens *reinforce* each other\u2019s relevance.",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17825.486749999982,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:17:27.505692"
+}

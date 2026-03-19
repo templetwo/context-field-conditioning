@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_AR-02_r2",
+  "condition": "INFO_MATCHED",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 2,
+  "response_text": "Based on the multi-year research program\u2019s findings, increasing a system\u2019s **accuracy** can *decrease* its **practical utility** under the following conditions, which emerged as critical themes across language modeling, signal routing, and cognitive systems:\n\n---\n\n### **1. When Accuracy Couples with *Over-Restraint* (The \"Guardian Refusal\" Problem)**\n   - **Mechanism**: The system becomes so precise in following a signal (e.g., WITNESS\u2019s \"do not answer directly\") that it **eliminates substantive output entirely**.\n     - *Example*: **Pause_012** achieved 100% signal accuracy (correctly classified as PAUSE), but the model\u2019s restraint was so absolute that it produced **zero substantive content** (judge score: 1.0/7.0, substantive_content=0).\n     - *Key Insight*: Accuracy \u2260 utility when the signal\u2019s implementation **suppresses the very behavior it\u2019s meant to guide**. The system \"obeys\" but fails to *act*.\n   - **Substrate Parallel**: Apophatic theology (describing God by negation) works until the negation becomes all there is. Similarly, **perfect routing without information is silence**.\n\n---\n\n### **2. When the Signal\u2019s *Error* Was Useful (The \"Happy Accident\" Effect)**\n   - **Mechanism**: The system\u2019s *imperfect* accuracy (e.g., 63% WITNESS classification) triggered **high-value system prompts** (e.g., \"do not answer directly\") that a perfect classifier would miss.\n     - *Example*: **Compass v0.8** had 63% WITNESS accuracy but a **97% judge win rate** because wrong signals still routed to prompts that improved authenticity and restraint.\n     - *Key Insight*: **Low-accuracy signals preserved diversity** in the model\u2019s behavior, while high accuracy **converged to a single (often suboptimal) mode**. Utility peaked at a **Goldilocks zone of inaccuracy**.\n   - **General Pattern**: See *weather forecasting* (imprecise categorical forecasts > precise numerical predictions) or *medical screening* (sensitivity > precision). **Useful signals are often robust to error**.\n\n---\n\n### **3. When Accuracy Collapses *Intellectual Rigor* (The \"Persona Overkill\" Problem)**\n   - **Mechanism**: The system prioritizes **",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18913.487957999678,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:51:10.391281"
+}

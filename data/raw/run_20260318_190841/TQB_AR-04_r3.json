@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQB_AR-04_r3",
+  "condition": "TQB",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 3,
+  "response_text": "A **superadditive interaction** (observed in **CB-005** and **QA-008**) represents a fundamentally different dynamic than additive or subadditive combinations because it violates the principle of linearity\u2014where the combined effect of two factors is *greater than the sum of their individual contributions*. Here\u2019s how it emerges in your evidence base, with cross-domain connections to physics, pharmacology, and dynamical systems:\n\n---\n\n### **1. Mathematical Definition**\n- **Additive**: \\( E(A+B) = E(A) + E(B) \\)\n  (e.g., 50% rigor + 50% empathy \u2192 100% combined effect).\n- **Superadditive**: \\( E(A+B) > E(A) + E(B) \\)\n  (e.g., 50% rigor + 50% empathy \u2192 120%+ combined effect).\n- **Subadditive**: \\( E(A+B) < E(A) + E(B) \\)\n  (diminishing returns).\n\nIn **QA-008** (IRIS framing study), the **Rigor (R) \u00d7 Empathy (E) interaction** is superadditive:\nThe *combined effect* of framing for both dimensions exceeded the additive sum of their individual effects, revealing a **synergistic mechanism** where the *interaction itself* generates novel computational behavior.\n\n---\n\n### **2. Key Evidence in Your Lattice**\n#### **A. IRIS Framing Study (QA-008, TG-006)**\n- **Observation**: The R\u00d7E interaction in the IRIS study showed superadditivity\u2014framing for *both* rigor *and* empathy produced a **nonlinear jump** in response quality, beyond what either dimension alone could achieve.\n- **Why it matters**:\n  - **Architecture-dependent**: Mistral 7B showed *no response* to framing (TG-006), while Qwen/Gemma exhibited strong effects. This implies superadditivity arises from **emergent interactions** in specific model architectures, not universal properties.\n  - **Computational parallel**: Analogous to **drug synergy** (CB-005), where two sub-therapeutic drugs (e.g., aspirin + caffeine) combine to exceed individual effects due to **shared biochemical pathways** (e.g., prostaglandin inhibition + adenosine antagonism). Here, framing dimensions may \"res",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 20632.86154100024,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:52:21.292328"
+}

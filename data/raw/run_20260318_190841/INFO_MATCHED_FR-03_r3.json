@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_FR-03_r3",
+  "condition": "INFO_MATCHED",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 3,
+  "response_text": "### **Shannon Entropy: Definition and Computation**\nShannon entropy is a measure of **uncertainty, randomness, or information content** in a discrete probability distribution. It quantifies how much \"surprise\" or \"variety\" exists in a system\u2014higher entropy means more unpredictability (e.g., a uniform distribution over many outcomes), while lower entropy means more certainty (e.g., a deterministic outcome).\n\n---\n\n### **Formal Definition**\nFor a discrete probability distribution \\( P = \\{p_1, p_2, ..., p_n\\} \\) where \\( p_i \\) is the probability of outcome \\( i \\), Shannon entropy \\( H \\) is defined as:\n\n\\[\nH(P) = -\\sum_{i=1}^{n} p_i \\log_2(p_i)\n\\]\n\n#### **Key Properties:**\n1. **Units:** Bits (if using base-2 log) or nats (natural log) or hartleys (base-10 log).\n2. **Maximum Entropy:** Achieved when all outcomes are equally likely (\\( p_i = \\frac{1}{n} \\)):\n   \\[\n   H_{\\text{max}} = \\log_2(n)\n   \\]\n   (e.g., for a fair coin flip, \\( H = 1 \\) bit).\n3. **Minimum Entropy:** \\( H = 0 \\) when one outcome is certain (\\( p_i = 1 \\) for some \\( i \\)).\n4. **Normalization:** Entropy is **subadditive** (combining systems cannot increase entropy beyond the sum of individual entropies).\n\n---\n\n### **Intuition**\n- **High Entropy:** Many possible outcomes with roughly equal probability (e.g., rolling a fair die).\n- **Low Entropy:** Few outcomes, with one dominating (e.g., a biased coin that always lands heads).\n- **Example:** If a model\u2019s token predictions are uniformly random, its entropy is maximized. If the model always predicts the same token, entropy is zero.\n\n---\n\n### **Computation Steps**\nGiven a probability distribution \\( P = \\{p_1, p_2, ..., p_n\\} \\):\n\n1. **For each outcome \\( i \\):**\n   - Compute \\( p_i \\log_2(p_i) \\).\n   - Note: \\( p_i \\log_2(p_i) \\) is zero when \\( p_i = 0 \\) (by convention, since \\(",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18913.269624999884,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:46:40.952624"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "B_AR-02_r3",
+  "condition": "B",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 3,
+  "response_text": "The evidence from this **cross-domain honeycomb lattice** reveals several conditions where **increasing accuracy decreases practical utility**\u2014a phenomenon emerging from **decoupled optimization of precision vs. actionable value**. Below are the key mechanisms and empirical findings from the research program:\n\n---\n\n### **1. When Utility is Defined by *Decision Quality*, Not *Truth Adherence* (CB-004, CB-0010)**\n   - **Mechanism**: Practical utility often depends on **entropy regulation** (CB-004) or **superadditive effects** (CB-005), not raw precision. Systems that maximize accuracy may overfit to *representational* goals rather than *behavioral* goals.\n   - **Evidence**:\n     - **Compass WITNESS** (CB-010): 63% accuracy but **97% judge win rate** because it optimized for *structured restraint* (CB-006) and *apophatic knowing* (CB-008)\u2014prioritizing **decision quality** over literal correctness.\n     - **Weather forecasting**: Imprecise probabilistic forecasts (\"30% chance of rain\") outperform precise but wrong deterministic forecasts (\"It will rain at 2 PM\") because they preserve **entropy flexibility** (CB-004).\n     - **Medical screening**: Tests optimized for **sensitivity** (catching all cases) may have lower precision but higher utility in **preventive decision-making**.\n   - **Domain Link**: Dynamical systems (CB-004) and computational pharmacology (CB-005) show that **superadditive interactions** (e.g., drug synergy) require **controlled imprecision** to access higher-order states.\n\n---\n\n### **2. When Accuracy Sacrifices *Structural Coherence* for Local Precision (CB-001, CB-009)**\n   - **Mechanism**: Systems that chase **local accuracy** (e.g., per-token prediction) may **lose global coherence** (CB-001), leading to brittle utility.\n   - **Evidence**:\n     - **Kuramoto \u2194 Attention Analogy** (CB-001): Transformers achieving \"perfect\" attention alignment might **over-constrain** global context, reducing adaptability (cf. **Phase-GPT bug** in CB-009, where gradient severance crippled learning despite",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17686.054457999944,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:16:17.755582"
+}

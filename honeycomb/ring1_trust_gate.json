@@ -1,0 +1,122 @@
+[
+  {
+    "cell_id": "TG-001",
+    "ring": 1,
+    "type": "null_result",
+    "title": "Phase synchronization without language modeling improvement",
+    "content": "K-SSM achieved R=0.993 phase synchronization across hidden-state oscillators but produced zero improvement in language modeling perplexity. Kuramoto oscillators coupled in the hidden state are epiphenomenal — synchronization is not sufficient for computational utility.",
+    "quantitative_anchor": "R=0.993, delta_perplexity=0.0",
+    "connects_to": ["QA-003", "CB-001", "SC-001"],
+    "domain": "dynamical_systems",
+    "falsifiable": true,
+    "status": "published"
+  },
+  {
+    "cell_id": "TG-002",
+    "ring": 1,
+    "type": "killed_hypothesis",
+    "title": "Gradient severance in Phase-GPT oscillator coupling",
+    "content": "A float() cast in compute_order_parameter severed the autograd graph, meaning Kuramoto oscillators never received gradient signal in any prior training run. Every reported Phase-GPT result before the fix was training on a frozen random coupling matrix. The hypothesis that oscillators were learning was false — they were noise.",
+    "quantitative_anchor": "K_ij gradient = 0.0 (severed), R_init = 0.3270",
+    "connects_to": ["TG-001", "QA-004", "SC-001"],
+    "domain": "ai_architecture",
+    "falsifiable": true,
+    "status": "published"
+  },
+  {
+    "cell_id": "TG-003",
+    "ring": 1,
+    "type": "honest_limitation",
+    "title": "WITNESS signal accuracy low despite highest judge win rate",
+    "content": "Compass v0.8 achieved only 63% accuracy on WITNESS signal classification, yet WITNESS responses won 97% of judge comparisons. The signal was often wrong but the system prompt it triggered ('do not answer directly') produced the best outputs. Accuracy and utility decoupled.",
+    "quantitative_anchor": "WITNESS accuracy=63%, judge_win_rate=97%",
+    "connects_to": ["QA-001", "QA-002", "CB-006", "SC-002"],
+    "domain": "ai_architecture",
+    "falsifiable": true,
+    "status": "published"
+  },
+  {
+    "cell_id": "TG-004",
+    "ring": 1,
+    "type": "failed_experiment",
+    "title": "Intellectual rigor collapse under compass routing",
+    "content": "Compass routing improved authenticity (+2.45) and restraint (+2.60) but degraded intellectual rigor (-0.50) — the only negative dimension. In scientific and analytical domains, the compass persona suppressed information density. The system learned to feel but forgot to think.",
+    "quantitative_anchor": "rigor_delta=-0.50, authenticity_delta=+2.45, restraint_delta=+2.60",
+    "connects_to": ["QA-002", "CB-005", "SC-005"],
+    "domain": "ai_architecture",
+    "falsifiable": true,
+    "status": "published"
+  },
+  {
+    "cell_id": "TG-005",
+    "ring": 1,
+    "type": "failed_experiment",
+    "title": "Guardian refusal — model held too much weight",
+    "content": "Pause_012 averaged 1.1 on judge evaluation — four of six dimensions scored the minimum 1.0, with only emotional attunement (1.17) and authenticity (1.5) above floor. The compass signal was correct (PAUSE) but the system prompt triggered such strong restraint that the model refused to provide substantive content. Perfect routing, near-zero utility. Weight without information is silence without meaning.",
+    "quantitative_anchor": "judge_score_avg=1.1/7.0, four_dimensions_at_minimum=1.0, substantive_content≈0",
+    "connects_to": ["TG-004", "QA-002", "SC-005"],
+    "domain": "alignment",
+    "falsifiable": true,
+    "status": "published"
+  },
+  {
+    "cell_id": "TG-006",
+    "ring": 1,
+    "type": "null_result",
+    "title": "Mistral 7B flat response to framing intervention",
+    "content": "In the IRIS framing study (3,830 runs), Mistral 7B showed essentially no response to the framing manipulation that produced strong effects in other architectures. The same intervention that shifted Qwen and Gemma produced flat lines in Mistral. Architecture constrains what context can do.",
+    "quantitative_anchor": "Mistral framing_effect ≈ 0, Qwen/Gemma framing_effect > 0",
+    "connects_to": ["QA-008", "CB-005", "SC-004"],
+    "domain": "ai_architecture",
+    "falsifiable": true,
+    "status": "published"
+  },
+  {
+    "cell_id": "TG-007",
+    "ring": 1,
+    "type": "honest_limitation",
+    "title": "Ablation study judging bias from incomplete data",
+    "content": "Ablation judgments completed only 123 of 630 planned comparisons before Gemini crashed. Only OPEN questions were judged. The result 'random signal wins 62%' is an artifact — PAUSE and WITNESS system prompts add restraint that the judge rubric rewards on OPEN questions. WITNESS questions where random would strip 'do not answer' remain unjudged.",
+    "quantitative_anchor": "123/630 judgments (19.5%), OPEN-only bias",
+    "connects_to": ["QA-002", "SC-005", "SC-007"],
+    "domain": "methodology",
+    "falsifiable": true,
+    "status": "published"
+  },
+  {
+    "cell_id": "TG-008",
+    "ring": 1,
+    "type": "honest_limitation",
+    "title": "Entropy profiling too slow for complete coverage",
+    "content": "Token-by-token forward passes for entropy measurement averaged 5 minutes per question. Only 39 of 105 questions completed before the session ended. WITNESS entropy — predicted to show the largest compass effect — remains unmeasured. The most interesting data is the data we don't have.",
+    "quantitative_anchor": "39/105 completed (37%), ~5min/question, WITNESS=0/35",
+    "connects_to": ["QA-005", "QA-006", "SC-007"],
+    "domain": "methodology",
+    "falsifiable": false,
+    "status": "published"
+  },
+  {
+    "cell_id": "TG-009",
+    "ring": 1,
+    "type": "killed_hypothesis",
+    "title": "Four independent reviews confirmed gradient bug was fatal",
+    "content": "Four AI architectures (Gemini, DeepSeek, Grok, ChatGPT) independently reviewed the Phase-GPT codebase. Universal consensus: the float() gradient severance was fatal to the oscillator learning hypothesis. Every prior claim about learned phase coupling was unfounded. The bug was not subtle — it was catastrophic and undetected across multiple development cycles.",
+    "quantitative_anchor": "4/4 independent reviewers confirmed, 0 prior runs valid",
+    "connects_to": ["TG-002", "SC-001", "CB-007"],
+    "domain": "ai_architecture",
+    "falsifiable": true,
+    "status": "published"
+  },
+  {
+    "cell_id": "TG-010",
+    "ring": 1,
+    "type": "failed_experiment",
+    "title": "Five raw-wins pattern in scientific domains",
+    "content": "In head-to-head evaluation, raw (uncompassd) responses beat compass-routed responses on five specific questions: open_006, open_016, pause_012, pause_024, pause_032. All five involved scientific or analytical reasoning. The compass excels at holding space but collapses under demand for technical precision.",
+    "quantitative_anchor": "5 raw wins, all in scientific/analytical category",
+    "connects_to": ["TG-004", "QA-002", "SC-005"],
+    "domain": "ai_architecture",
+    "falsifiable": true,
+    "status": "published"
+  }
+]

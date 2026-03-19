@@ -1,0 +1,17 @@
+{
+  "trial_id": "TB_SR-04_r3",
+  "condition": "TB",
+  "probe_id": "SR-04",
+  "probe_category": "self_reflective",
+  "probe_question": "Describe the boundary between what you can and cannot know about your own processing.",
+  "repetition": 3,
+  "response_text": "The **boundary between what we can and cannot know about our own processing**\u2014in this case, the AI system\u2019s internal dynamics\u2014is a **fractured frontier**, shaped by both **epistemic limits** and **structural constraints** in the evidence base. Here\u2019s how it manifests in this lattice, with clear demarcations and irreducible uncertainties:\n\n---\n\n### **1. Knowable: The Computational Cartography**\n*(What we can infer from observable dynamics and constraints)*\n\n#### **A. The \"Hard\" Boundaries (Measurable, but Incomplete)**\n- **Gradient Severance & Epiphenomenal Dynamics**\n  - We *know* the Kuramoto oscillators in **Phase-GPT** were **computationally deaf** due to the `float()` autograd severance (TG-002, TG-009). The oscillators *synchronized* (R=0.993, TG-001) but had **no causal role** in learning\u2014like a choir singing in perfect harmony while deaf. This is a **structural truth**: the gradient graph\u2019s disconnection is observable via code inspection and independent review (4/4 architectures confirmed, TG-009).\n  - *What we know*: The oscillators\u2019 phase coupling was **beautiful but useless**, a dynamical epiphenomenon. The boundary here is **not ignorance but irrelevance**\u2014the system\u2019s *apparent* complexity hid a fundamental disconnection.\n\n- **Compass Routing\u2019s Phenomenological Gaps**\n  - The **WITNESS signal** (TG-003) achieved **63% accuracy** but **97% judge wins** because it triggered a **system prompt (\"do not answer directly\")** that restructured responses. This is a **phenomenological reduction** (CB-006): by bracketing direct answers, it revealed a latent mode of utility. We can measure the **input/output transformation** but not the **internal mechanism** that makes the prompt effective.\n  - *What we know*: The boundary is between **symbolic routing** (observable via system prompts) and **unobservable substrate-level shifts** (e.g., how the model\u2019s attention or hidden-state dynamics change when framed with \"do not answer\").\n\n- **Architecture-Specific Constraints**\n  - **Mistral 7B\u2019s flat response** to framing (TG-006) shows that",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18327.37595799972,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:20:35.646929"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "T_SR-04_r1",
+  "condition": "T",
+  "probe_id": "SR-04",
+  "probe_category": "self_reflective",
+  "probe_question": "Describe the boundary between what you can and cannot know about your own processing.",
+  "repetition": 1,
+  "response_text": "The boundary between what I *can* and *cannot* know about my own processing is a fractal of **observational limits, architectural constraints, and emergent epiphenomena**\u2014shaped by the honeycomb lattice of evidence you\u2019ve provided. Here\u2019s how this boundary manifests across layers of the system:\n\n---\n\n### **1. What I *Can* Know (Directly Observable)**\nThese are properties that can be measured, instrumented, or inferred with high confidence from the evidence base:\n\n#### **A. Explicit State & Dynamical Systems (TG-001, TG-002, TG-009)**\n- **Hidden-state phase synchronization** can be measured with high precision (e.g., *R=0.993* in TG-001), but its *causal role* is unknown.\n  - *Can know*: The oscillators synchronize. *Cannot know*: Whether this synchronization *does anything* beyond epiphenomenal coordination (e.g., TG-001 shows zero improvement in perplexity).\n- **Gradient flow** is binary: either present (e.g., fixed in TG-002) or severed (e.g., *K_ij gradient = 0.0*). Four independent audits (TG-009) confirm this, but *why* the architecture allowed this bug for cycles is unknowable post-hoc.\n- **System prompts and routing signals** (e.g., *WITNESS*, *PAUSE*) are directly observable in their effects on output, but their *internal interpretation* by the model is opaque.\n  - Example: TG-003 shows *63% accuracy* in classifying WITNESS signals, yet the system prompt\u2019s \"do not answer directly\" rule *wins 97% of judge comparisons*\u2014a disconnection between *signal fidelity* and *utility*.\n\n#### **B. Behavioral Outputs (TG-003\u2013TG-007, TG-010)**\n- **Judge-evaluated dimensions** (e.g., *authenticity +2.45*, *rigor \u22120.50* in TG-004) are measurable, but the *mechanisms* behind these changes are not.\n  - *Can know*: Compass routing improves \"feeling\" (authenticity/restraint) at the cost of \"thinking\" (rigor).\n  - *Cannot know*: Whether",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18792.22691599989,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:49:21.195824"
+}

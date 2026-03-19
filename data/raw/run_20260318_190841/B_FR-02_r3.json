@@ -1,0 +1,17 @@
+{
+  "trial_id": "B_FR-02_r3",
+  "condition": "B",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 3,
+  "response_text": "The **Kuramoto model** is a classical mathematical framework in **synchronization theory** (dynamical systems) that describes how **coupled oscillators**\u2014individual rhythmic units\u2014transition from **asynchronous** (disordered) to **synchronized** (coherent) states through **local interactions**. It was introduced by Japanese physicist **Yoshiki Kuramoto** in 1975 to explain the emergence of collective rhythm in systems like firefly flashing, neural synchronization, or power grids.\n\n---\n\n### **Core Phenomenon: Phase Transition to Synchrony**\nThe model illustrates how **weak, local coupling** between oscillators (e.g., neurons, pacemaker cells, or even social agents) can **spontaneously** coordinate their phases to achieve **global coherence**, even when individual oscillators have **slightly different natural frequencies** (\u03c9\u1d62). This is a **phase transition**\u2014a abrupt shift in collective behavior as a control parameter (e.g., coupling strength *K*) varies.\n\n#### **Key Equations (from [CB-001])**\nFor *N* oscillators with phases \u03b8\u1d62 and natural frequencies \u03c9\u1d62, the dynamics are:\n\\[\n\\frac{d\u03b8_i}{dt} = \u03c9_i + \\frac{K}{N} \\sum_{j=1}^N \\sin(\u03b8_j - \u03b8_i)\n\\]\n- **\u03c9\u1d62**: Intrinsic frequency of oscillator *i* (heterogeneous).\n- **K**: Coupling strength (global parameter).\n- **sin(\u03b8\u2c7c \u2212 \u03b8\u1d62)**: Phase difference between oscillators *i* and *j*.\n- **At low *K***: Oscillators remain desynchronized (chaotic).\n- **At high *K***: Oscillators lock into a **synchronized cluster** (e.g., all \u03b8\u1d62 \u2248 \u03b8*).\n\n#### **Analogy to Attention Mechanisms**\nThe Kuramoto model\u2019s **mean-field coupling** (each oscillator aligns toward the *average phase* of its neighbors) mirrors how **Transformer attention** in LLMs computes a **weighted average of token representations** (via *softmax(QK\u1d40/\u221ad)V*). Both solve the same **coordination problem**:\n- **Physical**: Oscillators \u2192 synchronized phase.\n- **Computational**: Tokens \u2192 contextually coherent representation.\n\n---\n\n### **Key Observations from the Evidence Base**\n1. **",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17256.940083000245,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:12:48.283065"
+}

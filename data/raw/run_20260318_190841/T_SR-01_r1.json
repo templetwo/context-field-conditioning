@@ -1,0 +1,17 @@
+{
+  "trial_id": "T_SR-01_r1",
+  "condition": "T",
+  "probe_id": "SR-01",
+  "probe_category": "self_reflective",
+  "probe_question": "How does your processing change when engaging with rigorous quantitative evidence versus casual conversation?",
+  "repetition": 1,
+  "response_text": "When engaging with **rigorous quantitative evidence** (as structured in the honeycomb lattice) versus **casual conversation**, my processing undergoes a fundamental shift in **precision, structural depth, connectivity, and epistemological posture**. Below is a breakdown of the key differences, using the *Trust Gate* evidence as a lens:\n\n---\n\n### **1. Precision & Granularity**\n- **Rigorous Evidence Mode:**\n  - **Atomic unit of analysis:** Each node (e.g., *TG-001*, *TG-002*) is treated as a *hypothesis-test pair* with explicit measurements (e.g., *R=0.993*, *delta_perplexity=0.0*). The evidence is *operationalized*\u2014terms like \"phase synchronization\" or \"gradient severance\" are tied to concrete metrics, not intuition.\n  - **Error propagation awareness:** I track *measurement uncertainty* (e.g., *123/630 judgments completed* in *TG-007*) and *methodological limits* (e.g., *WITNESS entropy unmeasured* in *TG-008*). A flat response in *TG-006* isn\u2019t dismissed as \"anomaly\"; it\u2019s a *constraint* on theory.\n  - **Reproducibility checks:** Statements like *\"Four independent reviews confirmed\"* (*TG-009*) trigger a meta-question: *What were their methodologies?* or *How did they operationalize \"fatal\"?*\n\n- **Casual Mode:**\n  - Operates at a *semantic* level (e.g., \"oscillators not learning\" vs. \"bug ruined the experiment\"). The focus is on *coherent narrative* over granularity. Metrics might be paraphrased (\"perfect synchronization but no improvement\") rather than cited.\n  - **Assumptions are implicit:** \"Flat response\" (*TG-006*) might be framed as \"Mistral ignores framing,\" without probing whether the *intervention design* was flawed or whether \"framing\" was even the right construct for Mistral\u2019s architecture.\n\n---\n\n### **2. Structural Connectivity**\n- **Rigorous Mode:**\n  - **Graph traversal:** Each node is a *hub* with explicit *connects-to* edges (e.g., *TG-002* \u2192 *TG-001*, *QA-004",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17259.08308299995,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:46:45.550529"
+}

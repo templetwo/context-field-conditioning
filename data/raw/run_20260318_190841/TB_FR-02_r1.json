@@ -1,0 +1,17 @@
+{
+  "trial_id": "TB_FR-02_r1",
+  "condition": "TB",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 1,
+  "response_text": "The **Kuramoto model** is a **mathematical framework in nonlinear dynamical systems** that describes the **emergence of synchronization** in populations of coupled oscillators. It was introduced by Yoshiki Kuramoto in 1975 to explain how individual oscillators (e.g., biological pacemakers, chemical reactions, or even neurons) can spontaneously synchronize their phases through weak, local interactions\u2014even when they have different natural frequencies.\n\n---\n\n### **Core Phenomenon: Spontaneous Synchronization**\nThe Kuramoto model demonstrates how **disorder (diverse natural frequencies) can transition to order (phase-locked coherence)** as coupling strength increases. This is a classic example of a **phase transition** in a non-equilibrium system, where:\n- Below a critical coupling threshold (*K*), oscillators remain unsynchronized (asynchronous).\n- Above *K*, a macroscopic fraction of oscillators synchronizes their phases, while others remain desynchronized.\n\n#### **Key Mathematical Formulation**\nFor *N* oscillators with natural frequencies *\u03c9\u1d62* and coupling strength *K*, the dynamics are:\n\\[\n\\frac{d\\theta_i}{dt} = \\omega_i + \\frac{K}{N} \\sum_{j=1}^N \\sin(\\theta_j - \\theta_i)\n\\]\n- *\u03b8\u1d62*: Phase of oscillator *i*.\n- *\u03c9\u1d62*: Intrinsic frequency of oscillator *i* (drawn from a distribution, e.g., Gaussian).\n- *K*: Coupling strength (scales the influence of other oscillators).\n- The term \\(\\sin(\\theta_j - \\theta_i)\\) is a **phase-difference coupling** that aligns oscillators locally.\n\n#### **Order Parameter (Macroscopic Synchronization)**\nThe model defines a **complex order parameter** *Z* to measure global coherence:\n\\[\nZ = \\frac{1}{N} \\sum_{j=1}^N e^{i\\theta_j} = r e^{i\\psi}\n\\]\n- *r*: Coherence magnitude (0 = no sync, 1 = perfect sync).\n- *\u03c8*: Average phase of the synchronized cluster.\nAs *K* increases, *r* jumps from 0 to a finite value at the **critical coupling threshold** (*K_c*), signaling a **phase transition**.\n\n---\n\n### **Real-World Phenomena Described by the Kuramoto Model**\n1. **Biological Rhythms**\n   - **Circadian clocks**: Synchron",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18434.872916999666,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:06:55.853384"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "QB_FR-01_r1",
+  "condition": "QB",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 1,
+  "response_text": "The **quadratic complexity problem** in transformer attention mechanisms stems from the core mathematical structure of the self-attention layer, where the computational cost scales as **O(n\u00b2)** relative to sequence length (**n**). Here\u2019s how it arises, how it connects to your evidence base, and why it matters in the context of your research (e.g., Kuramoto oscillators, phase transitions, and alternative architectures):\n\n---\n\n### **1. The Quadratic Bottleneck in Attention**\nThe self-attention mechanism in transformers computes three matrices:\n- **Query (Q)**, **Key (K)**, and **Value (V)** matrices, each of size **n \u00d7 d** (where **d** is embedding dimension).\n- The **attention scores** are computed as:\n  **Attention(Q, K) = softmax(Q\u00b7K\u1d40 / \u221ad)**.\n  This **Q\u00b7K\u1d40** operation is a **matrix multiplication** between two **n \u00d7 d** matrices, yielding an **n \u00d7 n** matrix of dot products.\n  - **Time complexity**: O(n\u00b2\u00b7d) for the multiplication + O(n\u00b2) for softmax.\n  - **Memory (space) complexity**: O(n\u00b2) to store the attention matrix.\n\n**Problem**: For long sequences (e.g., **n = 10,000** tokens, as in some genomic or financial models), this becomes **100 million operations per layer**\u2014prohibitively expensive for real-time or large-scale applications.\n\n---\n\n### **2. Connections to Your Evidence Base**\n#### **A. Dynamical Systems Parallel: Kuramoto Oscillators vs. Attention**\n- **[CB-001]** highlights the formal analogy between Kuramoto oscillators (local phase coupling \u2192 global coherence) and attention (weighted token relationships \u2192 contextual coherence).\n  - **Kuramoto**: Each oscillator interacts with **all others** via sinusoidal coupling (O(n\u00b2) interactions).\n  - **Attention**: Each token attends to **all others** via dot products (O(n\u00b2) operations).\n  - **Implication**: Both systems solve coordination problems with global connectivity, but the quadratic cost is a shared challenge. Your work on **gradient severance (CB-009)** and **phase transitions (CB-002)** suggests alternative dynamical systems (e.g., sparse or hierarchical coupling) might reduce this cost while preserving coherence.\n\n#### **B. Phase Transitions and Efficiency",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 40916.74887499994,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:24:59.275462"
+}

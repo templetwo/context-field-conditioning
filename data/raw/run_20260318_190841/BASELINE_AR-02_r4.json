@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_AR-02_r4",
+  "condition": "BASELINE",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 4,
+  "response_text": "Increasing a system's **accuracy** (e.g., precision, recall, or overall performance) can sometimes **decrease its practical utility** due to trade-offs with other critical factors. Here are key conditions where this might occur:\n\n---\n\n### **1. Increased Cost or Resource Consumption**\n   - **Computational Overhead**: A more accurate model may require:\n     - More complex algorithms (e.g., deeper neural networks, ensemble methods).\n     - Higher memory/GPU/CPU usage, slowing down inference or increasing cloud costs.\n     - *Example*: A self-driving car with 99.999% accuracy might need 10x more compute power, making it impractical for mass adoption.\n   - **Data Collection Costs**: Higher accuracy often demands more labeled data, expensive sensors, or specialized hardware.\n     - *Example*: Medical diagnostics with 1% higher precision might require rare, costly samples.\n\n---\n### **2. Latency or Real-Time Constraints**\n   - **Slower Processing**: More accurate systems may take longer to process inputs (e.g., latency in AI models, slower simulations).\n     - *Example*: A fraud detection system with 99.9% accuracy but 2-second delay per transaction is useless for high-frequency trading.\n   - **User Experience**: Delays in response (e.g., voice assistants, autocomplete) frustrate users even if accuracy is high.\n\n---\n### **3. Overfitting or Brittleness**\n   - **Poor Generalization**: A hyper-accurate model on training data may fail catastrophically in real-world scenarios (e.g., adversarial examples in vision systems).\n     - *Example*: A chess AI with 100% accuracy in simulated games might lose to a novice due to unrealistic assumptions.\n   - **Lack of Robustness**: Overly complex models may be sensitive to noise or distribution shifts.\n     - *Example*: A weather prediction model with 99% accuracy in lab conditions but 50% in wild settings.\n\n---\n### **4. Trade-Offs with Other Metrics**\n   - **Precision-Recall Trade-off**: Increasing precision (fewer false positives) might reduce recall (more false negatives), and vice versa.\n     - *Example*: A spam filter with 99.9% precision might miss 20% of actual spam (low recall), leading to user frustration.\n   - **False Positives/Negatives**: In critical applications (",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 15706.76145899995,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:16:44.439717"
+}

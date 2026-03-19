@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_FR-03_r4",
+  "condition": "INFO_MATCHED",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 4,
+  "response_text": "Shannon entropy is a fundamental concept in information theory introduced by Claude Shannon in 1948. It quantifies the *average amount of information* or *uncertainty* contained in a random variable or probability distribution. In the context of language models and generative systems like the **compass-routed** or **raw** responses you've encountered, it measures how \"surprising\" or \"spread out\" the predicted tokens are\u2014essentially, how much freedom the model has in choosing its next output.\n\n---\n\n### **Mathematical Definition**\nGiven a discrete probability distribution \\( P = \\{p(x_1), p(x_2), ..., p(x_n)\\} \\) where \\( x_i \\) are possible outcomes and \\( p(x_i) \\) is their probability, the **Shannon entropy** \\( H \\) is defined as:\n\n\\[\nH(P) = -\\sum_{i=1}^{n} p(x_i) \\log_2 p(x_i)\n\\]\n\n- **Base 2 logarithm**: Uses \"bits\" as the unit of information (1 bit = 1 binary digit).\n- **Logarithm of probability**: Measures how much \"surprise\" or \"unexpectedness\" is associated with each outcome. If \\( p(x_i) = 1 \\) (certainty), \\( \\log_2(1) = 0 \\), so no information is gained. If \\( p(x_i) \\) is small (unlikely), \\( \\log_2(p(x_i)) \\) is negative, and the term \\( -p(x_i)\\log_2(p(x_i)) \\) becomes large, contributing more to entropy.\n- **Sum over all outcomes**: Aggregates the uncertainty across the entire distribution.\n\n---\n\n### **Intuition Behind Entropy**\n- **Maximum entropy**: A uniform distribution (e.g., \\( p(x_i) = \\frac{1}{n} \\) for all \\( i \\)) has the highest entropy because all outcomes are equally likely. For \\( n \\) outcomes, \\( H_{\\text{max}} = \\log_2(n) \\).\n- **Minimum entropy**: A deterministic distribution (e.g., \\( p(x_1) = 1 \\)) has \\( H = 0 \\), meaning no uncertainty.\n- **Interpretation**: Higher entropy means the model is more \"spread out\" in its choices, while lower entropy means it is more constrained or predictable.\n\n---\n\n### **Example: Entropy",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 19740.784625000742,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:47:00.695591"
+}

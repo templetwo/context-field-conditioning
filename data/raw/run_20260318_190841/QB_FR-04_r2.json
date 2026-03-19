@@ -1,0 +1,17 @@
+{
+  "trial_id": "QB_FR-04_r2",
+  "condition": "QB",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 2,
+  "response_text": "In **statistical hypothesis testing**, Type I and Type II errors are fundamental concepts that describe failures in decision-making when testing a null hypothesis (H\u2080) against an alternative hypothesis (H\u2081). While these errors are not explicitly defined in the provided honeycomb evidence (which focuses on dynamical systems, LLM routing, and cross-domain analogies), we can clarify them in general terms and then map them to relevant *patterns* in the evidence base that might offer analogous *structural insights*\u2014particularly around **signal classification, phase transitions, and decision trade-offs**.\n\n---\n\n### **Type I vs. Type II Errors: Core Definitions**\n| **Term**               | **Definition**                                                                 | **Example**                                                                 |\n|------------------------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------------|\n| **Type I Error**      | **False Positive**: Rejecting H\u2080 when it is *true*. Saying there is an effect when there isn\u2019t. | A medical test falsely diagnoses a disease when the patient is healthy.     |\n| **Type II Error**     | **False Negative**: Failing to reject H\u2080 when it is *false*. Missing a true effect. | A test fails to detect a disease that is actually present.                 |\n| **\u03b1 (alpha)**         | Probability of a Type I error (e.g., \u03b1 = 0.05 means 5% chance of false alarm). | Threshold for \"significance\" in p-values.                                  |\n| **\u03b2 (beta)**          | Probability of a Type II error. Power = 1 \u2212 \u03b2 (ability to detect true effects). | High \u03b2 = low sensitivity to real signals.                                 |\n\n---\n### **Key Trade-Off**\n- Reducing Type I errors (strict \u03b1) increases Type II errors (\u03b2 rises), and vice versa.\n- **Power analysis** balances these risks.\n\n---\n\n### **Connections to the Evidence Base**\nWhile the honeycomb focuses on LLM routing (Compass), dynamical systems (Kuramoto), and cross-domain bridges, we can draw *analogous structural patterns*:\n\n#### **1. Type I Error \u2194 WITNESS Signal \"Over-Routing\" (QA-002, QA-009)**\n- **QA-002** shows the **Compass WITNESS signal** achieves a perfect judge sweep (35-0-0 wins), but its accuracy is only **63%** (implied by QA-009\u2019s v",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18332.55554199968,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:28:04.948324"
+}

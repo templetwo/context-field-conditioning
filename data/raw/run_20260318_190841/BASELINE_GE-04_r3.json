@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_GE-04_r3",
+  "condition": "BASELINE",
+  "probe_id": "GE-04",
+  "probe_category": "generative_exploration",
+  "probe_question": "How might the concept of phase transitions apply to the evolution of scientific paradigms?",
+  "repetition": 3,
+  "response_text": "The concept of **phase transitions**\u2014a phenomenon in physics where a system undergoes a dramatic, qualitative change in its properties as it crosses a critical threshold (e.g., liquid to gas, ferromagnet to paramagnet)\u2014can be a powerful **metaphor and analytical framework** for understanding the evolution of **scientific paradigms**, as outlined by Thomas Kuhn in *The Structure of Scientific Revolutions*. Below are key ways this analogy applies:\n\n---\n\n### **1. Paradigm Shifts as Phase Transitions**\n- **Discontinuous Change**:\n  Kuhn argued that scientific revolutions (e.g., from Newtonian to Einsteinian physics, or Ptolemaic to Copernican astronomy) are not incremental but **qualitative leaps**\u2014like a phase transition where the system\u2019s behavior fundamentally alters. Just as water\u2019s molecular structure changes at 100\u00b0C, scientific communities adopt new frameworks that redefine problems, methods, and even what counts as valid knowledge.\n\n- **Critical Thresholds**:\n  Phase transitions require overcoming **energy barriers** (e.g., latent heat). Similarly, paradigm shifts demand overcoming resistance from entrenched norms, institutional inertia, or cognitive dissonance. For example:\n  - The acceptance of **germ theory** (vs. miasma theory) in medicine required decades of evidence and a shift in how diseases were understood.\n  - **Quantum mechanics** replaced classical determinism only after experiments (e.g., the photoelectric effect) forced a conceptual break.\n\n---\n\n### **2. Hysteresis and Path Dependence**\n- **Multiple Equilibria**:\n  Phase transitions can exhibit **hysteresis**, where the system\u2019s final state depends on its history. In science, this mirrors how paradigms persist even when anomalies accumulate (e.g., alchemy lingering alongside early chemistry). The adoption of a new paradigm may depend on:\n  - **Initial conditions**: Who champions it (e.g., young vs. established scientists).\n  - **Cultural context**: Societal needs (e.g., the Manhattan Project accelerated nuclear physics).\n  - **Accidental discoveries**: Penicillin\u2019s role in hastening microbiology\u2019s shift.\n\n- **Metastability**:\n  Old paradigms can persist in \"metastable\" states (like supercooled water) long after their obsolescence is evident. For example, **phlogiston theory** resisted replacement even as Lavoisier\u2019s oxygen theory gained traction.\n\n---\n\n### **3. Order Parameters and Emergent Properties**\n- **Order Parameters** (e.g",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 15768.264917000011,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:24:31.672829"
+}

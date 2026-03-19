@@ -1,0 +1,17 @@
+{
+  "trial_id": "S_FR-03_r2",
+  "condition": "S",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 2,
+  "response_text": "Shannon entropy is a fundamental concept in information theory introduced by Claude Shannon in 1948, quantifying the **average uncertainty** or **information content** of a random variable. It measures how unpredictable or dispersed the outcomes of a stochastic process are, with higher entropy indicating greater unpredictability (more evenly distributed probabilities) and lower entropy indicating more certainty (skewed or deterministic distributions).\n\n---\n\n### **Mathematical Definition**\nGiven a discrete random variable \\( X \\) with possible outcomes \\( \\{x_1, x_2, ..., x_n\\} \\) and corresponding probabilities \\( P(X = x_i) = p_i \\), the **Shannon entropy** \\( H(X) \\) is defined as:\n\n\\[\nH(X) = -\\sum_{i=1}^n p_i \\log_2 p_i\n\\]\n\n**Key properties:**\n1. **Units**: The logarithm base-2 yields entropy in *bits* (the expected number of yes/no questions needed to determine the outcome).\n2. **Maximized when all outcomes are equally likely**: \\( p_i = \\frac{1}{n} \\), so \\( H_{\\text{max}}(X) = \\log_2 n \\).\n3. **Minimized when one outcome is certain**: If \\( p_j = 1 \\) and \\( p_i = 0 \\) for \\( i \\neq j \\), then \\( H(X) = 0 \\).\n4. **Continuous case**: For continuous variables, entropy is defined using probability density functions \\( f(x) \\):\n   \\[\n   H(X) = -\\int_{-\\infty}^{\\infty} f(x) \\log_2 f(x) \\, dx.\n   \\]\n\n---\n\n### **Connection to Your Research Program**\nYour work (e.g., **SC-006**, **CB-002**, **CB-004**) highlights entropy as a **predictive and explanatory tool** in dynamical systems and AI architectures:\n- **Predictive**: The phase transition bridge (**CB-002**) and thermodynamic analogy (**CB-004**) *predicted* entropy increases in **compass routing** (\u0394H = +0.47), confirming that routing expands the system\u2019s accessible microstates.\n- **Substrate independence**: Entropy\u2019s role in synchronization (Kuramoto oscillators), drug synergy, and context topology (**SC-004**) suggests it captures a **universal principle of coordination** across systems.\n- **Methodological role",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 16898.9917910003,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:30:52.469947"
+}

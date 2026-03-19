@@ -1,0 +1,17 @@
+{
+  "trial_id": "T_AR-04_r2",
+  "condition": "T",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 2,
+  "response_text": "The evidence base you\u2019ve provided\u2014structured as a honeycomb lattice\u2014doesn\u2019t contain explicit examples of *superadditive interactions* (where the combined effect of two factors exceeds the sum of their individual effects) or their direct study. However, we can **infer** the principles of superadditivity from the failures of additive logic in this research program, particularly in **dynamical systems, alignment, and emergent behavior**. Here\u2019s how superadditivity contrasts with additivity, grounded in the *Trust Gate* findings:\n\n---\n\n### **1. Additive Combinations: Linear and Predictable**\nIn an additive system:\n- The effect of *A + B* = effect of *A* + effect of *B*.\n- Example from the evidence:\n  - **TG-001**: Kuramoto oscillators synchronized (high *R* = 0.993) but produced *no* improvement in perplexity. Here, dynamical synchronization (*A*) and language modeling (*B*) are treated as independent, but their combination fails to improve utility. This is **not superadditive**\u2014it\u2019s *zero-sum* for the task.\n  - **TG-006**: Framing interventions worked for Qwen/Gemma but not Mistral. If framing (*A*) and architecture (*B*) were additive, Mistral\u2019s flat response would imply framing alone should still have *some* effect. The lack of effect suggests **interaction**, not additivity.\n\n**Key question**: *Is the system\u2019s response to A+B just the sum of A and B, or does the coupling create something new?*\n\n---\n\n### **2. Superadditive Interactions: Emergent and Unpredictable**\nSuperadditivity occurs when:\n- The effect of *A + B* > effect of *A* + effect of *B*.\n- The combination *creates new properties* that neither component has alone.\n- Often tied to **nonlinearities, feedback loops, or contextual dependencies**.\n\n#### **Evidence of Superadditivity in the Lattice**\nWhile not explicitly labeled, the data hints at superadditive *failures* (where additivity was assumed but didn\u2019t hold) and emergent behaviors that *should* be superadditive but weren\u2019t studied:\n- **TG-003**: WITNESS signal had **63% accuracy** but triggered a **97% judge win rate**. The signal (*A*: accuracy) and the system prompt (*B*: \"do",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 16991.215499999955,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:42:46.016096"
+}

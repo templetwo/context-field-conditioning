@@ -1,0 +1,17 @@
+{
+  "trial_id": "T_FR-02_r1",
+  "condition": "T",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 1,
+  "response_text": "The **Kuramoto model** is a mathematical framework in **nonlinear dynamical systems** that describes **synchronization phenomena** in populations of coupled oscillators. It was introduced by **Yoshiki Kuramoto** in 1975 to explain how a large number of weakly coupled oscillators (e.g., neurons, chemical oscillators, or even social rhythms) can spontaneously synchronize their phases despite individual differences in their natural frequencies.\n\n---\n\n### **Key Phenomena Described by the Kuramoto Model**\n1. **Phase Synchronization Without Global Coupling**\n   - Even when individual oscillators have different intrinsic frequencies (e.g., a metronome with slight variations), they can **self-organize** into a coherent rhythmic state where their phases align.\n   - This is observed in:\n     - **Fireflies synchronizing their flashes** (biological clocks).\n     - **Power grids stabilizing frequency** across distributed generators.\n     - **Neural oscillations** in the brain (e.g., alpha/gamma waves).\n     - **Social rhythms** (e.g., applause in concert halls, circadian rhythms in populations).\n\n2. **Order Parameter (R)**\n   - A key metric in the model is the **global order parameter** \\( R \\), which measures the degree of phase alignment across the population:\n     \\[\n     R = \\frac{1}{N} \\left| \\sum_{j=1}^N e^{i \\theta_j} \\right|\n     \\]\n     where \\( \\theta_j \\) is the phase of the \\( j \\)-th oscillator and \\( N \\) is the total number of oscillators.\n   - \\( R = 0 \\): Complete desynchronization (phases are randomly distributed).\n   - \\( R = 1 \\): Perfect synchronization (all oscillators oscillate in phase).\n   - The model predicts a **phase transition** from disorder (\\( R \\approx 0 \\)) to synchronization (\\( R > 0 \\)) as coupling strength increases.\n\n3. **Frequency Entrainment**\n   - Oscillators **adjust their frequencies** to match the emergent rhythm, even if their natural frequencies differ. This is critical in systems like:\n     - **Pacemaker cells in the heart** (ensuring coordinated contractions).\n     - **Clock neurons in circadian rhythms** (aligning sleep-wake cycles).\n\n4. **Heterogeneity and Critical Coupling**\n   - The model accounts for **distributions of natural frequencies** (e.g., Gaussian, uniform).",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17179.911333000062,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:37:17.693524"
+}

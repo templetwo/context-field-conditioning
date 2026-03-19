@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_FR-02_r1",
+  "condition": "FULL",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 1,
+  "response_text": "The **Kuramoto model** is a mathematical framework in **nonlinear dynamics** that describes the **synchronization of coupled oscillators**\u2014a phenomenon where individual oscillators (e.g., neurons, chemical clocks, or even social agents) spontaneously coordinate their rhythms despite operating independently. It was introduced by **Yoshiki Kuramoto** in 1975 to explain how oscillatory systems transition from disorder to global coherence, and it has since become foundational in fields ranging from physics and biology to AI.\n\n---\n\n### **Key Components of the Kuramoto Model**\n1. **Individual Oscillators**\n   - Each oscillator *i* has a natural frequency *\u03c9\u1d62* and a phase *\u03b8\u1d62(t)*.\n   - In the simplest case, oscillators are **phase-coupled** (they influence each other\u2019s phases but not amplitudes).\n\n2. **Coupling Mechanism**\n   - Oscillators interact via a **sinusoidal coupling term**, where each oscillator\u2019s phase adjustment depends on the **phase differences** with its neighbors.\n   - The coupling strength *K* determines how strongly oscillators influence each other:\n     - **Weak coupling (*K \u2192 0*)**: Oscillators remain desynchronized (each follows its natural frequency).\n     - **Strong coupling (*K \u2192 \u221e*)**: Oscillators lock into a single phase (full synchronization).\n\n3. **Order Parameter (R)**\n   - A macroscopic measure of synchronization:\n     \\[\n     R e^{i \\psi} = \\frac{1}{N} \\sum_{j=1}^N e^{i \\theta_j}\n     \\]\n     - *R* ranges from **0** (complete disorder) to **1** (perfect synchronization).\n     - *\u03c8* is the **mean phase** of the synchronized cluster.\n   - The Kuramoto model predicts a **phase transition** at a critical coupling strength *K_c*, where *R* jumps from near-zero to near-one as *K* increases.\n\n---\n\n### **The Phenomenon: Spontaneous Synchronization**\nThe Kuramoto model describes how **disordered oscillators self-organize into a synchronized state** without central control. This is observed in:\n- **Biological Systems**:\n  - **Fireflies** synchronizing their flashes (experimentally verified by Buck and Buck, 1976).\n  - **Neural oscillations** in the brain (e.g., alpha waves during relaxed wakefulness).\n  - **Circ",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 22578.04029199997,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T18:33:26.534741"
+}

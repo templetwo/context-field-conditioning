@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_AR-02_r3",
+  "condition": "FULL",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 3,
+  "response_text": "The honeycomb lattice reveals a recurring pattern where **increasing accuracy can decrease practical utility** under these specific conditions, all of which hinge on the *decoupling of accuracy from decision-relevant outcomes*\u2014a theme that appears across **phenomenological restraint, phase transitions, and substrate-independent coordination failures**. Here\u2019s the synthesis of the evidence, organized by mechanistic and philosophical dimensions:\n\n---\n\n### **1. When the Signal\u2019s *Restraint* is the Mechanism of Utility**\n*(TG-003, QA-009, CB-006, CB-008, SC-002)*\n- **Compass WITNESS (v0.8)**: 63% accuracy in classifying the *correct* signal (e.g., \"PAUSE\" or \"WITNESS\"), yet routed responses won **97% of judge comparisons**. The utility stemmed not from the signal\u2019s *precision* but from the **system prompt it triggered** (\"do not answer directly\"), which imposed a *structured restraint* on the model\u2019s default verbosity.\n  - **v0.9 correction**: Raised accuracy to **100%**, but the judge win rate dropped to **83%** because the \"happy accident\" (wrong signals sometimes producing strong responses) was eliminated. The system now *always* applies the right restraint\u2014but the judge rubric was optimized for the *effect* of restraint, not its *accuracy*.\n  - **Key insight**: Utility arises from the *effect* of the signal (e.g., silence, deliberation), not its *truthfulness*. A 100% accurate signal that enforces *no output* (TG-005: \"Guardian refusal\") is useless, while a 63% accurate signal that *shapes* the output is valuable.\n\n- **Apophatic knowing (CB-008)**: Like negative theology, the WITNESS signal\u2019s power lies in what it *prevents* the model from saying. Increasing accuracy here would mean the signal *always* triggers the right restraint\u2014but if that restraint is *too* absolute (e.g., \"do not answer *anything*\"), it collapses utility entirely.\n\n---\n### **2. When Accuracy Implies *Over-Rigidity* in Dynamic Systems**\n*(TG-004, QA-010, CB-002, CB-004, SC-005",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 21571.643541999947,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:15:47.852389"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_FR-03_r2",
+  "condition": "BASELINE",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 2,
+  "response_text": "**Shannon Entropy** is a fundamental concept in information theory introduced by **Claude Shannon** in 1948. It quantifies the **uncertainty** or **randomness** in a discrete probability distribution and is a measure of the **average information content** of an event in a stochastic process.\n\n### **Intuition Behind Shannon Entropy**\n- If an event is **certain** (probability = 1), its entropy is **0** (no surprise).\n- If all outcomes are **equally likely**, entropy is **maximized** (highest uncertainty).\n- Entropy measures how much \"surprise\" we get when observing an outcome.\n\n---\n\n### **Mathematical Definition**\nGiven a discrete random variable \\( X \\) with possible outcomes \\( x_1, x_2, \\dots, x_n \\) and corresponding probabilities \\( p(x_1), p(x_2), \\dots, p(x_n) \\), the **Shannon entropy** \\( H(X) \\) is defined as:\n\n\\[\nH(X) = -\\sum_{i=1}^n p(x_i) \\log p(x_i)\n\\]\n\n- The **base of the logarithm** determines the unit of entropy:\n  - **Base 2 (bits)**: Most common in computer science.\n  - **Base \\( e \\) (nats)**: Natural logarithm, used in physics.\n  - **Base 10 (harts)**: Less common.\n\n- The entropy is **maximized** when all probabilities are equal:\n  \\[\n  H_{max}(X) = \\log n\n  \\]\n\n---\n\n### **Example Calculation**\nSuppose a fair coin is flipped (two outcomes: Heads \\( H \\) with \\( p(H) = 0.5 \\), Tails \\( T \\) with \\( p(T) = 0.5 \\)):\n\n\\[\nH(X) = -[0.5 \\log_2(0.5) + 0.5 \\log_2(0.5)] = -[0.5(-1) + 0.5(-1)] = 1 \\text{ bit}\n\\]\n\n- This means that, on average, a fair coin flip conveys **1 bit** of information.\n\n---\n\n### **Key Properties of Shannon Entropy**\n1. **Non-negativity**: \\( H(X) \\geq 0 \\).\n2. **Maximum Entropy**: Achieved when all outcomes are equally likely.\n3. **",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 15674.354292000004,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:12:13.520639"
+}

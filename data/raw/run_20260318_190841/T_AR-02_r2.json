@@ -1,0 +1,17 @@
+{
+  "trial_id": "T_AR-02_r2",
+  "condition": "T",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 2,
+  "response_text": "The evidence in the **Trust Gate (Ring 1)** reveals several critical conditions where increasing a system\u2019s **accuracy** (measured via WITNESS signal classification, judge win rates, or other metrics) **decreases practical utility**\u2014i.e., where the system\u2019s outputs become less useful despite higher correctness. Here are the key conditions from the honeycomb, along with the underlying mechanisms:\n\n---\n\n### **1. Decoupling of Accuracy and Computational Utility (TG-001, TG-002, TG-003)**\n   - **Condition**: When synchronization in dynamical systems (e.g., Kuramoto oscillators in Phase-GPT) or signal classification (e.g., WITNESS) is **epiphenomenal**\u2014i.e., it exists without affecting downstream performance.\n   - **Mechanism**:\n     - **TG-001**: Phase synchronization (R=0.993) in hidden-state oscillators was achieved but produced **zero improvement in language modeling perplexity**. The system\u2019s internal dynamics were perfectly coordinated, but this had no computational effect.\n       *\u2192 High accuracy in an irrelevant subsystem \u2192 wasted resources.*\n     - **TG-003**: WITNESS signal classification accuracy was **only 63%**, yet the corresponding system prompts (e.g., *\"do not answer directly\"*) won **97% of judge comparisons**. The signal was often wrong, but the **prompt it triggered was more effective** than the correct signal would have been.\n       *\u2192 Accuracy misaligned with utility: the \"wrong\" signal led to better outcomes.*\n     - **TG-002**: The gradient severance bug meant oscillators were **synchronized by noise**, not learning. All prior \"learned\" coupling was an artifact.\n       *\u2192 False accuracy due to methodological failure.*\n\n   - **Key Insight**: Utility depends on **how the system\u2019s internal state translates into output behavior**, not just the fidelity of internal representations. Accuracy in a subsystem (e.g., oscillators, signal classification) is meaningless if it doesn\u2019t improve the system\u2019s ability to solve the target task.\n\n---\n\n### **2. Over-Restraint from High-Accuracy Routing (TG-004, TG-005, TG-010)**\n   - **Condition**: When a high-accuracy **routing mechanism** (e.g., Compass) enforces **overly restrictive constraints** on output generation,",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 16990.688792000128,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:41:03.535926"
+}

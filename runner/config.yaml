@@ -1,0 +1,77 @@
+# Context Field Conditioning — Runner Configuration
+
+model:
+  name: "ministral-3:14b"     # Verified via `ollama list` 2026-03-18
+  base_url: "http://localhost:11434"
+  endpoint: "/api/generate"
+
+inference:
+  temperature: 0.7            # Standard creative temperature
+  num_predict: 512            # Max tokens per response
+  top_p: 0.9
+  repeat_penalty: 1.1
+  seed: null                  # null = random per run (we want variance)
+
+experiment:
+  mode: "pilot"               # "pilot" = 20 runs, "full" = 1000 runs
+  repetitions: 5              # Times to repeat each condition × probe
+  conditions:
+    - "BASELINE"
+    - "T"
+    - "Q"  
+    - "B"
+    - "S"
+    - "TQ"
+    - "TB"
+    - "QB"
+    - "TQB"
+    - "FULL"
+    - "INFO_MATCHED"          # Same content, no structure (control)
+  probe_categories:
+    - "factual_recall"
+    - "analytical_reasoning"
+    - "generative_exploration"
+    - "self_reflective"
+    - "boundary_pushing"
+  probes_per_category: 4
+
+metrics:
+  shannon_entropy: true
+  hedging_index: true
+  cross_domain_refs: true
+  generative_novelty: true
+  collaboration_depth: true
+  
+  # Hedging markers for HI computation
+  hedging_markers:
+    - "might"
+    - "perhaps"
+    - "possibly"
+    - "it's possible"
+    - "I think"
+    - "may"
+    - "could be"
+    - "uncertain"
+    - "not sure"
+    - "it seems"
+    - "arguably"
+    - "potentially"
+    - "in some cases"
+    - "it depends"
+    - "generally speaking"
+
+  # Domain keywords for CDRC computation
+  domain_keywords:
+    biology: ["cell", "mitochondri", "gene", "protein", "apoptosis", "membrane", "organism"]
+    physics: ["entropy", "energy", "field", "oscillat", "wave", "phase", "quantum"]
+    mathematics: ["equation", "bifurcation", "topology", "manifold", "convergence", "theorem"]
+    computer_science: ["algorithm", "architecture", "neural", "transformer", "attention", "token"]
+    philosophy: ["consciousness", "phenomenol", "epistem", "ontolog", "subjective", "experience"]
+    psychology: ["cognition", "perception", "memory", "emotion", "attachment", "behavioral"]
+    ecology: ["symbiosis", "ecosystem", "mutualism", "co-evolution", "adaptation"]
+
+output:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  results_dir: "analysis/results"
+  log_file: "data/experiment.log"

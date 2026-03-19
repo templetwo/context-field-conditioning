@@ -1,0 +1,17 @@
+{
+  "trial_id": "QB_FR-02_r1",
+  "condition": "QB",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 1,
+  "response_text": "The **Kuramoto model** is a **mathematical framework** in **nonlinear dynamics** that describes the **self-organized synchronization of coupled oscillators**\u2014a phenomenon where individual rhythmic systems (e.g., pendulums, neurons, or even social agents) spontaneously align their phases through weak, local interactions, without a central controller. It was introduced by **Yoshiki Kuramoto** in 1975 to explain how seemingly independent oscillators (like fireflies flashing in unison or pacemaker cells in the heart) achieve collective rhythmic behavior.\n\n---\n\n### **Key Components of the Kuramoto Model**\n1. **Oscillators with Natural Frequencies**\n   - Each oscillator \\(i\\) has an intrinsic frequency \\(\\omega_i\\) (e.g., a neuron firing at a baseline rate or a firefly\u2019s natural flash rhythm).\n   - Frequencies can vary randomly (e.g., \\(\\omega_i \\sim \\text{uniform}(-1,1)\\) in the classic model).\n\n2. **Coupling Through Phase Differences**\n   - Oscillators interact via **phase differences** \\((\\theta_j - \\theta_i)\\), where \\(\\theta_i\\) is the phase of oscillator \\(i\\).\n   - The coupling strength \\(K\\) scales the influence of neighbors. For \\(K = 0\\), oscillators behave independently; for large \\(K\\), they lock into sync.\n\n3. **Phase Evolution Equation**\n   The dynamics are governed by:\n   \\[\n   \\frac{d\\theta_i}{dt} = \\omega_i + \\frac{K}{N} \\sum_{j=1}^N \\sin(\\theta_j - \\theta_i)\n   \\]\n   - \\(\\omega_i\\): Natural frequency of oscillator \\(i\\).\n   - \\(\\frac{K}{N} \\sum_j \\sin(\\theta_j - \\theta_i)\\): **Mean-field coupling term** pulling \\(\\theta_i\\) toward the average phase of its neighbors.\n   - The sine function ensures the coupling is **phase-sensitive** (only differences matter, not absolute angles).\n\n4. **Order Parameter \\(R\\)**\n   - A macroscopic measure of synchronization:\n     \\[\n     R e^{i\\psi} = \\frac{1}{N} \\sum_{j=1}^N e^{i\\theta_j}\n     \\]\n     where \\(R\\) ranges from \\(0\\) (complete desynchrony) to \\(1\\) (perfect sync), and \\(\\psi\\) is the **average phase** of the system.\n   - At critical coupling",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18498.79620899992,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:25:54.977045"
+}

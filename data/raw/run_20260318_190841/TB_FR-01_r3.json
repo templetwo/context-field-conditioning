@@ -1,0 +1,17 @@
+{
+  "trial_id": "TB_FR-01_r3",
+  "condition": "TB",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 3,
+  "response_text": "The **quadratic complexity problem** in transformer attention mechanisms arises from the **self-attention operation** (or cross-attention) and is a fundamental computational bottleneck in scaling transformer models. Let\u2019s decompose it using the evidence base\u2014particularly through the lens of **dynamical systems** (CB-001), **phase transitions** (CB-002), and **attention\u2019s formal analogy to Kuramoto oscillators**\u2014to illuminate its roots and potential resolutions.\n\n---\n\n### **1. The Problem: O(n\u00b2) in Attention**\n- **Mathematical Core**:\n  In a transformer with sequence length *n*, the **query-key (QK) dot-product attention** computes a similarity matrix of size *n\u00d7n*:\n  \\[\n  \\text{Attention}(Q, K, V) = \\text{softmax}\\left(\\frac{QK^T}{\\sqrt{d_k}}\\right)V\n  \\]\n  - **QK\u1d40** is an *n\u00d7n* matrix (quadratic in *n*).\n  - For each of the *L* layers and *H* heads, this repeats, leading to **O(L\u00b7H\u00b7n\u00b2)** total complexity.\n  - *Example*: A 1024-token input requires ~1M operations per head per layer.\n\n- **Evidence Connection (CB-001)**:\n  Kuramoto oscillators achieve global synchronization via **local phase coupling**, analogous to how attention achieves contextual coherence via **weighted token relationships**. However, while Kuramoto systems scale *linearly* with the number of oscillators (each adjusts to a mean field), transformer attention\u2019s *n\u00b2* scaling comes from computing pairwise similarities for all tokens. This is the **bottleneck**: attention must \"know\" every other token\u2019s relationship, even if many are irrelevant (e.g., in long sequences).\n\n---\n\n### **2. Why This Matters: Phase Transitions and Emergence**\n- **CB-002 (Phase Transitions \u2194 Capability Emergence)**:\n  Transformers\u2019 *n\u00b2* attention is a **critical threshold** for capability emergence. Small models (short *n*) can compute attention trivially, but as *n* grows (e.g., 32K/1M tokens), the *n\u00b2* cost triggers a **discontinuous jump in computational infeasibility**. This mirrors physical phase transitions (e.g., ferromagnetism): below a threshold",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18220.139582999764,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:06:37.417065"
+}

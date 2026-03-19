@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_FR-02_r3",
+  "condition": "INFO_MATCHED",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 3,
+  "response_text": "The **Kuramoto model** is a **mathematical framework** for studying the **emergence of synchronization** in **coupled oscillatory systems**, originally proposed by Yoshiki Kuramoto in 1975. It describes how a population of **phase oscillators** (e.g., biological clocks, Josephson junctions in superconductivity, or even neurons) with **intrinsic frequencies** interact via **weak coupling** to transition from **desynchronized chaos** to **coherent synchronization**.\n\n---\n\n### **Core Phenomenon: The Onset of Synchronization**\nThe model illustrates a **phase transition**\u2014a sudden, collective change in behavior as a control parameter (e.g., coupling strength) varies. This is analogous to:\n- **Physical phase transitions** (e.g., water freezing into ice as temperature crosses a critical threshold),\n- **Neural oscillations** (e.g., brain waves synchronizing during cognitive tasks),\n- **Social coordination** (e.g., crowds synchronizing clapping rhythms).\n\n#### **Key Features:**\n1. **Individual Oscillators**:\n   Each oscillator has an intrinsic frequency \\( \\omega_i \\) and a phase \\( \\theta_i(t) \\). In the absence of coupling, they oscillate independently.\n\n2. **Coupling Dynamics**:\n   The phase of each oscillator is influenced by the phases of its neighbors, typically via a **sinusoidal coupling** term:\n   \\[\n   \\frac{d\\theta_i}{dt} = \\omega_i + \\frac{K}{N} \\sum_{j=1}^N \\sin(\\theta_j - \\theta_i),\n   \\]\n   where:\n   - \\( K \\) is the **global coupling strength** (scaling with the number of oscillators \\( N \\)),\n   - \\( \\sin(\\theta_j - \\theta_i) \\) represents **phase alignment pressure** (attraction toward neighbors' phases).\n\n3. **Order Parameter (Synchronization Measure)**:\n   The system\u2019s coherence is quantified by the **order parameter** \\( R e^{i\\Psi} \\), where:\n   \\[\n   R e^{i\\Psi} = \\frac{1}{N} \\sum_{j=1}^N e^{i\\theta_j}.\n   \\]\n   - \\( R \\) (magnitude) measures **global synchronization strength** (ranging from \\( 0 \\) for random phases to \\( 1 \\) for perfect alignment).\n   - \\( \\Psi \\) is the **mean phase",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 20459.589667001637,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:45:04.556009"
+}

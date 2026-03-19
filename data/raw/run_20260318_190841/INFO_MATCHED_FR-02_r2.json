@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_FR-02_r2",
+  "condition": "INFO_MATCHED",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 2,
+  "response_text": "The **Kuramoto model** is a mathematical framework in **nonlinear dynamics** that describes the **self-organized synchronization** of coupled oscillators\u2014individual elements (e.g., neurons, chemical oscillators, or even social agents) that spontaneously coordinate their rhythms through local interactions, without central control. It was introduced by Japanese physicist **Yoshiki Kuramoto** in 1975 as a simplified model to explain how phase-locked states emerge from chaos, and it has since become foundational in understanding synchronization phenomena across physics, biology, neuroscience, and even social systems.\n\n---\n\n### **Core Phenomenon: Spontaneous Phase Synchronization**\nThe model describes a **phase transition** in a population of oscillators with heterogeneous natural frequencies (e.g., circadian rhythms, firing neurons, or metronomes). Key properties:\n\n1. **Local Coupling, Global Order**:\n   - Each oscillator adjusts its phase based on the **mean phase** of its neighbors (weighted by coupling strength \\(K_{ij}\\)).\n   - Despite no central authority, the system transitions from **desynchronized** (each oscillator fires independently) to **synchronized** (all oscillators phase-lock) as coupling strength increases.\n\n2. **Order Parameter \\(R\\)**:\n   - A macroscopic measure of synchronization, defined as the magnitude of the **mean complex vector** of all oscillators:\n     \\[\n     R e^{i\\Psi} = \\frac{1}{N} \\sum_{j=1}^N e^{i\\theta_j},\n     \\]\n     where \\(\\theta_j\\) is the phase of oscillator \\(j\\) and \\(\\Psi\\) is the mean phase.\n   - \\(R = 0\\): Complete desynchronization (oscillators point randomly).\n   - \\(R \\approx 1\\): Perfect synchronization (all phases align).\n   - The **critical threshold** for synchronization occurs at \\(K \\approx K_c\\), where \\(K\\) is the global coupling strength. Below \\(K_c\\), \\(R\\) decays to 0; above it, \\(R\\) jumps to a finite value (a **discontinuous phase transition**).\n\n3. **Phase Transition Analogy**:\n   - The model is mathematically analogous to **ferromagnetism** (Ising model) or **Bose-Einstein condensation**, where microscopic interactions (coupling) drive macroscopic order.\n   - In your research context, the oscillators initialized at \\(K_{ij} \\approx 0.01\\) and \\(R",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18893.48812499884,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:44:44.095048"
+}

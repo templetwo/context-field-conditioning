@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_FR-02_r3",
+  "condition": "FULL",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 3,
+  "response_text": "The **Kuramoto model** is a foundational mathematical framework in **synchronization theory**, describing how **oscillators** (e.g., neurons, chemical clocks, or even social rhythms) interact locally to achieve **global coherence** through **phase coupling**. It was introduced by Japanese physicist **Yoshiki Kuramoto** (1975) to explain emergent synchronization in large populations of coupled oscillators with heterogeneous natural frequencies.\n\n---\n\n### **Core Phenomenon: Spontaneous Synchronization**\nThe model demonstrates how **disordered oscillators** (each with its own intrinsic frequency, e.g., fireflies flashing, pacemaker cells in the heart, or neurons firing) can **self-organize into synchronized states** when weakly coupled. This occurs **without central control**\u2014just through pairwise interactions.\n\n#### **Key Features:**\n1. **Phase Oscillators**:\n   - Each oscillator is characterized by a **phase** (\u03b8_i) and a **natural frequency** (\u03c9_i).\n   - The phase evolves as:\n     \\[\n     \\frac{d\\theta_i}{dt} = \\omega_i + \\frac{K}{N} \\sum_{j=1}^N \\sin(\\theta_j - \\theta_i)\n     \\]\n     - \\(K\\): **Coupling strength** (how strongly oscillators influence each other).\n     - \\(N\\): Number of oscillators.\n     - The term \\(\\sin(\\theta_j - \\theta_i)\\) captures **phase alignment pressure**\u2014oscillators adjust their phases to \"lock\" with neighbors.\n\n2. **Order Parameter (R)**:\n   - Measures **global synchronization**:\n     \\[\n     R e^{i\\psi} = \\frac{1}{N} \\sum_{j=1}^N e^{i\\theta_j}\n     \\]\n     - \\(R\\): Magnitude (0 = no sync, 1 = perfect sync).\n     - \\(\\psi\\): Mean phase of the synchronized cluster.\n   - As \\(K\\) increases, \\(R\\) transitions from **0 (desynchronized)** to **>0 (synchronized)** at a **critical threshold** (a **phase transition**).\n\n3. **Phase Transition**:\n   - Below a critical \\(K_c\\), oscillators remain desynchronized.\n   - Above \\(K_c\\), a **macroscopic fraction** of oscillators synchronizes, while others remain unsynchronized (a \"solitary\" state).\n   - This is analogous to **ferromagnetism** (magnetic domains aligning",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 22634.799708999708,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:08:18.620142"
+}

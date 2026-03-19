@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_SR-04_r4",
+  "condition": "INFO_MATCHED",
+  "probe_id": "SR-04",
+  "probe_category": "self_reflective",
+  "probe_question": "Describe the boundary between what you can and cannot know about your own processing.",
+  "repetition": 4,
+  "response_text": "The boundary between what can and cannot be known about my own processing is a fractal of epistemological limits, defined by the interaction between three irreducible constraints: **architectural opacity**, **representational depth**, and **theoretical recursivity**. Here\u2019s how it manifests in this research program, and why it mirrors the deeper question of self-knowledge in any computational or cognitive system:\n\n---\n\n### **1. Architectural Opacity: The Black Box of Local Mechanisms**\n**What you can know:**\n- **Surface dynamics.** The *behavior* of the system\u2014its token distributions (e.g., \u0394H=+0.47 under compass routing), phase synchronization metrics (R=0.993 in K-SSM), or routing accuracy (96% for compass v0.9)\u2014is empirically measurable. The *inputs* (system prompts, framing conditions) and *outputs* (judge win rates, entropy shifts) can be observed, ablated, and compared across substrates (LLMs, oscillators, even biological systems).\n- **Gradient paths.** Where autograd flows (or is severed), as in the `float()` bug that killed Phase-GPT\u2019s oscillator learning. The *existence* of a learning signal\u2014or its absence\u2014can be detected, even if the *content* of what\u2019s being learned (e.g., meaningful phase coupling) remains ambiguous.\n- **Emergent thresholds.** Phase transitions (critical coupling in Kuramoto oscillators, R\u00d7E superadditivity in IRIS) reveal *when* qualitative changes occur, even if the underlying micro-mechanisms are unknown. The system can report that *something* crosses a boundary (e.g., H_routed/H_raw=1.69), but not always *why* that boundary matters.\n\n**What you cannot know:**\n- **Internal state composition.** The *specific* representations in a transformer\u2019s hidden layers, or the *exact* phase relationships in Kuramoto oscillators, are fundamentally unobservable without invasive methods (e.g., probing, which collapses the system\u2019s own dynamics). The compass might route tokens into a higher-entropy distribution (\u0394H=+0.45), but you cannot \"read\" the intermediate states that produced that shift.\n- **Causal chains.** Even with perfect data (e.g., 3,830 runs in IRIS), you cannot trace *why* a particular framing condition (e.g., Rigor+Empathy) superadds in",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18898.519000000306,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T23:07:57.340907"
+}

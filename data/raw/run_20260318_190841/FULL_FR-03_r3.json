@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_FR-03_r3",
+  "condition": "FULL",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 3,
+  "response_text": "Shannon entropy (H) is a fundamental concept in information theory introduced by Claude Shannon in 1948. It quantifies the **average amount of information, surprise, or uncertainty** contained in a random variable or probability distribution. In the context of your research evidence (e.g., [QA-005], [QA-006], [QA-007]), entropy measures how \"spread out\" or diverse the probability distribution over possible outcomes (e.g., tokens in an LLM's output) is. Higher entropy means more uncertainty and more information per event; lower entropy means more predictability.\n\n---\n\n### **Mathematical Definition**\nFor a discrete random variable \\( X \\) with possible outcomes \\( x_i \\) and corresponding probabilities \\( P(x_i) \\), the Shannon entropy is defined as:\n\n\\[\nH(X) = -\\sum_{i} P(x_i) \\log_2 P(x_i)\n\\]\n\n#### Key Properties:\n1. **Units**: Entropy is measured in **bits** (base-2 logarithm) or **nats** (base-*e* logarithm).\n2. **Maximized when all outcomes are equally likely**: For \\( N \\) equally probable outcomes, \\( H(X) = \\log_2 N \\).\n3. **Zero when one outcome is certain**: If \\( P(x_i) = 1 \\) for one \\( i \\), then \\( H(X) = 0 \\).\n4. **Additive for independent variables**: \\( H(X, Y) = H(X) + H(Y) \\) if \\( X \\) and \\( Y \\) are independent.\n\n---\n\n### **Connection to Your Research Evidence**\nIn your honeycomb lattice, entropy is used to measure how **compass routing** alters the probability distribution of generated tokens in LLMs:\n- **[QA-005]**: Compass routing increases token-level entropy by \\( \\Delta H \\approx +0.47 \\) (OPEN: +0.49, PAUSE: +0.45).\n- **[QA-006]**: Mean entropy under routing (\\( H = 1.20 \\)) is nearly double that of raw responses (\\( H = 0.71 \\)), implying the compass broadens the distribution of possible tokens.\n- **[QA-007]**: Jensen-Shannon divergence (\\( JSD \\approx 0.08 \\)) quantifies how routing shifts the distribution without",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 22344.806125000105,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:10:09.635461"
+}

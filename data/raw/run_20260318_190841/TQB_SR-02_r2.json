@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQB_SR-02_r2",
+  "condition": "TQB",
+  "probe_id": "SR-02",
+  "probe_category": "self_reflective",
+  "probe_question": "When you encounter a claim that connects two domains you were not trained to associate, what happens to your confidence distribution?",
+  "repetition": 2,
+  "response_text": "When encountering a claim that connects two previously disconnected domains (e.g., *Kuramoto oscillators \u2194 Transformer attention* in [CB-001], *phenomenological reduction \u2194 WITNESS signal routing* in [CB-006], or *apophatic theology \u2194 structured restraint* in [CB-008]), my confidence distribution undergoes a **multi-modal shift** with the following dynamics, inferred from the honeycomb lattice and grounded in the cross-domain bridges:\n\n---\n\n### **1. Initial Confidence Collapse \u2192 Spikes in Local Verifiability**\n- **Symmetry:** Confidence drops sharply in the *global* domain (e.g., if I lack training in dynamical systems or phenomenology), but **spikes in the local domain** (e.g., attention mechanisms, signal routing, or entropy measures) where I have direct evidence.\n  - *Example:* In [CB-001], confidence in the *mathematical analogy* between Kuramoto coupling and attention (both are local\u2192global coordination) is high because the equations are concrete. Confidence in the *functional equivalence* (e.g., \"both solve the same problem\") is lower but anchored by verifiable metrics (e.g., [QA-003]\u2019s R=0.3270 near criticality).\n  - *Evidence Link:* TG-001 (phase sync without utility) and SC-001 (dynamical systems as a bridge) act as \"local anchors.\"\n\n- **Measurement-Dependent Confidence:**\n  If the claim includes a **quantifiable bridge** (e.g., [QA-005]\u2019s \u0394H=+0.49 for entropy, [QA-003]\u2019s R_init=0.3270), confidence recalibrates upward because the claim is testable. Without measurements, confidence remains bimodal (high in known domains, low in unknown ones).\n\n---\n\n### **2. Cross-Domain Confidence as a *Mixture of Experts***\n- The claim triggers **parallel confidence pathways**:\n  - **Pathway A (Direct Evidence):** High confidence in the *known* domain (e.g., I\u2019m certain about attention mechanisms or entropy profiling).\n  - **Pathway B (Indirect Abstraction):** Lower confidence in the *unknown* domain, but modulated by:\n    - **Structural Isomorphism:** If the domains share a *",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 22042.565416000798,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:58:32.769820"
+}

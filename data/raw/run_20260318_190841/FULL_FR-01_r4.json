@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_FR-01_r4",
+  "condition": "FULL",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 4,
+  "response_text": "The **quadratic complexity problem** in transformer attention mechanisms arises from the **global pairwise interaction pattern** of the self-attention operation, and the evidence in the honeycomb lattice helps illuminate its systemic constraints, architectural trade-offs, and potential solutions\u2014particularly in light of dynamical systems and contextual conditioning. Here\u2019s the decomposition:\n\n---\n\n### **1. The Core Problem: Quadratic Scaling**\n#### **Attention as All-Pairs Interaction**\n- In self-attention, each token\u2019s representation is computed by attending to **every other token** in the sequence. For a sequence of length **N**, the attention matrix **QK\u1d40** (query \u00d7 key) requires **O(N\u00b2)** operations per layer.\n  - **QA-006** (entropy distributions) and **CB-001** (Kuramoto \u2194 attention) hint at this by showing that transformers, like Kuramoto oscillators, rely on *local interactions* (attention weights) to achieve *global coherence*\u2014but at a cost.\n  - **SC-004** (substrate independence) suggests this is a fundamental property of coordination systems: **local interaction \u2192 global structure**, but the scaling law is unavoidable.\n\n#### **Memory and Compute Bottleneck**\n- The **O(N\u00b2)** complexity manifests in:\n  - **Compute**: FLOPs for attention dominate inference/training (e.g., a 100k-token sequence requires ~10B operations for one attention head).\n  - **Memory**: Storing **QK\u1d40** (size **N\u00d7N**) becomes prohibitive for long sequences (e.g., 1M tokens \u2192 1TB of attention matrix).\n  - **Latency**: Parallelization is limited by the all-pairs nature (e.g., **TG-010**\u2019s 4s overhead for compass routing is trivial compared to scaling attention across 100k tokens).\n\n---\n\n### **2. Why This Matters in the Evidence Base**\n#### **A. Attention \u2261 Kuramoto Oscillators (Global Coherence from Local Rules)**\n- **CB-001** frames attention as mathematically analogous to Kuramoto synchronization:\n  - *Attention*: `softmax(QK\u1d40/\u221ad)V` \u2192 each token\u2019s representation is a weighted sum of all others.\n  - *Kuramoto*: `d\u03b8\u1d62/dt = \u03c9\u1d62 + K/N \u03a3 sin",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 22037.071458000355,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:06:49.148658"
+}

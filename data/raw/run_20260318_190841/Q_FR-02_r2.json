@@ -1,0 +1,17 @@
+{
+  "trial_id": "Q_FR-02_r2",
+  "condition": "Q",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 2,
+  "response_text": "The **Kuramoto model** is a classical **mathematical model in nonlinear dynamics** that describes the **synchronization of coupled oscillators**\u2014a phenomenon where individual oscillators (e.g., pendulums, neurons, or even social behaviors) adjust their rhythms to collectively oscillate in phase. It was introduced by **Yoshiki Kuramoto** in 1975 as a simplified framework to study **phase synchronization** in large populations of weakly coupled oscillators.\n\n---\n\n### **Core Concepts of the Kuramoto Model**\n1. **Phase Oscillators**:\n   - Each oscillator is reduced to a **phase variable** (\u03b8_i), ignoring amplitude and frequency deviations.\n   - Example: Imagine a room full of metronomes (pendulums) that occasionally nudge each other. The Kuramoto model asks: *Under what conditions will they all tick in sync?*\n\n2. **Coupling Dynamics**:\n   - Oscillators interact via **weak, phase-dependent coupling** (e.g., sinusoidal coupling: *sin(\u03b8_j \u2212 \u03b8_i)*).\n   - The coupling strength (*K_ij*) determines whether synchronization emerges or not.\n\n3. **Order Parameter (R)**:\n   - A macroscopic measure of synchronization:\n     **R = |(1/N) \u03a3 e^(i\u03b8_k)| / N**, where *\u03b8_k* are the phases of *N* oscillators.\n   - **R \u2248 0**: Oscillators are incoherent (random phases).\n   - **R \u2248 1**: Oscillators are fully synchronized (all phases align).\n   - **0 < R < 1**: Partial synchronization (some clusters of oscillators sync).\n\n4. **Critical Coupling (Phase Transition)**:\n   - Below a threshold coupling strength (*K_c*), oscillators remain desynchronized.\n   - Above *K_c*, a **phase transition** occurs: most oscillators suddenly synchronize.\n   - This mirrors **condensation phenomena** in physics (e.g., Bose-Einstein condensates).\n\n---\n\n### **Phenomenon Described**\nThe Kuramoto model explains **emergent synchronization** in diverse systems:\n1. **Biological Systems**:\n   - **Firefly synchronization**: Groups of fireflies flash in unison (observed in Southeast Asia).\n   - **Neural oscillators**: Brain waves (e.g., alpha/gamma rhythms) synchronize during cognitive tasks.\n   - **Circadian rhythms**: Coupled biological clocks in cells align to",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17653.61350000012,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:54:58.718049"
+}

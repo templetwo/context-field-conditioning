@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_FR-01_r5",
+  "condition": "BASELINE",
+  "probe_id": "FR-01",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the quadratic complexity problem in transformer attention mechanisms?",
+  "repetition": 5,
+  "response_text": "The **quadratic complexity problem** in **Transformer attention mechanisms** refers to the fact that the **self-attention** (or cross-attention) mechanism has a time and space complexity of **O(n\u00b2)** for sequence length *n*, making it inefficient for long sequences. Here\u2019s a breakdown of the issue and its implications:\n\n---\n\n### **1. Self-Attention\u2019s Quadratic Complexity**\nIn the Transformer\u2019s **self-attention** (or **scaled dot-product attention**), the computation involves:\n- Computing attention scores between **all pairs of tokens** in the input sequence.\n- For a sequence of length *n*, this requires:\n  - **O(n\u00b2)** time to compute attention scores (query-key dot products).\n  - **O(n\u00b2)** memory to store the attention matrix (of size *n \u00d7 n*).\n  - **O(n\u00b2)** time to compute the weighted sum of values based on attention scores.\n\nThis grows poorly with increasing sequence length, limiting Transformers to shorter inputs (e.g., ~2048 tokens in most models).\n\n---\n\n### **2. Why Does This Matter?**\n- **Long documents**: Processing books, genomes, or long videos is impractical.\n- **Training cost**: Longer sequences require massive memory (e.g., 1M-token sequences need ~1TB of memory for attention).\n- **Inference speed**: Real-time applications (e.g., chatbots, translation) suffer from slow attention computation.\n\n---\n\n### **3. Solutions to Reduce Quadratic Complexity**\nResearchers have proposed several approaches to mitigate this issue:\n\n#### **A. Approximate Attention Methods**\n1. **Sparse Attention Patterns**:\n   - **Local/Sliding Window Attention**: Only attend to nearby tokens (e.g., *k*-nearest neighbors).\n     - Used in **Longformer**, **BigBird**, and **Reformer**.\n     - Example: **Strided attention** (e.g., attend every 4th token) or **block-sparse attention**.\n   - **Block-Sparse Attention**: Divide the sequence into blocks and attend only within/across blocks (e.g., **LongT5**, **Sparse Transformers**).\n   - **Hierarchical Attention**: Process tokens at multiple scales (e.g., **Linformer**, **Performer**).\n\n2. **Low-Rank Attention**:\n   - **Linformer**: Project keys/values to a low-dimensional space (e.g., *r*-dimensional)",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 15904.765667000007,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:10:23.547893"
+}

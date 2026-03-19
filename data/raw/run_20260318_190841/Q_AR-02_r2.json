@@ -1,0 +1,17 @@
+{
+  "trial_id": "Q_AR-02_r2",
+  "condition": "Q",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 2,
+  "response_text": "This phenomenon\u2014where increasing **accuracy** (QA-001, QA-009) paradoxically **decreases practical utility**\u2014emerges in the **Compass** system (and by extension, AI routing architectures) due to the **interplay between signal correctness, entropy dynamics (QA-005\u2013QA-007), and the emergent properties of probabilistic distributions**. Below are the key conditions and mechanisms from the evidence base, organized by domain:\n\n---\n\n### **1. Signal Accuracy vs. \"Happy Accident\" Utility (QA-009, QA-002)**\n- **Condition**: When **WITNESS signals** (highest utility category) are misclassified as **OPEN/PAUSE** but still produce *strong, contextually useful responses* due to the raw model\u2019s stochasticity.\n  - **Evidence**:\n    - QA-002: WITNESS category achieved a **perfect sweep** (35 wins, 0 losses) in judge evaluations, but this relies on the raw model\u2019s ability to *occasionally* generate high-quality outputs even without perfect routing.\n    - QA-009: **v0.8 (78% accuracy)** had a **higher judge win rate (88%)** than **v0.9 (96% accuracy, 83% wins)**. The drop suggests that **v0.8\u2019s errors sometimes preserved utility** where v0.9\u2019s stricter routing overcorrected.\n  - **Mechanism**:\n    - **Over-constrained routing** (higher accuracy) reduces the raw model\u2019s exploratory entropy (QA-005\u2013QA-006), eliminating the \"lucky\" high-utility cases that arose from misclassified signals.\n    - **Tradeoff**: Accuracy prioritizes *correct classification*, but utility depends on *balancing correctness with exploratory diversity*.\n\n---\n\n### **2. Entropy Collapse and Probabilistic Rigidity (QA-005\u2013QA-007, QA-006)**\n- **Condition**: When **routing reduces token-level entropy** (QA-006: *H_raw = 0.71 \u2192 H_routed = 1.20*), but the *shape of the distribution* shifts toward **overly constrained modes** that sacrifice creative or adaptive utility.",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17124.556833000042,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:58:30.203763"
+}

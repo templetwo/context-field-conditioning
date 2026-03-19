@@ -1,0 +1,17 @@
+{
+  "trial_id": "S_AR-04_r3",
+  "condition": "S",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 3,
+  "response_text": "The evidence in **Ring 4: Structural Coherence** reveals that **superadditivity** is not just an additive sum of individual effects but a **qualitative shift in the system\u2019s emergent coordination properties**\u2014one that arises from **interdependent, nonlinear interactions** between components. Here\u2019s how the findings distinguish superadditive interactions from simple additivity, using the honeycomb lattice to ground the explanation:\n\n---\n\n### **1. Additivity vs. Superadditivity: A Conceptual Divide**\n- **Additive Effects**:\n  - If two factors (e.g., framing in IRIS or context structure in CFC) combine such that their joint effect is the *sum* of their individual effects (e.g., *E(A+B) = E(A) + E(B)*), the system behaves as a modular assembly.\n  - Example: Two drugs each reducing blood pressure by 10 mmHg would additively reduce it by 20 mmHg if combined.\n  - **Key Limitation**: No new *structural* or *dynamical* properties emerge; the system\u2019s behavior is predictable from parts.\n\n- **Superadditive Effects**:\n  - The combined effect *exceeds* the sum of individual effects (*E(A+B) > E(A) + E(B)*), indicating **synergy** or **emergent coordination**.\n  - In the evidence:\n    - **IRIS (SC-003)**: Factorial ablation across *framing conditions (R\u00d7E)* showed **R\u00d7E superadditivity**, meaning the interaction between *relational framing (R)* and *experiential framing (E)* produced a *greater-than-sum* effect on outcomes. This was not reducible to individual framing effects.\n    - **CFC (SC-003)**: The same methodology is being applied to test whether *honeycomb topology* (context structure) is superadditive. If confirmed, the topology itself\u2014*not just its parts*\u2014creates emergent utility.\n  - **Mathematical Signature**: Superadditivity implies **nonlinear coupling** (e.g., oscillators in Kuramoto models, phase transitions in CB-002) where interactions *amplify* or *stabilize* each other beyond linear predictions.\n\n---\n\n### **2. Mechanisms of Superadditivity in the Evidence**\nThe research program identifies **three substrate-independent mechanisms** where superadditivity emerges:\n\n#### **A. Dynamical Coupling (Phase",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17059.58612500035,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:35:26.629019"
+}

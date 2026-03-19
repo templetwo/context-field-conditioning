@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQ_AR-04_r2",
+  "condition": "TQ",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 2,
+  "response_text": "The **superadditive interaction** in the IRIS framing study (QA-008) is a critical finding that contrasts sharply with **simple additive effects**, revealing a deeper structural property of the system. Here\u2019s the distinction, grounded in the evidence:\n\n---\n\n### **1. Simple Additive Effects (No Synergy)**\n- **Definition**: If two factors (e.g., *Rigor* and *Empathy*) contribute independently to an outcome, their combined effect equals the sum of their individual effects. For example:\n  - *Rigor* alone improves output by **+X**.\n  - *Empathy* alone improves output by **+Y**.\n  - Combined effect = **X + Y** (no bonus or penalty).\n- **Evidence from the Lattice**:\n  - **TG-006**: Mistral 7B showed *no response* to framing interventions that worked in other models (Qwen/Gemma). This suggests framing effects are *architecture-dependent* and may not combine predictably across systems.\n  - **TG-004**: Compass routing improved *authenticity* (+2.45) and *restraint* (+2.60) but *hurt rigor* (-0.50). Here, the effects are *subtractive* for rigor, not additive.\n  - **QA-009**: Higher compass accuracy (v0.8 \u2192 v0.9) *reduced* judge win rates (88% \u2192 83%), showing that improving one component (signal accuracy) can *undo* another (utility) in a non-additive way.\n\n- **Key Insight**: Additive models assume effects are modular. The evidence shows they\u2019re not\u2014context manipulations (like framing) interact with the model\u2019s *latent architecture* (e.g., Mistral\u2019s indifference) or *trade off* across dimensions (e.g., rigor vs. authenticity).\n\n---\n\n### **2. Superadditive Interaction (Synergy > Sum of Parts)**\n- **Definition**: The combined effect of two factors is *greater than* the sum of their individual effects. Mathematically:\n  - *Rigor* alone: **+X**.\n  - *Empathy* alone: **+Y**.\n  - Combined effect: **> X + Y** (synergy).\n- **From QA-008 (IRIS Study)**:\n  - The **Rigor \u00d7 Empathy interaction** was superadditive, meaning:\n    -",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 27349.520583000412,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:53:39.325974"
+}

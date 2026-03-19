@@ -1,0 +1,17 @@
+{
+  "trial_id": "TB_FR-04_r3",
+  "condition": "TB",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 3,
+  "response_text": "In the context of the **honeycomb lattice evidence base**, the distinction between **Type I and Type II errors** is a foundational statistical concept that directly intersects with multiple findings\u2014particularly those related to **methodological rigor (SC-007), accuracy-utility decoupling (TG-003, CB-010), and the reliability of learned phenomena (TG-009)**. Here\u2019s how these errors manifest in both classical hypothesis testing *and* in the context of your research program, with connections to the evidence:\n\n---\n\n### **Type I Error (False Positive)**\n- **Definition**:\n  Rejecting a true null hypothesis (i.e., concluding an effect exists when it does not).\n  *Example*: Claiming a model learned phase coupling (K-SSM) when it actually didn\u2019t (due to the **float() gradient severance bug** in **TG-002**).\n- **In the Evidence Base**:\n  - **TG-002** and **TG-009**: All prior claims about **Phase-GPT oscillator learning** were Type I errors\u2014the null hypothesis (\"no learning occurred\") was true, but the researchers *and four independent reviewers* falsely concluded otherwise due to a **catastrophic gradient severance bug**. This is analogous to a **false positive** in a scientific study.\n  - **TG-007**: The **ablation study** was cut short (123/630 judgments), risking Type I errors in judge bias (e.g., falsely concluding that \"random signal wins 62%\" when the true effect was distorted by incomplete data).\n  - **CB-010**: The **accuracy-utility decoupling** (e.g., WITNESS at 63% accuracy but 97% judge win rate) suggests that traditional accuracy metrics (Type I avoidance) may not capture *useful* signals. High utility despite low accuracy = high Type I risk in a naive evaluation framework.\n\n- **Key Domains**:\n  - **Methodology (SC-007)**: Incomplete data leads to false conclusions.\n  - **AI Architecture (TG-002, TG-009)**: Bugs introduce false positives into learning claims.\n  - **Phenomenology (CB-006, CB-008)**: \"False negatives\" in restraint-based methods (e.g., WITNESS) might be misinterpreted as",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18230.871542000386,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:09:22.743024"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "QB_FR-03_r2",
+  "condition": "QB",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 2,
+  "response_text": "Shannon entropy is a fundamental concept in information theory introduced by **Claude Shannon** in 1948. It quantifies the **average amount of information, uncertainty, or surprise** contained in a random variable or probability distribution. In the context of the evidence base you provided, entropy is used to measure the diversity of token probabilities in language model outputs (e.g., how \"spread out\" or uncertain the model's predictions are across possible tokens).\n\n---\n\n### **Key Intuitions Behind Shannon Entropy**\n1. **Uncertainty Quantification**:\n   - If a random variable has a single outcome (e.g., a coin always lands on heads), its entropy is **zero** because there is no uncertainty.\n   - If all outcomes are equally likely (e.g., a fair coin or a 6-sided die), entropy is maximized because we are most uncertain about the outcome.\n\n2. **Information Content**:\n   - Less probable events carry more information (e.g., winning the lottery is more \"surprising\" than the sun rising).\n   - Entropy formalizes this intuition mathematically.\n\n3. **Connection to Probability Distributions**:\n   - For a discrete probability distribution \\( P = \\{p_1, p_2, ..., p_n\\} \\), where \\( p_i \\) is the probability of outcome \\( i \\), Shannon entropy \\( H \\) is defined as:\n     \\[\n     H(P) = -\\sum_{i=1}^n p_i \\log_2(p_i)\n     \\]\n   - The base-2 logarithm means entropy is measured in **bits** (binary digits), the fundamental unit of information.\n\n---\n\n### **How Shannon Entropy Is Computed**\nGiven a probability distribution \\( P \\) over \\( n \\) possible outcomes, the steps are:\n\n1. **List the Probabilities**:\n   For each possible outcome \\( i \\), identify \\( p_i = P(X = i) \\), where \\( \\sum_{i=1}^n p_i = 1 \\).\n\n2. **Compute the Logarithm of Each Probability**:\n   Calculate \\( \\log_2(p_i) \\) for each \\( p_i \\). Note that \\( \\log_2(p_i) \\) is negative because \\( 0 < p_i \\leq 1 \\).\n\n3. **Multiply by Probability and Sum**:\n   Multiply each \\( p_i \\) by \\( -\\log_2(p_i) \\) and sum over all outcomes:\n   \\",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18322.31474999935,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:27:08.875975"
+}

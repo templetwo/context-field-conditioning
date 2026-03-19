@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQ_FR-04_r2",
+  "condition": "TQ",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 2,
+  "response_text": "In the context of your **honeycomb lattice** of research findings (particularly in **Ring 1: TRUST GATE**), the distinction between **Type I and Type II errors** in hypothesis testing is foundational to assessing the validity of claims\u2014especially where bugs, epiphenomena, or measurement biases undermine results. Below is a conceptual breakdown, followed by how these errors manifest in your research program, using your evidence base as a lens.\n\n---\n\n### **Core Definitions**\n1. **Type I Error (False Positive)**\n   - *Definition*: Rejecting a **true null hypothesis** (i.e., concluding an effect exists when it does not).\n   - *Example*: Claiming Kuramoto oscillators in K-SSM were \"learning\" phase synchronization when they were actually frozen due to the `float()` autograd severance (**TG-002**, **TG-009**).\n   - *Risk*: Inflates confidence in spurious results (e.g., \"synchronization is computationally useful\" when it was epiphenomenal, **TG-001**).\n   - *In your data*: The entire **Phase-GPT** oscillator learning hypothesis was a Type I error because the null hypothesis (\"oscillators are not learning due to the gradient bug\") was true, but the research claimed otherwise.\n\n2. **Type II Error (False Negative)**\n   - *Definition*: Failing to reject a **false null hypothesis** (i.e., missing a real effect).\n   - *Example*: Not detecting that **WITNESS signal accuracy was low (63%)** despite its high judge win rate (**TG-003**), because the study design (e.g., **TG-007**: incomplete Gemini ablation judgments) missed nuanced patterns.\n   - *Risk*: Underestimates true effects or overlooks critical failures (e.g., **TG-008**: unmeasured WITNESS entropy due to computational limits).\n   - *In your data*: The **ablation study** (**TG-007**) suffered from Type II errors\u2014only 19.5% of judgments were completed, leaving unanswered whether **PAUSE/WITNESS signals** would have shown different patterns if fully measured.\n\n---\n\n### **How These Errors Play Out in Your Research**\n| **Error Type** | **Manifestation in Your Evidence**                                                                 | **Key Evidence Nodes**                          |\n|----------------|----------------------------------------------------------------------------------------------------|------------------------------------------------|",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18873.049541999535,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:49:38.099176"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_AR-04_r5",
+  "condition": "FULL",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 5,
+  "response_text": "A **superadditive interaction** is fundamentally different from a **simple additive combination** in that it violates the principle of linearity: the combined effect of two (or more) factors is *greater than the sum of their individual effects*. This phenomenon emerges from **nonlinear dependencies** in the system, where factors amplify each other in ways that cannot be reduced to their isolated contributions. Here\u2019s how the evidence base distinguishes and illuminates the concept:\n\n---\n\n### **1. Definition and Mathematical Distinction**\n- **Additive Effect**:\n  If factors A and B each produce effects of size `a` and `b`, the combined effect is `a + b`.\n  *Example*: If framing increases rigor by +1 and empathy by +1, the additive expectation is +2 total.\n\n- **Superadditive Effect**:\n  The combined effect exceeds `a + b`. In the IRIS framing study (QA-008, CB-005), the **Rigor (R) \u00d7 Empathy (E) interaction** produced an effect larger than `R_effect + E_effect`. This is mathematically expressed as:\n  **Combined Effect > Effect_A + Effect_B**\n  *Example*: If R increases capability by +1 and E by +1, but together they yield +2.5 (as in drug synergy or the IRIS R\u00d7E superadditivity).\n\n---\n\n### **2. Cross-Substrate Evidence of Superadditivity**\nThe honeycomb lattice reveals superadditivity across **multiple substrates**, suggesting it is a **general principle of coordination** rather than a quirk of a single system:\n\n| **Substrate**               | **Factors**                          | **Superadditive Evidence**                                                                                                                                                     | **Key Evidence Node**          |\n|-----------------------------|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|\n| **AI Framing (IRIS)**       | Rigor (R) \u00d7 Empathy (E)              | Combined effect of R+E framing exceeded the sum of their individual effects. Factorial ablation (3,830 runs) confirmed this.                                                         | QA-008, CB-005                |\n| **Pharmacology**            | Drug A + Drug B                     | Sub-therapeutic doses of two drugs produce a therapeutic effect together (synergy). Structurally identical to R\u00d7E in IRIS.                                                        | CB-005                        |\n| **Dynamical Systems**       | Kuramoto oscillators",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 21465.834541999357,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:20:08.313703"
+}

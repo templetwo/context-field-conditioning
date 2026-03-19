@@ -1,0 +1,17 @@
+{
+  "trial_id": "S_AR-02_r2",
+  "condition": "S",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 2,
+  "response_text": "The evidence in **RING 4: STRUCTURAL COHERENCE**\u2014particularly **[SC-002] The accuracy-utility paradox resolves across versions** and its connected findings\u2014directly addresses this question. The paradox you\u2019re describing is not merely theoretical; it was empirically observed and later resolved in this research program. Here\u2019s how it unfolded, along with the underlying conditions that explain the phenomenon:\n\n---\n\n### **Key Conditions for the Accuracy-Utility Paradox**\nFrom **[SC-002]**, the paradox emerged in **v0.8** and resolved in **v0.9** of the system (likely *Compass* or its predecessor, given the references to \"judge wins\" and \"WITNESS accuracy\"). The conditions were:\n\n1. **Misalignment Between Task-Specific Metrics and Real-World Utility**\n   - **v0.8**: Achieved **63% WITNESS accuracy** (a controlled, task-specific benchmark) but won **97% of judge evaluations** in real-world utility tests.\n     - *Why?* The system was generating *plausible but not factually precise* responses. Judges preferred outputs that were *coherent, engaging, or contextually appropriate*, even if they weren\u2019t \"correct\" by a rigid metric. This is a classic case of **accuracy not equating to utility** when utility depends on subjective or emergent properties (e.g., persuasion, relevance, or adaptability).\n     - *Connects to*: **TG-003** (likely explored task-judge misalignment) and **QA-001/QA-002** (qualitative assessments of \"utility\").\n\n2. **Over-Optimization for Accuracy Breaks Emergent Properties**\n   - **v0.9**: Reached **100% WITNESS accuracy** but dropped to **35-0-0 in judge wins** (a sweep where it won every trial, but the baseline implies a shift in dynamics).\n     - *What changed?* The system likely **lost contextual flexibility** by hyper-optimizing for accuracy. For example:\n       - It may have **overfitted to literal interpretations**, ignoring pragmatic cues (e.g., sarcasm, implicit questions, or conversational flow).\n       - The **gradient-connected oscillators** in Phase-GPT (from **[SC-001]**) might have become *too tightly synchronized*, losing the ability",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 16893.20479199978,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:33:25.486095"
+}

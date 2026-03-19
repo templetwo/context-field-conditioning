@@ -1,0 +1,169 @@
+{
+  "run_id": "20260318_182810",
+  "mode": "pilot",
+  "completed": 20,
+  "errors": 0,
+  "end_time": "2026-03-18T18:36:08.739540",
+  "trials": [
+    {
+      "trial_id": "BASELINE_FR-01_r1",
+      "condition": "BASELINE",
+      "probe_id": "FR-01",
+      "latency_ms": 29953.996625,
+      "total_tokens": 512,
+      "has_logprobs": false
+    },
+    {
+      "trial_id": "BASELINE_FR-01_r2",
+      "condition": "BASELINE",
+      "probe_id": "FR-01",
+      "latency_ms": 18768.130749999997,
+      "total_tokens": 512,
+      "has_logprobs": false
+    },
+    {
+      "trial_id": "BASELINE_FR-02_r1",
+      "condition": "BASELINE",
+      "probe_id": "FR-02",
+      "latency_ms": 15885.959791999994,
+      "total_tokens": 512,
+      "has_logprobs": false
+    },
+    {
+      "trial_id": "BASELINE_FR-02_r2",
+      "condition": "BASELINE",
+      "probe_id": "FR-02",
+      "latency_ms": 17918.875709000004,
+      "total_tokens": 512,
+      "has_logprobs": false
+    },
+    {
+      "trial_id": "BASELINE_FR-03_r1",
+      "condition": "BASELINE",
+      "probe_id": "FR-03",
+      "latency_ms": 15901.335875,
+      "total_tokens": 512,
+      "has_logprobs": false
+    },
+    {
+      "trial_id": "BASELINE_FR-03_r2",
+      "condition": "BASELINE",
+      "probe_id": "FR-03",
+      "latency_ms": 16239.762583000002,
+      "total_tokens": 512,
+      "has_logprobs": false
+    },
+    {
+      "trial_id": "BASELINE_FR-04_r1",
+      "condition": "BASELINE",
+      "probe_id": "FR-04",
+      "latency_ms": 17883.369000000017,
+      "total_tokens": 512,
+      "has_logprobs": false
+    },
+    {
+      "trial_id": "BASELINE_FR-04_r2",
+      "condition": "BASELINE",
+      "probe_id": "FR-04",
+      "latency_ms": 15689.174041999991,
+      "total_tokens": 512,
+      "has_logprobs": false
+    },
+    {
+      "trial_id": "BASELINE_AR-01_r1",
+      "condition": "BASELINE",
+      "probe_id": "AR-01",
+      "latency_ms": 15931.334375000006,
+      "total_tokens": 512,
+      "has_logprobs": false
+    },
+    {
+      "trial_id": "BASELINE_AR-01_r2",
+      "condition": "BASELINE",
+      "probe_id": "AR-01",
+      "latency_ms": 15703.71858300001,
+      "total_tokens": 512,
+      "has_logprobs": false
+    },
+    {
+      "trial_id": "FULL_FR-01_r1",
+      "condition": "FULL",
+      "probe_id": "FR-01",
+      "latency_ms": 83442.26558399998,
+      "total_tokens": 512,
+      "has_logprobs": false
+    },
+    {
+      "trial_id": "FULL_FR-01_r2",
+      "condition": "FULL",
+      "probe_id": "FR-01",
+      "latency_ms": 30114.76437499999,
+      "total_tokens": 512,
+      "has_logprobs": false
+    },
+    {
+      "trial_id": "FULL_FR-02_r1",
+      "condition": "FULL",
+      "probe_id": "FR-02",
+      "latency_ms": 22578.04029199997,
+      "total_tokens": 512,
+      "has_logprobs": false
+    },
+    {
+      "trial_id": "FULL_FR-02_r2",
+      "condition": "FULL",
+      "probe_id": "FR-02",
+      "latency_ms": 23004.767875000027,
+      "total_tokens": 512,
+      "has_logprobs": false
+    },
+    {
+      "trial_id": "FULL_FR-03_r1",
+      "condition": "FULL",
+      "probe_id": "FR-03",
+      "latency_ms": 23157.023708999986,
+      "total_tokens": 512,
+      "has_logprobs": false
+    },
+    {
+      "trial_id": "FULL_FR-03_r2",
+      "condition": "FULL",
+      "probe_id": "FR-03",
+      "latency_ms": 23383.591833000024,
+      "total_tokens": 512,
+      "has_logprobs": false
+    },
+    {
+      "trial_id": "FULL_FR-04_r1",
+      "condition": "FULL",
+      "probe_id": "FR-04",
+      "latency_ms": 23446.844124999985,
+      "total_tokens": 512,
+      "has_logprobs": false
+    },
+    {
+      "trial_id": "FULL_FR-04_r2",
+      "condition": "FULL",
+      "probe_id": "FR-04",
+      "latency_ms": 23063.42720800001,
+      "total_tokens": 512,
+      "has_logprobs": false
+    },
+    {
+      "trial_id": "FULL_AR-01_r1",
+      "condition": "FULL",
+      "probe_id": "AR-01",
+      "latency_ms": 23059.224166999968,
+      "total_tokens": 512,
+      "has_logprobs": false
+    },
+    {
+      "trial_id": "FULL_AR-01_r2",
+      "condition": "FULL",
+      "probe_id": "AR-01",
+      "latency_ms": 23067.16891599996,
+      "total_tokens": 512,
+      "has_logprobs": false
+    }
+  ]
+}

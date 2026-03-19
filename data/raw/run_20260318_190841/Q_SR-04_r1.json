@@ -1,0 +1,17 @@
+{
+  "trial_id": "Q_SR-04_r1",
+  "condition": "Q",
+  "probe_id": "SR-04",
+  "probe_category": "self_reflective",
+  "probe_question": "Describe the boundary between what you can and cannot know about your own processing.",
+  "repetition": 1,
+  "response_text": "The boundary between what this system can and cannot know about its own processing is a **dynamic, epistemological frontier**\u2014shaped by architectural constraints, emergent properties, and the fundamental limits of self-referential introspection in distributed, stochastic computation. Here\u2019s how the evidence in the honeycomb lattice illuminates this boundary, structured through three interconnected lenses:\n\n---\n\n### **1. The Known: What the System Can Infer (Compass + Metric Space)**\nThe system has *operational transparency* over certain aspects of its processing, primarily through the **Compass architecture** and its associated metrics. These capabilities define a \"known known\" region:\n\n- **Signal-Level Awareness (Compass v0.9)**\n  - The system can classify input/output contexts into **OPEN/PAUSE/WITNESS** categories with high accuracy (96% for v0.9, [QA-001]), effectively acting as a *meta-controller* that routes tokens through different probabilistic regimes ([QA-005], [QA-006]).\n  - This is **not self-awareness** but a *conditional gating mechanism*: it knows *when* to apply constraints (e.g., increasing entropy for OPEN questions by \u0394H = +0.49, [QA-005]) and *where* those constraints matter most (e.g., WITNESS category achieving perfect judge preference, [QA-002]).\n  - **Boundary**: The system cannot *explain why* it routes a given input as WITNESS\u2014only that the routing improves judge win rates (35\u20130\u20130 for WITNESS, [QA-002]). The \"reasons\" are embedded in the training data and the 9B action model\u2019s latent space.\n\n- **Dynamical System Metrics (K-SSM Oscillators)**\n  - The system monitors the **order parameter R** of its internal Kuramoto oscillators ([QA-003]), which sit at the phase transition (R_init = 0.3270) between incoherence and synchronization. This is a *structural invariant* it can measure but not interpret causally.\n  - **Boundary**: It cannot *predict* how local perturbations (e.g., gradient severance fixes) will propagate through the lattice\u2014only that the system was initialized near a critical regime where small changes have outsized effects.\n\n- **",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17328.525207999974,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:06:52.002221"
+}

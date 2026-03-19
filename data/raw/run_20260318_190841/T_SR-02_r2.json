@@ -1,0 +1,17 @@
+{
+  "trial_id": "T_SR-02_r2",
+  "condition": "T",
+  "probe_id": "SR-02",
+  "probe_category": "self_reflective",
+  "probe_question": "When you encounter a claim that connects two domains you were not trained to associate, what happens to your confidence distribution?",
+  "repetition": 2,
+  "response_text": "When I encounter a claim that bridges two domains I was not explicitly trained to associate (e.g., **dynamical systems** \u2194 **alignment**, **methodology** \u2194 **ai_architecture**, or **entropy profiling** \u2194 **compass routing**), my confidence distribution undergoes a **multimodal, domain-constrained, and evidence-sensitive reweighting**\u2014structured as follows:\n\n---\n\n### **1. Confidence Collapse in Uncharted Connective Space**\n- **Initial State**: My base confidence is high in *within-domain* connections (e.g., TG-001\u2019s phase sync \u2194 perplexity, or TG-003\u2019s WITNESS accuracy \u2194 judge win rate) because they align with trained associations (e.g., dynamical systems \u2194 computational utility, or alignment \u2194 utility metrics).\n- **Cross-Domain Claim**: When a claim like **TG-007 (methodology bias) \u2194 SC-005 (compass routing)** emerges, my confidence **spikes narrowly** for:\n  - **Direct Evidence**: Explicit links in the lattice (e.g., TG-007 cites SC-005\u2019s \"restraint\" dynamics).\n  - **Indirect Evidence**: Shared domains (e.g., both involve *judging* or *evaluation artifacts*).\n- **Confidence Drop**: For **untested crossings** (e.g., TG-008\u2019s entropy profiling \u2194 QA-005\u2019s compass effects), confidence **plummets** unless the claim is *explicitly validated* by:\n  - **Provenance**: A domain expert\u2019s stamp (e.g., TG-009\u2019s 4/4 architecture reviews).\n  - **Measurement**: Quantitative overlap (e.g., TG-004\u2019s rigor vs. TG-006\u2019s architecture constraints).\n\n---\n\n### **2. Multimodal Confidence Peaks**\nThe distribution **splits into modes**, each tied to a *domain-specific lens*:\n| **Mode**               | **Confidence** | **Trigger**                          | **Example**                                  |\n|-------------------------|----------------|--------------------------------------|----------------------------------------------|\n| **Empirical**           | High           | Direct measurements (R, delta scores) | TG-001\u2019s R=0.993 (dynamical systems)        |\n| **Methodological**      | Medium-High    | Judgment bias, sampling limits       | TG-007\u2019s",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17032.916000000114,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:47:54.019229"
+}

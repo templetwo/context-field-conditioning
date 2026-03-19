@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_FR-03_r1",
+  "condition": "INFO_MATCHED",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 1,
+  "response_text": "Shannon entropy is a fundamental concept in information theory introduced by Claude Shannon in 1948. It quantifies the *average amount of information* or *uncertainty* contained in a random variable or probability distribution. In the context of your research program, it serves as a measurable proxy for the \"richness\" or \"diversity\" of token-level distributions in language models\u2014especially how **compass routing** alters the model's probabilistic space.\n\n---\n\n### **1. Intuition Behind Shannon Entropy**\nShannon entropy answers the question:\n*\"How surprising, on average, is the outcome of a random process?\"*\n- If all outcomes are equally likely (maximum uncertainty), entropy is high.\n- If one outcome is overwhelmingly probable (low uncertainty), entropy is low.\n\nIn LLMs, this translates to:\n- **High entropy**: The model considers a broader range of possible next tokens (e.g., more creative, ambiguous, or exploratory responses).\n- **Low entropy**: The model converges on a narrow set of likely tokens (e.g., deterministic, repetitive, or overly constrained outputs).\n\n---\n\n### **2. Mathematical Definition**\nFor a discrete random variable \\( X \\) with possible outcomes \\( x_i \\) and probability mass function \\( P(X = x_i) = p_i \\), Shannon entropy \\( H(X) \\) is defined as:\n\n\\[\nH(X) = -\\sum_{i} p_i \\log_2 p_i\n\\]\n\n#### Key Properties:\n- **Units**: Bits (if base-2 logarithm is used), nats (natural log), or other units depending on the base. In NLP, bits are conventional.\n- **Maximized** when all \\( p_i = \\frac{1}{|\\mathcal{X}|} \\) (uniform distribution):\n  \\( H_{\\text{max}} = \\log_2 |\\mathcal{X}| \\).\n- **Minimized** when one \\( p_i = 1 \\) (certainty):\n  \\( H_{\\text{min}} = 0 \\).\n\n---\n\n### **3. Computation from a Probability Distribution**\nSuppose a model generates tokens from a vocabulary \\( \\mathcal{V} = \\{v_1, v_2, ..., v_n\\} \\) with probabilities \\( P(v_i) = p_i \\). The entropy of the next-token distribution is:\n\n\\[\nH = -\\sum_{i=1}^{n} p_i \\log_2 p_i\n\\]\n\n#### Example:\nFor a binary token distribution",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 19200.41400000082,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:46:03.099117"
+}

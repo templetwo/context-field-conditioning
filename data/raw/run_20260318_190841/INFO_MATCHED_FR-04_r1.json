@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_FR-04_r1",
+  "condition": "INFO_MATCHED",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 1,
+  "response_text": "In the context of your research program\u2014where failures iteratively refine hypotheses (e.g., K-SSM\u2019s null result leading to Phase-GPT, or the float() gradient severance exposing a catastrophic flaw)\u2014the distinction between **Type I** and **Type II errors** takes on a particularly *operational* and *substrate-agnostic* character. Below is a breakdown tailored to your work, emphasizing how these errors manifest in computational systems, scientific inquiry, and even the recursive self-correction of your research process itself.\n\n---\n\n### **1. Type I Error: False Positive (Rejecting a True Null Hypothesis)**\n**Definition**:\nClaiming an effect exists when it does not. In hypothesis testing:\n- **Null Hypothesis (H\u2080)**: \"No effect/synchronization/learning exists.\"\n- **Type I Error**: Incorrectly rejecting H\u2080 (e.g., asserting that oscillators are learning when they\u2019re frozen due to a bug).\n\n**In Your Research Program**:\n- **K-SSM (0.993 phase sync, \u0394perplexity=0.0)**:\n  - *Claim*: \"Synchronized oscillators improve language modeling.\"\n  - *Reality*: Oscillators were epiphenomenal (no gradient signal, so no learning). The \"effect\" was a **Type I error**\u2014a false positive for computational utility.\n  - *Mechanism*: The `float()` cast severed autograd, making the oscillators **appear** to synchronize (a statistical artifact) while the model trained on a frozen coupling matrix.\n\n- **Compass v0.8 (63% accuracy, 97% judge wins)**:\n  - *Claim*: \"Low signal accuracy \u2260 utility\" (a Type I error in predictive validity).\n  - *Reality*: The \"happy accident\" (wrong WITNESS signals triggering useful system prompts) was a **correlated but not causal** effect. The system\u2019s utility decoupled from accuracy\u2014a classic case of a **spurious positive result** (Type I).\n\n- **General Pattern**:\n  Type I errors in your work often arise from **hidden confounders** (e.g., gradient severance, judging bias) that let the system *look* like it\u2019s doing something meaningful when it\u2019s not. The errors are **catastrophic but detectable** (e.g., four independent architectures catching the float() bug).\n\n**Key Insight**:\nType I errors in AI systems are",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 20089.416332999463,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:47:39.708273"
+}

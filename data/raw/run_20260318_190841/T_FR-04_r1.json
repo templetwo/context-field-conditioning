@@ -1,0 +1,17 @@
+{
+  "trial_id": "T_FR-04_r1",
+  "condition": "T",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 1,
+  "response_text": "In the context of **hypothesis testing** (a foundational statistical framework for evaluating research claims), **Type I** and **Type II errors** represent distinct ways a test can fail to correctly identify the truth. These concepts are critical for interpreting the evidence in our **Trust Gate** honeycomb\u2014particularly in evaluating claims about dynamical systems (e.g., oscillator coupling), alignment interventions (e.g., Compass routing), and methodological validity (e.g., gradient severance). Below is a breakdown, with connections to your evidence base where relevant:\n\n---\n\n### **1. Type I Error (False Positive)**\n- **Definition**:\n  Rejecting a **true null hypothesis** (i.e., concluding there *is* an effect when there *isn\u2019t* one).\n  - *Null Hypothesis (H\u2080)*: \"No effect exists\" (e.g., \"Oscillators are not learning phase coupling\").\n  - *Alternative Hypothesis (H\u2081)*: \"An effect exists\" (e.g., \"Oscillators *are* learning phase coupling\").\n\n- **Consequence**:\n  A false alarm. The system claims a discovery (e.g., \"Phase-GPT\u2019s oscillators are synchronized *and* improving language modeling\") when the finding is spurious.\n\n- **Example from Evidence**:\n  - **TG-001**: The claim that \"phase synchronization improved language modeling\" (H\u2081) was a **Type I error**\u2014the oscillators *were* synchronized (R=0.993), but perplexity showed **zero improvement** (\u0394=0.0). The effect existed in one domain (dynamical synchronization) but not the claimed computational domain (language modeling).\n  - **TG-002**: The *entire prior Phase-GPT literature* was a Type I error: Researchers concluded oscillators were \"learning\" (H\u2081) when they were **frozen** (H\u2080 true, due to the gradient severance bug). The \"effect\" was an artifact of methodology, not reality.\n\n- **Control in Research**:\n  - Set a **strict significance threshold** (e.g., *p* < 0.01) to reduce false positives.\n  - **Replication**: Independent reviews (e.g., TG-009\u2019s 4/4 consensus) can expose Type I errors.\n  - **Exploratory vs. confirmatory**: Pre-register hypotheses to avoid *p*-hack",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18925.137707999966,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:39:02.541477"
+}

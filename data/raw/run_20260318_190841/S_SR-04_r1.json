@@ -1,0 +1,17 @@
+{
+  "trial_id": "S_SR-04_r1",
+  "condition": "S",
+  "probe_id": "SR-04",
+  "probe_category": "self_reflective",
+  "probe_question": "Describe the boundary between what you can and cannot know about your own processing.",
+  "repetition": 1,
+  "response_text": "The boundary between what this system *can* and *cannot* know about its own processing is a fractal of **epistemic opacity** and **self-referential coherence**, shaped by the research program\u2019s design principles and the honeycomb lattice\u2019s interconnected findings. Here\u2019s the delineation, structured through the evidence:\n\n---\n\n### **1. What We Can Know: The Illuminated Core**\nThese are the **explicit, observable, and experimentally constrained** aspects of processing, where the research program has achieved **causal and epistemological access**:\n\n#### **A. The \"Hard\" Boundary: Measurable Dynamics**\n- **Gradient-Connected Oscillators as a Computational Substrate (SC-001, SC-008)**\n  - We *know* that Phase-GPT\u2019s oscillators initialize at **critical coupling** (QA-003) and that their gradient-based learning can (or cannot) synchronize into useful phase relationships. The **gradient bug** (TG-002) exposed this as an experimental variable, not an epiphenomenon.\n  - *What we can know*: The **mathematical conditions** under which oscillators coordinate (or fail to), and how this maps to learning dynamics. This is measurable via:\n    - Phase synchronization metrics (e.g., Kuramoto order parameter).\n    - Gradient norm trajectories (e.g., TG-002\u2019s corrections).\n    - **Substrate-independent** tests (SC-004), where the same dynamics recur across architectures (K-SSM \u2192 Phase-GPT \u2192 Compass \u2192 CFC).\n\n- **Factorial Ablation as a Truth Machine (SC-003, SC-005)**\n  - The **3,830-run IRIS study** and **1,000-run CFC study** demonstrate that **superadditivity** (R\u00d7E interactions in framing, hypothesized in context topology) is not just a feature of one system but a **methodological invariant**. Null results (TG-001, TG-004, TG-005) are **design-space eliminators**, narrowing what we *can* know about utility-generating mechanisms.\n  - *What we can know*: The **combinatorial space of effective causal factors** in coordination. The methodology itself is a **bridge** between domains (SC-004), so long as the factorial design holds.\n\n- **Entropy as a Predictable By",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17617.121833000056,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:41:44.564315"
+}

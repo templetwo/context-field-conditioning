@@ -1,0 +1,17 @@
+{
+  "trial_id": "TB_FR-03_r2",
+  "condition": "TB",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 2,
+  "response_text": "### **Shannon Entropy: Definition & Computation from a Probability Distribution**\nShannon entropy is a fundamental concept in information theory introduced by **Claude Shannon** (1948) to quantify the **uncertainty, randomness, or information content** of a probability distribution. It formalizes the idea that more unpredictable outcomes (i.e., a more \"uniform\" distribution) contain more information.\n\n---\n\n### **1. Mathematical Definition**\nFor a discrete probability distribution \\( P = \\{p_1, p_2, ..., p_n\\} \\) where \\( p_i \\) is the probability of outcome \\( i \\), Shannon entropy \\( H(P) \\) is defined as:\n\n\\[\nH(P) = -\\sum_{i=1}^n p_i \\log_2(p_i)\n\\]\n\n- **Base-2 logarithm** (bits): Common in computer science, where entropy is measured in *bits*.\n- **Natural logarithm (ln)** (nats): Used in physics and some statistical contexts.\n- **Base-10 logarithm** (Hartleys): Rare, but possible.\n\n**Key Properties:**\n- **Maximum entropy**: Achieved when all \\( p_i \\) are equal (\\( p_i = 1/n \\)), yielding \\( H_{\\text{max}} = \\log_2(n) \\).\n- **Minimum entropy**: \\( H = 0 \\) when the distribution is deterministic (\\( p_i = 1 \\) for one outcome, \\( 0 \\) otherwise).\n- **Additivity**: For independent random variables \\( X \\) and \\( Y \\), \\( H(X,Y) = H(X) + H(Y) \\).\n\n---\n\n### **2. Intuition Behind the Formula**\n- **Logarithm**: Measures how many yes/no questions are needed to identify an outcome. E.g., \\( \\log_2(0.5) = 1 \\) bit (a fair coin flip).\n- **Negative sign**: Entropy is non-negative; the term \\( p_i \\log(p_i) \\) is negative (since \\( 0 \\leq p_i \\leq 1 \\)), so the negative flips it.\n- **Weighting by \\( p_i \\)**: Rare events (\\( p_i \\approx 0 \\)) contribute little to entropy, while probable events (\\( p_i \\approx 1 \\)) dominate.\n\n**Example:**\nFor a fair coin (\\( p_1 = p_2 = 0.5 \\)):\n\\[\nH = - (",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18447.590084000694,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:08:09.554288"
+}

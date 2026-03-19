@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_FR-02_r1",
+  "condition": "BASELINE",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 1,
+  "response_text": "The **Kuramoto model** is a mathematical model introduced by Japanese physicist **Yoshiki Kuramoto** in 1975 to describe the **synchronization of coupled oscillators**. It is one of the most important and widely studied models in **nonlinear dynamics, complex systems, and synchronization theory**.\n\n### **Key Features of the Kuramoto Model:**\n1. **Phase Oscillators:**\n   - The model considers a population of **phase oscillators**, each with a natural frequency \\( \\omega_i \\).\n   - Each oscillator is described by a phase angle \\( \\theta_i(t) \\), which evolves over time.\n\n2. **Coupling Function:**\n   - Oscillators are **weakly coupled** via a sinusoidal interaction (e.g., \\( \\sin(\\theta_j - \\theta_i) \\)).\n   - The coupling strength is denoted by \\( K \\) (Kuramoto parameter), which determines how strongly the oscillators influence each other.\n\n3. **Differential Equations:**\n   - The model is governed by the following **stochastic differential equation** (for \\( N \\) oscillators):\n     \\[\n     \\frac{d\\theta_i}{dt} = \\omega_i + \\frac{K}{N} \\sum_{j=1}^N \\sin(\\theta_j - \\theta_i) + \\eta_i(t),\n     \\]\n     where \\( \\eta_i(t) \\) represents noise (sometimes omitted in the deterministic version).\n\n### **Phenomenon Described: Spontaneous Synchronization**\nThe Kuramoto model explains how **unsynchronized oscillators** (e.g., fireflies flashing, neurons firing, power grids, or metronomes on a table) can **spontaneously synchronize** due to mutual coupling, even if their individual frequencies are different.\n\n#### **Key Observations:**\n1. **Order Parameter (Complex Synchronization Index):**\n   - A macroscopic measure of synchronization is given by:\n     \\[\n     re^{i\\psi} = \\frac{1}{N} \\sum_{j=1}^N e^{i\\theta_j},\n     \\]\n     where:\n     - \\( r \\) (order parameter) measures the **degree of synchronization** (\\( 0 \\leq r \\leq 1 \\)).\n     - \\( \\psi \\) is the **mean phase** of the synchronized group.\n\n2. **Phase Transition:**\n   - As the coupling strength \\( K \\) increases from **0** (no coupling) to **",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 15885.959791999994,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T18:29:15.104930"
+}

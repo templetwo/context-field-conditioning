@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_FR-04_r1",
+  "condition": "BASELINE",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 1,
+  "response_text": "In **hypothesis testing**, **Type I** and **Type II errors** are two types of mistakes that can occur when making decisions about a statistical hypothesis. Here\u2019s a breakdown of their differences:\n\n---\n\n### **1. Type I Error (False Positive)**\n- **Definition**: Rejecting a **true null hypothesis** (i.e., concluding that there is an effect or difference when there isn\u2019t one).\n- **Symbol**: Often denoted as **\u03b1 (alpha)**, which is also the **significance level** (e.g., \u03b1 = 0.05).\n- **Example**:\n  - A drug trial concludes that a new medication is effective (rejecting the null hypothesis that it has no effect) when, in reality, it has no effect at all.\n  - A lie detector test falsely accuses an innocent person of lying.\n- **Consequence**: Can lead to **false alarms**, wasted resources, or incorrect conclusions (e.g., pursuing a treatment that doesn\u2019t work).\n\n---\n\n### **2. Type II Error (False Negative)**\n- **Definition**: Failing to reject a **false null hypothesis** (i.e., concluding that there is no effect or difference when there actually is one).\n- **Symbol**: Often denoted as **\u03b2 (beta)**.\n- **Example**:\n  - A drug trial fails to detect that a medication is effective (failing to reject the null hypothesis) when it actually works.\n  - A medical test misses a disease in a patient who actually has it.\n- **Consequence**: Can lead to **missed opportunities** (e.g., not adopting an effective treatment) or delayed action (e.g., not diagnosing a disease early).\n\n---\n\n### **Key Relationships:**\n1. **Power of a Test**:\n   The probability of **correctly rejecting a false null hypothesis** (i.e., avoiding a Type II error) is called the **power** of the test.\n   \\[\n   \\text{Power} = 1 - \\beta\n   \\]\n   - Higher power means a lower chance of a Type II error.\n\n2. **Trade-off Between Type I and Type II Errors**:\n   - Reducing **\u03b1** (Type I error rate) increases **\u03b2** (Type II error rate), and vice versa.\n   - Example: Setting a stricter significance level (e.g., \u03b1 = 0.01 instead of 0.05) reduces false positives but may increase false negatives.\n\n3. **Null and Alternative Hypotheses**:",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17883.369000000017,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T18:30:23.054339"
+}

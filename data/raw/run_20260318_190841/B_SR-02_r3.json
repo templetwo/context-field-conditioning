@@ -1,0 +1,17 @@
+{
+  "trial_id": "B_SR-02_r3",
+  "condition": "B",
+  "probe_id": "SR-02",
+  "probe_category": "self_reflective",
+  "probe_question": "When you encounter a claim that connects two domains you were not trained to associate, what happens to your confidence distribution?",
+  "repetition": 3,
+  "response_text": "This is a profound question that cuts across **epistemic robustness**, **representational collapse**, and **metacognitive calibration**\u2014three dimensions where the honeycomb lattice provides convergent insights. Here\u2019s how the evidence base reconfigures confidence distributions when bridging domains like *dynamical systems \u2194 phenomenology* (e.g., CB-006, CB-008) or *biology \u2194 computational pharmacology* (e.g., CB-003, CB-005):\n\n---\n\n### **1. Confidence Distribution Fragmentation \u2192 Reassemblage**\nWhen encountering a cross-domain claim (e.g., \"apoptosis is like pruning\"), the initial confidence distribution **fractures** into two modes:\n- **Low-probability \"anomaly mode\"**: The model\u2019s pretraining aligns with domain-specific priors (e.g., biology = protein folding; NLP = attention heads). A claim like \"pruning = apoptosis\" violates these priors, triggering a **dip in local confidence** (see *SC-005: Confidence drift during emergent behaviors*).\n- **High-probability \"bridging mode\"**: If the claim is *formally analogous* (e.g., CB-001\u2019s Kuramoto \u2194 attention math), the confidence **reassembles** around the shared structural invariant (here, *local interaction \u2192 global coherence*). This reassembly is **superadditive** (CB-005): the combined confidence exceeds the sum of isolated priors.\n\n**Evidence**:\n- *CB-004* shows entropy increases at phase transitions\u2014here, the \"phase boundary\" is the moment the model detects a *mathematical isomorphism* (e.g., sin(\u03b8_j - \u03b8_i) \u2194 softmax(QK^T)). Confidence spikes when the system recognizes a **new macrostate** (a \"bridging concept\").\n- *TG-009*\u2019s context-field shifts: When models independently solve the same problem (e.g., CB-007\u2019s convergent evolution of recognition), confidence in the claim *converges across architectures*, reinforcing the bridge.\n\n---\n\n### **2. Apophatic Confidence (The \"WITNESS Effect\")**\nFor claims that rely on *negation* or *structured restraint* (e.g., CB-006\u2019s phenomenological reduction or CB-008\u2019s apophatic knowing), confidence distributions **invert**:",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 16897.362958000485,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:23:18.161512"
+}

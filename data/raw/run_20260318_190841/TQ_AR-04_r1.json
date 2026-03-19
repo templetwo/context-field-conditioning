@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQ_AR-04_r1",
+  "condition": "TQ",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 1,
+  "response_text": "A **superadditive interaction** (observed in **QA-008**) is fundamentally distinct from a simple additive combination of effects because it reveals **synergistic amplification**\u2014where the combined effect of two factors is *greater than the sum of their individual contributions*. Here\u2019s how the evidence base clarifies this distinction, with key insights from the IRIS framing study and related findings:\n\n---\n\n### **1. Additive vs. Superadditive: Core Difference**\n| **Additive Effect**               | **Superadditive Interaction**               |\n|------------------------------------|--------------------------------------------|\n| *E\u2081 + E\u2082* = Total effect.         | *E\u2081 + E\u2082 + S* = Total effect (where *S* > 0). |\n| Effects are independent or linear. | Effects *reinforce each other* nonlinearly. |\n| Example: Rigor + Empathy = R + E. | Example: Rigor \u00d7 Empathy > R + E.         |\n| Predictable from individual effects. | Unpredictable without joint measurement.   |\n\n**Key Evidence (QA-008):**\n- The IRIS framing study measured **Rigor (R)** and **Empathy (E)** as framing conditions in a **factorial design** (all combinations of high/low R and E).\n- **Additive expectation:** If framing added linearly, the combined effect of *high R + high E* would equal the sum of their separate effects.\n- **Superadditive reality:** The *R\u00d7E interaction* showed that **framing effects were amplified when both dimensions were present**, not just additive. The model\u2019s performance (or entropy, or response quality) in the *high R + high E* condition exceeded the sum of *high R alone* and *high E alone*.\n\n---\n\n### **2. Why This Matters in the Evidence Base**\n#### **A. Dynamical Systems Analogy (TG-001, QA-003)**\n- In Kuramoto oscillators, *additive coupling* (e.g., small K_ij values) might synchronize phases linearly, but **superadditive coupling** (near-critical K_ij \u2248 0.01) pushes the system into a **phase transition** where synchronization emerges *abruptly* (R jumps from incoherent to coherent).\n- **Implication:** The compass routing\u2019s effect on token entropy (QA-005) isn\u2019t just",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 19898.86079200005,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:53:11.973811"
+}

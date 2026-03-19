@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_FR-03_r5",
+  "condition": "BASELINE",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 5,
+  "response_text": "Shannon entropy is a fundamental concept in **information theory**, introduced by **Claude Shannon** in 1948. It quantifies the **uncertainty** or **randomness** associated with a **probability distribution**\u2014that is, how uncertain we are about the outcome of a random variable before observing it.\n\n### **Intuition Behind Shannon Entropy**\n- If an event is **certain** (probability = 1), knowing its outcome gives **zero information** (entropy = 0).\n- If an event is **completely random** (uniform probability distribution), knowing its outcome gives **maximum information** (highest entropy).\n- Entropy measures how \"spread out\" a probability distribution is.\n\n### **Mathematical Definition**\nFor a discrete random variable \\( X \\) with possible outcomes \\( x_1, x_2, \\dots, x_n \\) and corresponding probabilities \\( P(x_1), P(x_2), \\dots, P(x_n) \\), the **Shannon entropy** \\( H(X) \\) is defined as:\n\n\\[\nH(X) = -\\sum_{i=1}^n P(x_i) \\log P(x_i)\n\\]\n\n(If \\( P(x_i) = 0 \\), the term is ignored since \\( 0 \\log 0 = 0 \\).)\n\n### **Continuous Case (Differential Entropy)**\nFor a **continuous** random variable \\( X \\) with probability density function \\( f(x) \\), the entropy is:\n\n\\[\nH(X) = -\\int_{-\\infty}^{\\infty} f(x) \\log f(x) \\, dx\n\\]\n\n(Note: Differential entropy can be negative, unlike discrete entropy.)\n\n### **Key Properties**\n1. **Maximum Entropy** occurs when all outcomes are equally likely (uniform distribution).\n   - For \\( n \\) equally likely outcomes, \\( H(X) = \\log n \\).\n   - Example: A fair coin (\\( P(H) = P(T) = 0.5 \\)) has \\( H(X) = 1 \\) bit.\n\n2. **Entropy is Zero** if there is no uncertainty (only one possible outcome).\n\n3. **Entropy is Additive** for independent random variables:\n   \\( H(X,Y) = H(X) + H(Y) \\) if \\( X \\) and \\( Y \\) are independent.\n\n4. **Units of Entropy**:\n   - If \\( \\log \\) is base",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17094.475584000007,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:13:03.182281"
+}

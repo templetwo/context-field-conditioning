@@ -1,0 +1,17 @@
+{
+  "trial_id": "TB_FR-04_r1",
+  "condition": "TB",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 1,
+  "response_text": "In classical **statistical hypothesis testing**, Type I and Type II errors refer to distinct failures in decision-making when evaluating a null hypothesis (H\u2080) against an alternative hypothesis (H\u2081). These concepts are foundational to **statistical inference**, but their analogs also emerge in **machine learning, dynamical systems, and even AI architecture evaluation**\u2014as reflected in your honeycomb lattice (e.g., TG-001\u2019s \"epiphenomenal synchronization,\" TG-007\u2019s \"judging bias from incomplete data,\" or CB-004\u2019s phase transitions).\n\n---\n\n### **Core Definitions**\n1. **Type I Error (False Positive, \u03b1-error)**\n   - **Definition**: Rejecting the null hypothesis (H\u2080) when it is *true*.\n   - **Example**: A medical test says you have a disease (H\u2081) when you don\u2019t (H\u2080 is true).\n   - **Consequence**: A \"cry wolf\" scenario\u2014false alarms erode trust in the system.\n   - **Controlled by**: **Significance level (\u03b1)**, e.g., p < 0.05 (5% risk of Type I error).\n   - **In AI Context**:\n     - **TG-002**: The Phase-GPT gradient severance was a *Type I error* in the original hypothesis\u2014claiming oscillators were learning (H\u2081) when they weren\u2019t (H\u2080 was true: no gradient signal).\n     - **TG-007**: The ablation study\u2019s incomplete data (judging only OPEN questions) introduced a *systematic Type I bias*\u2014concluding \"random signal wins\" when the judge rubric actually favored *restrained* responses (H\u2081: restraint improves scores).\n\n2. **Type II Error (False Negative, \u03b2-error)**\n   - **Definition**: Failing to reject the null hypothesis when it is *false* (i.e., missing a true effect).\n   - **Example**: A test says you don\u2019t have a disease (H\u2080) when you do (H\u2081 is true).\n   - **Consequence**: Undetected flaws or missed opportunities (e.g., a failed model improvement).\n   - **Controlled by**: **Statistical power (1 \u2212 \u03b2)**, which depends on sample size, effect size, and noise.\n   - **In AI Context**:\n     - **TG-001**: K-SSM\u2019s *epiphenomenal",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18467.531207999855,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:08:46.281861"
+}

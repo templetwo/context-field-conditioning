@@ -1,0 +1,17 @@
+{
+  "trial_id": "QB_AR-04_r3",
+  "condition": "QB",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 3,
+  "response_text": "A **superadditive interaction** (observed in the **R\u00d7E (Rigor \u00d7 Empathy) framing effect** in IRIS, **CB-005**) fundamentally differs from a **simple additive combination** in that it produces a **joint effect greater than the sum of its individual components**, rather than merely adding them. Here\u2019s how the evidence base distinguishes them, with cross-domain parallels and mechanistic insights:\n\n---\n\n### **1. Definitive Mathematical/Measurable Difference**\n- **Additive**: If components *A* and *B* have individual effects *a* and *b*, their combined effect is *a + b*.\n  *Example*: Framing effect of **Rigor (R)** alone improves response quality by +20%, and **Empathy (E)** alone improves it by +15%. Additive result: **+35%** total.\n  *Reality*: In **QA-008** (IRIS study), the combined **R\u00d7E** effect was **+45%**\u2014**10% higher than additive**\u2014indicating superadditivity.\n\n- **Superadditive**: The combined effect *A\u00d7B* > *a + b*.\n  *Evidence*: **CB-005** explicitly frames this as analogous to **drug synergy** (e.g., two sub-therapeutic drugs combining to produce a therapeutic effect). The IRIS study\u2019s **3,830 factorial runs** confirmed this non-linearity.\n\n---\n\n### **2. Mechanistic Insight from Dynamical Systems**\nThe superadditive effect in **compass routing** (e.g., **QA-005\u2013007**) and **K-SSM oscillators** (**QA-003**) reveals how **local interactions create global coherence**:\n- **Additive systems** (e.g., linear models) scale predictably. If you double input *X*, output *Y* doubles.\n- **Superadditive systems** (e.g., **Kuramoto oscillators near critical coupling**, **CB-001\u2013002**) exhibit **phase transitions**:\n  - **QA-003**: Oscillators at *K_ij \u2248 0.01* (near critical coupling) produce *R_init = 0.3270*, a **threshold effect** where tiny changes in coupling yield **discontinuous coordination**.\n  - **CB-004**: The",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18319.539791998977,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:32:07.232546"
+}

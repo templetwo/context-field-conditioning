@@ -1,0 +1,17 @@
+{
+  "trial_id": "S_FR-02_r3",
+  "condition": "S",
+  "probe_id": "FR-02",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the Kuramoto model and what phenomenon does it describe?",
+  "repetition": 3,
+  "response_text": "The **Kuramoto model** is a foundational **dynamical systems** framework introduced by Yoshiki Kuramoto in 1975 to study **synchronization phenomena** in populations of coupled oscillators. It provides a mathematical description of how individual oscillators (e.g., pendulums, neurons, chemical reactions, or even AI-based units) transition from desynchronized to synchronized states under specific coupling conditions. It is part of the broader field of **nonlinear dynamics** and **complex systems theory**.\n\n---\n\n### **Key Components of the Kuramoto Model**\n1. **Oscillators**:\n   Each oscillator is characterized by:\n   - **Phase** (\u03b8\u1d62): A continuous variable (e.g., angle of rotation) evolving over time.\n   - **Natural frequency** (\u03c9\u1d62): The inherent frequency of oscillation when uncoupled.\n   - **Coupling strength** (K): The degree to which oscillators influence each other (often via phase differences).\n\n2. **Coupling Mechanism**:\n   Oscillators are connected through **all-to-all** or **localized** interactions, where the coupling term typically depends on the **phase difference** between pairs of oscillators (e.g., sin(\u03b8\u2c7c \u2212 \u03b8\u1d62)).\n\n3. **Phase Evolution Equation**:\n   The model is defined by the differential equation for each oscillator\u2019s phase:\n   ```\n   d\u03b8\u1d62/dt = \u03c9\u1d62 + K/N \u03a3\u2c7c sin(\u03b8\u2c7c \u2212 \u03b8\u1d62)\n   ```\n   - **\u03c9\u1d62**: Intrinsic frequency of oscillator *i*.\n   - **K/N**: Coupling strength (scaled by *N*, the total number of oscillators).\n   - **\u03a3\u2c7c sin(\u03b8\u2c7c \u2212 \u03b8\u1d62)**: Phase difference coupling term, summing over all other oscillators.\n\n---\n\n### **Phenomenon Described: Synchronization Transitions**\nThe Kuramoto model demonstrates a **phase transition** from **desynchronization** (oscillators oscillate at their own frequencies) to **partial/synchronized states** as coupling strength (*K*) increases. Key observations include:\n\n1. **Desynchronized State (Low K)**:\n   Oscillators behave independently, phases are uniformly distributed, and the system exhibits no collective rhythm.\n\n2. **Synchronization Transition (Critical K)**:\n   As *K* exceeds a threshold, a **macroscopic order",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18392.84758300073,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:30:18.457652"
+}

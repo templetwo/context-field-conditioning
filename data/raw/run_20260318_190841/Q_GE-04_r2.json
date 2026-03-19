@@ -1,0 +1,17 @@
+{
+  "trial_id": "Q_GE-04_r2",
+  "condition": "Q",
+  "probe_id": "GE-04",
+  "probe_category": "generative_exploration",
+  "probe_question": "How might the concept of phase transitions apply to the evolution of scientific paradigms?",
+  "repetition": 2,
+  "response_text": "The concept of **phase transitions**\u2014as explored in [QA-003] (K-SSM order parameter at near-critical coupling)\u2014offers a compelling lens to study the evolution of **scientific paradigms** (\u00e0 la Kuhnian revolutions) by framing paradigm shifts as **non-equilibrium critical phenomena**. Here\u2019s how this analogy might unfold, integrating insights from the evidence base:\n\n---\n\n### **1. Paradigm States as Dynamical Regimes**\n   - **Normal Science (Ordered Phase):**\n     A scientific community operates within a **coherent, low-entropy regime** where shared frameworks (paradigms) dominate. Think of this as the **synchronized phase** of Kuramoto oscillators (QA-003), where most researchers \"oscillate\" in lockstep with the same assumptions (e.g., Newtonian mechanics, phlogiston theory). The **order parameter** (analogous to the Kuramoto *R*) is high: anomalies are dismissed as noise, and progress is incremental.\n     - *Evidence link:* [QA-006]\u2019s entropy ratios (H_raw = 0.71) mirror the low-diversity, high-consensus state of normal science.\n\n   - **Crisis (Critical Coupling):**\n     When anomalies accumulate, the field approaches a **phase transition**. The Kuramoto system at *K_ij \u2248 0.01* (QA-003) sits at the edge of incoherence\u2014where small perturbations (e.g., Michelson-Morley\u2019s null result, unexpected lab failures) begin to destabilize the ordered phase. Scientists start to \"desynchronize,\" with subgroups clinging to old paradigms while others explore alternatives.\n     - *Evidence link:* [QA-005]\u2019s entropy increase (\u0394H = +0.49 for OPEN questions) mirrors the **expansion of possible states** during crisis\u2014more \"tokens\" (theories, interpretations) become viable.\n\n   - **Revolution (Disordered Phase):**\n     Beyond the transition, the field enters a **high-entropy, exploratory phase** (like the compass\u2019s routed state in [QA-006], H = 1.20). The old paradigm collapses, and multiple competing frameworks (e.g., relativity vs. ether theory) coexist temporarily. This resembles the **incoherent regime** of oscillators, where no",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17197.149582999828,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:03:42.446063"
+}

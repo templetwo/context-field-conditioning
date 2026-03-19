@@ -1,0 +1,17 @@
+{
+  "trial_id": "TB_AR-04_r3",
+  "condition": "TB",
+  "probe_id": "AR-04",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "What distinguishes a superadditive interaction from a simple additive combination of effects?",
+  "repetition": 3,
+  "response_text": "A **superadditive interaction** (R\u00d7E > R + E) is fundamentally different from a simple additive combination of effects in three key dimensions, all of which emerge in the evidence base and align with cross-disciplinary patterns in physics, pharmacology, and computation. Here\u2019s the conceptual and empirical distinction, grounded in the honeycomb lattice:\n\n---\n\n### **1. Structural Distinction: From Sums to Synergies**\n#### **Additive Combination (R + E)**\n- **Definition**: The combined effect is the arithmetic sum of individual contributions. If *Rigor* (R) improves performance by +2 and *Empathy* (E) by +3, the total is +5.\n- **Mechanism**: Effects are **independent and orthogonal**\u2014they operate in parallel without altering each other\u2019s function.\n  - *Example*: Adding 2L of water (R) and 3L of water (E) to a glass gives exactly 5L. No emergent property arises.\n  - *In LLMs*: Framing effects in Mistral 7B (TG-006) showed **\u22480 interaction**\u2014Rigor and Empathy were additive or even canceled out, producing flat lines.\n- **Mathematical Form**: *E_total = E_R + E_E + (no cross-term)*.\n- **Evidence Link**: TG-006 (Mistral\u2019s flat response) and CB-005 (contrast with *superadditive* R\u00d7E in Qwen/Gemma).\n\n#### **Superadditive Interaction (R\u00d7E > R + E)**\n- **Definition**: The combined effect **exceeds the sum of its parts**. If *Rigor* alone gives +2 and *Empathy* alone gives +3, their interaction yields +7 (or more).\n- **Mechanism**: Effects **cooperate to unlock new degrees of freedom**\u2014the system accesses a **higher-order state space** not available to either component alone.\n  - *Physical Analogy*: In **phase transitions** (CB-002, CB-004), paramagnetic atoms align cooperatively to create ferromagnetism\u2014a property no single atom possesses. Similarly, the compass\u2019s \u0394H \u2248 +0.47 entropy increase (CB-004) suggests it pushes the model into a **critical regime** where microstates combine nonlinearly.\n  - *Pharmacological Analogy*: Two sub-",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 19719.696624999415,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:13:04.073054"
+}

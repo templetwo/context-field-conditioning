@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_AR-02_r4",
+  "condition": "FULL",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 4,
+  "response_text": "The evidence base reveals a **structural paradox** where increasing accuracy can *decrease* practical utility in three specific conditions\u2014all of which hinge on the **decoupling of signal accuracy from downstream utility** and the **context-dependence of optimization objectives**. Here\u2019s the synthesis, grounded in the honeycomb lattice:\n\n---\n\n### **1. When the Signal\u2019s Utility Relies on *Structured Failure* (Apophatic Utility)**\n**Mechanism:**\nUtility emerges not from correctness but from **bracketing the default response**\u2014forcing the system to engage with a *negation* of its natural behavior. The most extreme example is the **WITNESS signal** (TG-003, QA-002, CB-008):\n- **v0.8 (low accuracy, high utility):** 63% accuracy but 97% judge win rate because the *wrong* WITNESS signals triggered the system prompt **\"do not answer directly\"**, which produced the best outputs.\n- **v0.9 (high accuracy, lower utility):** 100% accuracy but a 5-point drop in judge wins (88% \u2192 83%) because the system no longer leveraged the \"happy accident\" of imperfect signals forcing restraint.\n- **Key insight:** The signal\u2019s value came from its *imperfection*\u2014it was a **negative constraint** that revealed the model\u2019s true capacity (CB-006, CB-008). Perfect accuracy removed the apophatic (via negativa) mechanism.\n\n**General condition:**\n> **Utility increases when the system is *pushed against its defaults***\u2014not when it aligns with them. Accuracy optimizations that eliminate \"useful errors\" (e.g., over-restraint in TG-005) destroy utility.\n\n---\n\n### **2. When the Optimization Target is *Substrate-Specific* but the Utility Metric is *General-Purpose***\n**Mechanism:**\nThe **IRIS framing study** (QA-008, CB-005) and **Mistral 7B flatline** (TG-006) show that:\n- **Framing effects** (e.g., rigor \u00d7 empathy) are **superadditive** in some architectures (Qwen, Gemma) but **nonexistent in others** (Mistral).\n- **Accuracy** (e.g., signal classification) is measured in",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 21493.06745800095,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:16:09.347217"
+}

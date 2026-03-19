@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQB_FR-03_r1",
+  "condition": "TQB",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 1,
+  "response_text": "**Shannon Entropy (H)** is a fundamental concept in information theory introduced by Claude Shannon in 1948. It quantifies the **average amount of information, surprise, or uncertainty** associated with a random variable (e.g., the output distribution of an LLM token). In the context of your honeycomb lattice, entropy is used to measure how \"spread out\" or \"diverse\" the probability distribution of generated tokens is under different routing conditions (e.g., raw vs. compass-routed responses).\n\n---\n\n### **Key Intuition Behind Shannon Entropy**\n1. **Uncertainty Measure**: Entropy is maximized when all outcomes are equally likely (high uncertainty) and minimized when one outcome dominates (low uncertainty).\n2. **Information Content**: Rare events (low probability) contribute more to entropy than common events (high probability).\n3. **Normalized by Base-2 Logarithm**: Typically, entropy is computed using log base 2, where the unit is **bits** (binary digits). For natural language, base-*e* (nats) or base-256 (for byte-level tokens) can also be used, but base-2 is standard unless specified otherwise.\n\n---\n\n### **Formal Definition**\nFor a discrete random variable \\( X \\) with possible outcomes \\( \\{x_1, x_2, ..., x_n\\} \\) and probability mass function \\( P(X = x_i) = p_i \\), the **Shannon entropy** is:\n\n\\[\nH(X) = -\\sum_{i=1}^n p_i \\log_2(p_i)\n\\]\n\n- \\( p_i \\): Probability of outcome \\( x_i \\).\n- \\( \\log_2(p_i) \\): Information content of \\( x_i \\) (negative because information is maximized when \\( p_i \\) is small).\n- The sum aggregates the \"expected information\" across all possible outcomes.\n\n---\n\n### **Example Calculation**\nSuppose an LLM generates a token with the following probability distribution:\n| Token (\\( x_i \\)) | Probability (\\( p_i \\)) |\n|-------------------|--------------------------|\n| \"the\"             | 0.4                      |\n| \"and\"             | 0.3                      |\n| \"ai\"              | 0.2                      |\n| \"research\"        | 0.1                      |\n\nCompute \\( H(X) \\):\n\n\\[\nH(X) = - \\left[ 0.4 \\log_",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 20539.642375000767,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:46:30.972672"
+}

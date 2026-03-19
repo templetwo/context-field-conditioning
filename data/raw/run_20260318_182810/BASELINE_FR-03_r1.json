@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_FR-03_r1",
+  "condition": "BASELINE",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 1,
+  "response_text": "**Shannon entropy** is a fundamental concept in **information theory**, introduced by **Claude Shannon** in 1948. It quantifies the **average amount of uncertainty or information** contained in a random variable or a probability distribution. The higher the entropy, the more uncertain (or \"random\") the system is.\n\n### **Key Intuition Behind Shannon Entropy**\n- If a system has a **single possible outcome** (certainty), its entropy is **0** (no uncertainty).\n- If all outcomes are **equally likely**, entropy is **maximized** (maximum uncertainty).\n- For a given number of possible outcomes, entropy is highest when the probabilities are **uniformly distributed**.\n\n---\n\n### **Mathematical Definition**\nFor a discrete random variable \\( X \\) with possible outcomes \\( x_1, x_2, \\dots, x_n \\) and corresponding probabilities \\( P(x_1), P(x_2), \\dots, P(x_n) \\), the **Shannon entropy** \\( H(X) \\) is defined as:\n\n\\[\nH(X) = -\\sum_{i=1}^n P(x_i) \\log_2 P(x_i)\n\\]\n\n- The base of the logarithm is typically **2** (resulting in **bits** as the unit of information).\n- Sometimes, natural logarithm (**ln**) is used, in which case entropy is measured in **nats**.\n- If \\( P(x_i) = 0 \\), the term \\( P(x_i) \\log P(x_i) \\) is defined as **0** (to avoid undefined behavior).\n\n---\n\n### **Example Calculation**\nSuppose we have a **fair coin flip** (two possible outcomes: Heads \\( H \\) or Tails \\( T \\), each with probability \\( 0.5 \\)):\n\n\\[\nH(X) = -[P(H) \\log_2 P(H) + P(T) \\log_2 P(T)]\n\\]\n\n\\[\nH(X) = -[0.5 \\log_2 0.5 + 0.5 \\log_2 0.5]\n\\]\n\n\\[\nH(X) = -[0.5 \\times (-1) + 0.5 \\times (-1)] = 1 \\text{ bit}\n\\]\n\nThis means a fair coin flip contains **1 bit of information** (maximum uncertainty).\n\n---\n\n### **Properties of Shannon Entropy**\n1. **Maximum Entropy for Uniform Distribution**\n   -",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 15901.335875,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T18:29:48.927983"
+}

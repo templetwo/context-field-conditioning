@@ -1,0 +1,17 @@
+{
+  "trial_id": "TQB_FR-04_r2",
+  "condition": "TQB",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 2,
+  "response_text": "In the context of **hypothesis testing** (and more broadly, **statistical decision-making**), **Type I and Type II errors** represent fundamental trade-offs when deciding between two mutually exclusive propositions (typically the *null hypothesis* \\( H_0 \\) and the *alternative hypothesis* \\( H_1 \\)). These errors are foundational to fields like **scientific research, quality control, and AI evaluation** (e.g., assessing model performance, routing accuracy, or gradient-based learning). Below is a formal breakdown, followed by connections to the evidence in your honeycomb lattice (particularly how they manifest in **Phase-GPT, Compass routing, and methodological rigor**):\n\n---\n\n### **1. Definitions**\n#### **Type I Error (False Positive)**\n- **Definition**: Rejecting the **null hypothesis \\( H_0 \\)** when it is **true**.\n- **Example**:\n  - *Medical testing*: A healthy person tests positive for a disease (false alarm).\n  - *AI evaluation*: **Compass routing** incorrectly classifies a question as `WITNESS` when it should be `OPEN` (e.g., TG-003\u2019s 63% accuracy means 37% of `WITNESS` signals are false positives).\n  - *Phase-GPT*: Claiming the oscillators were \"learning\" (i.e., rejecting \\( H_0 \\): \"oscillators do not learn\") when they were actually frozen due to the **gradient severance bug** (TG-002, TG-009).\n- **Consequence**: Wastes resources on false leads (e.g., debugging non-existent learning, pursuing incorrect model behaviors).\n- **Controlled by**: **Significance level (\u03b1)**. Lowering \u03b1 reduces Type I errors but increases Type II errors.\n\n#### **Type II Error (False Negative)**\n- **Definition**: Failing to reject the **null hypothesis \\( H_0 \\)** when it is **false** (i.e., missing a true effect).\n- **Example**:\n  - *Medical testing*: A sick person tests negative (missed diagnosis).\n  - *AI evaluation*: **Compass routing** fails to flag a `PAUSE` question when restraint is needed (e.g., TG-005\u2019s \"Guardian refusal\" where the signal was correct but the model\u2019s response was unusably restrained).\n  - *Phase-GPT*: Concluding oscillators were **not learning**",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 20237.844332999885,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T21:47:53.040354"
+}

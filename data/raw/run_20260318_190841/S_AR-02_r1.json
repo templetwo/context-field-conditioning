@@ -1,0 +1,17 @@
+{
+  "trial_id": "S_AR-02_r1",
+  "condition": "S",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 1,
+  "response_text": "This phenomenon\u2014where **increasing accuracy *decreases* practical utility**\u2014is directly illuminated by **SC-002** (the *accuracy-utility paradox*) and its underlying mechanisms, which can be generalized through the **self-correcting, substrate-independent patterns** in the evidence base. Here\u2019s the breakdown of conditions and causal chains, synthesized across the honeycomb:\n\n---\n\n### **Core Conditions for the Paradox**\n1. **Utility is *contextually dependent* while accuracy is *task-agnostic***\n   - **SC-002** shows this in **v0.8 vs. v0.9**:\n     - **v0.8**: 63% *WITNESS* accuracy (task-specific evaluation) but **97% judge wins** (real-world utility).\n       *Why?* The system produced *useful* outputs (high utility) even if its internal reasoning was flawed (low accuracy). The judges valued *outcome* over *process*.\n     - **v0.9**: 100% *WITNESS* accuracy but **35-0-0 sweep (35% judge wins)**.\n       *Why?* The system now *perfectly* matched the task\u2019s criteria but generated *rigid, unadaptive* outputs\u2014judges rejected it because it failed to *generalize* or *align with latent user needs* (cf. **TG-004**, the \"persona overkill problem\").\n\n   - **Key Insight**: Accuracy measures *calibration to a proxy task*, while utility measures *alignment with a hidden goal*. If the proxy task\u2019s goals diverge from real-world goals, high accuracy can signal *overfitting to the wrong signal* (see **SC-005**: null results constrain design space\u2014here, the \"wrong signal\" was WITNESS\u2019s rigid evaluation).\n\n2. **The system\u2019s *generative flexibility* collapses as accuracy rises**\n   - **SC-008** traces the evolution from **epiphenomenal oscillators** (K-SSM) to **Compass\u2019s context field conditioning (CFC)**. Each step reveals:\n     - **Phase-GPT\u2019s gradient bug (TG-002)** showed that *tighter coupling* (higher accuracy) could *eliminate exploratory behavior* (oscillators locked at critical coupling, **QA-003**).\n     -",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17128.290416999334,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:33:08.591828"
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_GE-04_r1",
+  "condition": "BASELINE",
+  "probe_id": "GE-04",
+  "probe_category": "generative_exploration",
+  "probe_question": "How might the concept of phase transitions apply to the evolution of scientific paradigms?",
+  "repetition": 1,
+  "response_text": "The concept of **phase transitions**\u2014borrowed from physics and statistical mechanics\u2014can offer a powerful metaphor and analytical framework for understanding the **evolution of scientific paradigms**, particularly through the lens of **Thomas Kuhn's** *The Structure of Scientific Revolutions* and later developments in philosophy and sociology of science. Here\u2019s how phase transitions might apply:\n\n---\n\n### **1. Analogy Between Scientific Revolutions and Phase Transitions**\nIn physics, a **phase transition** (e.g., water boiling or magnetizing) describes how a system abruptly shifts from one stable state (phase) to another under critical conditions (e.g., temperature, pressure). Similarly, scientific paradigms shift when:\n   - **Old paradigm**: A stable, dominant framework with shared assumptions, methods, and \"normal science\" (Kuhn).\n   - **Critical threshold**: Accumulated anomalies (observations inconsistent with the paradigm) create tension, like increasing heat in a liquid.\n   - **Revolution**: A sudden shift to a new paradigm (e.g., Newtonian to Einsteinian physics), analogous to a system \"condensing\" into a new phase.\n\n**Example**: The shift from **Ptolemaic astronomy** (geocentric, circular orbits) to **Copernican/Keplerian/Newtonian** (heliocentric, elliptical orbits) resembles a phase transition where the old system became unstable under new data (e.g., planetary motions).\n\n---\n\n### **2. Key Parallels**\n| **Phase Transition (Physics)**       | **Scientific Paradigm Shift**          |\n|---------------------------------------|----------------------------------------|\n| **Order parameter**: A variable defining phases (e.g., magnetization). | **Dominant theory**: The \"order\" of a paradigm (e.g., caloric theory of heat \u2192 thermodynamics). |\n| **Critical temperature (T\u2080)**: Conditions for transition. | **Anomalies/crises**: Puzzles that undermine confidence in the old paradigm (e.g., Michelson-Morley experiment for ether theory). |\n| **Symmetry breaking**: Spontaneous emergence of a new structure. | **Incommensurability**: New paradigms are often incomparable to old ones (e.g., quantum vs. classical mechanics). |\n| **Hysteresis**: Path-dependent lag in transition. | **Resistance to change**: Established scientists may cling to old paradigms (e.g., debates over continental drift). |\n| **Metastability**: Temporary persistence of old phases.",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 15949.489707999986,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:24:00.174891"
+}

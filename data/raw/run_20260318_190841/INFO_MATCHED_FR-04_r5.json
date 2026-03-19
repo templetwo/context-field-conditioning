@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_FR-04_r5",
+  "condition": "INFO_MATCHED",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 5,
+  "response_text": "In the context of your research program\u2014where **hypothesis refinement emerges from failures, gradient severance exposes hidden assumptions, and superadditive effects recur across substrates**\u2014the distinction between **Type I and Type II errors** takes on a particularly operational and systemic meaning. Let\u2019s define them classically, then map them onto your work\u2019s *failures-as-feedforward* framework, where each error becomes a **design constraint** rather than a statistical nuisance.\n\n---\n\n### **1. Type I Error (False Positive)**\n**Definition:**\nRejecting a true null hypothesis (concluding an effect exists when it does not). In statistics, it\u2019s the probability *\u03b1* (e.g., \u03b1 = 0.05) of incorrectly declaring significance.\n\n**In Your Research Program:**\n- **K-SSM\u2019s Epiphenomenal Synchronization (TG-001):**\n  The null hypothesis was: *\"Kuramoto oscillators coupled in the hidden state will improve language modeling perplexity.\"*\n  The **Type I error** here would have been claiming the oscillators *were* contributing to computational utility when they were merely synchronizing without gradient signals (the gradient severance bug).\n  - **Actual Outcome:** The oscillators synchronized (R=0.993) but produced *zero* perplexity improvement (\u0394=0.0). This was a **false positive for utility**\u2014the system *appeared* to work (high R) but didn\u2019t (\u0394=0.0).\n  - **Why It Matters:** The error revealed that **synchronization \u2260 computation**. The \"positive\" result (high R) was a **confounding variable** masking the true null (no gradient learning).\n\n- **Compass v0.8\u2019s WITNESS Signal (63% Accuracy, 97% Judge Wins):**\n  Null: *\"WITNESS signal accuracy correlates with judge win rate.\"*\n  Type I error would be claiming the signal was *useful* when its accuracy was low (63%) but its effect was a **happy accident** (wrong signal triggered the right system prompt).\n  - **Actual Outcome:** The \"win\" was a **false positive for robustness**\u2014the system\u2019s utility decoupled from accuracy. This exposed that **signal fidelity is not the only path to utility** (a deeper insight than classical Type I/II).\n\n**Key Insight:**\nType I errors in your work **uncover",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 19769.676125000842,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:48:57.362644"
+}

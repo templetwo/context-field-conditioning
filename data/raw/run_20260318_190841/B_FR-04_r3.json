@@ -1,0 +1,17 @@
+{
+  "trial_id": "B_FR-04_r3",
+  "condition": "B",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 3,
+  "response_text": "In the context of **hypothesis testing** (a foundational concept in statistics and experimental design), **Type I and Type II errors** represent two distinct ways a test can fail to correctly identify the \"truth\" about a population or process. These errors are inversely related: reducing one often increases the other. Below is the formal distinction, alongside **cross-domain parallels** from your honeycomb lattice that illuminate their broader significance in dynamical systems, biology, and computational cognition.\n\n---\n\n### **1. Formal Definitions**\n#### **Type I Error (False Positive)**\n- **Definition**: Rejecting a **true null hypothesis** (*H\u2080*).\n- **Example**: A medical test diagnoses a disease when the patient is actually healthy.\n- **Consequence**: Unnecessary treatment, wasted resources, or false alarms.\n- **Probability**: Denoted by **\u03b1** (alpha), the significance level (e.g., \u03b1 = 0.05).\n\n#### **Type II Error (False Negative)**\n- **Definition**: Failing to reject a **false null hypothesis** (accepting *H\u2080* when it\u2019s false).\n- **Example**: A medical test misses a disease in a sick patient.\n- **Consequence**: Delayed treatment, missed opportunities, or overlooked risks.\n- **Probability**: Denoted by **\u03b2** (beta). **Power** = 1 \u2212 \u03b2 (probability of correctly rejecting *H\u2080* when it\u2019s false).\n\n---\n### **2. Relationship Between Type I and Type II Errors**\n- **Trade-off**: Decreasing \u03b1 (strictly requiring evidence to reject *H\u2080*) increases \u03b2 (more false negatives), and vice versa.\n- **Optimization**: Balancing \u03b1 and \u03b2 depends on context:\n  - **High-stakes decisions** (e.g., criminal trials, medical screening): Prioritize low \u03b1 (e.g., \"innocent until proven guilty\").\n  - **Resource-limited settings** (e.g., spam filters, fraud detection): Tolerate higher \u03b1 for lower \u03b2 (catch more false positives to minimize misses).\n\n---\n### **3. Cross-Domain Analogies from the Honeycomb Lattice**\nYour research highlights how these errors manifest in **dynamical systems, biology, and computational models**\u2014often as **phase transitions, pruning, or synchronization failures**.\n\n#### **A. Type I Errors \u2194 False Synchronization in Kuramoto Oscillators (CB-001)**\n- **Analogy**: In Kuramoto\u2019s model",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17161.61512499957,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T20:14:33.094519"
+}

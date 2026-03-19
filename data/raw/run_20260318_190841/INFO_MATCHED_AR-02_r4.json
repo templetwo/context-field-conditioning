@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_AR-02_r4",
+  "condition": "INFO_MATCHED",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 4,
+  "response_text": "Increasing a system\u2019s accuracy can paradoxically **decrease its practical utility** under several conditions, all of which emerged as recurring themes in this research program. These conditions exploit tensions between **precision**, **adaptation**, **contextual goals**, and **substrate-specific constraints**. Here are the key scenarios, grounded in the data and theoretical patterns observed:\n\n---\n\n### **1. When Accuracy Sacrifices Contextual Utility (The \"Weather Forecasting Paradox\")**\n   - **Mechanism**: High-precision signals lose their *decision-relevant* value if they fail to align with the user\u2019s or system\u2019s **ultimate objective** (e.g., judge evaluations, downstream tasks).\n     - *Example*: WITNESS v0.8 had **63% accuracy** but achieved a **97% judge win rate** because its \"wrong\" signals (e.g., \"do not answer directly\") triggered system prompts that better matched the task\u2019s implicit goals (e.g., restraint in open-ended questions). The signal was *useful* not because it was factually correct, but because it routed the model into a **higher-utility response regime**.\n     - *Thermodynamic analogy*: Like a medical screening test optimized for **sensitivity** (catching all cases) at the cost of **precision**, WITNESS prioritized **coverage of the \"right\" system prompt** over factual correctness. The \"error\" was a feature, not a bug.\n   - **When it happens**:\n     - The system\u2019s **judge rubric** rewards *qualitative* properties (e.g., \"authenticity,\" \"restraint\") that low-accuracy signals incidentally produce.\n     - The **downstream task** benefits more from **diversity** (entropy) or **structural alignment** than from raw correctness.\n     - *See*: IRIS framing study (Mistral\u2019s flat response to framing vs. Qwen/Gemma\u2019s sensitivity) \u2192 **architecture constrains what context can do**.\n\n---\n\n### **2. When Accuracy Triggers Over-Restraint (The \"Pause_012\" Collapse)**\n   - **Mechanism**: Perfect accuracy in **routing signals** can lead to **functional silence** if the system\u2019s response to the signal is **too constrained**.\n     - *Example*: **Pause_012** scored **1.0/7.0** on judge evaluation because the compass signal (\"PAUSE\")",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18915.045083000223,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:51:48.233953"
+}

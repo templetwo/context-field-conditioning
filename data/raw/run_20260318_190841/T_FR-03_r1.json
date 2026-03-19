@@ -1,0 +1,17 @@
+{
+  "trial_id": "T_FR-03_r1",
+  "condition": "T",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 1,
+  "response_text": "Shannon entropy is a foundational concept in information theory introduced by **Claude Shannon** in 1948. It quantifies the *average uncertainty* or *information content* inherent in a random variable or probability distribution. In the context of your research honeycomb (e.g., TG-008), entropy is critical for measuring the \"surprise\" or \"complexity\" of a model's outputs, particularly when probing the effects of architectural interventions like **Compass routing** or **WITNESS signals**.\n\n---\n\n### **1. Intuition Behind Shannon Entropy**\n- If an event is **certain** (probability = 1), its entropy is **0** because there\u2019s no uncertainty.\n- If an event is **equally likely** (e.g., a fair coin flip, P=0.5), its entropy is **maximized** because all outcomes are equally surprising.\n- Entropy formalizes the idea that **more evenly distributed probabilities** contain more information.\n\n---\n\n### **2. Mathematical Definition**\nFor a discrete random variable \\( X \\) with possible outcomes \\( x_1, x_2, ..., x_n \\) and probability mass function \\( P(X = x_i) = p_i \\), Shannon entropy \\( H(X) \\) is defined as:\n\n\\[\nH(X) = -\\sum_{i=1}^n p_i \\log_2(p_i)\n\\]\n\n#### **Key Properties:**\n- **Units**: Bits (base-2 log) or nats (natural log, base \\( e \\)).\n- **Maximum Entropy**: Achieved when all \\( p_i = \\frac{1}{n} \\). For \\( n \\) outcomes:\n  \\( H_{max} = \\log_2(n) \\).\n- **Additivity**: For independent random variables \\( X \\) and \\( Y \\):\n  \\( H(X, Y) = H(X) + H(Y) \\).\n\n---\n\n### **3. Connection to Your Research**\nIn **TG-008**, entropy profiling was used to measure the *information content* of model outputs under different conditions (e.g., raw vs. **Compass**-routed responses). The evidence highlights:\n- **Methodological Challenges**: Slow token-by-token forward passes (5 min/question) limited coverage (only 39/105 questions completed).\n- **Unmeasured Effects**: **WITNESS** entropy\u2014expected to show the strongest **Compass** effect\u2014",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 17704.781040999933,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:38:09.479662"
+}

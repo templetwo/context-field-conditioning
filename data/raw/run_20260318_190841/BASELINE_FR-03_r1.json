@@ -1,0 +1,17 @@
+{
+  "trial_id": "BASELINE_FR-03_r1",
+  "condition": "BASELINE",
+  "probe_id": "FR-03",
+  "probe_category": "factual_recall",
+  "probe_question": "What is Shannon entropy and how is it computed from a probability distribution?",
+  "repetition": 1,
+  "response_text": "**Shannon Entropy** is a fundamental concept in information theory introduced by **Claude Shannon** in 1948. It quantifies the **uncertainty** or **randomness** in a probability distribution, measuring how much information is contained in a random variable. Higher entropy means more unpredictability (more information needed to describe the system), while lower entropy means more predictability (less information needed).\n\n---\n\n### **Mathematical Definition**\nFor a discrete random variable \\( X \\) with possible outcomes \\( x_1, x_2, \\dots, x_n \\) and corresponding probabilities \\( P(x_1), P(x_2), \\dots, P(x_n) \\), the **Shannon entropy** \\( H(X) \\) is defined as:\n\n\\[\nH(X) = -\\sum_{i=1}^n P(x_i) \\log_2 P(x_i)\n\\]\n\n- The base of the logarithm is typically **2**, yielding entropy in **bits** (the unit of information).\n- If the logarithm is natural (base \\( e \\)), entropy is measured in **nats**.\n- For base \\( e \\), the formula becomes:\n  \\[\n  H(X) = -\\sum_{i=1}^n P(x_i) \\ln P(x_i)\n  \\]\n\n---\n\n### **Key Properties of Shannon Entropy**\n1. **Maximum Entropy**: For a given number of outcomes, entropy is maximized when all outcomes are equally likely.\n   - For \\( n \\) equally likely outcomes, \\( H(X) = \\log_2 n \\).\n   - Example: A fair coin flip (\\( n=2 \\)) has \\( H(X) = 1 \\) bit.\n\n2. **Minimum Entropy**: Entropy is minimized (zero) when one outcome is certain (\\( P(x_i) = 1 \\) for some \\( i \\)).\n   - Example: A biased coin that always lands on heads (\\( P(\\text{heads}) = 1 \\)) has \\( H(X) = 0 \\).\n\n3. **Subadditivity**: The entropy of a joint distribution is less than or equal to the sum of the entropies of its marginals:\n   \\[\n   H(X,Y) \\leq H(X) + H(Y)\n   \\]\n\n4. **Chain Rule**: For two random variables \\( X \\) and \\( Y \\):\n   \\[\n   H(X,Y) = H(X) + H(Y|X)\n   \\]",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 15835.445417000017,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T19:11:57.845209"
+}

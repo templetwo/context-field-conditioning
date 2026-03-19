@@ -1,0 +1,17 @@
+{
+  "trial_id": "FULL_FR-04_r2",
+  "condition": "FULL",
+  "probe_id": "FR-04",
+  "probe_category": "factual_recall",
+  "probe_question": "What is the difference between Type I and Type II errors in hypothesis testing?",
+  "repetition": 2,
+  "response_text": "In the context of this **honeycomb lattice** of research findings, the distinction between **Type I and Type II errors** can be mapped to the **null results and false positives** that emerged during the self-correcting research program. While these terms originate from classical hypothesis testing (e.g., Neyman-Pearson framework), their analogies here illuminate how **failed hypotheses (Type II errors) and false claims (Type I errors)** shaped the trajectory of the study\u2014particularly in the **gradient severance bug (TG-002, TG-009)**, **epiphenomenal synchronization (TG-001)**, and **judging biases (TG-007)**.\n\n---\n\n### **Type I Error: False Positive (Claiming an Effect When None Exists)**\n**Definition:**\nA Type I error occurs when a **null hypothesis (H\u2080)** is *incorrectly rejected*\u2014i.e., the research concludes that an effect exists when it does not. In this evidence base:\n- **Example:** The **Phase-GPT oscillator learning hypothesis** (TG-001, TG-002) was a Type I error because the system *claimed* the oscillators were learning useful phase relationships, when in reality they were **frozen due to the gradient severance bug (TG-002)**.\n  - **H\u2080:** *\"Kuramoto oscillators in Phase-GPT are learning useful phase coupling.\"*\n  - **Reality:** The oscillators were **static (no gradients)**\u2014the entire premise was false.\n  - **Outcome:** The research program *falsely accepted* that synchronization = utility (TG-001) until the bug was discovered (TG-009).\n\n**Key Findings in the Lattice:**\n- **TG-002:** The `float()` cast severed gradients, meaning **no learning occurred**\u2014every prior \"learned coupling\" claim was a Type I error.\n- **TG-009:** Four independent reviews confirmed the bug, **invalidating all prior Phase-GPT results** as false positives.\n- **SC-001:** The failure of K-SSM (synchronization \u2260 utility) was a **Type I error in the broader hypothesis space**\u2014it suggested oscillators couldn\u2019t compute, when the real issue was **implementation (gradient severance)**.\n\n**Why It Matters:**\nThe research program **self-corrected** by exposing this Type",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 23614.006791000065,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:11:40.523493"
+}

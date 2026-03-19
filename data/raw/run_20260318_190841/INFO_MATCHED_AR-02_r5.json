@@ -1,0 +1,17 @@
+{
+  "trial_id": "INFO_MATCHED_AR-02_r5",
+  "condition": "INFO_MATCHED",
+  "probe_id": "AR-02",
+  "probe_category": "analytical_reasoning",
+  "probe_question": "Under what conditions would increasing a system's accuracy decrease its practical utility?",
+  "repetition": 5,
+  "response_text": "Based on the research program\u2019s findings\u2014particularly the *Compass* and *WITNESS* studies\u2014**increasing accuracy can decrease practical utility under these key conditions**:\n\n---\n\n### **1. When the Signal\u2019s *Meaningful Effect* Relies on a \"Happy Accident\" (Not the Signal Itself)**\n   - **Example**: *Compass v0.8* (63% WITNESS accuracy) still won **97% of judge comparisons** because the *wrong* signal triggered a **system prompt (\"do not answer directly\")** that improved outputs *despite* the signal being incorrect.\n     - **Mechanism**: The *utility* came from the **prompt\u2019s effect**, not the signal\u2019s correctness.\n     - **Failure Mode**: If you *fix* the signal to be 100% accurate (v0.9), the \"happy accident\" disappears, and utility *drops* if the prompt\u2019s design was suboptimal for the task.\n   - **General Rule**:\n     - **Utility \u2260 Accuracy** when the *secondary effects* (e.g., prompts, restraint, framing) are more impactful than the primary signal.\n     - **Fixing the signal too early** can destroy the system\u2019s emergent properties.\n\n---\n\n### **2. When Higher Accuracy Removes \"Useful Error\" (Apophatic Utility)**\n   - **Example**: *WITNESS* worked because it **prevented** the model from saying the *wrong thing* (e.g., suppressing direct answers in analytical tasks).\n     - **63% accuracy** \u2192 **97% judge wins** (because errors often triggered better prompts).\n     - **100% accuracy** \u2192 **35-0-0 judge sweep** (but only because the prompt was *perfectly* aligned; if misaligned, it could fail catastrophically).\n   - **Thermodynamic Analogy**:\n     - Like a **phase transition**, the system\u2019s utility depends on being *near* (not at) an optimal threshold.\n     - **Too much precision** collapses entropy (\u0394H drops), reducing the system\u2019s ability to explore useful states.\n   - **General Rule**:\n     - **Useful error** (e.g., wrong signals that trigger better prompts) can be more valuable than perfect accuracy if the system\u2019s *design* exploits it.\n     - **Apophatic systems** (where utility comes from *what is",
+  "tokens": [],
+  "logprobs": [],
+  "has_logprobs": false,
+  "total_tokens": 512,
+  "latency_ms": 18914.25841599994,
+  "model": "ministral-3:14b",
+  "backend": "ollama",
+  "timestamp": "2026-03-18T22:52:07.149437"
+}
